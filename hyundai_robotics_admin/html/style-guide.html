@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>스타일 가이드</title>
+  <link rel="stylesheet" type="text/css" href="/hyundai_robotics/assets/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="/hyundai_robotics/assets/css/common.css">
+  <link rel="stylesheet" type="text/css" href="/hyundai_robotics/assets/css/sub.css">
+  <link rel="stylesheet" type="text/css" href="/hyundai_robotics/assets/css/form.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src='//cdnjs.cloudflare.com/ajax/libs/jquery-throttle-debounce/1.1/jquery.ba-throttle-debounce.min.js'>
+  </script>
+  <script type="text/javascript" src="/hyundai_robotics/assets/js/include.js"></script>
+  <script type="text/javascript" src="/hyundai_robotics/assets/js/form.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollToPlugin.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
+</head>
+<style>
+  /* 가이드 인라인 스타일 CSS */
+  .wrap {
+    background: blanchedalmond;
+  }
+
+  #container {
+    overflow: visible;
+    width: 100%;
+    max-width: 1520rem;
+    margin: 0 auto;
+    padding-top: 150rem;
+  }
+
+  #container .con-box {
+    background: #fff;
+    border: solid 2rem #222;
+    padding: 20rem;
+    margin-bottom: 80rem;
+  }
+
+  #container .con-box>h3 {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    font-size: 40rem;
+    margin-bottom: 50rem;
+    padding: 10rem;
+    box-sizing: border-box;
+    color: #fff;
+    background: #222;
+  }
+
+  form>div,
+  .con-box>div {
+    border: solid 1rem rgb(143, 143, 143);
+    padding: 40rem 20rem;
+    margin-bottom: 50rem;
+  }
+
+  strong {
+    display: inline-block;
+    font-size: 16rem;
+    margin-bottom: 10rem;
+  }
+
+  span.ps {
+    display: inline-block;
+    width: 100%;
+    font-size: 16rem;
+    text-align: right;
+    margin-bottom: 10rem
+  }
+
+  .tab-area {
+    width: 100%;
+    display: grid;
+    gap: 10rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .tab-area li {
+    width: 100%;
+    height: 50rem;
+  }
+
+  .tab-area li a {
+    transition: 0.5s;
+    border-radius: 30rem;
+    border: solid 1rem #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    font-size: 20rem;
+    color: #fff;
+    font-weight: 700;
+  }
+
+  .tab-area li a:hover {
+    background: #fff;
+    color: #000;
+  }
+
+  /* h3.gradient-text {
+        font-weight:bold;
+        font-size:100rem;
+        position: relative;
+        z-index: 1;
+        background: linear-gradient(80deg, rgba(0,255,252,1) 0%, rgba(124,247,126,1) 100%);
+        -webkit-background-clip: text;
+        color: transparent;
+    } */
+</style>
+
+<body>
+  <div id="pageStyleGuide" class="wrap">
+
+    <!-- HEADER 헤더 시작 -->
+    <header id="header" class="bg"></header>
+    <!-- HEADER 헤더 끝 -->
+
+    <!-- CONTAINER 컨테이너 시작 -->
+    <div id="container">
+      <section class="con-box">
+        <h3>가이드 탭</h3>
+        <span class="ps">(클릭시 해당 내용으로 스크롤 이동됩니다.)</span>
+        <div>
+          <ul class="tab-area">
+            <li>
+              <a href="javascript:void(0)">
+                1. Form 양식
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">
+                2. 팝업
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">
+                3. 버튼
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">
+                4. 비주얼 영역
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">
+                5. 스와이퍼
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="con-box">
+        <h3>1. Form 양식</h3>
+
+        <form>
+          <div class="form-wrap-cont">
+            <!-- 신청자 정보 시작 -->
+            <div class="applicant-info">
+              <strong class="form-list-tit">신청업체 정보</strong>
+              <div class="form-input-box">
+                <!-- 업체명 시작 -->
+                <div class="form-text-box form-input- item">
+                  <label for="inputComName" class="form-tit">업체명<span>*</span></label>
+                  <div class="form-inner">
+                    <input id="inputComName" type="text" maxlength="20" placeholder="회사명 또는 업체명">
+                    <span class="alert">한글, 영문만 입력 가능</span>
+                  </div>
+                </div>
+                <!-- 업체명 끝 -->
+                <!-- 지역 시작 -->
+                <div class="column-3 form-select-box form-input-item">
+                  <strong class="form-tit">지역<span><span class="essential">*</span></strong>
+                  <ul class="form-list column-3 object-3">
+                    <li class="select-list">
+                      <div class="select-custom">
+                        <a href="javascript:void(0)" class="select_tit">시/도 선택</a>
+                        <ul class="select-custom-list">
+                          <li>지역 1</li>
+                          <li>지역 2</li>
+                          <li>지역 3</li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="select-list">
+                      <div class="select-custom">
+                        <a href="javascript:void(0)" class="select_tit">시/군/구 선택</a>
+                        <ul class="select-custom-list">
+                          <li>지역 1</li>
+                          <li>지역 2</li>
+                          <li>지역 3</li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <!-- 지역 끝 -->
+                <!-- 주소 시작 -->
+                <div class="column-3 form-select-box form-input-item">
+                  <strong class="form-tit">주소<span><span class="essential">*</span></strong>
+                  <ul class="form-list column-3 object-3">
+                    <li class="select-list">
+                      <div class="select-custom">
+                        <a href="javascript:void(0)" class="select_tit">시/도 선택</a>
+                        <ul class="select-custom-list">
+                          <li>지역 1</li>
+                          <li>지역 2</li>
+                          <li>지역 3</li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="select-list">
+                      <div class="select-custom">
+                        <a href="javascript:void(0)" class="select_tit">시/군/구 선택</a>
+                        <ul class="select-custom-list">
+                          <li>지역 1</li>
+                          <li>지역 2</li>
+                          <li>지역 3</li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="detailed-address">
+                      <input type="text" placeholder="나머지 주소 입력" class="detailed-address" disabled>
+                      <span class="alert">공백 포함 20자까지 입력 가능</span>     
+                    </li>
+                  </ul>
+                </div>
+                <!-- 주소 끝 -->
+                <!-- 고객사 시작 -->
+                <div class="column-3 form-text-box form-input-item">
+                  <label for="inputAppTeamName" class="form-tit">고객사 확인<span>*</span></label>
+                  <ul class="form-list column-3 object-3">
+                    <li>
+                      <div class="form-inner">
+                        <input id="inputAppTeamName" type="text" maxlength="20" placeholder="신청자 본인 소속">
+                        <span class="alert">한글, 영문만 입력 가능</span>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="form-inner">
+                        <label for="inputAppName" class="hide">신청자 본인 이름</label>
+                        <input id="inputAppName" type="text" maxlength="20" placeholder="신청자 본인 이름">
+                        <span class="alert">한글, 영문만 입력 가능</span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <!-- 고객사 끝 -->
+                <!-- 연락처 시작 -->
+                <div class="form-text-box form-input-item">
+                  <label for="inputNum" class="form-tit">연락처<span>*</span></label>
+                  <div class="form-inner">
+                    <input id="inputNum" type="number" maxlength="11" placeholder="-없이 숫자만">
+                    <span class="alert">숫자만 입력 가능</span>
+                  </div>
+                </div>
+                <!-- 연락처 끝 -->
+                <!-- 이메일 끝 -->
+                <div class="form-text-box form-input-item">
+                  <label for="inputEmail" class="form-tit">E-Mail<span>*</span></label>
+                  <div class="form-inner">
+                    <input id="inputEmail" type="email" placeholder="E-Mail">
+                    <span class="alert">한글, 영문만 입력 가능</span>
+                  </div>
+                </div>
+                <!-- 이메일 끝 -->
+                <!-- 관심분야 시작 -->
+                <div class="form-select-box form-input-item">
+                  <strong class="form-tit">관심분야<span><span class="essential">*</span></strong>
+                  <ul class="form-list">
+                    <li class="select-list">
+                      <div class="select-custom">
+                        <a href="javascript:void(0)" class="select_tit">관심분야 선택</a>
+                        <ul class="select-custom-list">
+                          <li>지역 1</li>
+                          <li>지역 2</li>
+                          <li>지역 3</li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <!-- 관심분야 끝 -->
+                <!--  -->
+                <!-- 관심분야 끝 -->
+              </div>
+            </div>
+            <!-- 신청자 정보 끝 -->
+            <!-- 요청사항 시작 -->
+            <div class="form-textarea-box form-input-item">
+              <label for="inputTextarea" class="form-list-tit">요청사항<span class="essential">*</span></label>
+              <div class="form-inner">
+                <textarea id="inputTextarea" placeholder="1,000자 이내로 입력" maxlength="1000"
+                  style="width: 100%;max-width: 100%;min-width: 100%;min-height: 300rem;max-height: 300rem;"></textarea>
+                  <span class="alert">공백 포함 1,000자까지 입력 가능</span>
+                <div class="count">0/1,000</div>
+              </div>
+            </div>
+
+            <!-- 파일첨부 시작 -->
+            <div class="form-file-box-wrap form-input-item">
+              <span class="form-tit">파일 첨부</span>
+              <div class="form-file-box">
+                <input class="upload-name" value="" placeholder="첨부파일/1mb 이하">
+                <label for="file">파일 첨부</label>
+                <input type="file" id="file">
+              </div>
+            </div>
+            <!-- 파일첨부 끝 -->
+            <!-- 요청사항 끝 -->
+          </div>
+          <div class="notification">
+            <div class="check-group circle-check">
+              <div>
+                <input type="checkbox" id="check">
+                <label for="check"></label>
+              </div>
+              <label for="check" class="check-tit">개인정보 수집 및 이용 동의</label>
+            </div>
+          </div>
+          <!-- 클래스 disable이 들어갈 경우 버튼의 클릭이 비활성화 됩니다. (제거할 경우 버튼 활성화) -->
+          <a href="#none" class="signup-btn common-btn disable">제휴문의하기</a>
+        </form>
+
+
+        <form>
+          <!-- 1. 신청자 이름 입력창 시작-->
+          <div class="form-text-box form-input-item">
+            <label for="inputName" class="form-tit">이름<span>*</span></label>
+            <div class="form-inner">
+              <input id="inputName" type="text" maxlength="20" placeholder="신청자 본인 이름">
+              <span class="alert">한글, 영문만 입력 가능</span>
+            </div>
+          </div>
+          <!-- 1. 신청자 이름 입력창 끝 -->
+          <!-- 2. 신청자 연락처 입력창 시작-->
+          <div class="form-number-box form-input-item">
+            <label for="inputNum" class="form-tit">연락처<span>*</span></label>
+            <div class="form-inner">
+              <input id="inputNum" type="number" maxlength="11" placeholder="번호 입력">
+              <span class="alert">숫자만 입력 가능</span>
+            </div>
+          </div>
+          <!-- 2. 신청자 이름 입력창 끝 -->
+          <!-- 3. 업체명 입력창 시작-->
+          <div class="form-text-box form-input-item">
+            <label for="inputComName" class="form-tit">업체명<span>*</span></label>
+            <div class="form-inner">
+              <input id="inputComName" type="text" maxlength="20" placeholder="업체명 입력">
+              <span class="alert">공백 포함 20자까지 입력 가능</span>
+            </div>
+          </div>
+          <!-- 3. 업체명 입력창 끝 -->
+          <!-- 4. 업종 직접입력 시작-->
+          <div class="form-text-box form-input-item">
+            <label for="inputComName" class="form-tit">업종명<span>*</span></label>
+            <div class="form-inner">
+              <input id="inputComName" type="text" maxlength="20" placeholder="업체명 입력">
+              <span class="alert">공백 포함 20자까지 입력 가능</span>
+            </div>
+          </div>
+          <!-- 4. 업종 직접입력 끝 -->
+          <!-- 기본 텍스트박스 (label 태그를 지우고 싶을 경우) 시작 -->
+          <strong>기본 텍스트박스(label 태그 X)</strong>
+          <div class="form-text-box form-input-item">
+            <label class="hide" for="inputText" aria-colcount="form-tit">.hide 클래스를 사용하면 눈에 보이지 않고, 스크린리더에만 표시됩니다.
+              (label 및 caption 등 웹접근성 고려)</label>
+            <div class="form-inner">
+              <input id="inputText" type="text" placeholder="label 숨김 타입 ">
+            </div>
+          </div>
+          <!-- 기본 텍스트박스 (label 태그를 지우고 싶을 경우) 끝 -->
+
+          <!-- 텍스트에어리어 시작 -->
+          <strong>텍스트에어리어 박스 (텍스트 갯수 실시간으로 반영 / 최대 1000자 / script 위치 : form.js)</strong>
+          <div class="form-textarea-box">
+            <label for="inputTextarea" class="form-list-tit">이름<span class="essential">*</span></label>
+            <div class="form-inner">
+              <textarea id="inputTextarea" placeholder="1,000자 이내로 입력" maxlength="1000"
+                style="width: 100%;max-width: 100%;min-width: 100%;min-height: 300rem;max-height: 300rem;"></textarea>
+                <span class="alert"></span>
+              <div class="count">0/1,000</div>
+            </div>
+          </div>
+          <!-- 텍스트에어리어 끝 -->
+
+          <!-- 라디오 버튼 시작 -->
+          <strong>라디오 버튼 박스 (중복체크 막아둠 / script 위치 : form.js)</strong>
+          <div class="form-radio-wrap">
+            <strong class="form-list-tit">로봇선택<span>(중복선택가능)</span><span class="essential">*</span></strong>
+            <!-- form-radio-box에 overlap 추가시 중복선택가능 -->
+            <div class="form-radio-box overlap">
+              <ul>
+                <li class="radio-group-wrap">
+                  <div class="radio-group">
+                    <input id="robotRadio1" type="radio">
+                    <label for="robotRadio1">방역로봇</label>
+                  </div>
+                </li>
+                <li class="radio-group-wrap">
+                  <div class="radio-group">
+                    <input id="robotRadio2" type="radio">
+                    <label for="robotRadio2">서빙로봇</label>
+                  </div>
+                </li>
+                <li class="radio-group-wrap">
+                  <div class="radio-group">
+                    <input id="robotRadio3" type="radio">
+                    <label for="robotRadio3">호텔로봇</label>
+                  </div>
+                </li>
+                <li class="radio-group-wrap">
+                  <div class="radio-group">
+                    <input id="robotRadio4" type="radio">
+                    <label for="robotRadio4">test01</label>
+                  </div>
+                </li>
+                <li class="radio-group-wrap">
+                  <div class="radio-group">
+                    <input id="robotRadio5" type="radio">
+                    <label for="robotRadio5">test02</label>
+                  </div>
+                </li>
+                <li class="radio-group-wrap radio-input-group">
+                  <div class="radio-group">
+                    <input id="robotRadio6" type="radio">
+                    <label for="robotRadio6">test02</label>
+                  </div>
+                  <input type="text" placeholder="직접입력" disabled>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- 라디오 버튼 끝 -->
+
+          <!-- 셀렉트박스 시작 -->
+          <strong>셀렉트박스</strong>
+          <div class="form-select-box form-input-item">
+            <strong class="form-tit">예약날짜선택<span><span class="essential">*</span></strong>
+            <div class="select-custom">
+              <a href="javascript:void(0)" class="select_tit">시간</a>
+              <ul class="select-custom-list">
+                <li>오전 9시 ~ 12시</li>
+                <li>오전 13시 ~ 15시</li>
+                <li>오전 15시 ~ 18시</li>
+              </ul>
+            </div>
+          </div>
+          <!-- 셀렉트박스 끝 -->
+          <!-- 체크박스 시작 -->
+          <strong>체크박스 (전체선택 버튼 클릭시 같은 부모요소에 있는 체크박스들 전체선택)</strong>
+          <div>
+            <strong class="form-list-tit">개인정보동의<span><span class="essential">*</span></strong>
+            <div class="form-check-box form-input-item">
+              <div class="check-group-wrap">
+                <div class="check-group">
+                  <div>
+                    <input type="checkbox" id="check1">
+                    <label for="check1"></label>
+                  </div>
+                  <label for="check1" class="check-tit">개인정보 수집 및 이용 동의01</label>
+                </div>
+              </div>
+              <div class="check-group-wrap">
+                <div class="check-group">
+                  <div>
+                    <input type="checkbox" id="check2">
+                    <label for="check2"></label>
+                  </div>
+                  <label for="check2" class="check-tit">개인정보 수집 및 이용 동의02</label>
+                </div>
+              </div>
+              <div class="check-group-wrap">
+                <div class="check-group">
+                  <div>
+                    <input type="checkbox" id="check3">
+                    <label for="check3"></label>
+                  </div>
+                  <label for="check3" class="check-tit">개인정보 수집 및 이용 동의03</label>
+                </div>
+              </div>
+              <div class="check-group-wrap">
+                <div class="check-group circle-check">
+                  <div>
+                    <input type="checkbox" id="check4">
+                    <label for="check4"></label>
+                  </div>
+                  <label for="check4" class="check-tit">개인정보 수집 및 이용 동의04(원형 체크 박스)</label>
+                </div>
+              </div>
+              <div class="check-group-wrap">
+                <div class="check-group">
+                  <div>
+                    <input id="checkAll" type="checkbox">
+                    <label for="checkAll"></label>
+                  </div>
+                  <label for="checkAll" class="check-tit">전체선택</label>
+                </div>
+              </div>
+              <div class="check-group-wrap check-input-group">
+                <div class="check-group">
+                  <div>
+                    <input id="check5" type="checkbox">
+                    <label for="check5"></label>
+                  </div>
+                  <label for="check5" class="check-tit">기타</label>
+                </div>
+                <div class="input-wrap">
+                  <input type="text" placeholder="직접입력" disabled>
+                  <span class="alert">공백 포함 20자까지 입력 가능</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 체크박스 끝 -->
+
+          <!-- 이메일 시작 -->
+          <strong>이메일박스</strong>
+          <div class="form-email-box form-input-item">
+            <label for="inputEmail" class="form-tit">이메일을 입력하세요</label>
+            <input id="inputEmail" type="email" placeholder="이메일을 입력하세요">
+            <button type="submit" herf="#none">구독하기</button>
+          </div>
+          <!-- 이메일 끝 -->
+
+          <!-- 파일첨부 시작 -->
+          <div class="form-file-box-wrap form-input-item">
+            <span class="form-tit">이미지 첨부</span>
+            <div class="form-file-box">
+              <input class="upload-name" value="첨부파일" placeholder="첨부파일/1mb 이하">
+              <label for="file">파일 첨부</label>
+              <input type="file" id="file">
+            </div>
+          </div>
+          <!-- 파일첨부 끝 -->
+        </form>
+      </section>
+      <section class="con-box">
+        <h3>2. 팝업</h3>
+        <ul class="popup-list">
+          <li>
+            <a href="#none" id="popupBtn01" class="signup-btn common-btn green">공통 - 개인정보 수집 및 이용 동의</a>
+          </li>
+          <li>
+            <a href="#none" id="popupBtn02" class="signup-btn common-btn green">상담신청 - 상담신청 완료</a>
+          </li>
+          <li>
+            <a href="#none" id="popupBtn03" class="signup-btn common-btn green">시연신청 - 시연신청 완료</a>
+          </li>
+          <li>
+            <a href="#none" id="popupBtn04" class="signup-btn common-btn green">AS신청 - AS신청 완료</a>
+          </li>
+          <li>
+            <a href="#none" id="popupBtn05" class="signup-btn common-btn green">AS신청 - 첨부 이미지 용량초과</a>
+          </li>
+          <li>
+            <a href="#none" id="popupBtn06" class="signup-btn common-btn green">제휴문의 - 제휴문의 완료</a>
+          </li>
+          <li>
+            <a href="#none" id="popupBtn07" class="signup-btn common-btn green">제휴문의, 대리점모집문의 - 첨부파일 용량초과</a>
+          </li>
+          <li>
+            <a href="#none" id="popupBtn08" class="signup-btn common-btn green">대리점모집문의 - 대리점모집문의 완료</a>
+          </li>
+        </ul>
+      </section>
+      <section class="con-box">
+        <h3>3. 버튼</h3>
+        <div style="background:lightgray">
+          <strong> (1) .common-btn </strong>
+          <a href="javascript:void(0)" class="common-btn">기본버튼</a>
+        </div>
+        <div>
+          <strong> (2) .common-btn.green </strong>
+          <a href="javascript:void(0)" class="common-btn green">초록색 버튼</a>
+        </div>
+        <div>
+          <strong> (3) .common-btn.gray (클릭 가능) </strong>
+          <a href="javascript:void(0)" class="common-btn gray">회색 버튼</a>
+        </div>
+        <div>
+          <strong> (4) .common-btn.disable (클릭 안됌) </strong>
+          <a href="javascript:void(0)" class="common-btn disable">비활성화 버튼</a>
+        </div>
+        <div>
+          <strong> (5) .common-btn.black </strong>
+          <a style="display:flex" href="javascript:void(0)" class="common-btn black">닫기 버튼</a>
+        </div>
+        <div>
+          <strong> (6) .common-btn.more-btn </strong>
+          <a href="javascript:void(0)" class="common-btn more-btn">더보기 버튼</a>
+        </div>
+        <div>
+          <strong> (7) .common-btn.close-btn (더보기와 같이 사용되는 버튼으로 평소에는 display:none)</strong>
+          <a style="display:flex" href="javascript:void(0)" class="common-btn close-btn">닫기 버튼</a>
+        </div>
+        <div style="background:lightgray">
+          <strong> (8) .common-btn.square </strong>
+          <a style="display:flex" href="javascript:void(0)" class="common-btn square">닫기 버튼</a>
+          <a style="display:flex" href="javascript:void(0)" class="common-btn green square">닫기 버튼</a>
+          <a style="display:flex" href="javascript:void(0)" class="common-btn black square">닫기 버튼</a>
+        </div>
+      </section>
+      <section id="company"
+        style="width:100vw; max-width:100vw; padding:0; position:relative; left:50%; transform:translateX(-50%)"
+        class="con-box">
+        <h3>4. 비주얼 영역</h3>
+        <!-- PS. 현재 가이드 페이지는 id값이 중복으로 들어가 있지만 실제로는 이렇게 작업되면 안됌 -->
+        <section id="heroVisual">
+          <div class="tit-wrap">
+            <h2>히어로비주얼 입니다. <strong class="gradient">현대 방역로봇</strong></h2>
+          </div>
+          <!-- <img src="/hyundai_robotics/assets/images/sub/product_descriptions/hyundai_d1/hero_visual-01.png"> -->
+        </section>
+        <section id="titleVisual">
+          <div class="tit-wrap">
+            <span class="depth2">기업</span>
+            <h2>타이틀 비쥬얼입니다.</h2>
+          </div>
+        </section>
+        <section id="titleVisual" class="no-bg">
+          <div class="tit-wrap">
+            <h2>타이틀 비쥬얼입니다.</h2>
+            <P>titleVisual에 .no-bg 클래스를 넣으면 배경이 사라집니다.</P>
+          </div>
+        </section>
+      </section>
+      <section class="con-box">
+        <h3>5. 스와이퍼</h3>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+    </div>
+    <!-- CONTAINER 컨테이너 끝 -->
+
+    <!--  퀵메뉴 시작 -->
+    <div id="quickMenu"></div>
+    <!-- 퀵메뉴 끝 -->
+
+    <!-- FOOTER 푸터 시작 -->
+    <footer id="footer"></footer>
+    <!-- FOOTER 푸터 끝 -->
+
+    <!-- POPUP 팝업 시작 (각 팝업에는 ID 명을 임시로 적용시켜두었습니다. ex : id="popup01", id="popup02", id="popup03 ...")-->
+    <!-- modal-cont에 class="center"를 넣을 경우 글자정렬이 중앙정렬로 적용됩니다. (기본 : text-align="left") -->
+
+    <!-- 팝업 개인정보 수집 및 이용 동의 -->
+    <div id="popup01" class="modal-wrap">
+      <div class="modal-cont">
+        <div class="modal-tit">개인정보 수집 및 이용 동의</div>
+        <div class="modal-info">
+          <p>
+            현대로보틱스 개인정보보호법 등 관련 법령상의 개인정보보호
+            규정을 준수하며, 다음과 같이 개인정보를 수집 이용합니다.
+          </p>
+          <p class="emphasis">
+            개인정보 수집 항목 : 이름, 연락처<br>
+            개인정보 목적 : 로봇 문의 및 상담<br>
+            보유 및 이용 기간 : 접수 후 3개월 이내 파기
+          </p>
+          <p>
+            위 개인정보 수집 이용에 동의하지 않으실 수 있으며, <br>
+            동의하지 않는 경우 상담신청이 제한됩니다.<br>
+            감사합니다
+          </p>
+        </div>
+        <a href="#none" class="modal-btn">확인</a>
+      </div>
+    </div>
+    <!-- 팝업 상담신청 완료 -->
+    <div id="popup02" class="modal-wrap">
+      <div class="modal-cont center">
+        <div class="modal-tit">상담신청 완료</div>
+        <div class="modal-info">
+          <p>
+            상담신청이 완료 되었습니다.
+            <br>메인 페이지로 이동합니다.
+          </p>
+        </div>
+        <a href="#none" class="modal-btn common-btn green">확인</a>
+      </div>
+    </div>
+    <!-- 팝업 시연신청 완료 -->
+    <div id="popup03" class="modal-wrap">
+      <div class="modal-cont center">
+        <div class="modal-tit">시연신청 완료</div>
+        <div class="modal-info">
+          <p>
+            시연신청이 완료 되었습니다.
+            <br>메인 페이지로 이동합니다.
+          </p>
+        </div>
+        <a href="#none" class="modal-btn common-btn green">확인</a>
+      </div>
+    </div>
+    <!-- 팝업 A/S신청 완료 -->
+    <div id="popup04" class="modal-wrap">
+      <div class="modal-cont center">
+        <div class="modal-tit">A/S신청 완료</div>
+        <div class="modal-info">
+          <p>
+            A/S신청이 완료 되었습니다.
+            <br>메인 페이지로 이동합니다.
+          </p>
+        </div>
+        <a href="#none" class="modal-btn common-btn green">확인</a>
+      </div>
+    </div>
+    <!-- 팝업 첨부 이미지 용량초과 -->
+    <div id="popup05" class="modal-wrap">
+      <div class="modal-cont center">
+        <div class="modal-tit">첨부 이미지 용량초과</div>
+        <div class="modal-info">
+          <p>
+            첨부하신 이미지의 용량이 1MB를 초과하였습니다.
+            <br>servicerb@hyundai-robotics.com로 문의 바랍니다.
+          </p>
+        </div>
+        <a href="#none" class="modal-btn common-btn green">확인</a>
+      </div>
+    </div>
+    <!-- 팝업 제휴문의 완료 -->
+    <div id="popup06" class="modal-wrap">
+      <div class="modal-cont center">
+        <div class="modal-tit">제휴문의 완료</div>
+        <div class="modal-info">
+          <p>
+            제휴문의가 완료 되었습니다.
+            <br>메인 페이지로 이동합니다.
+          </p>
+        </div>
+        <a href="#none" class="modal-btn common-btn green">확인</a>
+      </div>
+    </div>
+    <!-- 팝업 첨부파일 용량초과 -->
+    <div id="popup07" class="modal-wrap">
+      <div class="modal-cont center">
+        <div class="modal-tit">첨부파일 용량초과</div>
+        <div class="modal-info">
+          <p>
+            첨부하신 파일의 용량이 1MB를 초과하였습니다.
+            <br>servicerb@hyundai-robotics.com로 문의 바랍니다.
+          </p>
+        </div>
+        <a href="#none" class="modal-btn common-btn green">확인</a>
+      </div>
+    </div>
+    <!-- 팝업 대리점모집문의 용량초과 -->
+    <div id="popup08" class="modal-wrap">
+      <div class="modal-cont center">
+        <div class="modal-tit">대리점모집문의 완료</div>
+        <div class="modal-info">
+          <p>
+            대리점모집문의가 완료 되었습니다.
+            <br>메인 페이지로 이동합니다.
+          </p>
+        </div>
+        <a href="#none" class="modal-btn common-btn green">확인</a>
+      </div>
+    </div>
+
+    <!-- POPUP 팝업 끝 -->
+  </div>
+</body>
+<!-- sweet alert -->
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script>
+  $(document).ready(function () {
+
+    // 예시용 스와이퍼
+    var swiper = new Swiper(".mySwiper", {
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+
+    // 스타일 가이드 탭 스크립트
+    $('.tab-area li').on('click', function () {
+
+      const index = $(this).index() + 1;
+      const conBox = $('section.con-box')
+
+      $('html, body').animate({
+        scrollTop: conBox.eq(index).offset().top - 100
+      }, 500);
+
+    })
+
+    // 스타일 가이드 팝업 버튼
+    $('.signup-btn').on('click', function () {
+
+      if($(this).prop("id") == "popupBtn01") {
+        $('.modal-wrap#popup01').addClass('active');
+      } else if ($(this).prop("id") == "popupBtn02") {
+        $('.modal-wrap#popup02').addClass('active');
+      } else if ($(this).prop("id") == "popupBtn03") {
+        $('.modal-wrap#popup03').addClass('active');
+      } else if ($(this).prop("id") == "popupBtn04") {
+        $('.modal-wrap#popup04').addClass('active');
+      } else if ($(this).prop("id") == "popupBtn05") {
+        $('.modal-wrap#popup05').addClass('active');
+      } else if ($(this).prop("id") == "popupBtn06") {
+        $('.modal-wrap#popup06').addClass('active');
+      } else if ($(this).prop("id") == "popupBtn07") {
+        $('.modal-wrap#popup07').addClass('active');
+      } else if ($(this).prop("id") == "popupBtn08") {
+        $('.modal-wrap#popup08').addClass('active');
+      }
+
+
+    });
+
+    $('.modal-btn').on('click', function () {
+
+      $('.modal-wrap').removeClass('active');
+
+    });
+
+  })
+</script>
+
+</html>

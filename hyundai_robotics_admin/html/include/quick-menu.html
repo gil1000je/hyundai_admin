@@ -1,0 +1,123 @@
+<div class="quick-menu">
+    
+    <ul class="depth1">
+        <li class="active-btn">
+            <a title="퀵메뉴 활성화" href="javascript:void(0)">
+                <img src="/hyundai_robotics/assets/images/include/quick_menu/icon_quick_menu_call.png" alt="상담신청 아이콘">
+                 <span>상담신청</span>
+             </a>
+         </li>
+         <li><a title="시연신청 페이지 이동" href="javascript:void(0)"><img src="/hyundai_robotics/assets/images/include/quick_menu/icon_quick_menu_robot.png" alt="시연신청 아이콘"><span>시연신청</span></a></li>
+         <li><a title="대리점 문의 페이지 이동" href="javascript:void(0)"><img src="/hyundai_robotics/assets/images/include/quick_menu/icon_quick_menu_building.png" alt="대리점 문의 아이콘"><span>대리점 문의</span></a></li>
+         <li class="sns-menu" title="공유하기 이동">
+             <a title="SNS 메뉴 활성화" href="javascript:void(0)"><img src="/hyundai_robotics/assets/images/include/quick_menu/icon_sns_icon.png" alt="공유하기 아이콘"><span>공유하기</span></a>
+            <ul class="depth2">
+                <li><a title="sns_share" href="javascript:void(0)">
+                    <img src="/hyundai_robotics/assets/images/include/quick_menu/icon_sns_share.png" alt="sns_share">
+                </a></li>
+                <li><a title="sns_in" href="javascript:void(0)">
+                    <img src="/hyundai_robotics/assets/images/include/quick_menu/icon_sns_in.png" alt="sns_in">
+                </a></li>
+                <li><a title="sns_youtube" href="javascript:void(0)">
+                    <img src="/hyundai_robotics/assets/images/include/quick_menu/icon_sns_youtube.png" alt="sns_youtube">
+                </a></li>
+                <li><a title="sns_instagram" href="javascript:void(0)">
+                    <img src="/hyundai_robotics/assets/images/include/quick_menu/icon_sns_insta.png" alt="sns_insta">
+                </a></li>
+            </ul>
+        </li>
+    </ul>
+    <a class="top-btn" href="javascript:void(0)" title="클릭시 최상단으로 이동"><img src="/hyundai_robotics/assets/images/include/quick_menu/icon_top_btn.png" alt="탑버튼"><span>TOP</span></a>
+    <a class="quick-close" href="javascript:void(0)" title="모바일 퀵메뉴 닫기"><img src="/hyundai_robotics/assets/images/include/quick_menu/quick_close_btn.png" alt=""></a>
+</div>
+
+<script>
+    
+    // 퀵메뉴의 스크립트 : quickMenuScript()
+    function quickMenuScript() {
+
+        var quickMenu = $('.quick-menu') //퀵메뉴
+        var activeBtn = $('.active-btn') //퀵메뉴의 상담지원 버튼
+        var snsMenu = $('.sns-menu') //퀵메뉴의 공유하기 버튼
+        var snsLastLink = $('.sns-menu .depth2 li:last-child a') //퀵메뉴의 SNS 마지막 버튼
+        var topBtn = $('.top-btn') // 탑버튼
+        var quick_close = $('.quick-close')//모바일 퀵메뉴 x버튼
+
+        function activeQuickMenu() {
+
+            //퀵메뉴의 상담지원 버튼 클릭시 퀵메뉴 활성화
+            activeBtn.on('mouseover', function(){
+
+                quickMenu.addClass('active')
+
+                setTimeout(function(){
+                    snsMenu.on('mouseover')
+                },500)
+                
+            })
+            
+            quickMenu.on('mouseleave', function(){
+
+                quickMenu.removeClass('active')
+                snsMenu.removeClass('active')
+
+            })
+
+            //퀵메뉴의 공유하기 버튼 클릭시 메뉴 활성화 및 비활성화
+            snsMenu.on('mouseover', function(){
+
+                snsMenu.addClass('active')
+
+            })
+
+            //퀵메뉴 탭 접근시 활성화
+            activeBtn.find('a').on('focus', function(){
+                setTimeout(function(){
+                    if(! quickMenu.hasClass('active')) quickMenu.addClass('active') 
+                    snsMenu.addClass('active')
+                    //quickMenu.addClass('show-top-btn')
+                },100)
+            })
+            //퀵메뉴의 마지막 a태그 탭 접근시 퀵메뉴 비활성화
+            snsLastLink.on("focusout",function(){
+                quickMenu.removeClass('active')
+                snsMenu.removeClass('active')
+            })
+
+        } activeQuickMenu()
+
+        function scrollQuickMenu() {
+
+            $(window).scroll( $.throttle( 500, function(e) {
+
+                if($(document).scrollTop() > 0){
+                    quickMenu.addClass('show-top-btn')
+                    topBtn.attr("tabindex",0)
+
+                } else {
+                    quickMenu.removeClass('show-top-btn')
+                    topBtn.attr("tabindex",-1)
+                }
+                
+            }))
+
+        } scrollQuickMenu()
+
+        function moveToTop() {
+            //탑버튼
+            topBtn.on("click",function(){
+                $('html, body').animate({ scrollTop: 0 }, 500);  // 최상단으로 스크롤
+                // 접근성관련 탭으로 탑버튼 클릭시 logo에 포커싱 이동
+                setTimeout(function(){
+                    $('#logo > a').focus()
+                },600)
+            })
+        } moveToTop()
+
+        quick_close.on('click', function(){
+            $(this).parent('.quick-menu').removeClass('active');
+        });
+
+    } quickMenuScript()
+
+</script>
