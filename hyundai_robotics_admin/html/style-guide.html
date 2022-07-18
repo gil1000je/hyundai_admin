@@ -6,116 +6,46 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>스타일 가이드</title>
-  <link rel="stylesheet" type="text/css" href="/hyundai_robotics/assets/css/reset.css">
-  <link rel="stylesheet" type="text/css" href="/hyundai_robotics/assets/css/common.css">
-  <link rel="stylesheet" type="text/css" href="/hyundai_robotics/assets/css/sub.css">
-  <link rel="stylesheet" type="text/css" href="/hyundai_robotics/assets/css/form.css">
+  <link rel="stylesheet" type="text/css" href="/hyundai_robotics_admin/assets/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="/hyundai_robotics_admin/assets/css/common.css">
+  <link rel="stylesheet" type="text/css" href="/hyundai_robotics_admin/assets/css/form.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script src='//cdnjs.cloudflare.com/ajax/libs/jquery-throttle-debounce/1.1/jquery.ba-throttle-debounce.min.js'>
   </script>
-  <script type="text/javascript" src="/hyundai_robotics/assets/js/include.js"></script>
-  <script type="text/javascript" src="/hyundai_robotics/assets/js/form.js"></script>
+  <script type="text/javascript" src="/hyundai_robotics_admin/assets/js/include.js"></script>
+  <script type="text/javascript" src="/hyundai_robotics_admin/assets/js/form.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollToPlugin.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
 </head>
 <style>
+  html {font-size:0.8px;}
   /* 가이드 인라인 스타일 CSS */
-  .wrap {
-    background: blanchedalmond;
-  }
+  .wrap {background: blanchedalmond;}
+  #container {overflow: visible;width: 100%;max-width: 1520rem;margin: 0 auto;padding-top: 150rem;}
+  #container .con-box { background: #fff; border: solid 2rem #222; padding: 20rem;margin-bottom: 80rem; }
+  form>div, .con-box>div { border: solid 1rem rgb(143, 143, 143); padding: 40rem 20rem; margin-bottom: 50rem;}
+  .tab-area { width: 100%; display: grid; gap: 10rem; grid-template-columns: repeat(3, 1fr);}
+  .tab-area li { width: 100%; height: 50rem;}
+  .tab-area li a { transition: 0.5s; border-radius: 30rem; border: solid 1rem #000; display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; background: #000; font-size: 20rem; color: #fff; font-weight: 700;}
+  .tab-area li a:hover { background: #fff; color: #000;}
+  .main-tit { display: inline-block;width: 100%; text-align: center; font-size: 40rem; margin-bottom: 50rem; padding: 10rem; box-sizing: border-box; color: #fff; background: #222;}
+  .sub-tit { display:block; font-size:20rem; font-weight:700; color:rgb(19, 166, 186); margin-bottom:10rem;}
+  .caption { display: inline-block; width: 100%; font-size: 16rem; text-align: right; margin-bottom: 10rem}
 
-  #container {
-    overflow: visible;
-    width: 100%;
-    max-width: 1520rem;
-    margin: 0 auto;
-    padding-top: 150rem;
-  }
 
-  #container .con-box {
-    background: #fff;
-    border: solid 2rem #222;
-    padding: 20rem;
-    margin-bottom: 80rem;
-  }
+  /* style */
 
-  #container .con-box>h3 {
-    display: inline-block;
-    width: 100%;
-    text-align: center;
-    font-size: 40rem;
-    margin-bottom: 50rem;
-    padding: 10rem;
-    box-sizing: border-box;
-    color: #fff;
-    background: #222;
-  }
+  /* 버튼 */
+  .common-btn { font-size:16rem; color:#222; white-space:nowrap; border-radius:3rem; background:#F4F4F4; border:solid 1px #BBB; color:#BBB; min-height:44rem; padding:0 42rem; }
+  .common-btn:hover, .common-btn.active { border:solid 1px #0E80D6; background:#0E80D6; color:#fff; }
+  .common-btn:disabled { border:solid 1px #999; background:#ddd; color:#999; cursor:default; }
 
-  form>div,
-  .con-box>div {
-    border: solid 1rem rgb(143, 143, 143);
-    padding: 40rem 20rem;
-    margin-bottom: 50rem;
-  }
+  /* 라디오 버튼 */
+  .radio-wrap label, .check-wrap label { display:flex; align-items:center; line-height:1; gap:8rem; font-size:16rem }
 
-  strong {
-    display: inline-block;
-    font-size: 16rem;
-    margin-bottom: 10rem;
-  }
-
-  span.ps {
-    display: inline-block;
-    width: 100%;
-    font-size: 16rem;
-    text-align: right;
-    margin-bottom: 10rem
-  }
-
-  .tab-area {
-    width: 100%;
-    display: grid;
-    gap: 10rem;
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .tab-area li {
-    width: 100%;
-    height: 50rem;
-  }
-
-  .tab-area li a {
-    transition: 0.5s;
-    border-radius: 30rem;
-    border: solid 1rem #000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    background: #000;
-    font-size: 20rem;
-    color: #fff;
-    font-weight: 700;
-  }
-
-  .tab-area li a:hover {
-    background: #fff;
-    color: #000;
-  }
-
-  /* h3.gradient-text {
-        font-weight:bold;
-        font-size:100rem;
-        position: relative;
-        z-index: 1;
-        background: linear-gradient(80deg, rgba(0,255,252,1) 0%, rgba(124,247,126,1) 100%);
-        -webkit-background-clip: text;
-        color: transparent;
-    } */
 </style>
 
 <body>
@@ -127,14 +57,14 @@
 
     <!-- CONTAINER 컨테이너 시작 -->
     <div id="container">
-      <section class="con-box">
-        <h3>가이드 탭</h3>
-        <span class="ps">(클릭시 해당 내용으로 스크롤 이동됩니다.)</span>
+      <section id="tab" class="con-box">
+        <span class="main-tit">0. 가이드 탭</span>
+        <span class="caption">(클릭시 해당 내용으로 스크롤 이동됩니다.)</span>
         <div>
           <ul class="tab-area">
             <li>
               <a href="javascript:void(0)">
-                1. Form 양식
+                1. 컨포넌트
               </a>
             </li>
             <li>
@@ -160,9 +90,61 @@
           </ul>
         </div>
       </section>
-      <section class="con-box">
-        <h3>1. Form 양식</h3>
-
+      <section id="comonents" class="con-box">
+        <span class="main-tit">1. 컨포넌트</span>
+        <!-- 버튼 시작 -->
+        <div id="buttons">
+          <span class="sub-tit">버튼</span>
+          <button class="common-btn" type="button">
+            저장
+          </button>
+          <button class="common-btn active" type="button">
+            저장
+          </button>
+          <button class="common-btn" type="button" disabled>
+            저장
+          </button>
+          <button class="common-btn" type="button">
+            세글자
+          </button>
+          <button class="common-btn" type="button">
+            네엣글자
+          </button>
+          <button class="common-btn" type="button">
+            다아섯글자
+          </button>
+        </div>
+        <!-- 버튼 끝 -->
+        <!-- 라디오 버튼 및 체크박스 시작 --> 
+        <div id="radioAndCheck">
+          <span class="sub-tit">라디오버튼 및 체크박스</span>
+          <div class="radio-wrap">
+            <label for="radioSample" name="radioSample">
+              <input id="radioSample" type="radio"> 회원관리
+            </label>
+          </div>
+          <div class="check-wrap">
+            <label for="checkSample" name="checkSample">
+              <input id="checkSample" type="checkbox"> 회원관리
+            </label>
+          </div>
+        </div>
+        <!-- 라디오 버튼 및 체크박스 끝 --> 
+        <!-- 인풋박스 시작 --> 
+        <div id="inputBoxs">
+          <span class="sub-tit">인풋박스</span>
+          <input id="inputSample" type="text" placeholder="아이디 입력">
+        </div>
+        <!-- 인풋박스 끝 -->
+        <!-- 드롭박스 시작 --> 
+        <div id="dropBox">
+          <span class="sub-tit">드롭박스</span>
+          
+        </div>
+        <!-- 드롭박스 끝 -->
+      </section>
+      <section id="form" class="con-box">
+        <h3>1. 컨포넌트</h3>
         <form>
           <div class="form-wrap-cont">
             <!-- 신청자 정보 시작 -->
@@ -331,8 +313,6 @@
           <!-- 클래스 disable이 들어갈 경우 버튼의 클릭이 비활성화 됩니다. (제거할 경우 버튼 활성화) -->
           <a href="#none" class="signup-btn common-btn disable">제휴문의하기</a>
         </form>
-
-
         <form>
           <!-- 1. 신청자 이름 입력창 시작-->
           <div class="form-text-box form-input-item">
@@ -620,7 +600,7 @@
           <div class="tit-wrap">
             <h2>히어로비주얼 입니다. <strong class="gradient">현대 방역로봇</strong></h2>
           </div>
-          <!-- <img src="/hyundai_robotics/assets/images/sub/product_descriptions/hyundai_d1/hero_visual-01.png"> -->
+          <!-- <img src="/hyundai_robotics_admin/assets/images/sub/product_descriptions/hyundai_d1/hero_visual-01.png"> -->
         </section>
         <section id="titleVisual">
           <div class="tit-wrap">
@@ -647,6 +627,7 @@
         </div>
       </section>
     </div>
+
     <!-- CONTAINER 컨테이너 끝 -->
 
     <!--  퀵메뉴 시작 -->
@@ -656,139 +637,10 @@
     <!-- FOOTER 푸터 시작 -->
     <footer id="footer"></footer>
     <!-- FOOTER 푸터 끝 -->
-
-    <!-- POPUP 팝업 시작 (각 팝업에는 ID 명을 임시로 적용시켜두었습니다. ex : id="popup01", id="popup02", id="popup03 ...")-->
-    <!-- modal-cont에 class="center"를 넣을 경우 글자정렬이 중앙정렬로 적용됩니다. (기본 : text-align="left") -->
-
-    <!-- 팝업 개인정보 수집 및 이용 동의 -->
-    <div id="popup01" class="modal-wrap">
-      <div class="modal-cont">
-        <div class="modal-tit">개인정보 수집 및 이용 동의</div>
-        <div class="modal-info">
-          <p>
-            현대로보틱스 개인정보보호법 등 관련 법령상의 개인정보보호
-            규정을 준수하며, 다음과 같이 개인정보를 수집 이용합니다.
-          </p>
-          <p class="emphasis">
-            개인정보 수집 항목 : 이름, 연락처<br>
-            개인정보 목적 : 로봇 문의 및 상담<br>
-            보유 및 이용 기간 : 접수 후 3개월 이내 파기
-          </p>
-          <p>
-            위 개인정보 수집 이용에 동의하지 않으실 수 있으며, <br>
-            동의하지 않는 경우 상담신청이 제한됩니다.<br>
-            감사합니다
-          </p>
-        </div>
-        <a href="#none" class="modal-btn">확인</a>
-      </div>
-    </div>
-    <!-- 팝업 상담신청 완료 -->
-    <div id="popup02" class="modal-wrap">
-      <div class="modal-cont center">
-        <div class="modal-tit">상담신청 완료</div>
-        <div class="modal-info">
-          <p>
-            상담신청이 완료 되었습니다.
-            <br>메인 페이지로 이동합니다.
-          </p>
-        </div>
-        <a href="#none" class="modal-btn common-btn green">확인</a>
-      </div>
-    </div>
-    <!-- 팝업 시연신청 완료 -->
-    <div id="popup03" class="modal-wrap">
-      <div class="modal-cont center">
-        <div class="modal-tit">시연신청 완료</div>
-        <div class="modal-info">
-          <p>
-            시연신청이 완료 되었습니다.
-            <br>메인 페이지로 이동합니다.
-          </p>
-        </div>
-        <a href="#none" class="modal-btn common-btn green">확인</a>
-      </div>
-    </div>
-    <!-- 팝업 A/S신청 완료 -->
-    <div id="popup04" class="modal-wrap">
-      <div class="modal-cont center">
-        <div class="modal-tit">A/S신청 완료</div>
-        <div class="modal-info">
-          <p>
-            A/S신청이 완료 되었습니다.
-            <br>메인 페이지로 이동합니다.
-          </p>
-        </div>
-        <a href="#none" class="modal-btn common-btn green">확인</a>
-      </div>
-    </div>
-    <!-- 팝업 첨부 이미지 용량초과 -->
-    <div id="popup05" class="modal-wrap">
-      <div class="modal-cont center">
-        <div class="modal-tit">첨부 이미지 용량초과</div>
-        <div class="modal-info">
-          <p>
-            첨부하신 이미지의 용량이 1MB를 초과하였습니다.
-            <br>servicerb@hyundai-robotics.com로 문의 바랍니다.
-          </p>
-        </div>
-        <a href="#none" class="modal-btn common-btn green">확인</a>
-      </div>
-    </div>
-    <!-- 팝업 제휴문의 완료 -->
-    <div id="popup06" class="modal-wrap">
-      <div class="modal-cont center">
-        <div class="modal-tit">제휴문의 완료</div>
-        <div class="modal-info">
-          <p>
-            제휴문의가 완료 되었습니다.
-            <br>메인 페이지로 이동합니다.
-          </p>
-        </div>
-        <a href="#none" class="modal-btn common-btn green">확인</a>
-      </div>
-    </div>
-    <!-- 팝업 첨부파일 용량초과 -->
-    <div id="popup07" class="modal-wrap">
-      <div class="modal-cont center">
-        <div class="modal-tit">첨부파일 용량초과</div>
-        <div class="modal-info">
-          <p>
-            첨부하신 파일의 용량이 1MB를 초과하였습니다.
-            <br>servicerb@hyundai-robotics.com로 문의 바랍니다.
-          </p>
-        </div>
-        <a href="#none" class="modal-btn common-btn green">확인</a>
-      </div>
-    </div>
-    <!-- 팝업 대리점모집문의 용량초과 -->
-    <div id="popup08" class="modal-wrap">
-      <div class="modal-cont center">
-        <div class="modal-tit">대리점모집문의 완료</div>
-        <div class="modal-info">
-          <p>
-            대리점모집문의가 완료 되었습니다.
-            <br>메인 페이지로 이동합니다.
-          </p>
-        </div>
-        <a href="#none" class="modal-btn common-btn green">확인</a>
-      </div>
-    </div>
-
-    <!-- POPUP 팝업 끝 -->
   </div>
 </body>
-<!-- sweet alert -->
-<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <script>
   $(document).ready(function () {
-
-    // 예시용 스와이퍼
-    var swiper = new Swiper(".mySwiper", {
-      pagination: {
-        el: ".swiper-pagination",
-      },
-    });
 
     // 스타일 가이드 탭 스크립트
     $('.tab-area li').on('click', function () {
@@ -802,35 +654,39 @@
 
     })
 
-    // 스타일 가이드 팝업 버튼
-    $('.signup-btn').on('click', function () {
+    function popupScript() {
 
-      if($(this).prop("id") == "popupBtn01") {
-        $('.modal-wrap#popup01').addClass('active');
-      } else if ($(this).prop("id") == "popupBtn02") {
-        $('.modal-wrap#popup02').addClass('active');
-      } else if ($(this).prop("id") == "popupBtn03") {
-        $('.modal-wrap#popup03').addClass('active');
-      } else if ($(this).prop("id") == "popupBtn04") {
-        $('.modal-wrap#popup04').addClass('active');
-      } else if ($(this).prop("id") == "popupBtn05") {
-        $('.modal-wrap#popup05').addClass('active');
-      } else if ($(this).prop("id") == "popupBtn06") {
-        $('.modal-wrap#popup06').addClass('active');
-      } else if ($(this).prop("id") == "popupBtn07") {
-        $('.modal-wrap#popup07').addClass('active');
-      } else if ($(this).prop("id") == "popupBtn08") {
-        $('.modal-wrap#popup08').addClass('active');
-      }
+        // 스타일 가이드 팝업 버튼
+        $('.signup-btn').on('click', function () {
+
+            if($(this).prop("id") == "popupBtn01") {
+              $('.modal-wrap#popup01').addClass('active');
+            } else if ($(this).prop("id") == "popupBtn02") {
+              $('.modal-wrap#popup02').addClass('active');
+            } else if ($(this).prop("id") == "popupBtn03") {
+              $('.modal-wrap#popup03').addClass('active');
+            } else if ($(this).prop("id") == "popupBtn04") {
+              $('.modal-wrap#popup04').addClass('active');
+            } else if ($(this).prop("id") == "popupBtn05") {
+              $('.modal-wrap#popup05').addClass('active');
+            } else if ($(this).prop("id") == "popupBtn06") {
+              $('.modal-wrap#popup06').addClass('active');
+            } else if ($(this).prop("id") == "popupBtn07") {
+              $('.modal-wrap#popup07').addClass('active');
+            } else if ($(this).prop("id") == "popupBtn08") {
+              $('.modal-wrap#popup08').addClass('active');
+            }
 
 
-    });
+        });
 
-    $('.modal-btn').on('click', function () {
+        $('.modal-btn').on('click', function () {
 
-      $('.modal-wrap').removeClass('active');
+          $('.modal-wrap').removeClass('active');
 
-    });
+        });
+    }
+    popupScript()
 
   })
 </script>
