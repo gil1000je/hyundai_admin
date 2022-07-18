@@ -1,5 +1,6 @@
-$(document).ready(function() {
+gsap.registerPlugin(ScrollTrigger);
 
+$(document).ready(function() {
     // 고객지원 - FAQ
     function faqSlideUpandDown () {
 
