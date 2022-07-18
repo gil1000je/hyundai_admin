@@ -98,6 +98,15 @@
 .logoin-modal .button-wrap .alert{left: 50%;transform: translateX(-50%);}
 .modal-wrap.logoin-modal{max-width: 500rem;padding: 36rem 70rem;border-radius: 8rem;border: 1px solid #fff;}
 .modal-wrap .button-wrap{margin-top: 36rem;}
+
+.modal-info-cont{border: 1px solid #bbb;border-radius: 5rem;overflow-y: auto;margin-top: 12rem;height: 397rem;}
+.modal-search{width: 100%;display: flex;justify-content: space-between;}
+.modal-search > input[type="text"]{width: calc(80% - 4rem)!important;height: 32rem!important;padding: 0!important;padding-left: 9rem!important;}
+.modal-search > input[type="button"]{width: calc(20% - 4rem);height: 32rem;}
+
+.modal-table {width: 100%;}
+.modal-table thead tr{border-bottom: 1px solid #bbb;background: #f4f4f4;}
+.modal-table tbody tr{border-bottom: 1px solid #bbb;height: 31rem;}
 /* //////////////////////////////////////////////////////////////// */
 /* ////////////////////////popup 끝////////////////////////// */
 /* ///////////////////////////////////////////////////////////////// */
