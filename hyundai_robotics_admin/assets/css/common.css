@@ -271,7 +271,7 @@
 /* ///////////////////////////////////////////////////////////////// */
 
 /* pagination */
-.pagenation {justify-content: center;margin-top: 72rem;}
+/* .pagenation {justify-content: center;margin-top: 72rem;}
 .pagenation , .pagenation-wrap, .arrow-group{display: flex;align-items: center;}
 .pagenation a{width: 50rem;height: 50rem;border: 1rem solid #000;font-size: 22rem;font-weight: 500;display: flex;align-items: center;justify-content: center;}
 .pagenation a.page-link{margin: 0 3rem;}
@@ -281,7 +281,7 @@
 .pagenation a.space_arrow img{width: 8rem;}
 .pagenation a.space_arrow.back_space_arrow img{transform: rotate(180deg);}
 .arrow-group.front-arrow-group{margin-right: 20rem;}
-.arrow-group.back-arrow-group{margin-left: 20rem;}
+.arrow-group.back-arrow-group{margin-left: 20rem;} */
 
 @media (min-width:1024px) {
 
