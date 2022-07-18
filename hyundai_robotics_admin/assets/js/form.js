@@ -118,26 +118,21 @@ $(document).ready(function() {
     });
     
     //select option custom
-    var _select_title = $('.select-custom > .select_tit');
-    _select_title.on('click', function(){
-      $(this).next('.select-custom-list').stop().slideToggle('active');
+    var selectTitle = $('.selected-option');
+    selectTitle.on('click', function(){
+      $(this).next('.option-list').stop().slideToggle('active');
       $(this).toggleClass('active');
     });
 
-    $('.select-custom-list > li').on('click', function(){
-      var _li_value = $(this).html();
-      $(this).parent().siblings(_select_title).html(_li_value);
-      $(this).parent().siblings(_select_title).addClass('selectd');
-      $(this).parent().siblings(_select_title).removeClass('active');
-      $(this).parent('.select-custom-list').stop().slideToggle('active');
+    $('.option-list > li').on('click', function(){
+
+      var value = $(this).html();
+      $(this).parent().siblings(selectTitle).html(value);
+      $(this).parent().siblings(selectTitle).addClass('selectd');
+      $(this).parent().siblings(selectTitle).removeClass('active');
+      $(this).parent('.option-list').stop().slideToggle('active');
+
     });
-
-    // 두번째 셀렉트박스 선택시 disabled 제거 (개발 연결시 지워야할 수 있음)
-    $('.form-select-box .form-list li:nth-child(2)').find('.select-custom-list > li').on("click",function(){
-
-        $(this).parents('.form-list').find('.detailed-address').prop('disabled',false)
-
-    })
 
 });
 
