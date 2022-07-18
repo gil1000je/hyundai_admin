@@ -21,26 +21,30 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
 </head>
 <style>
-  html {font-size:0.8px;}
+
+  html {font-size:1px;}
   /* 가이드 인라인 스타일 CSS */
   .wrap {background: blanchedalmond;}
-  #container {overflow: visible;width: 100%;max-width: 1520rem;margin: 0 auto;padding-top: 150rem;}
-  #container .con-box { background: #fff; border: solid 2rem #222; padding: 20rem;margin-bottom: 80rem; }
-  form>div, .con-box>div { border: solid 1rem rgb(143, 143, 143); padding: 40rem 20rem; margin-bottom: 50rem;}
+  #container .con-box { background: #fff; border: solid 2rem #222; padding: 20rem; margin-bottom: 80rem; }
+  div.dont-copy-this-div { border: solid 1rem rgb(143, 143, 143); padding: 40rem 20rem; margin-bottom: 50rem;}
   .tab-area { width: 100%; display: grid; gap: 10rem; grid-template-columns: repeat(3, 1fr);}
   .tab-area li { width: 100%; height: 50rem;}
   .tab-area li a { transition: 0.5s; border-radius: 30rem; border: solid 1rem #000; display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; background: #000; font-size: 20rem; color: #fff; font-weight: 700;}
   .tab-area li a:hover { background: #fff; color: #000;}
-  .main-tit { display: inline-block;width: 100%; text-align: center; font-size: 40rem; margin-bottom: 50rem; padding: 10rem; box-sizing: border-box; color: #fff; background: #222;}
-  .sub-tit { display:block; font-size:20rem; font-weight:700; color:rgb(19, 166, 186); margin-bottom:10rem;}
+  .bg-tit { display: inline-block;width: 100%; text-align: center; font-size: 40rem; margin-bottom: 50rem; padding: 10rem; box-sizing: border-box; color: #fff; background: #222;}
+  .sub-tit { display:block; font-size:20rem; font-weight:700; color:rgb(19, 166, 186); margin-bottom:20rem;}
   .caption { display: inline-block; width: 100%; font-size: 16rem; text-align: right; margin-bottom: 10rem}
+  #layout {box-sizing:content-box !important}
 
+  /* style */   /* style */   /* style */   /* style */
 
-  /* style */
-
+  /* common */
+  .wrap {width:100%; overflow:auto; font-size:16rem}
+  #container {overflow: visible; margin: 0 auto; }
+  #layout section {width:1300rem; margin:0 auto;}
   /* 버튼 */
   .common-btn { font-size:16rem; color:#222; white-space:nowrap; border-radius:3rem; background:#F4F4F4; border:solid 1px #BBB; color:#BBB; min-height:44rem; padding:0 42rem; }
-  .common-btn:hover, .common-btn.active { border:solid 1px #0E80D6; background:#0E80D6; color:#fff; }
+  .common-btn:hover, .common-btn.active { border:solid 1px #3BB88C; background:#3BB88C; color:#fff; }
   .common-btn:disabled { border:solid 1px #999; background:#ddd; color:#999; cursor:default; }
 
   /* 체크박스 및 라디오 버튼 */
@@ -51,6 +55,7 @@
   input[type="text"]:focus { outline:solid 1.5px #222; border:solid 1px #fff;}
   input[type="text"]::placeholder {color:#999; font-size:16rem}
   input[type="text"]:disabled {border:solid 1px #999; background:#ddd;}
+  .input-wrap {display:flex}
   .input-wrap.red {position:relative; display:inline-block;}
   .input-wrap.red input[type="text"] {outline:solid 1.5px #E81953; border:solid 1px #fff;}
   .input-wrap.red .alert {position:absolute; right:0; top:2rem; font-size:12rem; font-weight:700; color:#e81953}
@@ -62,6 +67,47 @@
   .select-wrap .option-list li {height:32rem; display:flex; align-items:center; border-radius:3rem; padding:0 13rem;}
   .select-wrap .option-list li:hover { background:#F4F4F4; }
   .select-wrap .option-list li a { font-size:16rem }
+
+  /* 페이지네이션 */
+  #pagination .pagination-inner a { display:flex; align-items:center; justify-content:center; width:32rem; height:32rem; background:#fff; border:solid 1px #eee; border-radius:3rem; font-size:16rem }
+  #pagination .pagination-inner a.active { background:#3BB88C; color:#fff; }
+  #pagination .pagination-inner, #pagination .number-wrap, #pagination .arr-wrap  { display:flex; gap:6rem }
+  
+  /* 네비게이션 */
+  #navigation > ul { display:flex; gap:20rem; }
+  #navigation > ul a { font-size:14rem; color:#999 }
+
+  /* 탭 */
+  #tab .tab-list {display:flex; flex-wrap:wrap; gap:8rem;}
+  #tab .tab-list li a { font-size:16rem; display:flex; align-items:center; justify-content:center; min-height:44rem; padding:0 42rem; border:solid 1px #bbb; color:#999; background:#F5FCF9; border-radius:3rem; white-space:nowrap;}
+  #tab .tab-list li a.active { background:#3BB88C; color:#fff; border:solid 1px #3BB88C; }
+
+  /* 타이틀 영역 */
+  .title-wrap { width:1300rem; margin:0 auto; padding:33rem 0 70rem;}
+  .title-wrap h2.main-tit { font-size:30rem; color:#222; font-weight:700; line-height:44rem; letter-spacing:-0.018em; }
+
+  /* 테이블 */
+  .table-type02 { width:100%; max-width:800rem; border-radius:3rem; outline:solid 1px #BBB; }
+  .table-type02 .col:first-child {width:30%}
+  .table-type02 .col:last-child {width:70%}
+  .table-type02 thead { background:#f4f4f4; }
+  .table-type02 tr {height:34rem; border-bottom:solid 1px #bbb; }
+  .table-type02 tbody tr:last-child {border-bottom:0}
+  .table-type02 th {font-weight:500; color:#222;}
+  .table-type02 th, .table-type02 td {border-right:solid 1px #bbb; padding:7rem 14rem; font-size:15rem; }
+  .table-type02 th:last-child, .table-type02 td:last-child {border-right:0}
+
+  /* 인포 리스트 */
+  .info-list { display:flex; gap:20rem; flex-direction:column; }
+  .info-list li {display:flex; min-height:44rem; align-items:center; }
+  .info-list .title {width:160rem; font-size:18rem; font-weight:500; word-break:nowrap}
+  .info-list .info {width:100%}
+  .info-list li.table-li {align-items:flex-start; }
+  .info-list input {margin:0; width:390rem;}
+  .info-list input + input {margin-left:16rem}
+  .info-list li .input-wrap.red .alert {top:-17rem}
+  .btn-wrap {margin-top:26rem; display:flex; gap:14rem; justify-content:flex-end}
+
 </style>
 
 <body>
@@ -72,9 +118,11 @@
     <!-- HEADER 헤더 끝 -->
 
     <!-- CONTAINER 컨테이너 시작 -->
-    <div id="container">
+    <div id="container" style="padding-top:180rem;">
+
+      <!-- 0. 탭 섹션 시작 -->
       <section id="tab" class="con-box">
-        <span class="main-tit">0. 가이드 탭</span>
+        <span class="bg-tit">0. 가이드 탭</span>
         <span class="caption">(클릭시 해당 내용으로 스크롤 이동됩니다.)</span>
         <div>
           <ul class="tab-area">
@@ -85,31 +133,19 @@
             </li>
             <li>
               <a href="javascript:void(0)">
-                2. 팝업
-              </a>
-            </li>
-            <li>
-              <a href="javascript:void(0)">
-                3. 버튼
-              </a>
-            </li>
-            <li>
-              <a href="javascript:void(0)">
-                4. 비주얼 영역
-              </a>
-            </li>
-            <li>
-              <a href="javascript:void(0)">
-                5. 스와이퍼
+                2. 레이아웃
               </a>
             </li>
           </ul>
         </div>
       </section>
-      <section id="comonents" class="con-box">
-        <span class="main-tit">1. 컨포넌트</span>
+      <!-- 0. 탭 섹션 끝 -->
+
+      <!-- 1. 컨포넌트 섹션 시작 -->
+      <section id="conponents" class="con-box">
+        <span class="bg-tit">1. 컨포넌트</span>
         <!-- 버튼 시작 -->
-        <div id="buttons">
+        <div id="buttons" class="dont-copy-this-div">
           <span class="sub-tit">버튼</span>
           <button class="common-btn" type="button">
             기본
@@ -126,7 +162,7 @@
         </div>
         <!-- 버튼 끝 -->
         <!-- 라디오 버튼 및 체크박스 시작 --> 
-        <div id="radioAndCheck">
+        <div id="radioAndCheck" class="dont-copy-this-div">
           <span class="sub-tit">라디오버튼 및 체크박스</span>
           <div class="input-wrap radio">
             <label for="radioSample" name="radioSample">
@@ -141,7 +177,7 @@
         </div>
         <!-- 라디오 버튼 및 체크박스 끝 --> 
         <!-- 인풋박스 시작 --> 
-        <div id="inputBoxs">
+        <div id="inputBoxs" class="dont-copy-this-div">
           <span class="sub-tit">인풋박스</span>
           <label class="hide" for="">hi</label>
           <div class="input-wrap">
@@ -157,7 +193,7 @@
         </div>
         <!-- 인풋박스 끝 -->
         <!-- 드롭박스 시작 --> 
-        <div id="dropBox">
+        <div id="dropBox" class="dont-copy-this-div">
           <span class="sub-tit">드롭박스</span>
           <div class="select-wrap">
             <a href="javascript:void(0)" class="selected-option">지역전체</a>
@@ -185,522 +221,253 @@
         </div>
         <!-- 드롭박스 끝 -->
         <!-- 페이지네이션 시작 -->
-        <div id="pagination">       
-          <!-- pagenation 시작 -->
-          <div class="pagenation-wrap">
-              <div class="arrow-group">
-                  <a href="javascript:void(0)" class="prev-btn double">
-  
-                  </a>
-                  <a href="javascript:void(0)" class="prev-btn">
-
-                  </a>
-              </div>
-              <span class="pagenation-wrap">
-              
-                
-                    <a href="news_board?cate=NEWS&amp;pno=1&amp;ss=" class="page-link active">1</a>
-                  
-                  
-              
-              </span>
-              <div class="arrow-group">
-                <a href="javascript:void(0)" class="next-btn double">
-  
-                </a>
-                <a href="javascript:void(0)" class="next-btn">
-
-                </a>
-              </div>
+        <div class="paginationWrap" class="dont-copy-this-div">
+          <span class="sub-tit">페이지네이션</span>
+          <div id="pagination">
+            <!-- 페이지네이션은 Include 폴더에 있습니다. -->
           </div>
-          
-          <!-- pagenation 끝 -->
         </div>
         <!-- 페이지네이션 끝 -->
-      </section>
-      <section id="form" class="con-box">
-        <h3>1. 컨포넌트</h3>
-        <form>
-          <div class="form-wrap-cont">
-            <!-- 신청자 정보 시작 -->
-            <div class="applicant-info">
-              <strong class="form-list-tit">신청업체 정보</strong>
-              <div class="form-input-box">
-                <!-- 업체명 시작 -->
-                <div class="form-text-box form-input- item">
-                  <label for="inputComName" class="form-tit">업체명<span>*</span></label>
-                  <div class="form-inner">
-                    <input id="inputComName" type="text" maxlength="20" placeholder="회사명 또는 업체명">
-                    <span class="alert">한글, 영문만 입력 가능</span>
-                  </div>
-                </div>
-                <!-- 업체명 끝 -->
-                <!-- 지역 시작 -->
-                <div class="column-3 form-select-box form-input-item">
-                  <strong class="form-tit">지역<span><span class="essential">*</span></strong>
-                  <ul class="form-list column-3 object-3">
-                    <li class="select-list">
-                      <div class="select-custom">
-                        <a href="javascript:void(0)" class="select_tit">시/도 선택</a>
-                        <ul class="select-custom-list">
-                          <li>지역 1</li>
-                          <li>지역 2</li>
-                          <li>지역 3</li>
-                        </ul>
-                      </div>
-                    </li>
-                    <li class="select-list">
-                      <div class="select-custom">
-                        <a href="javascript:void(0)" class="select_tit">시/군/구 선택</a>
-                        <ul class="select-custom-list">
-                          <li>지역 1</li>
-                          <li>지역 2</li>
-                          <li>지역 3</li>
-                        </ul>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-                <!-- 지역 끝 -->
-                <!-- 주소 시작 -->
-                <div class="column-3 form-select-box form-input-item">
-                  <strong class="form-tit">주소<span><span class="essential">*</span></strong>
-                  <ul class="form-list column-3 object-3">
-                    <li class="select-list">
-                      <div class="select-custom">
-                        <a href="javascript:void(0)" class="select_tit">시/도 선택</a>
-                        <ul class="select-custom-list">
-                          <li>지역 1</li>
-                          <li>지역 2</li>
-                          <li>지역 3</li>
-                        </ul>
-                      </div>
-                    </li>
-                    <li class="select-list">
-                      <div class="select-custom">
-                        <a href="javascript:void(0)" class="select_tit">시/군/구 선택</a>
-                        <ul class="select-custom-list">
-                          <li>지역 1</li>
-                          <li>지역 2</li>
-                          <li>지역 3</li>
-                        </ul>
-                      </div>
-                    </li>
-                    <li class="detailed-address">
-                      <input type="text" placeholder="나머지 주소 입력" class="detailed-address" disabled>
-                      <span class="alert">공백 포함 20자까지 입력 가능</span>     
-                    </li>
-                  </ul>
-                </div>
-                <!-- 주소 끝 -->
-                <!-- 고객사 시작 -->
-                <div class="column-3 form-text-box form-input-item">
-                  <label for="inputAppTeamName" class="form-tit">고객사 확인<span>*</span></label>
-                  <ul class="form-list column-3 object-3">
-                    <li>
-                      <div class="form-inner">
-                        <input id="inputAppTeamName" type="text" maxlength="20" placeholder="신청자 본인 소속">
-                        <span class="alert">한글, 영문만 입력 가능</span>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="form-inner">
-                        <label for="inputAppName" class="hide">신청자 본인 이름</label>
-                        <input id="inputAppName" type="text" maxlength="20" placeholder="신청자 본인 이름">
-                        <span class="alert">한글, 영문만 입력 가능</span>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-                <!-- 고객사 끝 -->
-                <!-- 연락처 시작 -->
-                <div class="form-text-box form-input-item">
-                  <label for="inputNum" class="form-tit">연락처<span>*</span></label>
-                  <div class="form-inner">
-                    <input id="inputNum" type="number" maxlength="11" placeholder="-없이 숫자만">
-                    <span class="alert">숫자만 입력 가능</span>
-                  </div>
-                </div>
-                <!-- 연락처 끝 -->
-                <!-- 이메일 끝 -->
-                <div class="form-text-box form-input-item">
-                  <label for="inputEmail" class="form-tit">E-Mail<span>*</span></label>
-                  <div class="form-inner">
-                    <input id="inputEmail" type="email" placeholder="E-Mail">
-                    <span class="alert">한글, 영문만 입력 가능</span>
-                  </div>
-                </div>
-                <!-- 이메일 끝 -->
-                <!-- 관심분야 시작 -->
-                <div class="form-select-box form-input-item">
-                  <strong class="form-tit">관심분야<span><span class="essential">*</span></strong>
-                  <ul class="form-list">
-                    <li class="select-list">
-                      <div class="select-custom">
-                        <a href="javascript:void(0)" class="select_tit">관심분야 선택</a>
-                        <ul class="select-custom-list">
-                          <li>지역 1</li>
-                          <li>지역 2</li>
-                          <li>지역 3</li>
-                        </ul>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-                <!-- 관심분야 끝 -->
-                <!--  -->
-                <!-- 관심분야 끝 -->
-              </div>
-            </div>
-            <!-- 신청자 정보 끝 -->
-            <!-- 요청사항 시작 -->
-            <div class="form-textarea-box form-input-item">
-              <label for="inputTextarea" class="form-list-tit">요청사항<span class="essential">*</span></label>
-              <div class="form-inner">
-                <textarea id="inputTextarea" placeholder="1,000자 이내로 입력" maxlength="1000"
-                  style="width: 100%;max-width: 100%;min-width: 100%;min-height: 300rem;max-height: 300rem;"></textarea>
-                  <span class="alert">공백 포함 1,000자까지 입력 가능</span>
-                <div class="count">0/1,000</div>
-              </div>
-            </div>
-
-            <!-- 파일첨부 시작 -->
-            <div class="form-file-box-wrap form-input-item">
-              <span class="form-tit">파일 첨부</span>
-              <div class="form-file-box">
-                <input class="upload-name" value="" placeholder="첨부파일/1mb 이하">
-                <label for="file">파일 첨부</label>
-                <input type="file" id="file">
-              </div>
-            </div>
-            <!-- 파일첨부 끝 -->
-            <!-- 요청사항 끝 -->
-          </div>
-          <div class="notification">
-            <div class="check-group circle-check">
-              <div>
-                <input type="checkbox" id="check">
-                <label for="check"></label>
-              </div>
-              <label for="check" class="check-tit">개인정보 수집 및 이용 동의</label>
-            </div>
-          </div>
-          <!-- 클래스 disable이 들어갈 경우 버튼의 클릭이 비활성화 됩니다. (제거할 경우 버튼 활성화) -->
-          <a href="#none" class="signup-btn common-btn disable">제휴문의하기</a>
-        </form>
-        <form>
-          <!-- 1. 신청자 이름 입력창 시작-->
-          <div class="form-text-box form-input-item">
-            <label for="inputName" class="form-tit">이름<span>*</span></label>
-            <div class="form-inner">
-              <input id="inputName" type="text" maxlength="20" placeholder="신청자 본인 이름">
-              <span class="alert">한글, 영문만 입력 가능</span>
-            </div>
-          </div>
-          <!-- 1. 신청자 이름 입력창 끝 -->
-          <!-- 2. 신청자 연락처 입력창 시작-->
-          <div class="form-number-box form-input-item">
-            <label for="inputNum" class="form-tit">연락처<span>*</span></label>
-            <div class="form-inner">
-              <input id="inputNum" type="number" maxlength="11" placeholder="번호 입력">
-              <span class="alert">숫자만 입력 가능</span>
-            </div>
-          </div>
-          <!-- 2. 신청자 이름 입력창 끝 -->
-          <!-- 3. 업체명 입력창 시작-->
-          <div class="form-text-box form-input-item">
-            <label for="inputComName" class="form-tit">업체명<span>*</span></label>
-            <div class="form-inner">
-              <input id="inputComName" type="text" maxlength="20" placeholder="업체명 입력">
-              <span class="alert">공백 포함 20자까지 입력 가능</span>
-            </div>
-          </div>
-          <!-- 3. 업체명 입력창 끝 -->
-          <!-- 4. 업종 직접입력 시작-->
-          <div class="form-text-box form-input-item">
-            <label for="inputComName" class="form-tit">업종명<span>*</span></label>
-            <div class="form-inner">
-              <input id="inputComName" type="text" maxlength="20" placeholder="업체명 입력">
-              <span class="alert">공백 포함 20자까지 입력 가능</span>
-            </div>
-          </div>
-          <!-- 4. 업종 직접입력 끝 -->
-          <!-- 기본 텍스트박스 (label 태그를 지우고 싶을 경우) 시작 -->
-          <strong>기본 텍스트박스(label 태그 X)</strong>
-          <div class="form-text-box form-input-item">
-            <label class="hide" for="inputText" aria-colcount="form-tit">.hide 클래스를 사용하면 눈에 보이지 않고, 스크린리더에만 표시됩니다.
-              (label 및 caption 등 웹접근성 고려)</label>
-            <div class="form-inner">
-              <input id="inputText" type="text" placeholder="label 숨김 타입 ">
-            </div>
-          </div>
-          <!-- 기본 텍스트박스 (label 태그를 지우고 싶을 경우) 끝 -->
-
-          <!-- 텍스트에어리어 시작 -->
-          <strong>텍스트에어리어 박스 (텍스트 갯수 실시간으로 반영 / 최대 1000자 / script 위치 : form.js)</strong>
-          <div class="form-textarea-box">
-            <label for="inputTextarea" class="form-list-tit">이름<span class="essential">*</span></label>
-            <div class="form-inner">
-              <textarea id="inputTextarea" placeholder="1,000자 이내로 입력" maxlength="1000"
-                style="width: 100%;max-width: 100%;min-width: 100%;min-height: 300rem;max-height: 300rem;"></textarea>
-                <span class="alert"></span>
-              <div class="count">0/1,000</div>
-            </div>
-          </div>
-          <!-- 텍스트에어리어 끝 -->
-
-          <!-- 라디오 버튼 시작 -->
-          <strong>라디오 버튼 박스 (중복체크 막아둠 / script 위치 : form.js)</strong>
-          <div class="form-radio-wrap">
-            <strong class="form-list-tit">로봇선택<span>(중복선택가능)</span><span class="essential">*</span></strong>
-            <!-- form-radio-box에 overlap 추가시 중복선택가능 -->
-            <div class="form-radio-box overlap">
+        <!-- 네비게이션 시작 -->
+        <div id="navigationWrap" class="dont-copy-this-div">
+          <span class="sub-tit">네비게이션</span>
+          <div id="navigation">
+            <nav>
               <ul>
-                <li class="radio-group-wrap">
-                  <div class="radio-group">
-                    <input id="robotRadio1" type="radio">
-                    <label for="robotRadio1">방역로봇</label>
-                  </div>
-                </li>
-                <li class="radio-group-wrap">
-                  <div class="radio-group">
-                    <input id="robotRadio2" type="radio">
-                    <label for="robotRadio2">서빙로봇</label>
-                  </div>
-                </li>
-                <li class="radio-group-wrap">
-                  <div class="radio-group">
-                    <input id="robotRadio3" type="radio">
-                    <label for="robotRadio3">호텔로봇</label>
-                  </div>
-                </li>
-                <li class="radio-group-wrap">
-                  <div class="radio-group">
-                    <input id="robotRadio4" type="radio">
-                    <label for="robotRadio4">test01</label>
-                  </div>
-                </li>
-                <li class="radio-group-wrap">
-                  <div class="radio-group">
-                    <input id="robotRadio5" type="radio">
-                    <label for="robotRadio5">test02</label>
-                  </div>
-                </li>
-                <li class="radio-group-wrap radio-input-group">
-                  <div class="radio-group">
-                    <input id="robotRadio6" type="radio">
-                    <label for="robotRadio6">test02</label>
-                  </div>
-                  <input type="text" placeholder="직접입력" disabled>
+                <li class="depth01">
+                  <a href="javascript:void(0)" title="클릭시 해당 뎁스로 이동">회원관리</a>
                 </li>
               </ul>
-            </div>
-          </div>
-          <!-- 라디오 버튼 끝 -->
-
-          <!-- 셀렉트박스 시작 -->
-          <strong>셀렉트박스</strong>
-          <div class="form-select-box form-input-item">
-            <strong class="form-tit">예약날짜선택<span><span class="essential">*</span></strong>
-            <div class="select-custom">
-              <a href="javascript:void(0)" class="select_tit">시간</a>
-              <ul class="select-custom-list">
-                <li>오전 9시 ~ 12시</li>
-                <li>오전 13시 ~ 15시</li>
-                <li>오전 15시 ~ 18시</li>
+            </nav>
+            <nav>
+              <ul>
+                <li class="depth01">
+                  <a href="javascript:void(0)" title="클릭시 해당 뎁스로 이동">회원관리</a>
+                </li>
+                <li class="depth02">
+                  <a href="javascript:void(0)" title="클릭시 해당 뎁스로 이동">대리점 회원</a>
+                </li>
               </ul>
-            </div>
+            </nav>
+            <nav>
+              <ul>
+                <li class="depth01">
+                  <a href="javascript:void(0)" title="클릭시 해당 뎁스로 이동">회원관리</a>
+                </li>
+                <li class="depth02">
+                  <a href="javascript:void(0)" title="클릭시 해당 뎁스로 이동">대리점 회원</a>
+                </li>
+                <li class="depth03">
+                  <a href="javascript:void(0)" title="클릭시 해당 뎁스로 이동">회원 상세</a>
+                </li>
+              </ul>
+            </nav>
           </div>
-          <!-- 셀렉트박스 끝 -->
-          <!-- 체크박스 시작 -->
-          <strong>체크박스 (전체선택 버튼 클릭시 같은 부모요소에 있는 체크박스들 전체선택)</strong>
-          <div>
-            <strong class="form-list-tit">개인정보동의<span><span class="essential">*</span></strong>
-            <div class="form-check-box form-input-item">
-              <div class="check-group-wrap">
-                <div class="check-group">
-                  <div>
-                    <input type="checkbox" id="check1">
-                    <label for="check1"></label>
-                  </div>
-                  <label for="check1" class="check-tit">개인정보 수집 및 이용 동의01</label>
-                </div>
-              </div>
-              <div class="check-group-wrap">
-                <div class="check-group">
-                  <div>
-                    <input type="checkbox" id="check2">
-                    <label for="check2"></label>
-                  </div>
-                  <label for="check2" class="check-tit">개인정보 수집 및 이용 동의02</label>
-                </div>
-              </div>
-              <div class="check-group-wrap">
-                <div class="check-group">
-                  <div>
-                    <input type="checkbox" id="check3">
-                    <label for="check3"></label>
-                  </div>
-                  <label for="check3" class="check-tit">개인정보 수집 및 이용 동의03</label>
-                </div>
-              </div>
-              <div class="check-group-wrap">
-                <div class="check-group circle-check">
-                  <div>
-                    <input type="checkbox" id="check4">
-                    <label for="check4"></label>
-                  </div>
-                  <label for="check4" class="check-tit">개인정보 수집 및 이용 동의04(원형 체크 박스)</label>
-                </div>
-              </div>
-              <div class="check-group-wrap">
-                <div class="check-group">
-                  <div>
-                    <input id="checkAll" type="checkbox">
-                    <label for="checkAll"></label>
-                  </div>
-                  <label for="checkAll" class="check-tit">전체선택</label>
-                </div>
-              </div>
-              <div class="check-group-wrap check-input-group">
-                <div class="check-group">
-                  <div>
-                    <input id="check5" type="checkbox">
-                    <label for="check5"></label>
-                  </div>
-                  <label for="check5" class="check-tit">기타</label>
-                </div>
-                <div class="input-wrap">
-                  <input type="text" placeholder="직접입력" disabled>
-                  <span class="alert">공백 포함 20자까지 입력 가능</span>
-                </div>
-              </div>
-            </div>
+        </div>
+        <!-- 네비게이션 끝 -->
+        <!-- 탭 시작 -->
+        <div id="tabWrap" class="dont-copy-this-div">
+          <span class="sub-tit">탭</span>
+          <div id="tab">
+            <ul class="tab-list">
+              <li>
+                <a class="active" href="javascript:void(0)" title="탭">
+                  기업
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" title="탭">
+                  도입 업체
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" title="탭">
+                  활성화 (399,999)
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" title="탭">
+                  비활성화 (3,999)
+                </a>
+              </li>
+            </ul>
           </div>
-          <!-- 체크박스 끝 -->
+        </div>
+        <!-- 탭 끝 -->
+      </section>
+      <!-- 1. 컨포넌트 섹션 끝 -->
 
-          <!-- 이메일 시작 -->
-          <strong>이메일박스</strong>
-          <div class="form-email-box form-input-item">
-            <label for="inputEmail" class="form-tit">이메일을 입력하세요</label>
-            <input id="inputEmail" type="email" placeholder="이메일을 입력하세요">
-            <button type="submit" herf="#none">구독하기</button>
-          </div>
-          <!-- 이메일 끝 -->
-
-          <!-- 파일첨부 시작 -->
-          <div class="form-file-box-wrap form-input-item">
-            <span class="form-tit">이미지 첨부</span>
-            <div class="form-file-box">
-              <input class="upload-name" value="첨부파일" placeholder="첨부파일/1mb 이하">
-              <label for="file">파일 첨부</label>
-              <input type="file" id="file">
+      <!-- 2. 레이아웃 섹션 시작 -->
+      <section id="layout" class="con-box">
+        <span class="bg-tit">2. 레이아웃</span>
+        <!-- 타이틀 영역 시작 -->
+        <div class="title-wrap">
+          <nav id="navigation">
+            <ul>
+              <li class="depth01">
+                  <a href="javascript:void(0)" title="클릭시 해당 뎁스로 이동">프로필 수정</a>
+              </li>
+              <li class="depth02">
+                  <a href="javascript:void(0)" title="클릭시 해당 뎁스로 이동">비밀번호 재설정</a>
+              </li>
+            </ul>
+          </nav>
+          <h2 class="main-tit">프로필 관리</h2>
+        </div>
+        <!-- 타이틀 영역 끝 -->
+        <!-- 컨테이너 시작 -->
+        <div id="container">
+          <section>
+            <ul class="info-list">
+              <li>
+                <div class="title">
+                  아이디
+                </div>
+                <div class="info">
+                  admin_ID
+                </div>
+              </li>
+              <li>
+                <div class="title">
+                  비밀번호
+                </div>
+                <div class="info">
+                  <button type="button" class="common-btn active">
+                    비밀번호 재설정
+                  </button>
+                </div>
+              </li>
+              <li>
+                <div class="title">
+                  이름
+                </div>
+                <div class="info">
+                  홍길동
+                </div>
+              </li>
+              <li>
+                <div class="title">
+                  연락처
+                </div>
+                <div class="info">
+                    <div class="input-wrap">
+                      <lable for="input01" class="hide">연락처</lable>
+                      <lable for="input02" class="hide">연락처</lable>
+                      <input id="input01" type="text" placeholder="마케팅본부" disabled>
+                      <input id="input02" type="text" placeholder="과장" disabled>
+                    </div>
+                </div>
+              </li>
+              <li>
+                <div class="title">
+                  이메일
+                </div>
+                <div class="info">
+                    <div class="input-wrap">
+                      <lable for="input01" class="hide">이메일</lable>
+                      <input id="input01" type="text" placeholder="">
+                    </div>
+                </div>
+              </li>
+              <li>
+                <div class="title">
+                  현재 비밀번호
+                </div>
+                <div class="info">
+                    <div class="input-wrap red">
+                      <lable for="input01" class="hide">라벨</lable>
+                      <input id="input01" type="text" placeholder="">
+                      <span class="alert">비밀번호가 일치하지 않습니다.</span>
+                    </div>
+                </div>
+              </li>
+              <li>
+                <div class="title">
+                  새로운 비밀번호
+                </div>
+                <div class="info">
+                  <div class="input-wrap red">
+                    <lable for="input01" class="hide">라벨</lable>
+                    <input id="input01" type="text" placeholder="">
+                    <span class="alert">비밀번호가 일치하지 않습니다.</span>
+                  </div>
+                </div>
+              </li>
+              <li class="table-li">
+                <div class="title">
+                  관리권한
+                </div>
+                <div class="info">
+                  <div class="table-wrap">
+                    <table class="table-type02">
+                      <caption>관리권한 관련 테이블</caption>
+                      <colgroup>
+                        <col class="col">
+                        <col class="col">
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <th scope="col">
+                            관리 권한 구분
+                          </th>
+                          <th scope="col">
+                            권한설정
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>대리점회원</td>
+                          <td>보기, 관리</td>
+                        </tr>
+                        <tr>
+                          <td>상담신청</td>
+                          <td>보기</td>
+                        </tr>
+                        <tr>
+                          <td>시연신청</td>
+                          <td>없음</td>
+                        </tr>
+                        <tr>
+                          <td>대리점 문의</td>
+                          <td>없음</td>
+                        </tr>
+                        <tr>
+                          <td>A/S신청</td>
+                          <td>보기, 관리</td>
+                        </tr>
+                        <tr>
+                          <td>제휴문의</td>
+                          <td>없음</td>
+                        </tr>
+                        <tr>
+                          <td>콘텐츠관리</td>
+                          <td>보기, 관리</td>
+                        </tr>
+                        <tr>
+                          <td>설정</td>
+                          <td>없음</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <div class="btn-wrap">
+              <button type="button" class="common-btn">
+                취소
+              </button>
+              <button type="button" class="common-btn">
+                등록
+              </button>
             </div>
-          </div>
-          <!-- 파일첨부 끝 -->
-        </form>
+          </section>
+        </div>
+        <!-- 컨테이너 끝 -->
       </section>
-      <section class="con-box">
-        <h3>2. 팝업</h3>
-        <ul class="popup-list">
-          <li>
-            <a href="#none" id="popupBtn01" class="signup-btn common-btn green">공통 - 개인정보 수집 및 이용 동의</a>
-          </li>
-          <li>
-            <a href="#none" id="popupBtn02" class="signup-btn common-btn green">상담신청 - 상담신청 완료</a>
-          </li>
-          <li>
-            <a href="#none" id="popupBtn03" class="signup-btn common-btn green">시연신청 - 시연신청 완료</a>
-          </li>
-          <li>
-            <a href="#none" id="popupBtn04" class="signup-btn common-btn green">AS신청 - AS신청 완료</a>
-          </li>
-          <li>
-            <a href="#none" id="popupBtn05" class="signup-btn common-btn green">AS신청 - 첨부 이미지 용량초과</a>
-          </li>
-          <li>
-            <a href="#none" id="popupBtn06" class="signup-btn common-btn green">제휴문의 - 제휴문의 완료</a>
-          </li>
-          <li>
-            <a href="#none" id="popupBtn07" class="signup-btn common-btn green">제휴문의, 대리점모집문의 - 첨부파일 용량초과</a>
-          </li>
-          <li>
-            <a href="#none" id="popupBtn08" class="signup-btn common-btn green">대리점모집문의 - 대리점모집문의 완료</a>
-          </li>
-        </ul>
-      </section>
-      <section class="con-box">
-        <h3>3. 버튼</h3>
-        <div style="background:lightgray">
-          <strong> (1) .common-btn </strong>
-          <a href="javascript:void(0)" class="common-btn">기본버튼</a>
-        </div>
-        <div>
-          <strong> (2) .common-btn.green </strong>
-          <a href="javascript:void(0)" class="common-btn green">초록색 버튼</a>
-        </div>
-        <div>
-          <strong> (3) .common-btn.gray (클릭 가능) </strong>
-          <a href="javascript:void(0)" class="common-btn gray">회색 버튼</a>
-        </div>
-        <div>
-          <strong> (4) .common-btn.disable (클릭 안됌) </strong>
-          <a href="javascript:void(0)" class="common-btn disable">비활성화 버튼</a>
-        </div>
-        <div>
-          <strong> (5) .common-btn.black </strong>
-          <a style="display:flex" href="javascript:void(0)" class="common-btn black">닫기 버튼</a>
-        </div>
-        <div>
-          <strong> (6) .common-btn.more-btn </strong>
-          <a href="javascript:void(0)" class="common-btn more-btn">더보기 버튼</a>
-        </div>
-        <div>
-          <strong> (7) .common-btn.close-btn (더보기와 같이 사용되는 버튼으로 평소에는 display:none)</strong>
-          <a style="display:flex" href="javascript:void(0)" class="common-btn close-btn">닫기 버튼</a>
-        </div>
-        <div style="background:lightgray">
-          <strong> (8) .common-btn.square </strong>
-          <a style="display:flex" href="javascript:void(0)" class="common-btn square">닫기 버튼</a>
-          <a style="display:flex" href="javascript:void(0)" class="common-btn green square">닫기 버튼</a>
-          <a style="display:flex" href="javascript:void(0)" class="common-btn black square">닫기 버튼</a>
-        </div>
-      </section>
-      <section id="company"
-        style="width:100vw; max-width:100vw; padding:0; position:relative; left:50%; transform:translateX(-50%)"
-        class="con-box">
-        <h3>4. 비주얼 영역</h3>
-        <!-- PS. 현재 가이드 페이지는 id값이 중복으로 들어가 있지만 실제로는 이렇게 작업되면 안됌 -->
-        <section id="heroVisual">
-          <div class="tit-wrap">
-            <h2>히어로비주얼 입니다. <strong class="gradient">현대 방역로봇</strong></h2>
-          </div>
-          <!-- <img src="/hyundai_robotics_admin/assets/images/sub/product_descriptions/hyundai_d1/hero_visual-01.png"> -->
-        </section>
-        <section id="titleVisual">
-          <div class="tit-wrap">
-            <span class="depth2">기업</span>
-            <h2>타이틀 비쥬얼입니다.</h2>
-          </div>
-        </section>
-        <section id="titleVisual" class="no-bg">
-          <div class="tit-wrap">
-            <h2>타이틀 비쥬얼입니다.</h2>
-            <P>titleVisual에 .no-bg 클래스를 넣으면 배경이 사라집니다.</P>
-          </div>
-        </section>
-      </section>
-      <section class="con-box">
-        <h3>5. 스와이퍼</h3>
-        <div class="swiper mySwiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">Slide 1</div>
-            <div class="swiper-slide">Slide 2</div>
-            <div class="swiper-slide">Slide 3</div>
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-      </section>
+      <!-- 2. 레이아웃 섹션 끝 -->
+
     </div>
 
     <!-- CONTAINER 컨테이너 끝 -->
