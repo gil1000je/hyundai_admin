@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>현대로보틱스 어드민</title>
     <link rel="stylesheet" type="text/css" href="/hyundai_robotics_admin/assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="/hyundai_robotics_admin/assets/css/common.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src='//cdnjs.cloudflare.com/ajax/libs/jquery-throttle-debounce/1.1/jquery.ba-throttle-debounce.min.js'></script>
@@ -15,7 +16,7 @@
 <body>
     <div id="pageMain" class="wrap">
         <!-- HEADER 헤더 시작 -->
-        <header id="header"></header>
+        <header id="header" class="active"></header>
         <!-- HEADER 헤더 끝 -->
         <!-- CONTAINER 컨테이너 시작 -->
         <div id="container">
@@ -25,9 +26,16 @@
         <div id="quickMenu"></div>
         <!-- 퀵메뉴 끝 -->
         <!-- FOOTER 푸터 시작 -->
-        <footer id="footer"></footer>
+        <!-- <footer id="footer"></footer> -->
         <!-- FOOTER 푸터 끝 -->
     </div>
+    <script>
+    $(document).ready( function() {
+        
+        $("#header").load("/hyundai_robotics_admin/html/include/header.html");
+    });
+
+    </script>
 </body>
 
 </html>
