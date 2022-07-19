@@ -66,7 +66,17 @@
             </li>
             <li>
               <a href="javascript:void(0)">
-                3. 레이아웃
+                3. 상단영역 (#topArea)
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">
+                4. 중간영역 (#middleArea)
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">
+                5. 하단영역 (#bottomArea)
               </a>
             </li>
           </ul>
@@ -153,14 +163,6 @@
           </div>
         </div>
         <!-- 드롭박스 끝 -->
-        <!-- 페이지네이션 시작 -->
-        <div id="paginationWrap" class="dont-copy-this-div">
-          <span class="sub-tit">페이지네이션</span>
-          <div id="pagination">
-            <!-- 페이지네이션은 Include 폴더에 있습니다. -->
-          </div>
-        </div>
-        <!-- 페이지네이션 끝 -->
         <!-- 네비게이션 시작 -->
         <div id="navigationWrap" class="dont-copy-this-div">
           <span class="sub-tit">네비게이션</span>
@@ -602,9 +604,9 @@
       </section>
       <!-- 2. 레이아웃 섹션 끝 -->
 
-      <!-- 3. 탑영역 섹션 시작 -->
+      <!-- 3. 상단영역 (#topArea) 섹션 시작 -->
       <section id="topAreaWrap" class="style-box">
-        <span class="bg-tit">3. 탑영역</span>
+        <span class="bg-tit">3. 상단영역 (#topArea)</span>
         <span class="sub-tit">1. 기본 (네비 + 타이틀)</span>
 
         <!-- TOP AREA 탑 영역 시작 -->
@@ -649,7 +651,6 @@
             <h2 class="main-tit">로봇활용사례</h2>
           </div>
           <!-- 타이틀 영역 끝 -->
-
           <!-- 탭 영역 시작 -->
           <div id="tab">
             <ul class="tab-list">
@@ -695,7 +696,83 @@
         </div>
         <!-- TOP AREA 탑 영역 (탭) 끝 -->
 
-        <!-- BOTTOM AREA 바텀 영역 시작 -->
+        <span class="sub-tit" style="margin-top:50rem;">3. 셀렉트박스 및 검색박스 있음 (네비 + 타이틀 + 셀렉트박스 + 검색박스)</span>
+
+        <!-- TOP AREA 샐렉트 + 검색 영역 (셀렉트 + 검색) 시작 -->
+        <div id="topArea" class="search">
+
+          <!-- 타이틀 영역 시작 -->
+          <div class="title-wrap">
+            <nav id="navigation">
+              <ul>
+                <li class="depth01">
+                    <a href="javascript:void(0)" title="클릭시 해당 뎁스로 이동">설정</a>
+                </li>
+                <li class="depth02">
+                    <a href="javascript:void(0)" title="클릭시 해당 뎁스로 이동">관리자 계정 관리</a>
+                </li>
+              </ul>
+            </nav>
+            <h2 class="main-tit">관리자 계정 관리</h2>
+          </div>
+          <!-- 타이틀 영역 끝 -->
+          <!-- 검색 영역 시작 -->
+          <div class="search-wrap">
+            <div class="left">
+              <div class="select-wrap">
+                <a href="javascript:void(0)" class="selected-option">25개</a>
+                <ul class="option-list">
+                  <li>
+                    <a href="javascript:void(0)">지역 1</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">지역 2</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">지역 3</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">지역 4</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">지역 5</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">지역 6</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="num">
+                전체 <strong>201</strong>명
+              </div>
+            </div>
+            <div class="right">
+              <div class="input-wrap">
+                <input id="inputSample" type="text" placeholder="검색어 입력">
+                <button class="common-btn" type="submit">
+                  검색
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- 검색 영역 끝 -->
+
+        </div>
+        <!-- TOP AREA 탑 영역 (탭) 끝 -->
+
+      </section>
+      <!-- 3. 상단영역 (#topArea) 섹션 끝 -->
+      <!-- 4. 중단영역 (#middleArea) 섹션 시작 -->
+      <section id="middleAreaWrap" class="style-box">
+        <span class="bg-tit">4. 중단영역 (#middleArea)</span>
+        <span class="sub-tit" style="margin-top:50rem;">1. 작업중</span>
+      </section>
+      <!-- 4. 중단영역 (#middleArea) 섹션 끝 -->
+      <!-- 5. 하단영역 (#bottomArea) 섹션 시작 -->
+      <section id="middleAreaWrap" class="style-box">
+        <span class="bg-tit">5. 하단영역 (#bottomArea)</span>
+        <span class="sub-tit" style="margin-top:50rem;">1. 기본 (버튼 only)</span>
+        <!-- 1. BOTTOM AREA 바텀 영역 (기본) 시작 -->
         <div id="bottomArea">
           <div class="btn-wrap">
             <button type="button" class="common-btn">
@@ -706,9 +783,43 @@
             </button>
           </div>
         </div>
-        <!-- BOTTOM AREA 바텀 영역 끝 -->
+        <!-- 1. BOTTOM AREA 바텀 영역 (기본) 끝 -->
+        <span class="sub-tit" style="margin-top:50rem;">2. 양 옆 버튼 (버튼 + 버튼)</span>
+        <!-- 2. BOTTOM AREA 바텀 영역 (페이지 네이션 있음) 시작 -->
+        <div id="bottomArea">
+          <div class="btn-wrap">
+            <button type="button" class="common-btn">
+              등록
+            </button>
+          </div>
+          <div class="btn-wrap">
+            <button type="button" class="common-btn">
+              취소
+            </button>
+            <button type="button" class="common-btn">
+              등록
+            </button>
+          </div>
+        </div>
+        <!-- 3. BOTTOM AREA 바텀 영역 (페이지 네이션 있음) 끝 -->
+        <span class="sub-tit" style="margin-top:50rem;">3. 페이지네이션 및 버튼 (버튼 + 페이지네이션)</span>
+        <!-- 3. BOTTOM AREA 바텀 영역 (페이지 네이션 있음) 시작 -->
+        <div id="bottomArea">
+          <div id="pagination">
+
+          </div>
+          <div class="btn-wrap">
+            <button type="button" class="common-btn">
+              취소
+            </button>
+            <button type="button" class="common-btn">
+              등록
+            </button>
+          </div>
+        </div>
+        <!-- 3. BOTTOM AREA 바텀 영역 (페이지 네이션 있음) 끝 -->
       </section>
-      <!-- 3. 탑영역 섹션 끝 -->
+      <!-- 5. 하단영역 (#bottomArea) 섹션 끝 -->
     </div>
 
     <!-- CONTAINER 컨테이너 끝 -->
@@ -726,7 +837,7 @@
     $('.tab-area li').on('click', function () {
 
       const index = $(this).index() + 1;
-      const conBox = $('section.con-box')
+      const conBox = $('section.style-box')
 
       $('html, body').animate({
         scrollTop: conBox.eq(index).offset().top - 100
