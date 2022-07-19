@@ -103,7 +103,6 @@
 .modal-wrap .button-wrap{margin-top: 36rem;}
 
 .modal-info-cont{border: 1px solid #bbb;background: #f4f4f4;border-radius: 5rem;margin-top: 21rem;height: 194rem;position: relative;overflow: hidden;}
-.modal-info-cont.modal-info-table{margin-top: 12rem;height: 397rem;background: #fff;}
 .modal-info-list{width: 95%;height: 90%;position: absolute;top: 50%;right: 5rem;transform: translateY(-50%);overflow-y: auto;}
 .modal-info-list::-webkit-scrollbar {width: 6rem;}
 .modal-info-list::-webkit-scrollbar-thumb {background: #E5E5E5;border-radius: 5rem;}
@@ -113,14 +112,24 @@
 .modal-search > input[type="text"]{width: calc(80% - 4rem)!important;height: 32rem!important;padding: 0!important;padding-left: 9rem!important;}
 .modal-search > input[type="button"]{width: calc(20% - 4rem);height: 32rem;background: #f4f4f4;border: 1px solid #bbb;border-radius: 3rem;}
 
-.modal-table {width: 100%;/*height: 396rem;overflow-y: auto;display: block;*/}
+/* modal-table */
+.modal-info-cont.modal-info-table{margin-top: 12rem;height: 397rem;background: #fff;}
+.modal-info-cont.modal-info-table .modal-info-thead{display: flex;align-items: center;border-bottom: 1px solid #bbb;background: #f4f4f4;}
+.modal-info-cont.modal-info-table .modal-info-thead > li{text-align: center;padding: 3rem 0;}
+.modal-info-cont.modal-info-table .modal-info-thead > li.checkbox{width: 15%;}
+.modal-info-cont.modal-info-table .modal-info-thead > li:nth-child(2){width: 20%;}
+.modal-info-cont.modal-info-table .modal-info-thead > li:nth-child(3){width: 65%;}
+.modal-table {width: 100%;height: 372rem;overflow-y: scroll;}
+.modal-table table{width: 100%;}
 .modal-table::-webkit-scrollbar {width: 6rem;}
 .modal-table::-webkit-scrollbar-thumb {background: #E5E5E5;opacity: 0.5;}
-/* .modal-table thead{position: sticky;top: 0;z-index: 99;} */
-.modal-table thead tr{border-bottom: 1px solid #bbb;background: #f4f4f4;}
-.modal-table thead tr th{padding: 3rem 0;}
 .modal-table tbody tr{border-bottom: 1px solid #bbb;}
 .modal-table tbody tr td{padding: 8rem 0;text-align: center;font-size: 12rem;}
+
+.modal-table .modal-table-noresult{width: inherit;height: inherit;display: flex;align-items: center;justify-content: center;flex-direction: column;}
+.modal-table .modal-table-noresult .noresult-icon{width: 96rem;}
+.modal-table .modal-table-noresult p{color: #7B7B7B;margin-top: 20rem;font-size: 14rem;}
+
 /* //////////////////////////////////////////////////////////////// */
 /* ////////////////////////popup 끝////////////////////////// */
 /* ///////////////////////////////////////////////////////////////// */
