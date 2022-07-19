@@ -26,17 +26,16 @@
   html {font-size:1px;}
 
   /* 가이드 인라인 스타일 CSS */
-  .wrap {background: blanchedalmond; max-width:100%;}
-  #container .con-box { background: #fff; border: solid 2rem #222; border-left:0; border-right:0; padding: 20rem; margin-bottom: 80rem; }
+  .wrap {background: rgb(227, 226, 225); max-width:100%;}
+  #container .style-box { background: #fff; padding: 20rem; margin-bottom: 80rem; }
   div.dont-copy-this-div { border: solid 1rem rgb(143, 143, 143); padding: 40rem 20rem; margin-bottom: 50rem;}
   .tab-area { width: 100%; display: grid; gap: 10rem; grid-template-columns: repeat(3, 1fr);}
   .tab-area li { width: 100%; height: 50rem;}
   .tab-area li a { transition: 0.5s; border-radius: 30rem; border: solid 1rem #000; display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; background: #000; font-size: 20rem; color: #fff; font-weight: 700;}
   .tab-area li a:hover { background: #fff; color: #000;}
   .bg-tit { display: inline-block;width: 100%; text-align: center; font-size: 40rem; margin-bottom: 50rem; padding: 10rem; box-sizing: border-box; color: #fff; background: #222;}
-  .sub-tit { display:block; font-size:20rem; font-weight:700; color:rgb(19, 166, 186); margin:20rem 0;}
+  .sub-tit { display:block; font-size:20rem; font-weight:700; color:#fff; border:solid 1rem #000; background:rgb(19, 166, 186); padding:10rem; margin:20rem 0;}
   .caption { display: inline-block; width: 100%; font-size: 16rem; text-align: right; margin-bottom: 10rem}
-  #layout section {width:1300rem; margin:0 auto;}
 
 </style>
 
@@ -51,7 +50,7 @@
     <div id="container" style="padding-top:180rem;">
 
       <!-- 0. 탭 섹션 시작 -->
-      <section id="tab" class="con-box">
+      <section id="tab" class="style-box">
         <span class="bg-tit">0. 가이드 탭</span>
         <span class="caption">(클릭시 해당 내용으로 스크롤 이동됩니다.)</span>
         <div>
@@ -66,13 +65,18 @@
                 2. 레이아웃
               </a>
             </li>
+            <li>
+              <a href="javascript:void(0)">
+                3. 레이아웃
+              </a>
+            </li>
           </ul>
         </div>
       </section>
       <!-- 0. 탭 섹션 끝 -->
 
       <!-- 1. 컨포넌트 섹션 시작 -->
-      <section id="conponents" class="con-box">
+      <section id="conponents" class="style-box">
         <span class="bg-tit">1. 컨포넌트</span>
         <!-- 버튼 시작 -->
         <div id="buttons" class="dont-copy-this-div">
@@ -365,11 +369,12 @@
         <!-- 테이블 끝 -->
       </section>
       <!-- 1. 컨포넌트 섹션 끝 -->
+
       <!-- 2. 레이아웃 섹션 시작 -->
-      <section id="layout" class="con-box">
+      <section id="layout" class="style-box">
         <span class="bg-tit">2. 레이아웃</span>
         <!-- TOP AREA 탑 영역 시작 -->
-        <div id="topArea">
+        <div id="topArea" style="background:rgb(245, 203, 203);">
           <!-- 타이틀 영역 시작 -->
           <div class="title-wrap">
             <nav id="navigation">
@@ -382,13 +387,13 @@
                 </li>
               </ul>
             </nav>
-            <h2 class="main-tit">메인 관리</h2>
+            <h2 class="main-tit">탑영역 - #topArea</h2>
           </div>
           <!-- 타이틀 영역 끝 -->
         </div>
         <!-- TOP AREA 탑 영역 끝 -->
         <!-- 컨테이너 시작 -->
-        <div id="container">
+        <div id="container" style="background:rgb(195, 247, 247)">
           <section class="con-box">
             <ul class="info-list-type01">
               <li>
@@ -530,7 +535,7 @@
         </div>
         <!-- 컨테이너 끝 -->
         <!-- BOTTOM AREA 바텀 영역 시작 -->
-        <div id="bottomArea">
+        <div id="bottomArea" style="background:rgb(237, 197, 137)">
           <div class="btn-wrap">
             <button type="button" class="common-btn">
               취소
@@ -543,11 +548,40 @@
         <!-- BOTTOM AREA 바텀 영역 끝 -->
       </section>
       <!-- 2. 레이아웃 섹션 끝 -->
-      <!-- 3. 레이아웃 섹션 시작 -->
-      <section id="layout" class="con-box">
-        <span class="bg-tit">3. 레이아웃</span>
+
+      <!-- 3. 탑영역 섹션 시작 -->
+      <section id="topAreaWrap" class="style-box">
+        <span class="bg-tit">3. 탑영역</span>
+
+        <span class="sub-tit">1. 기본 (네비 + 타이틀)</span>
+
         <!-- TOP AREA 탑 영역 시작 -->
         <div id="topArea">
+
+          <!-- 타이틀 영역 시작 -->
+          <div class="title-wrap">
+            <nav id="navigation">
+              <ul>
+                <li class="depth01">
+                    <a href="javascript:void(0)" title="클릭시 해당 뎁스로 이동">프로필 수정</a>
+                </li>
+                <li class="depth02">
+                    <a href="javascript:void(0)" title="클릭시 해당 뎁스로 이동">비밀번호 재설정</a>
+                </li>
+              </ul>
+            </nav>
+            <h2 class="main-tit">프로필 관리</h2>
+          </div>
+          <!-- 타이틀 영역 끝 -->
+
+        </div>
+        <!-- TOP AREA 탑 영역 끝 -->
+
+        <span class="sub-tit" style="margin-top:50rem;">2. 탭 있음 (네비 + 타이틀 + 탭)</span>
+
+        <!-- TOP AREA 탑 영역 (탭) 시작 -->
+        <div id="topArea">
+
           <!-- 타이틀 영역 시작 -->
           <div class="title-wrap">
             <nav id="navigation">
@@ -556,345 +590,60 @@
                     <a href="javascript:void(0)" title="클릭시 해당 뎁스로 이동">콘텐츠 관리</a>
                 </li>
                 <li class="depth02">
-                    <a href="javascript:void(0)" title="클릭시 해당 뎁스로 이동">메인 관리</a>
+                    <a href="javascript:void(0)" title="클릭시 해당 뎁스로 이동">로봇활용사례</a>
                 </li>
               </ul>
             </nav>
-            <h2 class="main-tit">메인 관리</h2>
+            <h2 class="main-tit">로봇활용사례</h2>
           </div>
           <!-- 타이틀 영역 끝 -->
+
           <!-- 탭 영역 시작 -->
           <div id="tab">
             <ul class="tab-list">
               <li>
                 <a class="active" href="javascript:void(0)" title="탭">
-                  히어로 설정
+                  기업
                 </a>
               </li>
               <li>
                 <a href="javascript:void(0)" title="탭">
-                  배너 설정
+                  숙박
                 </a>
               </li>
               <li>
                 <a href="javascript:void(0)" title="탭">
-                  Manifesto 설정
+                  의료
                 </a>
               </li>
               <li>
                 <a href="javascript:void(0)" title="탭">
-                  제품 활용 사례
+                  문화
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" title="탭">
+                  음식점
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" title="탭">
+                  호텔
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" title="탭">
+                  도입 업체
                 </a>
               </li>
             </ul>
           </div>
           <!-- 탭 영역 끝 -->
+
         </div>
-        <!-- TOP AREA 탑 영역 끝 -->
-        <!-- CONTAINER 컨테이너 시작 -->
-        <div id="container">
-          <section class="con-box">
-            <div class="table-wrap">
-              <div class="table-alert"><strong>히어로 </strong> * 히어로 이미지는 8개까지 등록 가능합니다.</div>
-              <table class="table-type01">
-                <caption>메인 관리 히어로 설정 테이블</caption>
-                <colgroup>
-                  <col width="4%">
-                  <col width="19%">
-                  <col width="19%">
-                  <col width="19%">
-                  <col width="19%">
-                </colgroup>
-                <thead>
-                  <tr>
-                    <th scope="col">
-                      No.
-                    </th>
-                    <th scope="col">
-                      언어
-                    </th>
-                    <th scope="col">
-                      PC
-                    </th>
-                    <th scope="col">
-                      Mobile
-                    </th>
-                    <th scope="col">
-                      노출 설정
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>1</td>
-                    <td class="lenguage">
-                      <div>국문</div>
-                      <div>영문</div>
-                    </td>
-                    <td class="pc">
-                      <div>이미지</div>
-                      <div>동영상</div>
-                    </td>
-                    <td class="mobile">
-                      <div>이미지</div>
-                      <div>동영상</div>
-                    </td>
-                    <td class="setting">
-                      <div class="input-wrap radio">
-                        <label for="radioSample1" name="radioSample1">
-                          <input id="radioSample1" type="radio"> 노출
-                        </label>
-                        <label for="radioSample2" name="radioSample2">
-                          <input id="radioSample2" type="radio"> 미노출
-                        </label>
-                      </div>
-                      <div class="input-wrap radio">
-                        <label for="radioSample1" name="radioSample1">
-                          <input id="radioSample1" type="radio"> 노출
-                        </label>
-                        <label for="radioSample2" name="radioSample2">
-                          <input id="radioSample2" type="radio"> 미노출
-                        </label>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>2</td>
-                    <td class="lenguage">
-                      <div>국문</div>
-                      <div>영문</div>
-                    </td>
-                    <td class="pc">
-                      <div>이미지</div>
-                      <div>동영상</div>
-                    </td>
-                    <td class="mobile">
-                      <div>이미지</div>
-                      <div>동영상</div>
-                    </td>
-                    <td class="setting">
-                      <div class="input-wrap radio">
-                        <label for="radioSample1" name="radioSample1">
-                          <input id="radioSample1" type="radio"> 노출
-                        </label>
-                        <label for="radioSample2" name="radioSample2">
-                          <input id="radioSample2" type="radio"> 미노출
-                        </label>
-                      </div>
-                      <div class="input-wrap radio">
-                        <label for="radioSample1" name="radioSample1">
-                          <input id="radioSample1" type="radio"> 노출
-                        </label>
-                        <label for="radioSample2" name="radioSample2">
-                          <input id="radioSample2" type="radio"> 미노출
-                        </label>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>3</td>
-                    <td class="lenguage">
-                      <div>국문</div>
-                      <div>영문</div>
-                    </td>
-                    <td class="pc">
-                      <div>이미지</div>
-                      <div>동영상</div>
-                    </td>
-                    <td class="mobile">
-                      <div>이미지</div>
-                      <div>동영상</div>
-                    </td>
-                    <td class="setting">
-                      <div class="input-wrap radio">
-                        <label for="radioSample1" name="radioSample1">
-                          <input id="radioSample1" type="radio"> 노출
-                        </label>
-                        <label for="radioSample2" name="radioSample2">
-                          <input id="radioSample2" type="radio"> 미노출
-                        </label>
-                      </div>
-                      <div class="input-wrap radio">
-                        <label for="radioSample1" name="radioSample1">
-                          <input id="radioSample1" type="radio"> 노출
-                        </label>
-                        <label for="radioSample2" name="radioSample2">
-                          <input id="radioSample2" type="radio"> 미노출
-                        </label>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>4</td>
-                    <td class="lenguage">
-                      <div>국문</div>
-                      <div>영문</div>
-                    </td>
-                    <td class="pc">
-                      <div>이미지</div>
-                      <div>동영상</div>
-                    </td>
-                    <td class="mobile">
-                      <div>이미지</div>
-                      <div>동영상</div>
-                    </td>
-                    <td class="setting">
-                      <div class="input-wrap radio">
-                        <label for="radioSample1" name="radioSample1">
-                          <input id="radioSample1" type="radio"> 노출
-                        </label>
-                        <label for="radioSample2" name="radioSample2">
-                          <input id="radioSample2" type="radio"> 미노출
-                        </label>
-                      </div>
-                      <div class="input-wrap radio">
-                        <label for="radioSample1" name="radioSample1">
-                          <input id="radioSample1" type="radio"> 노출
-                        </label>
-                        <label for="radioSample2" name="radioSample2">
-                          <input id="radioSample2" type="radio"> 미노출
-                        </label>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>5</td>
-                    <td class="lenguage">
-                      <div>국문</div>
-                      <div>영문</div>
-                    </td>
-                    <td class="pc">
-                      <div>이미지</div>
-                      <div>동영상</div>
-                    </td>
-                    <td class="mobile">
-                      <div>이미지</div>
-                      <div>동영상</div>
-                    </td>
-                    <td class="setting">
-                      <div class="input-wrap radio">
-                        <label for="radioSample1" name="radioSample1">
-                          <input id="radioSample1" type="radio"> 노출
-                        </label>
-                        <label for="radioSample2" name="radioSample2">
-                          <input id="radioSample2" type="radio"> 미노출
-                        </label>
-                      </div>
-                      <div class="input-wrap radio">
-                        <label for="radioSample1" name="radioSample1">
-                          <input id="radioSample1" type="radio"> 노출
-                        </label>
-                        <label for="radioSample2" name="radioSample2">
-                          <input id="radioSample2" type="radio"> 미노출
-                        </label>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>6</td>
-                    <td class="lenguage">
-                      <div>국문</div>
-                      <div>영문</div>
-                    </td>
-                    <td class="pc">
-                      <div>이미지</div>
-                      <div>동영상</div>
-                    </td>
-                    <td class="mobile">
-                      <div>이미지</div>
-                      <div>동영상</div>
-                    </td>
-                    <td class="setting">
-                      <div class="input-wrap radio">
-                        <label for="radioSample1" name="radioSample1">
-                          <input id="radioSample1" type="radio"> 노출
-                        </label>
-                        <label for="radioSample2" name="radioSample2">
-                          <input id="radioSample2" type="radio"> 미노출
-                        </label>
-                      </div>
-                      <div class="input-wrap radio">
-                        <label for="radioSample1" name="radioSample1">
-                          <input id="radioSample1" type="radio"> 노출
-                        </label>
-                        <label for="radioSample2" name="radioSample2">
-                          <input id="radioSample2" type="radio"> 미노출
-                        </label>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>7</td>
-                    <td class="lenguage">
-                      <div>국문</div>
-                      <div>영문</div>
-                    </td>
-                    <td class="pc">
-                      <div>이미지</div>
-                      <div>동영상</div>
-                    </td>
-                    <td class="mobile">
-                      <div>이미지</div>
-                      <div>동영상</div>
-                    </td>
-                    <td class="setting">
-                      <div class="input-wrap radio">
-                        <label for="radioSample1" name="radioSample1">
-                          <input id="radioSample1" type="radio"> 노출
-                        </label>
-                        <label for="radioSample2" name="radioSample2">
-                          <input id="radioSample2" type="radio"> 미노출
-                        </label>
-                      </div>
-                      <div class="input-wrap radio">
-                        <label for="radioSample1" name="radioSample1">
-                          <input id="radioSample1" type="radio"> 노출
-                        </label>
-                        <label for="radioSample2" name="radioSample2">
-                          <input id="radioSample2" type="radio"> 미노출
-                        </label>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>8</td>
-                    <td class="lenguage">
-                      <div>국문</div>
-                      <div>영문</div>
-                    </td>
-                    <td class="pc">
-                      <div>이미지</div>
-                      <div>동영상</div>
-                    </td>
-                    <td class="mobile">
-                      <div>이미지</div>
-                      <div>동영상</div>
-                    </td>
-                    <td class="setting">
-                      <div class="input-wrap radio">
-                        <label for="radioSample1" name="radioSample1">
-                          <input id="radioSample1" type="radio"> 노출
-                        </label>
-                        <label for="radioSample2" name="radioSample2">
-                          <input id="radioSample2" type="radio"> 미노출
-                        </label>
-                      </div>
-                      <div class="input-wrap radio">
-                        <label for="radioSample1" name="radioSample1">
-                          <input id="radioSample1" type="radio"> 노출
-                        </label>
-                        <label for="radioSample2" name="radioSample2">
-                          <input id="radioSample2" type="radio"> 미노출
-                        </label>
-                      </div>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </section>
-        </div>
-        <!-- CONTAINER 컨테이너 끝 -->
+        <!-- TOP AREA 탑 영역 (탭) 끝 -->
+
+
         <!-- BOTTOM AREA 바텀 영역 시작 -->
         <div id="bottomArea">
           <div class="btn-wrap">
@@ -908,7 +657,7 @@
         </div>
         <!-- BOTTOM AREA 바텀 영역 끝 -->
       </section>
-      <!-- 3. 레이아웃 섹션 끝 -->
+      <!-- 3. 탑영역 섹션 끝 -->
     </div>
 
     <!-- CONTAINER 컨테이너 끝 -->

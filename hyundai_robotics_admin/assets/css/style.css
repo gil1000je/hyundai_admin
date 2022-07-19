@@ -43,9 +43,13 @@ input[type="text"]:disabled {border:solid 1px #999; background:#ddd;}
 #pagination .pagination-inner, #pagination .number-wrap, #pagination .arr-wrap  { display:flex; gap:6rem }
 
 /* 네비게이션 */
-#navigation > ul { display:flex; gap:20rem; }
-#navigation > ul a { font-size:14rem; color:#999 }
-
+#navigation {margin-bottom:3rem}
+#navigation > ul { display:flex; gap:20rem; align-items:center; }
+#navigation > ul a { font-size:16rem; color:#999;}
+#navigation > ul .depth01::before {content:url(/hyundai_robotics_admin/assets/images/common/icon_home.svg); position:relative; top:1rem}
+#navigation > ul > li {position:relative;}
+#navigation > ul > li::after {content:">"; font-size:16rem; color:#999; position:absolute; right:-14rem;}
+#navigation > ul > li:last-child::after {display:none;} 
 /* 탭 */
 #tab {width:100%; max-width:1300rem; margin:0 auto;}
 #tab .tab-list {display:flex; flex-wrap:wrap; gap:8rem;}
