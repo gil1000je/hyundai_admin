@@ -8,6 +8,7 @@
     <title>현대로보틱스 어드민 팝업</title>
     <link rel="stylesheet" type="text/css" href="/hyundai_robotics_admin/assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="/hyundai_robotics_admin/assets/css/common.css">
+    <link rel="stylesheet" type="text/css" href="/hyundai_robotics_admin/assets/css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src='//cdnjs.cloudflare.com/ajax/libs/jquery-throttle-debounce/1.1/jquery.ba-throttle-debounce.min.js'></script>
@@ -31,21 +32,33 @@
             </div>
           </div>
         </div>
-        <!-- 비밀번호 재설정 팝업 -->
+        <!-- 관리자 계정 삭제 팝업 -->
         <div id="passwordResetModal" class="modal-wrap">
           <div class="modal-cont">
-            <div class="modal-tit">비밀번호 재설정</div>
+            <div class="modal-tit">관리자 계정 삭제</div>
             <div class="modal-info">
               <p>
-                비밀번호는 회원정보에 입력된 이메일을 통해<br>
-                재설정하실 수 있습니다.<br> 
-                비밀번호를 재설정 하시겠습니까?
+                선택한 3개 관리자 계정이 삭제 됩니다.<br>
+                정말 삭제 하시겠습니까?
               </p>
+              <div class="modal-info-cont">
+                <ul class="modal-info-list">
+                  <li>1.admin3 - 김기동</li>
+                  <li>2.admin4 - 한동</li>
+                  <li>3.admin6 - 정칠동</li>
+                  <li>1.admin3 - 김기동</li>
+                  <li>2.admin4 - 한동</li>
+                  <li>3.admin6 - 정칠동</li>
+                  <li>1.admin3 - 김기동</li>
+                  <li>2.admin4 - 한동</li>
+                  <li>3.admin6 - 정칠동</li>
+                </ul>
+              </div>
             </div>
             <div class="button-wrap">
               <ul class="button-wrap-list">
+                <li><a href="javascript:void(0)" class="common-btn green">비활성화</a></li>
                 <li><a href="javascript:void(0)" class="common-btn">취소</a></li>
-                <li><a href="javascript:void(0)" class="common-btn green">변경</a></li>
               </ul>
             </div>
           </div>
@@ -59,78 +72,140 @@
                 <input type="text" placeholder="대리점 검색">
                 <input type="button" value="검색">
               </div>
-              <div class="modal-info-cont">
+              <!-- 테이블이 들어간 팝업에는 .modal-info-table 클래스를 추가해 주세요. -->
+              <div class="modal-info-cont modal-info-table">
                 <table class="modal-table">
+                  <caption>대리점 메일 발송 테이블</caption>
+                  <colgroup>
+                    <col span="" width="20%">
+                    <col span="" width="30%">
+                    <col span="" width="*">
+                  </colgroup>
                   <thead>
                     <tr>
-                      <th><input type="checkbox"></th>
+                      <th class="checkbox">
+                        <input type="checkbox" id="allCheck">
+                        <label for="allCheck"></label>
+                      </th>
                       <th>대리명점</th>
                       <th>이메일</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td></td>
+                      <td class="checkbox">
+                        <input type="checkbox" id="check1">
+                        <label for="check1"></label>
+                      </td>
                       <td>종로점</td>
                       <td>jongro@HYUNDAIrobotics.com</td>
                     </tr>
                     <tr>
-                      <td></td>
+                      <td class="checkbox">
+                        <input type="checkbox" id="check2">
+                        <label for="check2"></label>
+                      </td>
                       <td>인천점</td>
                       <td>Incehon@HYUNDAIrobotics.com</td>
                     </tr>
                     <tr>
-                      <td></td>
+                      <td class="checkbox">
+                        <input type="checkbox" id="check3">
+                        <label for="check3"></label>
+                      </td>
                       <td>수원점</td>
                       <td>suwon@HYUNDAIrobotics.com</td>
                     </tr>
                     <tr>
-                      <td></td>
+                      <td class="checkbox">
+                        <input type="checkbox" id="check4">
+                        <label for="check4"></label>
+                      </td>
                       <td>마산점</td>
                       <td>masan@HYUNDAIrobotics.com</td>
                     </tr>
                     <tr>
-                      <td></td>
+                      <td class="checkbox">
+                        <input type="checkbox" id="check5">
+                        <label for="check5"></label>
+                      </td>
                       <td>부산점</td>
                       <td>busan@HYUNDAIrobotics.com</td>
                     </tr>
                     <tr>
-                      <td></td>
+                      <td class="checkbox">
+                        <input type="checkbox" id="check6">
+                        <label for="check6"></label>
+                      </td>
                       <td>창원점</td>
                       <td>changwon@HYUNDAIrobotics.com</td>
                     </tr>
                     <tr>
-                      <td></td>
+                      <td class="checkbox">
+                        <input type="checkbox" id="check7">
+                        <label for="check7"></label>
+                      </td>
                       <td>세종점</td>
                       <td>sejong@HYUNDAIrobotics.com</td>
                     </tr>
                     <tr>
-                      <td></td>
+                      <td class="checkbox">
+                        <input type="checkbox" id="check8">
+                        <label for="check8"></label>
+                      </td>
                       <td>대전점</td>
                       <td>daejeon@HYUNDAIrobotics.com</td>
                     </tr>
                     <tr>
-                      <td></td>
+                      <td class="checkbox">
+                        <input type="checkbox" id="check9">
+                        <label for="check9"></label>
+                      </td>
                       <td>평택점</td>
                       <td>pyeongtaek@HYUNDAIrobotics.com</td>
                     </tr>
                     <tr>
-                      <td></td>
+                      <td class="checkbox">
+                        <input type="checkbox" id="check10">
+                        <label for="check10"></label>
+                      </td>
                       <td>성남점</td>
                       <td>seongnam@HYUNDAIrobotics.com</td>
                     </tr>
                     <tr>
-                      <td></td>
+                      <td class="checkbox">
+                        <input type="checkbox" id="check11">
+                        <label for="check11"></label>
+                      </td>
                       <td>종로2점</td>
                       <td>jongro@HYUNDAIrobotics.com</td>
                     </tr>
                     <tr>
-                      <td></td>
+                      <td class="checkbox">
+                        <input type="checkbox" id="check12">
+                        <label for="check12"></label>
+                      </td>
+                      <td>인천2점</td>
+                      <td>Incehon@HYUNDAIrobotics.com</td>
+                    </tr>
+                    <tr>
+                      <td class="checkbox">
+                        <input type="checkbox" id="check12">
+                        <label for="check12"></label>
+                      </td>
+                      <td>인천2점</td>
+                      <td>Incehon@HYUNDAIrobotics.com</td>
+                    </tr>
+                    <tr>
+                      <td class="checkbox">
+                        <input type="checkbox" id="check12">
+                        <label for="check12"></label>
+                      </td>
                       <td>인천2점</td>
                       <td>Incehon@HYUNDAIrobotics.com</td>
                     </tr>
                   </tbody>
-                  </table>
+                </table>
               </div>
             </div>
             <div class="button-wrap">
@@ -140,6 +215,7 @@
               </ul>
             </div>
           </div>
+          <a href="javascript:void(0)" class="modal-closed"><img src="/hyundai_robotics_admin/assets/images/common/modal_closed_icon.png" alt="팝업창 닫기 버튼"></a>
         </div>
       </div>
     </div>
