@@ -1,7 +1,6 @@
 /* common */
-.wrap {width:100%; max-width:1300rem; margin:0 auto; margin-top:107rem; overflow:auto; font-size:16rem}
-#container {overflow: visible; margin: 0 auto; }
-#layout section {width:1300rem; margin:0 auto;}
+.wrap {width:100%; margin:0 auto; margin-top:107rem; overflow:auto; font-size:16rem}
+#container {width:100%; max-width:1300rem; margin: 0 auto; }
 
 /* 버튼 */
 .common-btn { font-size:16rem; color:#222; white-space:nowrap; border-radius:3rem; background:#F4F4F4; border:solid 1px #BBB; color:#BBB; min-height:44rem; padding:0 42rem; }
