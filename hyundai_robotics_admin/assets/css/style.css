@@ -15,11 +15,11 @@ a.common-btn { display:flex; align-items:center; justify-content:center}
 
 /* 체크박스 및 라디오 버튼 */
 .input-wrap.check label, .input-wrap.radio label { display:flex; align-items:center; line-height:1; gap:8rem; font-size:16rem } 
-input[type="checkbox"] { position:relative; } 
-input[type="checkbox"]::after { content:''; width: 20rem; height: 20rem; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); background:url(/hyundai_robotics_admin/assets/images/common/icon_checkbox_default.svg); } 
+input[type="checkbox"] { position:relative;  width: 20rem !important; height: 20rem !important;} 
+input[type="checkbox"]::after { content:''; width: 20rem !important; height: 20rem !important; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); background:url(/hyundai_robotics_admin/assets/images/common/icon_checkbox_default.svg); } 
 input[type="checkbox"]:checked::after {background:url(/hyundai_robotics_admin/assets/images/common/icon_checkbox_checked.svg);} 
-input[type="radio"] { position:relative; } 
-input[type="radio"]::after { content:''; width: 20rem; height: 20rem; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); background:url(/hyundai_robotics_admin/assets/images/common/icon_radio_default.svg); } 
+input[type="radio"] { position:relative;  width: 20rem !important; height: 20rem !important;} 
+input[type="radio"]::after { content:''; width: 20rem !important; height: 20rem !important; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); background:url(/hyundai_robotics_admin/assets/images/common/icon_radio_default.svg); } 
 input[type="radio"]:checked::after {background:url(/hyundai_robotics_admin/assets/images/common/icon_radio_checked.svg);} 
 
 /* 인풋박스 */
@@ -48,7 +48,7 @@ input[type="text"] + button { margin-left:14rem; }
 /* 페이지네이션 */
 #pagination .pagination-inner a { display:flex; align-items:center; justify-content:center; width:32rem; height:32rem; background:#fff; border:solid 1px #eee; border-radius:3rem; font-size:16rem } 
 #pagination .pagination-inner a.active { background:#3BB88C; color:#fff; } 
-#pagination .pagination-inner, #pagination .number-wrap, #pagination .arr-wrap { display:flex; gap:6rem } 
+#pagination .pagination-inner, #pagination .number-wrap, #pagination .arr-wrap { display:flex; gap:6rem }
 
 /* 네비게이션 */
 #navigation { margin-bottom:3rem } 
