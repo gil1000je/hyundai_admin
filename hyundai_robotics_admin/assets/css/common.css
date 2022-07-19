@@ -366,11 +366,11 @@
 .common-btn.close-btn { display:none; height:100rem; border:solid 2rem #000; background:#000; font-weight:500; font-size:25rem; font-weight:500; width:100%; max-width:670rem; border-radius:50rem;  margin:0 auto; }*/
 
 /* 0718 밀키 추가*/
-.common-btn{width: 100%;height: 44rem;background: #F4F4F4;border: 1px solid #bbb;font-size: 16rem;color: #666;display: flex;align-items: center;justify-content: center;border-radius: 5rem;}
+/* .common-btn{width: 100%;height: 44rem;background: #F4F4F4;border: 1px solid #bbb;font-size: 16rem;color: #666;display: flex;align-items: center;justify-content: center;border-radius: 5rem;}
 .logoin-modal .common-btn{height: 48rem;border-radius: 8rem;}
 .common-btn.green{background: #3bb88c;border: 1px solid inherit;color: #fff;}
 .button-wrap .button-wrap-list{display: flex;align-items: center;justify-content: space-between;}
-.button-wrap .button-wrap-list > li{width: calc(100% / 2 - 6rem);}
+.button-wrap .button-wrap-list > li{width: calc(100% / 2 - 6rem);} */
 
 /* 나머지 Style */
 body.fixed { width:100%; height:100%; overflow:hidden; }
