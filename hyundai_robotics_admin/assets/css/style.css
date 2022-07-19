@@ -49,7 +49,6 @@ input[type="text"] + button { margin-left:14rem; }
 #pagination .pagination-inner a { display:flex; align-items:center; justify-content:center; width:32rem; height:32rem; background:#fff; border:solid 1px #eee; border-radius:3rem; font-size:16rem } 
 #pagination .pagination-inner a.active { background:#3BB88C; color:#fff; } 
 #pagination .pagination-inner, #pagination .number-wrap, #pagination .arr-wrap { display:flex; gap:6rem }
-#pagination .pagination-inner .prev-btn {top:53%; transform: rotate(90deg);};
 
 /* 네비게이션 */
 #navigation { margin-bottom:3rem } 
