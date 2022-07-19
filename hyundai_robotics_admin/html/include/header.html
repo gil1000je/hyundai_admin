@@ -98,21 +98,6 @@
         // PC GNB
         function pcHeaderGnb() {
 
-            // 초기값
-            function init() {
-                
-                header.removeClass("mobile-type") //PC일때 모바일 타입 클래스 제거
-                gnb.off("mouseover")
-                depth1Li.find('a').off("focus")
-                hamBtn.off('click')
-                depth1Li.off('click')
-                depth2.show()
-                header.removeClass('active')
-                gnb.removeClass('active')
-                hamBtn.removeClass('x-btn')
-            }
-            init()
-
             //GNB에 마우스오버시 GNB 활성화
             gnb.on("mouseover",function(){
                 header.addClass('active')
@@ -125,117 +110,10 @@
             depth1Li.find('a').on("focus",function(){
                 header.addClass('active')
             })
-            //랭귀지탭에서 영문탭에서 포카스아웃시 GNB 비활성화
-            languageTab.find('li:last-child > a').on("focusout",function(){
-                header.removeClass('active')
-            })
-
         } 
-
-        // MOBILE GNB
-        function mobileHeaderGnb() {
-
-            // 초기값
-            function init() {
-                header.addClass("mobile-type") //MOBILE일때 모바일타입 클래스 추가
-                depth1Li.off('click')
-                header.off("mouseleave")
-                hamBtn.off('click')
-                header.removeClass('active')
-                gnb.removeClass('active')
-                hamBtn.removeClass('x-btn')
-                depth2.slideUp()
-            }
-            init()
-        
-            // 아코디언메뉴 클릭할 경우 2depth 활성화
-            depth1Li.on("click",function(){
-                depth1Li.not($(this)).find('.depth2').slideUp()
-                $(this).find('.depth2').slideToggle();
-                $(this).toggleClass('active').siblings().removeClass('active');
-            })
-
-            hamBtn.on("click",function(){
-                header.toggleClass('active');
-                hamBtn.toggleClass('x-btn')
-                $('#header.mobile-type nav').toggleClass('active');
-            })
-
-        }
-
-        //GNB 라인 인터렉션 (선이 따라다니는 모션)  
-        // function gnbLineEvent() {
-
-        //     function init() {
-        //         // 초기값 : gnb에 line 생성 및 line을 depth1에 위치시킴
-        //         gnbLine.appendTo(gnb)
-        //         gnbLine.stop().animate({width:0,left:depth1Li.offset().left},0)
-        //     }
-        //     init()
-
-        //     depth1Li.on("mouseover",function(){
-        //         gnbLine.stop().animate({width:$(this).width(),left:$(this).offset().left},400)
-        //     })
-        //     header.on("mouseleave",function(){
-        //         gnbLine.stop().animate({width:0},400)
-        //     })
-
-        // }
-
-        // 헤더 반응형 (리사이즈 Resize)
-        function headerResize() {
-
-            function resizeScript() {
-
-                var width = $(window).width()
-
-                if(width > 768) {
-                    pcHeaderGnb()
-                    gnbLineEvent()
-                } else {
-                    mobileHeaderGnb()
-                }
-
-            } resizeScript()
-            
-            $(window).resize( $.throttle( 500, function(e) {
-                resizeScript()
-            }))
-
-        }
-        headerResize()
-
-        // 스크롤시 배경색추가
-        function scrollScript() {
-
-            function headerBgShow() {
-
-                if($(document).scrollTop() > 0 || $('#titleVisual').hasClass('no-bg')){
-                    $('#header').addClass('bg');
-                }else{
-                    $('#header').removeClass('bg');
-                }
-
-            } headerBgShow()
-
-            $(document).on('scroll', function(){
-
-                headerBgShow()
-
-            });
-
-        } scrollScript()
-
-        // 언어변경 탭
-        function lenguageChange() {
-
-            $('#header .language-tab > li').on('click', function(){
-                $(this).addClass('active').siblings('li').removeClass('active');
-            });
-
-        } lenguageChange()
-
+        pcHeaderGnb()
     }
+    
     headerScript()
 
 </script>

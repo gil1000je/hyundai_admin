@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>현대로보틱스 어드민 > 프로필 관리 > 비밀번호 수정</title>
+    <title>현대로보틱스 어드민 > 프로필 관리 > 비밀번호 수정 오류 케이스</title>
     <link rel="stylesheet" type="text/css" href="/hyundai_robotics_admin/assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="/hyundai_robotics_admin/assets/css/common.css">
     <link rel="stylesheet" type="text/css" href="/hyundai_robotics_admin/assets/css/form.css">
@@ -13,6 +13,7 @@
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src='//cdnjs.cloudflare.com/ajax/libs/jquery-throttle-debounce/1.1/jquery.ba-throttle-debounce.min.js'></script>
     <script type="text/javascript" src="/hyundai_robotics_admin/assets/js/include.js"></script>
+    <script src="/hyundai_robotics_admin/assets/js/form.js"></script>
 </head>
 <body>
     <div id="profileSetting" class="wrap">
@@ -40,17 +41,18 @@
                 <!-- 타이틀 영역 끝 -->
             </section>
             <!-- TOP AREA 탑 영역 끝 -->
-            <!-- Mid AREA 중간 영역 시작 -->
-            <section id="MidArea">
+            <!-- mid AREA 중간 영역 시작 -->
+            <section id="midArea">
                 <ul class="info-list-type01">
                     <li>
                         <div class="title">
                             현재 비밀번호
                         </div>
                         <div class="info">
+                            <!-- red 클래스 추가시 해당 내부의 alert가 보여짐 -->
                             <div class="input-wrap red">
-                                <lable for="input01" class="hide">라벨</lable>
-                                <input id="input01" type="text" placeholder="">
+                                <lable for="input01" class="hide">현 비밀번호</lable>
+                                <input id="input01" type="password" placeholder="">
                                 <span class="alert">비밀번호가 일치하지 않습니다.</span>
                             </div>
                         </div>
@@ -61,8 +63,8 @@
                         </div>
                         <div class="info">
                             <div class="input-wrap red">
-                                <lable for="input01" class="hide">라벨</lable>
-                                <input id="input01" type="text" placeholder="">
+                                <lable for="input01" class="hide">현 비밀번호</lable>
+                                <input id="input01" type="password" placeholder="">
                                 <span class="alert">8~16자리 영문, 숫자로 입력해주세요.</span>
                             </div>
                         </div>
@@ -73,15 +75,15 @@
                         </div>
                         <div class="info">
                             <div class="input-wrap red">
-                                <lable for="input01" class="hide">라벨</lable>
-                                <input id="input01" type="text" placeholder="">
+                                <lable for="input01" class="hide">현 비밀번호</lable>
+                                <input id="input01" type="password" placeholder="">
                                 <span class="alert">비밀번호가 일치하지 않습니다.</span>
                             </div>
                         </div>
                     </li>
                 </ul>
             </section>
-            <!-- Mid AREA 중간 영역 끝 -->
+            <!-- mid AREA 중간 영역 끝 -->
             <!-- BOTTOM AREA 바텀 영역 시작 -->
             <section id="bottomArea">
                 <div class="btn-wrap">
