@@ -10,7 +10,7 @@ body,#header { min-width:1920rem }
 .common-btn:disabled { border:solid 1px #999; background:#ddd; color:#999; cursor:default; } 
 .button-wrap .button-wrap-list { display: flex; align-items: center; justify-content: space-between; } 
 .button-wrap .button-wrap-list > li { width: calc(100% / 2 - 6rem); } 
-.login-modal .common-btn { border: 1px solid #eee; border-radius: 8rem; font-size: 14rem; font-weight: bold; min-height: 48rem; } 
+.login-modal .common-btn { border: 1px solid #eee; border-radius: 8rem; font-size: 14rem; font-weight: bold; min-height: 48rem;width: 100%;display: flex;align-items: center;justify-content: center;} 
 
 /* 체크박스 및 라디오 버튼 */
 .input-wrap.check label, .input-wrap.radio label { display:flex; align-items:center; line-height:1; gap:8rem; font-size:16rem } 
@@ -128,8 +128,14 @@ input[type="text"] + button { margin-left:14rem; }
 
 
 /* 팝업 */
-.popup-cont{display: flex;align-items: center;justify-content: space-between;flex-wrap: wrap;/*width: 100vw;height: 100vh;*/background: rgba(0,0,0,0.5);}
-.modal-wrap{border: 1px solid #bbb;background: #fff;border-radius: 3rem;width: 100%;max-width: 400rem;padding: 48rem 14rem 26rem;position: relative;}
+#popupWrap{position: relative;}
+.popup-cont{width: 100vw;height: 100vh;background: rgba(0,0,0,0.5);display: none;}
+.popup-cont.active{display: block;}
+.popup-btn-wrap {position: absolute;top: 0;left: 0;}
+.popup-btn-wrap > a{display: inline-block;width: 200rem;height: 48rem;border: 1px solid #000;font-size: 16rem;display: flex;align-items: center;justify-content: center;}
+.popup-btn-wrap > a:not(:first-child){margin-top: 15rem;}
+.modal-wrap{border: 1px solid #bbb;background: #fff;border-radius: 3rem;width: 100%;max-width: 400rem;padding: 48rem 14rem 26rem;position: absolute;left: 50%;top:50%;transform: translate(-50%,-50%);display: none;}
+.modal-wrap.active{display: block;}
 .modal-wrap.txt-align-left .modal-tit, .modal-wrap.txt-align-left .modal-info > p{text-align: left;}
 .modal-wrap .modal-closed{width: 28rem;height: 28rem;position: absolute;top: 15rem;right: 10rem;}
 .modal-wrap .modal-tit{font-size: 24rem;line-height: 32rem;font-weight: bold;text-align: center;margin-bottom: 10rem;}

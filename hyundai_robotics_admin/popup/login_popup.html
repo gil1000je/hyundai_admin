@@ -13,74 +13,78 @@
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src='//cdnjs.cloudflare.com/ajax/libs/jquery-throttle-debounce/1.1/jquery.ba-throttle-debounce.min.js'></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="/hyundai_robotics_admin/assets/js/form.js"></script>
     <script src="/hyundai_robotics_admin/assets/js/include.js"></script>
 </head>
 <body>
-  <div id="popupWrap" class="">
+  <div id="popupWrap" class="container">
     <!-- CONTAINER 컨테이너 시작 -->
-    <div id="" class="popup-wrap-inner">
-      <div class="popup-cont">
-        <!-- 로그인 팝업 -->
-        <div id="loginModal" class="modal-wrap login-modal">
-          <div class="modal-cont">
-            <div class="modal-logo"><img src="/hyundai_robotics_admin/assets/images/common/popup_logo.png" alt="현대로보틱스"></div>
-            <div class="input-list">
-              <div class="id-wrap">
-                <input type="text" placeholder="ID">
-              </div>
-              <div class="password-wrap">
-                <input type="password" placeholder="PW">
-                <a href="javascript:void(0)" class="guideline find-password">비밀번호 찾기</a>
-              </div>
+    <div class="popup-cont">
+      <!-- 로그인 팝업 -->
+      <div id="loginModal" class="modal-wrap login-modal">
+        <div class="modal-cont">
+          <div class="modal-logo"><img src="/hyundai_robotics_admin/assets/images/common/popup_logo.png" alt="현대로보틱스"></div>
+          <div class="input-list">
+            <div class="id-wrap">
+              <input type="text" placeholder="ID">
             </div>
-            <div class="button-wrap">
-              <span class="alert">회원정보가 일치하지 않습니다</span>
-              <a href="javascript:void(0)" class="common-btn">로그인</a>
+            <div class="password-wrap">
+              <input type="password" placeholder="PW">
+              <a href="javascript:void(0)" class="guideline find-password">비밀번호 찾기</a>
             </div>
           </div>
-        </div>
-        <!-- 임시비밀번호 팝업 -->
-        <div id="findPasswordModal" class="modal-wrap login-modal">
-          <div class="modal-cont">
-            <div class="modal-info">
-              <p>
-                등록하신 메일로 임시 비밀번호가 발송됩니다.<br>
-                개인 메일주소가 등록되어 있지 않을 경우,<br>
-                내부 담당자에게 문의해 주세요.<br>
-                servicerb@hyundai-robotics.com
-              </p>
-            </div>
-            <div class="input-list">
-              <div class="id-wrap">
-                <input type="text" placeholder="ID">
-              </div>
-              <div class="mail-wrap">
-                <input type="email" placeholder="E-MAIL">
-              </div>
-            </div>
-            <div class="button-wrap">
-              <span class="alert">회원정보가 일치하지 않습니다</span>
-              <a href="javascript:void(0)" class="common-btn">비밀번호 찾기</a>
-              <a href="javascript:void(0)" class="guideline">취소</a>
-            </div>
-          </div>
-        </div>
-        <!-- 임시비밀번호 발송 팝업 -->
-        <div id="sendPasswordModal" class="modal-wrap login-modal">
-          <div class="modal-cont">
-            <div class="modal-info">
-              <p>
-                등록하신 메일로 임시 비밀번호가 발송되었습니다.<br>
-                메일을 못 받은 경우 내부 담당자에게 문의 해주세요.<br> 
-                servicerb@hyundai-robotics.com
-              </p>
-            </div>
-            <div class="button-wrap">
-              <a href="javascript:void(0)" class="common-btn">LOGIN</a>
-            </div>
+          <div class="button-wrap">
+            <span class="alert">회원정보가 일치하지 않습니다</span>
+            <button class="common-btn">로그인</button>
           </div>
         </div>
       </div>
+      <!-- 임시비밀번호 팝업 -->
+      <div id="findPasswordModal" class="modal-wrap login-modal">
+        <div class="modal-cont">
+          <div class="modal-info">
+            <p>
+              등록하신 메일로 임시 비밀번호가 발송됩니다.<br>
+              개인 메일주소가 등록되어 있지 않을 경우,<br>
+              내부 담당자에게 문의해 주세요.<br>
+              servicerb@hyundai-robotics.com
+            </p>
+          </div>
+          <div class="input-list">
+            <div class="id-wrap">
+              <input type="text" placeholder="ID">
+            </div>
+            <div class="mail-wrap">
+              <input type="email" placeholder="E-MAIL">
+            </div>
+          </div>
+          <div class="button-wrap">
+            <span class="alert">회원정보가 일치하지 않습니다</span>
+            <button class="common-btn">비밀번호 찾기</button>
+            <a href="javascript:void(0)" class="guideline">취소</a>
+          </div>
+        </div>
+      </div>
+      <!-- 임시비밀번호 발송 팝업 -->
+      <div id="sendPasswordModal" class="modal-wrap login-modal">
+        <div class="modal-cont">
+          <div class="modal-info">
+            <p>
+              등록하신 메일로 임시 비밀번호가 발송되었습니다.<br>
+              메일을 못 받은 경우 내부 담당자에게 문의 해주세요.<br> 
+              servicerb@hyundai-robotics.com
+            </p>
+          </div>
+          <div class="button-wrap">
+            <button class="common-btn">LOGIN</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="popup-btn-wrap">
+      <a href="javascript:void(0)">01. 로그인 팝업</a>
+      <a href="javascript:void(0)">02. 비밀번호 찾기 이메일 입력 팝업</a>
+      <a href="javascript:void(0)">03. 이메일 발송 완료 팝업</a>
     </div>
     <!-- CONTAINER 컨테이너 끝 -->
 </div>
