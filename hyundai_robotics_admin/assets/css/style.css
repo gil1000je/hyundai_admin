@@ -130,9 +130,9 @@ input[type="text"] + button { margin-left:14rem; }
 #popupWrap{position: relative;}
 .popup-cont{width: 100vw;height: 100vh;background: rgba(0,0,0,0.5);display: none;}
 .popup-cont.active{display: block;}
-.popup-btn-wrap {position: absolute;top: 0;left: 0;}
-.popup-btn-wrap > a{display: inline-block;width: 200rem;height: 48rem;border: 1px solid #000;font-size: 16rem;display: flex;align-items: center;justify-content: center;}
-.popup-btn-wrap > a:not(:first-child){margin-top: 15rem;}
+.popup-btn-wrap {position: absolute;top: 30rem;left: 30rem;display: flex;align-items: center;max-width:1240rem;flex-wrap: wrap;}
+.popup-btn-wrap > a{display: block;padding: 0 25rem;height: 48rem;border: 1px solid #000;font-size: 16rem;display: flex;align-items: center;justify-content: center;border-radius: 30rem;margin-right: 20rem;margin-top: 10rem;}
+.popup-btn-wrap > a:hover{background: #3BB88C;color: #fff;border: 1px solid #3BB88C;}
 .modal-wrap{border: 1px solid #bbb;background: #fff;border-radius: 3rem;width: 100%;max-width: 400rem;padding: 48rem 14rem 26rem;position: absolute;left: 50%;top:50%;transform: translate(-50%,-50%);display: none;}
 .modal-wrap.active{display: block;}
 .modal-wrap.txt-align-left .modal-tit, .modal-wrap.txt-align-left .modal-info > p{text-align: left;}
