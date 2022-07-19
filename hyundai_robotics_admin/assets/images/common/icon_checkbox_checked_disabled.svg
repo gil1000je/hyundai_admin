@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <g id="그룹_7522" data-name="그룹 7522" transform="translate(-1252.002 -348)">
+    <g id="사각형_4747" data-name="사각형 4747" transform="translate(1252.002 348)" fill="#ddd" stroke="#bbb" stroke-width="1">
+      <rect width="20" height="20" stroke="none"/>
+      <rect x="0.5" y="0.5" width="19" height="19" fill="none"/>
+    </g>
+    <g id="그룹_7521" data-name="그룹 7521" transform="translate(-9.303 -21.185)">
+      <rect id="사각형_4748" data-name="사각형 4748" width="16.37" height="16.37" transform="translate(1263 371)" fill="none"/>
+      <path id="Icon_ionic-ios-checkmark" data-name="Icon ionic-ios-checkmark" d="M26.127,13.664,24.837,12.3a.273.273,0,0,0-.205-.091h0a.262.262,0,0,0-.205.091l-8.938,9.285-3.253-3.354a.277.277,0,0,0-.41,0l-1.3,1.345a.308.308,0,0,0,0,.431l4.1,4.231a1.282,1.282,0,0,0,.857.431,1.345,1.345,0,0,0,.85-.416h.007l9.795-10.153A.33.33,0,0,0,26.127,13.664Z" transform="translate(1253.4 361.285)" fill="#999"/>
+    </g>
+  </g>
+</svg>

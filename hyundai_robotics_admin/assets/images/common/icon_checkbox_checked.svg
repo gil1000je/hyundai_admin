@@ -1,0 +1,10 @@
+<svg id="체크박스_선택" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <g id="사각형_4747" data-name="사각형 4747" fill="#fff" stroke="#3bb88c" stroke-width="1">
+    <rect width="20" height="20" stroke="none"/>
+    <rect x="0.5" y="0.5" width="19" height="19" fill="none"/>
+  </g>
+  <g id="그룹_6954" data-name="그룹 6954" transform="translate(-569.832 2.868)">
+    <rect id="사각형_4748" data-name="사각형 4748" width="14.273" height="14.277" transform="translate(572.687)" fill="#fff"/>
+    <path id="Icon_ionic-ios-checkmark" data-name="Icon ionic-ios-checkmark" d="M23.637,13.292l-1.085-1.018a.244.244,0,0,0-.173-.068h0a.234.234,0,0,0-.173.068l-7.52,6.914-2.737-2.5a.254.254,0,0,0-.345,0l-1.1,1a.211.211,0,0,0,0,.321l3.452,3.15a1.137,1.137,0,0,0,.721.321,1.188,1.188,0,0,0,.715-.309H15.4l8.241-7.561A.225.225,0,0,0,23.637,13.292Z" transform="translate(563.253 -9.206)" fill="#3bb88c"/>
+  </g>
+</svg>
