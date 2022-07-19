@@ -397,8 +397,8 @@
           <!-- 타이틀 영역 끝 -->
         </div>
         <!-- TOP AREA 탑 영역 끝 -->
-        <!-- MIDDLE AREA 중간 영역 시작 -->
-        <div id="middelArea" style="background:rgb(195, 247, 247)">
+        <!-- midDLE AREA 중간 영역 시작 -->
+        <div id="midArea" style="background:rgb(195, 247, 247)">
           <section class="con-box">
             <ul class="info-list-type01">
               <li>
@@ -447,7 +447,7 @@
                 <div class="info">
                     <div class="input-wrap">
                       <lable for="input01" class="hide">이메일</lable>
-                      <input id="input01" type="text" placeholder="">
+                      <input id="input01" type="email" placeholder="">
                     </div>
                 </div>
               </li>
@@ -457,8 +457,8 @@
                 </div>
                 <div class="info">
                     <div class="input-wrap red">
-                      <lable for="input01" class="hide">라벨</lable>
-                      <input id="input01" type="text" placeholder="">
+                      <lable for="input01" class="hide">현재 비밀번호</lable>
+                      <input id="input01" type="password" placeholder="">
                       <span class="alert">비밀번호가 일치하지 않습니다.</span>
                     </div>
                 </div>
@@ -469,8 +469,8 @@
                 </div>
                 <div class="info">
                   <div class="input-wrap red">
-                    <lable for="input01" class="hide">라벨</lable>
-                    <input id="input01" type="text" placeholder="">
+                    <lable for="input01" class="hide">새로운 비밀번호</lable>
+                    <input id="input01" type="password" placeholder="">
                     <span class="alert">비밀번호가 일치하지 않습니다.</span>
                   </div>
                 </div>
@@ -591,9 +591,14 @@
             </ul>
           </section>
         </div>
-        <!-- MIDDLE AREA 중간 영역 끝 -->
+        <!-- midDLE AREA 중간 영역 끝 -->
         <!-- BOTTOM AREA 바텀 영역 시작 -->
         <div id="bottomArea" style="background:rgb(237, 197, 137)">
+          <div class="btn-wrap">
+            <button type="button" class="common-btn">
+              등록
+            </button>
+          </div>
           <div class="btn-wrap">
             <button type="button" class="common-btn">
               취소
@@ -755,6 +760,9 @@
                 <button class="common-btn" type="submit">
                   검색
                 </button>
+                <button class="common-btn" type="submit">
+                  등록
+                </button>
               </div>
             </div>
           </div>
@@ -765,12 +773,383 @@
 
       </section>
       <!-- 3. 상단영역 (#topArea) 섹션 끝 -->
+
       <!-- 4. 중단영역 (#middleArea) 섹션 시작 -->
       <section id="middleAreaWrap" class="style-box">
-        <span class="bg-tit">4. 중단영역 (#middleArea)</span>
-        <span class="sub-tit" style="margin-top:50rem;">1. 작업중</span>
+        <span class="bg-tit">4. 중단영역 (#midArea)</span>
+        <span class="sub-tit" style="margin-top:50rem;">1. 첫번째 리스트 타입 (.info-list-type01)</span>
+        <!-- MIDDLE AREA 중간 영역 시작 -->
+        <div id="midArea">
+          <section class="con-box">
+            <ul class="info-list-type01">
+              <li>
+                <div class="title">
+                  아이디
+                </div>
+                <div class="info">
+                  admin_ID
+                </div>
+              </li>
+              <li>
+                <div class="title">
+                  비밀번호
+                </div>
+                <div class="info">
+                  <button type="button" class="common-btn active">
+                    비밀번호 재설정
+                  </button>
+                </div>
+              </li>
+              <li>
+                <div class="title">
+                  이름
+                </div>
+                <div class="info">
+                  홍길동
+                </div>
+              </li>
+              <li>
+                <div class="title">
+                  연락처
+                </div>
+                <div class="info">
+                    <div class="input-wrap">
+                      <lable for="input01" class="hide">연락처</lable>
+                      <lable for="input02" class="hide">연락처</lable>
+                      <input id="input01" type="text" placeholder="마케팅본부" disabled>
+                      <input id="input02" type="text" placeholder="과장" disabled>
+                    </div>
+                </div>
+              </li>
+              <li>
+                <div class="title">
+                  이메일
+                </div>
+                <div class="info">
+                    <div class="input-wrap">
+                      <lable for="input01" class="hide">이메일</lable>
+                      <input id="input01" type="email" placeholder="">
+                    </div>
+                </div>
+              </li>
+              <li>
+                <div class="title">
+                  현재 비밀번호
+                </div>
+                <div class="info">
+                    <div class="input-wrap red">
+                      <lable for="input01" class="hide">현재 비밀번호</lable>
+                      <input id="input01" type="password" placeholder="">
+                      <span class="alert">비밀번호가 일치하지 않습니다.</span>
+                    </div>
+                </div>
+              </li>
+              <li>
+                <div class="title">
+                  새로운 비밀번호
+                </div>
+                <div class="info">
+                  <div class="input-wrap red">
+                    <lable for="input01" class="hide">라벨</lable>
+                    <input id="input01" type="text" placeholder="">
+                    <span class="alert">비밀번호가 일치하지 않습니다.</span>
+                  </div>
+                </div>
+              </li>
+              <li class="table-li">
+                <div class="title">
+                  관리권한
+                </div>
+                <div class="info">
+                  <div class="table-wrap">
+                    <table class="table-type02">
+                      <caption>관리권한 관련 테이블</caption>
+                      <colgroup>
+                        <col class="col">
+                        <col class="col">
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <th scope="col">
+                            관리 권한 구분
+                          </th>
+                          <th scope="col">
+                            권한설정
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>대리점회원</td>
+                          <td>보기, 관리</td>
+                        </tr>
+                        <tr>
+                          <td>상담신청</td>
+                          <td>보기</td>
+                        </tr>
+                        <tr>
+                          <td>시연신청</td>
+                          <td>없음</td>
+                        </tr>
+                        <tr>
+                          <td>대리점 문의</td>
+                          <td>없음</td>
+                        </tr>
+                        <tr>
+                          <td>A/S신청</td>
+                          <td>보기, 관리</td>
+                        </tr>
+                        <tr>
+                          <td>제휴문의</td>
+                          <td>없음</td>
+                        </tr>
+                        <tr>
+                          <td>콘텐츠관리</td>
+                          <td>보기, 관리</td>
+                        </tr>
+                        <tr>
+                          <td>설정</td>
+                          <td>없음</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </li>
+              <li class="table-li">
+                <div class="title">
+                    관리권한
+                </div>
+                <div class="info">
+                    <div class="table-wrap">
+                      <div class="input-wrap check all">
+                        <label for="checkSample" name="checkSample">
+                          <input id="checkSample" type="checkbox"> 전체 권한 설정
+                        </label>
+                      </div>
+                      <table class="table-type02">
+                          <caption>관리권한 관련 테이블</caption>
+                          <colgroup>
+                              <col class="col">
+                              <col class="col">
+                          </colgroup>
+                          <thead>
+                              <tr>
+                                  <th scope="col">
+                                      관리 권한 구분
+                                  </th>
+                                  <th scope="col">
+                                      권한설정
+                                  </th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                              <tr>
+                                  <td>대리점회원</td>
+                                  <td>
+                                      <label for="checkSample" name="checkSample">
+                                          <input id="checkSample" type="checkbox"> 전체
+                                          <input id="checkSample" type="checkbox"> 보기
+                                          <input id="checkSample" type="checkbox"> 관리
+                                      </label>                                               
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>상담신청</td>
+                                  <td>
+                                      <label for="checkSample" name="checkSample">
+                                          <input id="checkSample" type="checkbox"> 전체
+                                          <input id="checkSample" type="checkbox"> 보기
+                                          <input id="checkSample" type="checkbox"> 관리
+                                      </label>                                               
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>시연신청</td>
+                                  <td>
+                                      <label for="checkSample" name="checkSample">
+                                          <input id="checkSample" type="checkbox"> 전체
+                                          <input id="checkSample" type="checkbox"> 보기
+                                          <input id="checkSample" type="checkbox"> 관리
+                                      </label>                                               
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>대리점 문의</td>
+                                  <td>
+                                      <label for="checkSample" name="checkSample">
+                                          <input id="checkSample" type="checkbox"> 전체
+                                          <input id="checkSample" type="checkbox"> 보기
+                                          <input id="checkSample" type="checkbox"> 관리
+                                      </label>                                               
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>A/S신청</td>
+                                  <td>
+                                      <label for="checkSample" name="checkSample">
+                                          <input id="checkSample" type="checkbox"> 전체
+                                          <input id="checkSample" type="checkbox"> 보기
+                                          <input id="checkSample" type="checkbox"> 관리
+                                      </label>                                               
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>제휴문의</td>
+                                  <td>
+                                      <label for="checkSample" name="checkSample">
+                                          <input id="checkSample" type="checkbox"> 전체
+                                          <input id="checkSample" type="checkbox"> 보기
+                                          <input id="checkSample" type="checkbox"> 관리
+                                      </label>                                               
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>콘텐츠관리</td>
+                                  <td>
+                                      <label for="checkSample" name="checkSample">
+                                          <input id="checkSample" type="checkbox"> 전체
+                                          <input id="checkSample" type="checkbox"> 보기
+                                          <input id="checkSample" type="checkbox"> 관리
+                                      </label>                                               
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>설정</td>
+                                  <td>
+                                      <label for="checkSample" name="checkSample">
+                                          <input id="checkSample" type="checkbox"> 전체
+                                          <input id="checkSample" type="checkbox"> 보기
+                                          <input id="checkSample" type="checkbox"> 관리
+                                      </label>                                               
+                                  </td>
+                              </tr>
+                          </tbody>
+                      </table>
+                      <div class="table-info">
+                        상담신청, 시연신청, 대리점모집문의, A/S신청, 제휴문의, 대리점모집문의 <br>
+                        [관리]권한 설정 시 등록하신 이메일로 문의 내용이 전송됩니다.
+                      </div>
+                    </div>
+                </div>
+            </li>
+              <li>
+                <div class="title">
+                  새로운 비밀번호
+                </div>
+                <div class="info">
+                  <div class="select-wrap">
+                    <a href="javascript:void(0)" class="selected-option">지역전체</a>
+                    <ul class="option-list">
+                      <li>
+                        <a href="javascript:void(0)">지역 1</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">지역 2</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">지역 3</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">지역 4</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">지역 5</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">지역 6</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="select-wrap">
+                    <a href="javascript:void(0)" class="selected-option">지역전체</a>
+                    <ul class="option-list">
+                      <li>
+                        <a href="javascript:void(0)">지역 1</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">지역 2</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">지역 3</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">지역 4</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">지역 5</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">지역 6</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </div>
+        <!-- MIDDLE AREA 중간 영역 끝 -->
+        <span class="sub-tit" style="margin-top:50rem;">2. 두번째 리스트 타입 (.info-list-type02)</span>
+        <!-- MIDDLE AREA 중간 영역 시작 -->
+        <div id="midArea">
+          <section class="con-box">
+            <ul class="info-list-type02">
+              <li>
+                <div class="title">
+                  이름
+                </div>
+                <div class="info">
+                  <div class="input-wrap">
+                    <label for="inputSample">
+                      <input id="inputSample" type="text" placeholder="기본">
+                    </label>
+                  </div>
+                  <span class="alert">
+                    2021.06.04
+                  </span>
+                </div>
+              </li>
+              <li>
+                <div class="title">
+                  노출설정
+                </div>
+                <div class="info">
+                  <div class="input-wrap radio">
+                    <label for="radioSample01" name="radioSample">
+                      <input id="radioSample01" type="radio"> 노출
+                    </label>
+                    <label for="radioSample02" name="radioSample">
+                      <input id="radioSample02" type="radio"> 미노출
+                    </label>
+                    <label for="radioSample03" name="radioSample">
+                      <input id="radioSample03" type="radio"> 미노출
+                    </label>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="title">
+                  PC
+                </div>
+                <div class="info">
+                  <div class="input-wrap file">
+                    <input class="hide" type="file" id="file">
+                    <input type="text">
+                    <label class="common-btn" for="file">이미지 첨부</label>
+                  </div>
+                  <span class="alert">
+                    권장 사이즈:210*560
+                  </span>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </div>
+        <!-- midDLE AREA 중간 영역 끝 -->
       </section>
       <!-- 4. 중단영역 (#middleArea) 섹션 끝 -->
+
       <!-- 5. 하단영역 (#bottomArea) 섹션 시작 -->
       <section id="middleAreaWrap" class="style-box">
         <span class="bg-tit">5. 하단영역 (#bottomArea)</span>

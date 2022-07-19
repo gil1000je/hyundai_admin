@@ -13,6 +13,7 @@
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src='//cdnjs.cloudflare.com/ajax/libs/jquery-throttle-debounce/1.1/jquery.ba-throttle-debounce.min.js'></script>
     <script type="text/javascript" src="/hyundai_robotics_admin/assets/js/include.js"></script>
+    <script src="/hyundai_robotics_admin/assets/js/form.js"></script>
 </head>
 <body>
     <div id="profileSetting" class="wrap">
@@ -40,8 +41,8 @@
                 <!-- 타이틀 영역 끝 -->
             </section>
             <!-- TOP AREA 탑 영역 끝 -->
-            <!-- Mid AREA 중간 영역 시작 -->
-            <section id="MidArea">
+            <!-- mid AREA 중간 영역 시작 -->
+            <section id="midArea">
                 <ul class="info-list-type01">
                     <li>
                         <div class="title">
@@ -49,8 +50,9 @@
                         </div>
                         <div class="info">
                             <div class="input-wrap">
-                                <lable for="input01" class="hide">라벨</lable>
-                                <input id="input01" type="text" placeholder="현재 비밀번호를 입력해 주세요.">
+                                <lable for="input01" class="hide">현재 비밀번호</lable>
+                                <input id="input01" type="password" placeholder="현재 비밀번호를 입력해 주세요.">
+                                <span class="alert">input-wrap에 red 클래스 추가시 alert가 출력됩니다.</span>
                             </div>
                         </div>
                     </li>
@@ -60,8 +62,9 @@
                         </div>
                         <div class="info">
                             <div class="input-wrap">
-                                <lable for="input01" class="hide">라벨</lable>
-                                <input id="input01" type="text" placeholder="새로운 비밀번호를 입력해 주세요.">
+                                <lable for="input01" class="hide">새로운 비밀번호</lable>
+                                <input id="input01" type="password" placeholder="새로운 비밀번호를 입력해 주세요.">
+                                <span class="alert">input-wrap에 red 클래스 추가시 alert가 출력됩니다.</span>
                             </div>
                         </div>
                     </li>
@@ -71,14 +74,15 @@
                         </div>
                         <div class="info">
                             <div class="input-wrap">
-                                <lable for="input01" class="hide">라벨</lable>
-                                <input id="input01" type="text" placeholder="새로운 비밀번호를 다시 입력해 주세요.">
+                                <lable for="input01" class="hide">비밀번호 확인</lable>
+                                <input id="input01" type="password" placeholder="새로운 비밀번호를 다시 입력해 주세요.">
+                                <span class="alert">input-wrap에 red 클래스 추가시 alert가 출력됩니다.</span>
                             </div>
                         </div>
                     </li>
                 </ul>
             </section>
-            <!-- Mid AREA 중간 영역 끝 -->
+            <!-- mid AREA 중간 영역 끝 -->
             <!-- BOTTOM AREA 바텀 영역 시작 -->
             <section id="bottomArea">
                 <div class="btn-wrap">
@@ -93,6 +97,7 @@
             <!-- BOTTOM AREA 바텀 영역 끝 -->
         </div>
         <!-- 컨테이너 끝 -->
+        
     </div>
 </body>
 

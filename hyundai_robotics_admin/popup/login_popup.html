@@ -39,7 +39,27 @@
           </div>
         </div>
       </div>
-      <!-- 임시비밀번호 팝업 -->
+      <!-- 로그인 실패 팝업 -->
+      <div id="loginModal" class="modal-wrap login-modal">
+        <div class="modal-cont">
+          <div class="modal-logo"><img src="/hyundai_robotics_admin/assets/images/common/popup_logo.png" alt="현대로보틱스"></div>
+          <div class="input-list">
+            <div class="id-wrap">
+              <input type="text" placeholder="ID">
+            </div>
+            <div class="password-wrap">
+              <input type="password" placeholder="PW">
+              <a href="javascript:void(0)" class="guideline find-password">비밀번호 찾기</a>
+            </div>
+          </div>
+          <!-- 로그인 정보가 일치하지 않을 경우, button-wrap 안의 alert가 display:block 되어야함 -->
+          <div class="button-wrap">
+            <span class="alert" style="display:block">회원정보가 일치하지 않습니다</span>
+            <button class="common-btn">로그인</button>
+          </div>
+        </div>
+      </div>
+      <!-- 비밀번호 찾기 팝업 -->
       <div id="findPasswordModal" class="modal-wrap login-modal">
         <div class="modal-cont">
           <div class="modal-info">
@@ -65,6 +85,32 @@
           </div>
         </div>
       </div>
+      <!-- 비밀번호 찾기 (회원정보 불일치) 팝업 -->
+      <div id="findPasswordModal" class="modal-wrap login-modal">
+        <div class="modal-cont">
+          <div class="modal-info">
+            <p>
+              등록하신 메일로 임시 비밀번호가 발송됩니다.<br>
+              개인 메일주소가 등록되어 있지 않을 경우,<br>
+              내부 담당자에게 문의해 주세요.<br>
+              servicerb@hyundai-robotics.com
+            </p>
+          </div>
+          <div class="input-list">
+            <div class="id-wrap">
+              <input type="text" placeholder="ID">
+            </div>
+            <div class="mail-wrap">
+              <input type="email" placeholder="E-MAIL">
+            </div>
+          </div>
+          <div class="button-wrap">
+            <span class="alert" style="display:block">회원정보가 일치하지 않습니다</span>
+            <button class="common-btn">비밀번호 찾기</button>
+            <a href="javascript:void(0)" class="guideline">취소</a>
+          </div>
+        </div>
+      </div>
       <!-- 임시비밀번호 발송 팝업 -->
       <div id="sendPasswordModal" class="modal-wrap login-modal">
         <div class="modal-cont">
@@ -83,8 +129,10 @@
     </div>
     <div class="popup-btn-wrap">
       <a href="javascript:void(0)">01. 로그인 팝업</a>
-      <a href="javascript:void(0)">02. 비밀번호 찾기 이메일 입력 팝업</a>
-      <a href="javascript:void(0)">03. 이메일 발송 완료 팝업</a>
+      <a href="javascript:void(0)">02. 로그인 실패 팝업 (에러 케이스 - 회원정보 불일치)</a>
+      <a href="javascript:void(0)">03. 비밀번호 찾기 팝업</a>
+      <a href="javascript:void(0)">04. 비밀번호 찾기 팝업 (에러 케이스 - 회원정보 불일치)</a>
+      <a href="javascript:void(0)">05. 임시 비밀번호 발송 완료 팝업</a>
     </div>
     <!-- CONTAINER 컨테이너 끝 -->
 </div>
