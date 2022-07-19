@@ -6,11 +6,11 @@ body,#header { min-width:1920rem }
 
 /* 버튼 */
 .common-btn { font-size:16rem; white-space:nowrap; border-radius:3rem; background:#F4F4F4; border:solid 1px #BBB; color:#666; min-height:44rem; padding:0 42rem; display:inline-block; } 
-a.common-btn { display:flex; align-items:center; justify-content:center}
 .common-btn:hover, .common-btn.active { border:solid 1px #3BB88C; background:#3BB88C; color:#fff; } 
 .common-btn:disabled { border:solid 1px #999; background:#ddd; color:#999; cursor:default; } 
 .button-wrap .button-wrap-list { display: flex; align-items: center; justify-content: space-between; } 
 .button-wrap .button-wrap-list > li { width: calc(100% / 2 - 6rem); } 
+label.common-btn { width:120rem; display:flex; align-items:center; justify-content:center;}
 .login-modal .common-btn { border: 1px solid #eee; border-radius: 8rem; font-size: 14rem; font-weight: bold; min-height: 48rem;width: 100%;display: flex;align-items: center;justify-content: center;} 
 
 /* 체크박스 및 라디오 버튼 */
@@ -23,22 +23,25 @@ input[type="radio"]::after { content:''; width: 20rem !important; height: 20rem 
 input[type="radio"]:checked::after {background:url(/hyundai_robotics_admin/assets/images/common/icon_radio_checked.svg);} 
 
 /* 인풋박스 */
-input[type="text"], input[type="password"] { border:solid 1px #BBB; background:#fff; border-radius:3rem; height:44rem; padding:0 14rem; font-size:16rem; margin-top:20rem } 
-input[type="text"]:focus, input[type="password"]:focus { outline:solid 1.5px #222; border:solid 1px #fff; } 
-input[type="text"]::placeholder, input[type="password"]::placeholder { color:#999; font-size:16rem } 
-input[type="text"]:disabled, input[type="password"]:disabled { border:solid 1px #999; background:#ddd; } 
-input[type="text"] + button { margin-left:14rem; }
+input[type="text"], input[type="password"], input[type="email"], input[type="number"]  { border:solid 1px #BBB; background:#fff; border-radius:3rem; height:44rem; padding:0 14rem; font-size:16rem; margin-top:20rem } 
+input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, input[type="number"]:focus { outline:solid 1.5px #222; border:solid 1px #fff; } 
+input[type="text"]::placeholder, input[type="password"]::placeholder, input[type="email"]::placeholder, input[type="number"]::placeholder { color:#999; font-size:16rem } 
+input[type="text"]:disabled, input[type="password"]:disabled, input[type="email"]:disabled, input[type="number"]:disabled  { border:solid 1px #999; background:#ddd; } 
+input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0;}
+input[type="text"] + button, input[type="text"] + button + button { margin-left:14rem; }
 .input-wrap { display:flex; align-items:flex-end } 
 .login-modal .input-wrap { flex-direction: column; } 
 .input-wrap.red { position:relative; display:inline-block; } 
 .input-wrap.red input[type="text"] { outline:solid 1.5px #E81953; border:solid 1px #fff; } 
 .input-wrap.red .alert { position:absolute; right:0; top:2rem; font-size:12rem; font-weight:700; color:#e81953 } 
 .login-modal input:not(input[type="button"]) { border-radius: 3rem; } 
+.input-wrap.file { display:flex; gap:14rem }
+.input-wrap.file input[type="text"] {width:666rem}
 
 /* 셀렉트 박스 (드롭박스) */
 .select-wrap { width:100%; max-width:160rem; position:relative; } 
 .select-wrap .selected-option { font-size:16rem; color:#222; display:flex; align-items:center; height:44rem; padding:0 40rem 0 14rem; border-radius:3rem; background:#fff; border:solid 1px #bbb } 
-.select-wrap .option-list { display:none; width:100%; border-radius:3rem; border:solid 1px #bbb; background:#fff; position:absolute; left:0; top:48rem; padding:8rem 13rem } 
+.select-wrap .option-list { display:none; width:100%; border-radius:3rem; border:solid 1px #bbb; background:#fff; position:absolute; left:0; top:48rem; padding:8rem 13rem; z-index:3; } 
 .select-wrap .option-list li { height:32rem; display:flex; align-items:center; border-radius:3rem; padding:0 13rem; } 
 .select-wrap .option-list li:hover { background:#F4F4F4; }
 .select-wrap .option-list li a { font-size:16rem } 
@@ -46,9 +49,10 @@ input[type="text"] + button { margin-left:14rem; }
 .select-wrap .selected-option.active::before { top:50%; transform:translateY(-50%) rotate(-180deg) } 
 
 /* 페이지네이션 */
-#pagination .pagination-inner a { display:flex; align-items:center; justify-content:center; width:32rem; height:32rem; background:#fff; border:solid 1px #eee; border-radius:3rem; font-size:16rem } 
-#pagination .pagination-inner a.active { background:#3BB88C; color:#fff; } 
-#pagination .pagination-inner, #pagination .number-wrap, #pagination .arr-wrap { display:flex; gap:6rem }
+#pagination .pagination-inner a { display:flex; align-items:center; justify-content:center; width:32rem; height:32rem; background:#fff; border:solid 1px #bbb; border-radius:3rem; font-size:16rem } 
+#pagination .pagination-inner a.active { background:#3BB88C; border:solid 1px #3bb88c; color:#fff; } 
+#pagination .pagination-inner, #pagination .number-wrap, #pagination .arr-wrap { display:flex; gap:6rem;}
+#pagination .arr-wrap a {border:0}
 
 /* 네비게이션 */
 #navigation { margin-bottom:3rem } 
@@ -69,10 +73,13 @@ input[type="text"] + button { margin-left:14rem; }
 .title-wrap { width:1300rem; margin:0 auto; padding:33rem 0 70rem; } 
 .title-wrap h2.main-tit { font-size:30rem; color:#222; font-weight:700; line-height:44rem; letter-spacing:-0.018em; } 
 
-
-/* 테이블 타입 1 */
+/* 테이블 공통 */
+.table-wrap .all {margin-bottom:10rem;}
+.table-wrap .table-info { margin-top:12rem; color:#999; line-height:24rem;}
 .table-alert { display:flex; align-items:center; height:52rem; gap:8rem } 
 .table-alert strong { font-size:18rem; font-weight:500; } 
+
+/* 테이블 타입 1 */
 .table-type01 { width:100%; max-width:1300rem; border-radius:3rem; background:#fff; outline:solid 1px #BBB; } 
 .table-type01 .num { width:100rem; } 
 .table-type01 tr { height:30rem; border-bottom:solid 1px #BBB } 
@@ -98,17 +105,6 @@ input[type="text"] + button { margin-left:14rem; }
 .table-type02 th, .table-type02 td { border-right:solid 1px #bbb; padding:7rem 14rem; font-size:15rem; } 
 .table-type02 th:last-child, .table-type02 td:last-child { border-right:0 } 
 
-/* 인포 리스트 */
-.info-list-type01 { display:flex; gap:20rem; flex-direction:column; } 
-.info-list-type01 li { display:flex; min-height:44rem; align-items:center; } 
-.info-list-type01 .title { width:160rem; font-size:18rem; font-weight:500; word-break:nowrap } 
-.info-list-type01 .info { width:100% } 
-.info-list-type01 li.table-li { align-items:flex-start; } 
-.info-list-type01 input, .info-list-type01 .select-wrap { display:inline-block; margin:0; width:390rem; max-width:100%; } 
-.info-list-type01 input + input, .info-list-type01 .select-wrap + .select-wrap { margin-left:16rem } 
-.info-list-type01 li .input-wrap.red .alert { top:-17rem } 
-.btn-wrap { display:flex; gap:14rem; } 
-
 /* 레이아웃 LAY OUT */
 
 /* TOP AREA 탑영역 */
@@ -120,7 +116,31 @@ input[type="text"] + button { margin-left:14rem; }
 #topArea.search .search-wrap .left .num {margin-bottom:5rem}
 #topArea.search .search-wrap input[type="text"] {width:380rem;}
 
-#bottomArea { width:100%; max-width:1300rem; margin:0 auto; margin-bottom:250rem; position:relative; display:flex; align-items:center; margin-top:26rem; padding-top:26rem; } 
+/* MID AREA 중간영역 */
+
+/* 인포 리스트 */
+.info-list-type01 { display:flex; gap:20rem; flex-direction:column; } 
+.info-list-type01 li { display:flex; min-height:44rem; align-items:center; } 
+.info-list-type01 .title { width:160rem; font-size:18rem; font-weight:500; word-break:nowrap } 
+.info-list-type01 .info { width:100% } 
+.info-list-type01 li.table-li { align-items:flex-start; } 
+.info-list-type01 input, .info-list-type01 .select-wrap { display:inline-block; margin:0; width:390rem; max-width:100%; } 
+.info-list-type01 input + input, .info-list-type01 .select-wrap + .select-wrap { margin-left:16rem } 
+.info-list-type01 li .input-wrap.red .alert { top:-17rem } 
+
+.info-list-type02 { display:flex; flex-direction:column; gap:22rem;}
+.info-list-type02 li { display:flex; flex-direction:column; gap:9rem; }
+.info-list-type02 .title { font-size:18rem; font-weight:500; }
+.info-list-type02 .info .alert { font-size:12rem; color:#999; } 
+.info-list-type02 input {margin:0; width:800rem;}
+.info-list-type02 .radio {display:flex; gap:40rem; align-items:center;}
+.info-list-type02 .radio label {width:120rem;}
+
+.btn-wrap { display:flex; gap:14rem; } 
+
+
+/* BOTTOM AREA 하단영역 */
+#bottomArea { width:100%; max-width:1300rem; margin:0 auto; margin-bottom:250rem; position:relative; display:flex; align-items:center; margin-top:26rem; padding-top:26rem } 
 #bottomArea .btn-wrap:last-child {position:absolute; top:50%; right:0; transform:translateY(-50%)}
 #bottomArea #pagination {position:absolute; top:50%; left:50%; transform:translate(-50%, -50%)}
 
@@ -149,7 +169,7 @@ input[type="text"] + button { margin-left:14rem; }
 .modal-wrap .guideline{color: #999;text-decoration: underline;font-weight: bold;display: block;}
 .modal-wrap .button-wrap .guideline{margin-top: 14rem;font-size: 14rem;text-align: center;}
 .modal-wrap .input-list > div.password-wrap .find-password{font-size: 10rem;margin-top: 6rem;margin-left: auto;text-align: right;}
-.alert{color: #E81953;font-size: 12rem;position: absolute;top: -20rem;font-weight: bold;}
+.modal-wrap .alert {color: #E81953;font-size: 12rem;position: absolute;top: -20rem;font-weight: bold;}
 .modal-wrap .button-wrap{margin-top: 36rem;}
 .modal-wrap .button-wrap .common-btn{width: 100%;}
 

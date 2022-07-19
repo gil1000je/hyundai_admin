@@ -16,6 +16,15 @@ $(document).ready(function() {
     }
     textAreaTextLength ()
 
+    function radioCheck() {
+        $('.radio input[type="radio"]').on('change', function(){
+
+            $(this).parent().siblings().find('input[type="radio"]').prop('checked', false);
+
+        })
+    }
+    radioCheck()
+
     // 체크박스 전체선택 스크립트
     function checkboxAll() {
 
@@ -76,9 +85,9 @@ $(document).ready(function() {
     maxLengthCheck()
 
     // file custom
-    $(".form-file-box #file").on('change',function(){
-        var fileName = $(".form-file-box #file").val();
-        $(".form-file-box .upload-name").val(fileName);
+    $(".file #file").on('change',function(){
+        var fileName = $(".file #file").val();
+        $(".file input[type='text']").val(fileName);
     });
     
     //select option custom

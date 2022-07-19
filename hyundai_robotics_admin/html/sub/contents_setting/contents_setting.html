@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>현대로보틱스 설정 > 관리자 계정 관리 > 관리자 계정 정보</title>
+    <title>현대로보틱스 어드민 > 콘텐츠 관리</title>
     <link rel="stylesheet" type="text/css" href="/hyundai_robotics_admin/assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="/hyundai_robotics_admin/assets/css/common.css">
     <link rel="stylesheet" type="text/css" href="/hyundai_robotics_admin/assets/css/form.css">
@@ -29,17 +28,14 @@
                     <nav id="navigation">
                         <ul>
                             <li class="depth01">
-                                <a href="javascript:void(0)" title="클릭시 해당 뎁스로 이동">설정</a>
+                                <a href="javascript:void(0)" title="클릭시 해당 뎁스로 이동">프로필 수정</a>
                             </li>
                             <li class="depth02">
-                                <a href="javascript:void(0)" title="클릭시 해당 뎁스로 이동">관리자 계정 관리</a>
-                            </li>
-                            <li class="depth03">
-                                <a href="javascript:void(0)" title="클릭시 해당 뎁스로 이동">관리자 계정 정보</a>
+                                <a href="javascript:void(0)" title="클릭시 해당 뎁스로 이동">비밀번호 재설정</a>
                             </li>
                         </ul>
                     </nav>
-                    <h2 class="main-tit">관리자 계정 정보</h2>
+                    <h2 class="main-tit">프로필 관리</h2>
                 </div>
                 <!-- 타이틀 영역 끝 -->
             </section>
@@ -70,9 +66,7 @@
                             이름
                         </div>
                         <div class="info">
-                            <div class="input-wrap">
-                                <input id="inputSample" type="text">
-                              </div>
+                            홍길동
                         </div>
                     </li>
                     <li>
@@ -83,8 +77,8 @@
                             <div class="input-wrap">
                                 <label for="input01" class="hide">부서</label>
                                 <label for="input02" class="hide">직급</label>
-                                <input id="input01" type="text" placeholder="마케팅본부" >
-                                <input id="input02" type="text" placeholder="과장">
+                                <input id="input01" type="text" placeholder="마케팅본부" disabled>
+                                <input id="input02" type="text" placeholder="과장" disabled>
                             </div>
                         </div>
                     </li>
@@ -95,7 +89,7 @@
                         <div class="info">
                             <div class="input-wrap">
                                 <label for="input01" class="hide">연락처</label>
-                                <input id="input01" type="text" placeholder="">
+                                <input id="input01" type="number" placeholder="">
                             </div>
                         </div>
                     </li>
@@ -106,7 +100,7 @@
                         <div class="info">
                             <div class="input-wrap">
                                 <label for="input01" class="hide">이메일</label>
-                                <input id="input01" type="text" placeholder="">
+                                <input id="input01" type="email" placeholder="">
                             </div>
                         </div>
                     </li>
@@ -116,11 +110,6 @@
                         </div>
                         <div class="info">
                             <div class="table-wrap">
-                                <div class="input-wrap check all">
-                                    <label for="checkSample" name="checkSample">
-                                      <input id="checkSample" type="checkbox"> 전체 권한 설정
-                                    </label>
-                                </div>
                                 <table class="table-type02">
                                     <caption>관리권한 관련 테이블</caption>
                                     <colgroup>
@@ -140,99 +129,39 @@
                                     <tbody>
                                         <tr>
                                             <td>대리점회원</td>
-                                            <td>
-                                                <label for="checkSample" name="checkSample">
-                                                    <input id="checkSample" type="checkbox"> 전체
-                                                    <input id="checkSample" type="checkbox"> 보기
-                                                    <input id="checkSample" type="checkbox"> 관리
-                                                </label>                                               
-                                            </td>
+                                            <td>보기, 관리</td>
                                         </tr>
                                         <tr>
                                             <td>상담신청</td>
-                                            <td>
-                                                <label for="checkSample" name="checkSample">
-                                                    <input id="checkSample" type="checkbox"> 전체
-                                                    <input id="checkSample" type="checkbox"> 보기
-                                                    <input id="checkSample" type="checkbox"> 관리
-                                                </label>                                               
-                                            </td>
+                                            <td>보기</td>
                                         </tr>
                                         <tr>
                                             <td>시연신청</td>
-                                            <td>
-                                                <label for="checkSample" name="checkSample">
-                                                    <input id="checkSample" type="checkbox"> 전체
-                                                    <input id="checkSample" type="checkbox"> 보기
-                                                    <input id="checkSample" type="checkbox"> 관리
-                                                </label>                                               
-                                            </td>
+                                            <td>없음</td>
                                         </tr>
                                         <tr>
                                             <td>대리점 문의</td>
-                                            <td>
-                                                <label for="checkSample" name="checkSample">
-                                                    <input id="checkSample" type="checkbox"> 전체
-                                                    <input id="checkSample" type="checkbox"> 보기
-                                                    <input id="checkSample" type="checkbox"> 관리
-                                                </label>                                               
-                                            </td>
+                                            <td>없음</td>
                                         </tr>
                                         <tr>
                                             <td>A/S신청</td>
-                                            <td>
-                                                <label for="checkSample" name="checkSample">
-                                                    <input id="checkSample" type="checkbox"> 전체
-                                                    <input id="checkSample" type="checkbox"> 보기
-                                                    <input id="checkSample" type="checkbox"> 관리
-                                                </label>                                               
-                                            </td>
+                                            <td>보기, 관리</td>
                                         </tr>
                                         <tr>
                                             <td>제휴문의</td>
-                                            <td>
-                                                <label for="checkSample" name="checkSample">
-                                                    <input id="checkSample" type="checkbox"> 전체
-                                                    <input id="checkSample" type="checkbox"> 보기
-                                                    <input id="checkSample" type="checkbox"> 관리
-                                                </label>                                               
-                                            </td>
+                                            <td>없음</td>
                                         </tr>
                                         <tr>
                                             <td>콘텐츠관리</td>
-                                            <td>
-                                                <label for="checkSample" name="checkSample">
-                                                    <input id="checkSample" type="checkbox"> 전체
-                                                    <input id="checkSample" type="checkbox"> 보기
-                                                    <input id="checkSample" type="checkbox"> 관리
-                                                </label>                                               
-                                            </td>
+                                            <td>보기, 관리</td>
                                         </tr>
                                         <tr>
                                             <td>설정</td>
-                                            <td>
-                                                <label for="checkSample" name="checkSample">
-                                                    <input id="checkSample" type="checkbox"> 전체
-                                                    <input id="checkSample" type="checkbox"> 보기
-                                                    <input id="checkSample" type="checkbox"> 관리
-                                                </label>                                               
-                                            </td>
+                                            <td>없음</td>
                                         </tr>
                                     </tbody>
                                 </table>
-                                <div class="table-info">
-                                    상담신청, 시연신청, 대리점모집문의, A/S신청, 제휴문의, 대리점모집문의 <br>
-                                    [관리]권한 설정 시 등록하신 이메일로 문의 내용이 전송됩니다.
-                                </div>
                             </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="title">
-                            등록일자
-                        </div>
-                        <div class="info">
-                            2022-01-12
                         </div>
                     </li>
                 </ul>
@@ -242,13 +171,10 @@
             <section id="bottomArea">
                 <div class="btn-wrap">
                     <button type="button" class="common-btn">
-                        삭제
+                        취소
                     </button>
                     <button type="button" class="common-btn">
-                        목록
-                    </button>
-                    <button type="button" class="common-btn">
-                        저장
+                        등록
                     </button>
                 </div>
             </section>
