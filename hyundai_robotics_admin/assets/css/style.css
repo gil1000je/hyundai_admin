@@ -80,11 +80,12 @@ input[type="text"] + button { margin-left:14rem; }
 .table-type01 tr:nth-child(odd) { background:#F5FCF9 } 
 .table-type01 tr:nth-child(even) { background:#fff } 
 .table-type01 th { font-size:16rem; background:#3BB88C; color:#fff; font-weight:400 } 
-.table-type01 td { font-size:14rem; text-align:center; border-right:solid 1px #BBB } 
+.table-type01 td { font-size:14rem; text-align:center;/* border-right:solid 1px #BBB */ } 
 .table-type01 td:first-child, .table-type01 td:last-child { border-right:0 } 
 .table-type01 td div { height:30rem; display:flex; align-items:center; justify-content:center; } 
-.table-type01 td div:first-child { border-bottom:solid 1px #bbb; } 
+/* .table-type01 td div:first-child { border-bottom:solid 1px #bbb; }  */
 .table-type01 td.setting .input-wrap { display:flex; gap:60rem; justify-content:center; } 
+.table-type01 input[type="checkbox"] {margin-left:10rem;}
 
 /* 테이블 타입 2*/
 .table-type02 { width:100%; max-width:800rem; border-radius:3rem; background:#fff; outline:solid 1px #BBB; } 
@@ -113,14 +114,15 @@ input[type="text"] + button { margin-left:14rem; }
 /* TOP AREA 탑영역 */
 #topArea.tab { padding-bottom:12rem } 
 #topArea.tab .title-wrap, #topArea.search .title-wrap { padding-bottom:16rem } 
-#topArea.search .search-wrap { display:flex; justify-content:space-between}
+#topArea.search .search-wrap { display:flex; justify-content:space-between; padding-bottom:12rem }
 #topArea.search .search-wrap .select-wrap { width:120rem; }
 #topArea.search .search-wrap .left {position:relative; display:flex; align-items:flex-end; gap:12rem}
 #topArea.search .search-wrap .left .num {margin-bottom:5rem}
 #topArea.search .search-wrap input[type="text"] {width:380rem;}
 
-#bottomArea { width:100%; max-width:1300rem; margin:0 auto; display:flex; justify-content:flex-end } 
-
+#bottomArea { width:100%; max-width:1300rem; margin:0 auto; margin-bottom:250rem; position:relative; display:flex; align-items:center; margin-top:26rem; padding-top:26rem; } 
+#bottomArea .btn-wrap:last-child {position:absolute; top:50%; right:0; transform:translateY(-50%)}
+#bottomArea #pagination {position:absolute; top:50%; left:50%; transform:translate(-50%, -50%)}
 
 
 
@@ -154,7 +156,6 @@ input[type="text"] + button { margin-left:14rem; }
 .modal-wrap.login-modal{max-width: 500rem;padding: 36rem 70rem;border-radius: 8rem;border: 1px solid #fff;}
 .modal-wrap.login-modal .button-wrap{margin-top: 30rem;position: relative;}
 .modal-wrap.login-modal .button-wrap .alert{left: 50%;transform: translateX(-50%);display: none;}
-
 .modal-info-cont{border: 1px solid #bbb;background: #f4f4f4;border-radius: 5rem;margin-top: 21rem;height: 194rem;position: relative;overflow: hidden;}
 .modal-info-list{width: 95%;height: 90%;position: absolute;top: 50%;right: 5rem;transform: translateY(-50%);overflow-y: auto;}
 .modal-info-list::-webkit-scrollbar {width: 6rem;}
@@ -184,6 +185,3 @@ input[type="text"] + button { margin-left:14rem; }
 .modal-info-table .input-wrap{align-items: center;justify-content: center;}
 .modal-info-table .input-wrap input[type="checkbox"]::after{width: 16rem;height: 16rem;background-repeat: no-repeat;background-size: contain;background-position: center;}
 
-#bottomArea { width:100%; max-width:1300rem; margin:0 auto; position:relative; display:flex; align-items:center; margin-top:26rem; } 
-#bottomArea .btn-wrap:last-child {position:absolute; top:50%; right:0; transform:translateY(-50%)}
-#bottomArea #pagination {position:absolute; top:50%; left:50%; transform:translate(-50%, -50%)}
