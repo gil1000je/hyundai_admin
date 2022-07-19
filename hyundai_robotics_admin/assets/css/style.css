@@ -149,6 +149,7 @@ input[type="text"] + button { margin-left:14rem; }
 .modal-wrap .input-list > div.password-wrap .find-password{font-size: 10rem;margin-top: 6rem;margin-left: auto;text-align: right;}
 .alert{color: #E81953;font-size: 12rem;position: absolute;top: -20rem;font-weight: bold;}
 .modal-wrap .button-wrap{margin-top: 36rem;}
+.modal-wrap .button-wrap .common-btn{width: 100%;}
 
 .modal-wrap.login-modal{max-width: 500rem;padding: 36rem 70rem;border-radius: 8rem;border: 1px solid #fff;}
 .modal-wrap.login-modal .button-wrap{margin-top: 30rem;position: relative;}
