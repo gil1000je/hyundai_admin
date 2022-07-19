@@ -6,6 +6,7 @@ body,#header { min-width:1920rem }
 
 /* 버튼 */
 .common-btn { font-size:16rem; white-space:nowrap; border-radius:3rem; background:#F4F4F4; border:solid 1px #BBB; color:#666; min-height:44rem; padding:0 42rem; display:inline-block; } 
+a.common-btn { display:flex; align-items:center; justify-content:center}
 .common-btn:hover, .common-btn.active { border:solid 1px #3BB88C; background:#3BB88C; color:#fff; } 
 .common-btn:disabled { border:solid 1px #999; background:#ddd; color:#999; cursor:default; } 
 .button-wrap .button-wrap-list { display: flex; align-items: center; justify-content: space-between; } 
@@ -14,20 +15,18 @@ body,#header { min-width:1920rem }
 
 /* 체크박스 및 라디오 버튼 */
 .input-wrap.check label, .input-wrap.radio label { display:flex; align-items:center; line-height:1; gap:8rem; font-size:16rem } 
-input[type="checkbox"] { position:relative; } 
-input[type="checkbox"]::after { content:''; width: 20rem; height: 20rem; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); background:url(/hyundai_robotics_admin/assets/images/common/icon_checkbox_default.svg); } 
+input[type="checkbox"] { position:relative;  width: 20rem !important; height: 20rem !important;} 
+input[type="checkbox"]::after { content:''; width: 20rem !important; height: 20rem !important; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); background:url(/hyundai_robotics_admin/assets/images/common/icon_checkbox_default.svg); } 
 input[type="checkbox"]:checked::after {background:url(/hyundai_robotics_admin/assets/images/common/icon_checkbox_checked.svg);} 
-input[type="radio"] { position:relative; } 
-input[type="radio"]::after { content:''; width: 20rem; height: 20rem; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); background:url(/hyundai_robotics_admin/assets/images/common/icon_radio_default.svg); } 
+input[type="radio"] { position:relative;  width: 20rem !important; height: 20rem !important;} 
+input[type="radio"]::after { content:''; width: 20rem !important; height: 20rem !important; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); background:url(/hyundai_robotics_admin/assets/images/common/icon_radio_default.svg); } 
 input[type="radio"]:checked::after {background:url(/hyundai_robotics_admin/assets/images/common/icon_radio_checked.svg);} 
 
 /* 인풋박스 */
-input[type="text"] { border:solid 1px #BBB; background:#fff; border-radius:3rem; height:44rem; padding:0 14rem; font-size:16rem; margin-top:20rem } 
-input[type="text"]:focus { outline:solid 1.5px #222; border:solid 1px #fff; } 
-input[type="text"]::placeholder { color:#999; font-size:16rem } 
-input[type="text"]:disabled { border:solid 1px #999; background:#ddd; } 
-.input-wrap { display:flex } 
-.login-modal .input-list { flex-direction: column; } 
+input[type="text"], input[type="password"] { border:solid 1px #BBB; background:#fff; border-radius:3rem; height:44rem; padding:0 14rem; font-size:16rem; margin-top:20rem } 
+input[type="text"]:focus, input[type="password"]:focus { outline:solid 1.5px #222; border:solid 1px #fff; } 
+input[type="text"]::placeholder, input[type="password"]::placeholder { color:#999; font-size:16rem } 
+input[type="text"]:disabled, input[type="password"]:disabled { border:solid 1px #999; background:#ddd; } 
 input[type="text"] + button { margin-left:14rem; }
 .input-wrap { display:flex; align-items:flex-end } 
 .login-modal .input-wrap { flex-direction: column; } 
@@ -41,7 +40,7 @@ input[type="text"] + button { margin-left:14rem; }
 .select-wrap .selected-option { font-size:16rem; color:#222; display:flex; align-items:center; height:44rem; padding:0 40rem 0 14rem; border-radius:3rem; background:#fff; border:solid 1px #bbb } 
 .select-wrap .option-list { display:none; width:100%; border-radius:3rem; border:solid 1px #bbb; background:#fff; position:absolute; left:0; top:48rem; padding:8rem 13rem } 
 .select-wrap .option-list li { height:32rem; display:flex; align-items:center; border-radius:3rem; padding:0 13rem; } 
-.select-wrap .option-list li:hover { background:#F4F4F4; } 
+.select-wrap .option-list li:hover { background:#F4F4F4; }
 .select-wrap .option-list li a { font-size:16rem } 
 .select-wrap .selected-option::before { transition:0.3s; content:url(/hyundai_robotics_admin/assets/images/common/icon_select_arr.svg); position:absolute; right:15rem; top:53%; transform:translateY(-50%) } 
 .select-wrap .selected-option.active::before { top:50%; transform:translateY(-50%) rotate(-180deg) } 
@@ -49,7 +48,7 @@ input[type="text"] + button { margin-left:14rem; }
 /* 페이지네이션 */
 #pagination .pagination-inner a { display:flex; align-items:center; justify-content:center; width:32rem; height:32rem; background:#fff; border:solid 1px #eee; border-radius:3rem; font-size:16rem } 
 #pagination .pagination-inner a.active { background:#3BB88C; color:#fff; } 
-#pagination .pagination-inner, #pagination .number-wrap, #pagination .arr-wrap { display:flex; gap:6rem } 
+#pagination .pagination-inner, #pagination .number-wrap, #pagination .arr-wrap { display:flex; gap:6rem }
 
 /* 네비게이션 */
 #navigation { margin-bottom:3rem } 
