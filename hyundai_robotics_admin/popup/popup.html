@@ -14,332 +14,342 @@
     <script src='//cdnjs.cloudflare.com/ajax/libs/jquery-throttle-debounce/1.1/jquery.ba-throttle-debounce.min.js'></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="/hyundai_robotics_admin/assets/js/include.js"></script>
+    <script src="/hyundai_robotics_admin/assets/js/form.js"></script>
 </head>
 <body>
-  <div id="popupWrap" class="">
+  <div id="popupWrap" class="container">
     <!-- CONTAINER 컨테이너 시작 -->
-    <div id="" class="popup-wrap-inner">
-      <div class="popup-cont">
-        <!-- 비밀번호 재설정 팝업 -->
-        <div id="passwordResetModal" class="modal-wrap">
-          <div class="modal-cont">
-            <div class="modal-tit">비밀번호 재설정</div>
-            <div class="modal-info">
-              <p>비밀번호가 재설정되었습니다.</p>
-            </div>
-            <div class="button-wrap">
-              <a href="javascript:void(0)" class="common-btn green">확인</a>
-            </div>
+    <div class="popup-cont">
+      <!-- 비밀번호 재설정 팝업 -->
+      <div id="passwordResetModal" class="modal-wrap">
+        <div class="modal-cont">
+          <div class="modal-tit">비밀번호 재설정</div>
+          <div class="modal-info">
+            <p>비밀번호가 재설정되었습니다.</p>
           </div>
-        </div>
-        <!-- 비밀번호 재설정(메일 발송) 팝업 -->
-        <div id="passwordResetModal" class="modal-wrap">
-          <div class="modal-cont">
-            <div class="modal-tit">비밀번호 재설정</div>
-            <div class="modal-info">
-              <p>입력된 이메일로 비밀번호 재설정 메일이 발송되었습니다.</p>
-            </div>
-            <div class="button-wrap">
-              <a href="javascript:void(0)" class="common-btn green">확인</a>
-            </div>
+          <div class="button-wrap">
+            <button class="common-btn green">확인</button>
           </div>
-        </div>
-        <!-- 비밀번호 재설정 선택 팝업 -->
-        <div id="passwordResetModal" class="modal-wrap">
-          <div class="modal-cont">
-            <div class="modal-tit">비밀번호 재설정</div>
-            <div class="modal-info">
-              <p>
-                비밀번호는 회원정보에 입력된 이메일을 통해<br>
-                재설정하실 수 있습니다.<br>
-                비밀번호를 재설정 하시겠습니까? 
-              </p>
-            </div>
-            <div class="button-wrap">
-              <ul class="button-wrap-list">
-                <li><a href="javascript:void(0)" class="common-btn">취소</a></li>
-                <li><a href="javascript:void(0)" class="common-btn green">변경</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <!-- 관리자 계정 삭제 팝업 -->
-        <div id="passwordResetModal" class="modal-wrap txt-align-left">
-          <div class="modal-cont">
-            <div class="modal-tit">관리자 계정 삭제</div>
-            <div class="modal-info">
-              <p>
-                선택한 3개 관리자 계정이 삭제 됩니다.<br>
-                정말 삭제 하시겠습니까?
-              </p>
-              <div class="modal-info-cont">
-                <ul class="modal-info-list">
-                  <li>1.admin3 - 김기동</li>
-                  <li>2.admin4 - 한동</li>
-                  <li>3.admin6 - 정칠동</li>
-                  <li>1.admin3 - 김기동</li>
-                  <li>2.admin4 - 한동</li>
-                  <li>3.admin6 - 정칠동</li>
-                  <li>1.admin3 - 김기동</li>
-                  <li>2.admin4 - 한동</li>
-                  <li>3.admin6 - 정칠동</li>
-                </ul>
-              </div>
-            </div>
-            <div class="button-wrap">
-              <ul class="button-wrap-list">
-                <li><a href="javascript:void(0)" class="common-btn green">비활성화</a></li>
-                <li><a href="javascript:void(0)" class="common-btn">취소</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <!-- 뉴스 삭제 팝업 -->
-        <div id="passwordResetModal" class="modal-wrap txt-align-left">
-          <div class="modal-cont">
-            <div class="modal-tit">뉴스 삭제</div>
-            <div class="modal-info">
-              <p>
-                선택한 3개 기사를<br>
-                뉴스 리스트에서 삭제하시겠습니까?
-              </p>
-              <div class="modal-info-cont">
-                <ul class="modal-info-list">
-                  <li>1.현대L&S, 국제물류산업대전에서 스마트 물류</li>
-                  <li>2.현대로보틱스, 유럽 최대 통신사와 '서비스로봇</li>
-                  <li>3.현대로보틱스, 로봇 기반 철골 제작 자동 자동</li>
-                </ul>
-              </div>
-            </div>
-            <div class="button-wrap">
-              <ul class="button-wrap-list">
-                <li><a href="javascript:void(0)" class="common-btn green">비활성화</a></li>
-                <li><a href="javascript:void(0)" class="common-btn">취소</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <!-- 대리점 메일 발송 팝업 -->
-        <div id="passwordResetModal" class="modal-wrap">
-          <div class="modal-cont">
-            <div class="modal-tit">대리점 메일 발송</div>
-            <div class="modal-info">
-              <p>선택한 ‘종로점’, ‘인천점’, ‘수원점’ 3개 대리점으로<br> 
-                메일을 발송합니다.</p>
-            </div>
-            <div class="button-wrap">
-              <ul class="button-wrap-list">
-                <li><a href="javascript:void(0)" class="common-btn">취소</a></li>
-                <li><a href="javascript:void(0)" class="common-btn green">발송</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <!-- 대리점 메일 발송 완료 팝업 -->
-        <div id="passwordResetModal" class="modal-wrap">
-          <div class="modal-cont">
-            <div class="modal-tit">대리점 메일 발송</div>
-            <div class="modal-info">
-              <p>메일을 발송하였습니다.</p>
-            </div>
-            <div class="button-wrap">
-              <a href="javascript:void(0)" class="common-btn green">확인</a>
-            </div>
-          </div>
-        </div>
-        <!-- 대리점 메일 발송(선택) 팝업 -->
-        <div id="passwordResetModal" class="modal-wrap agency-modal txt-align-left">
-          <div class="modal-cont">
-            <div class="modal-tit">대리점 메일 발송</div>
-            <div class="modal-info">
-              <div class="modal-search">
-                <input type="text" placeholder="대리점 검색">
-                <input type="button" value="검색">
-              </div>
-              <div class="modal-info-cont modal-info-table">
-                <ul class="modal-info-thead">
-                  <li class="checkbox">
-                    <div class="input-wrap check">
-                      <label for="allCheck" name="checkSample">
-                        <input id="allCheck" type="checkbox">
-                      </label>
-                    </div>
-                  </li>
-                  <li>대리점명</li>
-                  <li>이메일</li>
-                </ul>
-                <div class="modal-table">
-                  <table>
-                    <caption>대리점 메일 발송 테이블</caption>
-                    <colgroup>
-                      <col span="" width="15%">
-                      <col span="" width="20%">
-                      <col span="" width="*">
-                    </colgroup>
-                    <tbody>
-                      <tr>
-                        <td>
-                          <div class="input-wrap check">
-                            <label for="check01" name="checkSample">
-                              <input id="check01" type="checkbox">
-                            </label>
-                          </div>
-                        </td>
-                        <td>종로점</td>
-                        <td>jongro@HYUNDAIrobotics.com</td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <div class="input-wrap check">
-                            <label for="check02" name="checkSample">
-                              <input id="check02" type="checkbox">
-                            </label>
-                          </div>
-                        </td>
-                        <td>인천점</td>
-                        <td>Incehon@HYUNDAIrobotics.com</td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <div class="input-wrap check">
-                            <label for="check03" name="checkSample">
-                              <input id="check03" type="checkbox">
-                            </label>
-                          </div>
-                        </td>
-                        <td>수원점</td>
-                        <td>suwon@HYUNDAIrobotics.com</td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <div class="input-wrap check">
-                            <label for="check04" name="checkSample">
-                              <input id="check04" type="checkbox">
-                            </label>
-                          </div>
-                        </td>
-                        <td>마산점</td>
-                        <td>masan@HYUNDAIrobotics.com</td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <div class="input-wrap check">
-                            <label for="check05" name="checkSample">
-                              <input id="check05" type="checkbox">
-                            </label>
-                          </div>
-                        </td>
-                        <td>부산점</td>
-                        <td>busan@HYUNDAIrobotics.com</td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <div class="input-wrap check">
-                            <label for="check06" name="checkSample">
-                              <input id="check06" type="checkbox">
-                            </label>
-                          </div>
-                        </td>
-                        <td>창원점</td>
-                        <td>changwon@HYUNDAIrobotics.com</td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <div class="input-wrap check">
-                            <label for="check08" name="checkSample">
-                              <input id="check08" type="checkbox">
-                            </label>
-                          </div>
-                        </td>
-                        <td>수원점</td>
-                        <td>suwon@HYUNDAIrobotics.com</td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <div class="input-wrap check">
-                            <label for="check09" name="checkSample">
-                              <input id="check09" type="checkbox">
-                            </label>
-                          </div>
-                        </td>
-                        <td>마산점</td>
-                        <td>masan@HYUNDAIrobotics.com</td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <div class="input-wrap check">
-                            <label for="check10" name="checkSample">
-                              <input id="check10" type="checkbox">
-                            </label>
-                          </div>
-                        </td>
-                        <td>부산점</td>
-                        <td>busan@HYUNDAIrobotics.com</td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <div class="input-wrap check">
-                            <label for="check11" name="checkSample">
-                              <input id="check11" type="checkbox">
-                            </label>
-                          </div>
-                        </td>
-                        <td>창원점</td>
-                        <td>changwon@HYUNDAIrobotics.com</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-            </div>
-            <div class="button-wrap">
-              <ul class="button-wrap-list">
-                <li><a href="javascript:void(0)" class="common-btn">취소</a></li>
-                <li><a href="javascript:void(0)" class="common-btn green">변경</a></li>
-              </ul>
-            </div>
-          </div>
-          <a href="javascript:void(0)" class="modal-closed"><img src="/hyundai_robotics_admin/assets/images/common/modal_closed_icon.png" alt="팝업창 닫기 버튼"></a>
-        </div>
-        <!-- 대리점 메일 발송(선택) test 팝업 -->
-        <div id="passwordResetModal" class="modal-wrap agency-modal txt-align-left">
-          <div class="modal-cont">
-            <div class="modal-tit">대리점 메일 발송</div>
-            <div class="modal-info">
-              <div class="modal-search">
-                <input type="text" placeholder="대리점 검색">
-                <input type="button" value="검색">
-              </div>
-              <div class="modal-info-cont modal-info-table">
-                <ul class="modal-info-thead">
-                  <li class="checkbox">
-                    <div class="input-wrap check">
-                      <label for="allCheck" name="checkSample">
-                        <input id="allCheck" type="checkbox">
-                      </label>
-                    </div>
-                  </li>
-                  <li>대리점명</li>
-                  <li>이메일</li>
-                </ul>
-                <div class="modal-table">
-                  <div class="modal-table-noresult">
-                    <img src="/hyundai_robotics_admin/assets/images/common/noresult_icon.png" alt="검색결과없음" class="noresult-icon">
-                    <p>‘2023’에 대한 결과가 없습니다</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="button-wrap">
-              <ul class="button-wrap-list">
-                <li><a href="javascript:void(0)" class="common-btn">취소</a></li>
-                <li><a href="javascript:void(0)" class="common-btn green">변경</a></li>
-              </ul>
-            </div>
-          </div>
-          <a href="javascript:void(0)" class="modal-closed"><img src="/hyundai_robotics_admin/assets/images/common/modal_closed_icon.png" alt="팝업창 닫기 버튼"></a>
         </div>
       </div>
+      <!-- 비밀번호 재설정(메일 발송) 팝업 -->
+      <div id="passwordResetModal" class="modal-wrap">
+        <div class="modal-cont">
+          <div class="modal-tit">비밀번호 재설정</div>
+          <div class="modal-info">
+            <p>입력된 이메일로 비밀번호 재설정 메일이 발송되었습니다.</p>
+          </div>
+          <div class="button-wrap">
+            <button class="common-btn green">확인</button>
+          </div>
+        </div>
+      </div>
+      <!-- 비밀번호 재설정 선택 팝업 -->
+      <div id="passwordResetModal" class="modal-wrap">
+        <div class="modal-cont">
+          <div class="modal-tit">비밀번호 재설정</div>
+          <div class="modal-info">
+            <p>
+              비밀번호는 회원정보에 입력된 이메일을 통해<br>
+              재설정하실 수 있습니다.<br>
+              비밀번호를 재설정 하시겠습니까? 
+            </p>
+          </div>
+          <div class="button-wrap">
+            <ul class="button-wrap-list">
+              <li><button class="common-btn">취소</button></li>
+              <li><button class="common-btn green">변경</button></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- 관리자 계정 삭제 팝업 -->
+      <div id="passwordResetModal" class="modal-wrap txt-align-left">
+        <div class="modal-cont">
+          <div class="modal-tit">관리자 계정 삭제</div>
+          <div class="modal-info">
+            <p>
+              선택한 3개 관리자 계정이 삭제 됩니다.<br>
+              정말 삭제 하시겠습니까?
+            </p>
+            <div class="modal-info-cont">
+              <ul class="modal-info-list">
+                <li>1.admin3 - 김기동</li>
+                <li>2.admin4 - 한동</li>
+                <li>3.admin6 - 정칠동</li>
+                <li>1.admin3 - 김기동</li>
+                <li>2.admin4 - 한동</li>
+                <li>3.admin6 - 정칠동</li>
+                <li>1.admin3 - 김기동</li>
+                <li>2.admin4 - 한동</li>
+                <li>3.admin6 - 정칠동</li>
+              </ul>
+            </div>
+          </div>
+          <div class="button-wrap">
+            <ul class="button-wrap-list">
+              <li><button class="common-btn green">비활성화</button></li>
+              <li><button class="common-btn">취소</button></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- 뉴스 삭제 팝업 -->
+      <div id="passwordResetModal" class="modal-wrap txt-align-left">
+        <div class="modal-cont">
+          <div class="modal-tit">뉴스 삭제</div>
+          <div class="modal-info">
+            <p>
+              선택한 3개 기사를<br>
+              뉴스 리스트에서 삭제하시겠습니까?
+            </p>
+            <div class="modal-info-cont">
+              <ul class="modal-info-list">
+                <li>1.현대L&S, 국제물류산업대전에서 스마트 물류</li>
+                <li>2.현대로보틱스, 유럽 최대 통신사와 '서비스로봇</li>
+                <li>3.현대로보틱스, 로봇 기반 철골 제작 자동 자동</li>
+              </ul>
+            </div>
+          </div>
+          <div class="button-wrap">
+            <ul class="button-wrap-list">
+              <li><button class="common-btn green">비활성화</button></li>
+              <li><button class="common-btn">취소</button></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- 대리점 메일 발송 팝업 -->
+      <div id="passwordResetModal" class="modal-wrap">
+        <div class="modal-cont">
+          <div class="modal-tit">대리점 메일 발송</div>
+          <div class="modal-info">
+            <p>선택한 ‘종로점’, ‘인천점’, ‘수원점’ 3개 대리점으로<br> 
+              메일을 발송합니다.</p>
+          </div>
+          <div class="button-wrap">
+            <ul class="button-wrap-list">
+              <li><button class="common-btn">취소</button></li>
+              <li><button class="common-btn green">발송</button></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- 대리점 메일 발송 완료 팝업 -->
+      <div id="passwordResetModal" class="modal-wrap">
+        <div class="modal-cont">
+          <div class="modal-tit">대리점 메일 발송</div>
+          <div class="modal-info">
+            <p>메일을 발송하였습니다.</p>
+          </div>
+          <div class="button-wrap">
+            <button class="common-btn green">확인</button>
+          </div>
+        </div>
+      </div>
+      <!-- 대리점 메일 발송(선택) 팝업 -->
+      <div id="passwordResetModal" class="modal-wrap agency-modal txt-align-left">
+        <div class="modal-cont">
+          <div class="modal-tit">대리점 메일 발송</div>
+          <div class="modal-info">
+            <div class="modal-search">
+              <input type="text" placeholder="대리점 검색">
+              <input type="button" value="검색">
+            </div>
+            <div class="modal-info-cont modal-info-table">
+              <ul class="modal-info-thead">
+                <li class="checkbox">
+                  <div class="input-wrap check">
+                    <label for="allCheck" name="checkSample">
+                      <input id="allCheck" type="checkbox">
+                    </label>
+                  </div>
+                </li>
+                <li>대리점명</li>
+                <li>이메일</li>
+              </ul>
+              <div class="modal-table">
+                <table>
+                  <caption>대리점 메일 발송 테이블</caption>
+                  <colgroup>
+                    <col span="" width="15%">
+                    <col span="" width="20%">
+                    <col span="" width="*">
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <div class="input-wrap check">
+                          <label for="check01" name="checkSample">
+                            <input id="check01" type="checkbox">
+                          </label>
+                        </div>
+                      </td>
+                      <td>종로점</td>
+                      <td>jongro@HYUNDAIrobotics.com</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="input-wrap check">
+                          <label for="check02" name="checkSample">
+                            <input id="check02" type="checkbox">
+                          </label>
+                        </div>
+                      </td>
+                      <td>인천점</td>
+                      <td>Incehon@HYUNDAIrobotics.com</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="input-wrap check">
+                          <label for="check03" name="checkSample">
+                            <input id="check03" type="checkbox">
+                          </label>
+                        </div>
+                      </td>
+                      <td>수원점</td>
+                      <td>suwon@HYUNDAIrobotics.com</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="input-wrap check">
+                          <label for="check04" name="checkSample">
+                            <input id="check04" type="checkbox">
+                          </label>
+                        </div>
+                      </td>
+                      <td>마산점</td>
+                      <td>masan@HYUNDAIrobotics.com</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="input-wrap check">
+                          <label for="check05" name="checkSample">
+                            <input id="check05" type="checkbox">
+                          </label>
+                        </div>
+                      </td>
+                      <td>부산점</td>
+                      <td>busan@HYUNDAIrobotics.com</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="input-wrap check">
+                          <label for="check06" name="checkSample">
+                            <input id="check06" type="checkbox">
+                          </label>
+                        </div>
+                      </td>
+                      <td>창원점</td>
+                      <td>changwon@HYUNDAIrobotics.com</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="input-wrap check">
+                          <label for="check08" name="checkSample">
+                            <input id="check08" type="checkbox">
+                          </label>
+                        </div>
+                      </td>
+                      <td>수원점</td>
+                      <td>suwon@HYUNDAIrobotics.com</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="input-wrap check">
+                          <label for="check09" name="checkSample">
+                            <input id="check09" type="checkbox">
+                          </label>
+                        </div>
+                      </td>
+                      <td>마산점</td>
+                      <td>masan@HYUNDAIrobotics.com</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="input-wrap check">
+                          <label for="check10" name="checkSample">
+                            <input id="check10" type="checkbox">
+                          </label>
+                        </div>
+                      </td>
+                      <td>부산점</td>
+                      <td>busan@HYUNDAIrobotics.com</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="input-wrap check">
+                          <label for="check11" name="checkSample">
+                            <input id="check11" type="checkbox">
+                          </label>
+                        </div>
+                      </td>
+                      <td>창원점</td>
+                      <td>changwon@HYUNDAIrobotics.com</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="button-wrap">
+            <ul class="button-wrap-list">
+              <li><button class="common-btn">취소</button></li>
+              <li><button class="common-btn green">변경</button></li>
+            </ul>
+          </div>
+        </div>
+        <a href="javascript:void(0)" class="modal-closed"><img src="/hyundai_robotics_admin/assets/images/common/modal_closed_icon.png" alt="팝업창 닫기 버튼"></a>
+      </div>
+      <!-- 대리점 메일 발송(선택) 팝업 -->
+      <div id="passwordResetModal" class="modal-wrap agency-modal txt-align-left">
+        <div class="modal-cont">
+          <div class="modal-tit">대리점 메일 발송</div>
+          <div class="modal-info">
+            <div class="modal-search">
+              <input type="text" placeholder="대리점 검색">
+              <input type="button" value="검색">
+            </div>
+            <div class="modal-info-cont modal-info-table">
+              <ul class="modal-info-thead">
+                <li class="checkbox">
+                  <div class="input-wrap check">
+                    <label for="allCheck" name="checkSample">
+                      <input id="allCheck" type="checkbox">
+                    </label>
+                  </div>
+                </li>
+                <li>대리점명</li>
+                <li>이메일</li>
+              </ul>
+              <div class="modal-table">
+                <div class="modal-table-noresult">
+                  <img src="/hyundai_robotics_admin/assets/images/common/noresult_icon.png" alt="검색결과없음" class="noresult-icon">
+                  <p>‘2023’에 대한 결과가 없습니다</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="button-wrap">
+            <ul class="button-wrap-list">
+              <li><button class="common-btn">취소</button></li>
+              <li><button class="common-btn green">변경</button></li>
+            </ul>
+          </div>
+        </div>
+        <a href="javascript:void(0)" class="modal-closed"><img src="/hyundai_robotics_admin/assets/images/common/modal_closed_icon.png" alt="팝업창 닫기 버튼"></a>
+      </div>
+    </div>
+    <div class="popup-btn-wrap">
+      <a href="javascript:void(0)">01. 비밀번호 재설정 팝업</a>
+      <a href="javascript:void(0)">02. 비밀번호 재설정(메일 발송) 팝업</a>
+      <a href="javascript:void(0)">03. 비밀번호 재설정 선택 팝업</a>
+      <a href="javascript:void(0)">04. 관리자 계정 삭제 팝업</a>
+      <a href="javascript:void(0)">05. 뉴스 삭제 팝업</a>
+      <a href="javascript:void(0)">06. 대리점 메일 발송 팝업</a>
+      <a href="javascript:void(0)">07. 대리점 메일 발송 완료 팝업</a>
+      <a href="javascript:void(0)">08. 대리점 메일 발송(선택) 팝업</a>
+      <a href="javascript:void(0)">09. 대리점 메일 발송 검색결과 없음 팝업</a>
     </div>
     <!-- CONTAINER 컨테이너 끝 -->
 </div>
