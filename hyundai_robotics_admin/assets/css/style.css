@@ -1,0 +1,90 @@
+/* common */
+.wrap {width:100%; max-width:1300rem; margin:0 auto; margin-top:107rem; overflow:auto; font-size:16rem}
+#container {overflow: visible; margin: 0 auto; }
+#layout section {width:1300rem; margin:0 auto;}
+
+/* 버튼 */
+.common-btn { font-size:16rem; color:#222; white-space:nowrap; border-radius:3rem; background:#F4F4F4; border:solid 1px #BBB; color:#BBB; min-height:44rem; padding:0 42rem; }
+.common-btn:hover, .common-btn.active { border:solid 1px #3BB88C; background:#3BB88C; color:#fff; }
+.common-btn:disabled { border:solid 1px #999; background:#ddd; color:#999; cursor:default; }
+
+/* 체크박스 및 라디오 버튼 */
+.input-wrap.check label, .input-wrap.radio label { display:flex; align-items:center; line-height:1; gap:8rem; font-size:16rem }
+
+/* 인풋박스 */
+input[type="text"] {border:solid 1px #BBB; background:#fff; border-radius:3rem; height:44rem; padding:0 14rem; font-size:16rem; margin-top:20rem}
+input[type="text"]:focus { outline:solid 1.5px #222; border:solid 1px #fff;}
+input[type="text"]::placeholder {color:#999; font-size:16rem}
+input[type="text"]:disabled {border:solid 1px #999; background:#ddd;}
+.input-wrap {display:flex}
+.input-wrap.red {position:relative; display:inline-block;}
+.input-wrap.red input[type="text"] {outline:solid 1.5px #E81953; border:solid 1px #fff;}
+.input-wrap.red .alert {position:absolute; right:0; top:2rem; font-size:12rem; font-weight:700; color:#e81953}
+
+/* 셀렉트 박스 (드롭박스) */
+.select-wrap {  width:100%; max-width:160rem; position:relative; }
+.select-wrap .selected-option { font-size:16rem; color:#222; display:flex; align-items:center; height:44rem; padding:0 40rem 0 14rem; border-radius:3rem; background:#fff; border:solid 1px #bbb}
+.select-wrap .option-list { display:none; width:100%; border-radius:3rem; border:solid 1px #bbb; background:#fff; position:absolute; left:0; top:48rem; padding:8rem 13rem}
+.select-wrap .option-list li {height:32rem; display:flex; align-items:center; border-radius:3rem; padding:0 13rem;}
+.select-wrap .option-list li:hover { background:#F4F4F4; }
+.select-wrap .option-list li a { font-size:16rem }
+
+/* 페이지네이션 */
+#pagination .pagination-inner a { display:flex; align-items:center; justify-content:center; width:32rem; height:32rem; background:#fff; border:solid 1px #eee; border-radius:3rem; font-size:16rem }
+#pagination .pagination-inner a.active { background:#3BB88C; color:#fff; }
+#pagination .pagination-inner, #pagination .number-wrap, #pagination .arr-wrap  { display:flex; gap:6rem }
+
+/* 네비게이션 */
+#navigation > ul { display:flex; gap:20rem; }
+#navigation > ul a { font-size:14rem; color:#999 }
+
+/* 탭 */
+#tab {width:100%; max-width:1300rem; margin:0 auto;}
+#tab .tab-list {display:flex; flex-wrap:wrap; gap:8rem;}
+#tab .tab-list li a { font-size:16rem; display:flex; align-items:center; justify-content:center; min-height:44rem; padding:0 42rem; border:solid 1px #bbb; color:#999; background:#F5FCF9; border-radius:3rem; white-space:nowrap;}
+#tab .tab-list li a.active { background:#3BB88C; color:#fff; border:solid 1px #3BB88C; }
+
+/* 타이틀 영역 */
+.title-wrap { width:1300rem; margin:0 auto; padding:33rem 0 70rem;}
+.title-wrap h2.main-tit { font-size:30rem; color:#222; font-weight:700; line-height:44rem; letter-spacing:-0.018em; }
+
+/* 테이블 타입 1 */
+.table-alert {display:flex; align-items:center; height:52rem; gap:8rem}
+.table-alert strong {font-size:18rem; font-weight:500;}
+.table-type01 {width:100%; max-width:1300rem; border-radius:3rem; outline:solid 1px #BBB;}
+.table-type01 .num {width:100rem;}
+.table-type01 tr {height:30rem; border-bottom:solid 1px #BBB}
+.table-type01 tr:last-child {border-bottom:0}
+.table-type01 tr:nth-child(odd) {background:#F5FCF9}
+.table-type01 tr:nth-child(even) {background:#fff}
+.table-type01 th { font-size:16rem; background:#3BB88C; color:#fff; font-weight:400}
+.table-type01 td { font-size:14rem; text-align:center; border-right:solid 1px #BBB}
+.table-type01 td:first-child, .table-type01 td:last-child {border-right:0}
+.table-type01 td div {height:30rem; display:flex; align-items:center; justify-content:center;}
+.table-type01 td div:first-child {border-bottom:solid 1px #bbb;}
+.table-type01 td.setting .input-wrap { display:flex; gap:60rem; justify-content:center; }
+
+/* 테이블 타입 2*/
+.table-type02 { width:100%; max-width:800rem; border-radius:3rem; outline:solid 1px #BBB; }
+.table-type02 .col:first-child {width:30%}
+.table-type02 .col:last-child {width:70%}
+.table-type02 thead { background:#f4f4f4; }
+.table-type02 tr {height:34rem; border-bottom:solid 1px #bbb; }
+.table-type02 tbody tr:last-child {border-bottom:0}
+.table-type02 th {font-weight:500; color:#222;}
+.table-type02 th, .table-type02 td {border-right:solid 1px #bbb; padding:7rem 14rem; font-size:15rem; }
+.table-type02 th:last-child, .table-type02 td:last-child {border-right:0}
+
+/* 인포 리스트 */
+.info-list-type01 { display:flex; gap:20rem; flex-direction:column; }
+.info-list-type01 li {display:flex; min-height:44rem; align-items:center; }
+.info-list-type01 .title {width:160rem; font-size:18rem; font-weight:500; word-break:nowrap}
+.info-list-type01 .info {width:100%}
+.info-list-type01 li.table-li {align-items:flex-start; }
+.info-list-type01 input {margin:0; width:390rem;}
+.info-list-type01 input + input {margin-left:16rem}
+.info-list-type01 li .input-wrap.red .alert {top:-17rem}
+.btn-wrap { margin-top:26rem; display:flex; gap:14rem; }
+
+/* 레이아웃 LAY OUT */
+#bottomArea { width:100%; max-width:1300rem; margin:0 auto; display:flex; justify-content:flex-end}
