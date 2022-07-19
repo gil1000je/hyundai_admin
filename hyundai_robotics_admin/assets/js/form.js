@@ -98,6 +98,14 @@ $(document).ready(function() {
 
     });
 
+    //팝업
+    $('.popup-btn-wrap > a').on('click', function(){
+        var index = $(this).index();
+        $('.popup-cont').addClass('active');
+
+        $('.modal-wrap').eq(index).addClass('active').siblings().removeClass('active');
+    });
+
 });
 
 
