@@ -78,6 +78,9 @@ input[type="text"] + button, input[type="text"] + button + button { margin-left:
 /* 테이블 공통 */
 .table-wrap .all {margin-bottom:10rem;}
 .table-wrap .table-info { margin-top:12rem; color:#999; line-height:24rem;}
+.table-wrap.empty { position:relative;}
+.table-wrap.empty .empty-info { position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); text-align:center}
+.table-wrap.empty .empty-info p { margin-top:55rem; font-size:20rem; color:#7B7B7B;}
 .table-alert { display:flex; align-items:center; height:52rem; gap:8rem } 
 .table-alert strong { font-size:18rem; font-weight:500; } 
 
@@ -110,10 +113,12 @@ input[type="text"] + button, input[type="text"] + button + button { margin-left:
 /* 레이아웃 LAY OUT */
 
 /* TOP AREA 탑영역 */
+#topArea .alert { display:inline-block; font-size:16rem; color:#999; margin-top:3rem; }
 #topArea.tab { padding-bottom:12rem } 
 #topArea.tab .title-wrap, #topArea.search .title-wrap { padding-bottom:16rem } 
 #topArea.search .search-wrap { display:flex; justify-content:space-between; padding-bottom:12rem }
 #topArea.search .search-wrap .select-wrap { width:120rem; }
+#topArea.search .search-wrap .select-wrap.wd160 { width:160rem; }
 #topArea.search .search-wrap .left {position:relative; display:flex; align-items:flex-end; gap:12rem}
 #topArea.search .search-wrap .left .num {margin-bottom:5rem}
 #topArea.search .search-wrap input[type="text"] {width:380rem;}

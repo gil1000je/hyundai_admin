@@ -1,5 +1,11 @@
 $(document).ready(function() {
 
+    // table-wrap에 empty 부여하면 TD 내용 제거
+    function tableEmpty() {
+        $('.table-wrap.empty').find('td').html("")
+    }
+    tableEmpty()
+
     // 텍스트에어리어 태그에 작성가능한 텍스트 수를 실시간으로 입력해주는 스크립트
     function textAreaTextLength () {
 
@@ -26,8 +32,8 @@ $(document).ready(function() {
     }
     radioCheck()
 
-    // 체크박스 전체선택 스크립트
-    function checkboxAll() {
+    //전체선택 스크립트
+    function checkAll() {
 
         $('#checkAll').on("change",function(){
             if($(this).prop('checked')){
@@ -67,8 +73,30 @@ $(document).ready(function() {
 
         });
 
+        $('th input[type="checkbox"]').on('change', function(){
+
+            if ($(this).is(':checked') === true) {
+                $(this).parents('.table-wrap').find('td input[type="checkbox"]').prop("checked", true);
+            } else {
+                $(this).parents('.table-wrap').find('td input[type="checkbox"]').prop("checked", false);
+            }
+            
+        })
+        $('td input[type="checkbox]').on('change',function(){
+
+            if ($(this).is(':checked') === true) {
+
+                $(this).parents('.table-wrap').find('th input[type="checkbox"]').prop("checked", true);
+                
+            } else {
+    
+                $(this).parents('.table-wrap').find('th input[type="checkbox"]').prop("checked", false);
+            }
+
+        })
+
     }
-    checkboxAll()
+    checkAll()
 
     // 인풋 넘버 타입 스크립트
     function maxLengthCheck(){
@@ -132,6 +160,10 @@ $(document).ready(function() {
 
     }
     ShowPopup ()
+
+    $(function(){
+        $('.datepicker').datepicker();
+    })
 
 });
 
