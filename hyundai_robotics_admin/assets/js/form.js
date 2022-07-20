@@ -160,7 +160,13 @@ $(document).ready(function() {
 
     }
     ShowPopup ()
-
+      
+    $.datepicker.setDefaults({
+        dateFormat: 'yy-mm-dd',
+        dayNames: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+        dayNamesShort: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+        dayNamesMin: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+    });
     $(function(){
         $('.datepicker').datepicker();
     })

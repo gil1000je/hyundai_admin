@@ -4,18 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>콘텐츠 관리 > 메인관리 > 제품 활용 사례 등록</title>
+    <title>콘텐츠 관리 > 새소식 > 이벤트 등록</title>
     <link rel="stylesheet" type="text/css" href="/hyundai_robotics_admin/assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="/hyundai_robotics_admin/assets/css/common.css">
     <link rel="stylesheet" type="text/css" href="/hyundai_robotics_admin/assets/css/form.css">
     <link rel="stylesheet" type="text/css" href="/hyundai_robotics_admin/assets/css/style.css">
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <script src='//cdnjs.cloudflare.com/ajax/libs/jquery-throttle-debounce/1.1/jquery.ba-throttle-debounce.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/cupertino/jquery-ui.min.css'></script>
     <script type="text/javascript" src="/hyundai_robotics_admin/assets/js/include.js"></script>
-    <script src="/hyundai_robotics_admin/assets/js/form.js"></script>
+    <script type="text/javascript" src="/hyundai_robotics_admin/assets/js/form.js"></script>
 </head>
 <body>
-    <div id="caseRegistration" class="wrap">
+    <div id="evenTRegistration" class="wrap">
         <!-- HEADER 헤더 시작 -->
         <header id="header" class="bg"></header>
         <!-- HEADER 헤더 끝 -->
@@ -31,100 +33,115 @@
                                 <a href="javascript:void(0)" title="클릭시 해당 뎁스로 이동">콘텐츠 관리</a>
                             </li>
                             <li class="depth02">
-                                <a href="javascript:void(0)" title="클릭시 해당 뎁스로 이동">메인 관리</a>
+                                <a href="javascript:void(0)" title="클릭시 해당 뎁스로 이동">새소식</a>
                             </li>
                             <li class="depth03">
-                                <a href="javascript:void(0)" title="클릭시 해당 뎁스로 이동">제품 활용 사례 등록</a>
+                                <a href="javascript:void(0)" title="클릭시 해당 뎁스로 이동">이벤트 등록</a>
                             </li>
                         </ul>
                     </nav>
-                    <h2 class="main-tit">제품 활용 사례 등록</h2>
+                    <h2 class="main-tit">이벤트 등록</h2>
                 </div>
                 <!-- 타이틀 영역 끝 -->
             </section>
             <!-- TOP AREA 탑 영역 끝 -->
             <!-- mid AREA 중간 영역 시작 -->
             <section id="midArea">
-                <ul class="info-list-type02">
+              <ul class="info-list-type01 dividing-line">
+                <li>
+                  <div class="title">
+                    제목
+                  </div>
+                  <div class="info">
+                      <div class="input-wrap">
+                        <lable for="input01" class="hide">제목입력</lable>
+                        <input id="input01" type="text" placeholder="제목입력" class="main-title">
+                      </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="title">
+                    등록일
+                  </div>
+                  <div class="info">
+                    <div class="input-wrap date">
+                      <input type="text" class="datepicker" placeholder="등록일 선택">
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <ul class="info-list-type02">
                   <li>
                     <div class="title">
-                      설명 1
+                      서브타이틀
                     </div>
                     <div class="info">
                       <div class="input-wrap">
                         <label for="inputSample">
-                          <input id="inputSample" type="text" placeholder="기본">
+                          <input id="inputSample" type="text" placeholder="서브타이틀 입력">
                         </label>
                       </div>
                     </div>
                   </li>
                   <li>
                     <div class="title">
-                      설명 2
+                      본문
                     </div>
                     <div class="info">
-                      <div class="input-wrap">
-                        <label for="inputSample">
-                          <input id="inputSample" type="text" placeholder="기본">
-                        </label>
-                      </div>
+                      <textarea cols="" rows=""></textarea>
                     </div>
-                  </li>
-                  <li class="info-item-col">    
-                        <div class="title">
-                          파일첨부
-                        </div>
-                        <div class="info">
-                          <div class="title">PC</div>
-                          <div>
-                            <div class="input-wrap file">
-                              <input class="hide" type="file" id="file">
-                              <input type="text" placeholder="선택한 파일 없음">
-                              <label class="common-btn" for="file">파일선택</label>
-                              <a href="javascript:void(0)" class="common-btn preview-btn">미리보기</a>
-                            </div>
-                            <span class="alert">이미지 사이즈 1920*900px</span>
-                          </div>
-                        </div>
-                        <div class="info">
-                          <div class="title">Mobile</div>
-                          <div>
-                            <div class="input-wrap file">
-                              <input class="hide" type="file" id="file">
-                              <input type="text" placeholder="선택한 파일 없음">
-                              <label class="common-btn" for="file">파일선택</label>
-                              <a href="javascript:void(0)" class="common-btn preview-btn">미리보기</a>
-                            </div>
-                            <span class="alert">이미지 사이즈 1920*900px</span>
-                          </div>
-                        </div>
                   </li>
                   <li>
                     <div class="title">
-                      링크
+                      썸네일 전부
                     </div>
                     <div class="info">
-                      <div class="input-wrap">
-                        <label for="inputSample">
-                          <input id="inputSample" type="text" placeholder="http://링크값">
-                        </label>
+                      <div class="input-wrap file">
+                        <input class="hide" type="file" id="file">
+                        <input type="text" placeholder="Thumbnail.jpg">
+                        <label class="common-btn" for="file">이미지 첨부</label>
                       </div>
                     </div>
                   </li>
                   <li>
-                    <div class="title">노출설정</div>
+                    <div class="title">
+                      첨부 파일
+                    </div>
+                    <div class="info">
+                      <div class="input-wrap file">
+                        <input class="hide" type="file" id="file">
+                        <input type="text" placeholder="Attachment.pdf">
+                        <label class="common-btn" for="file">파일 첨부</label>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="title">언어 설정</div>
                     <div class="info">
                       <div class="input-wrap radio">
                         <label for="radioSample01" name="radioSample">
-                          <input id="radioSample01" type="radio"> 노출
+                          <input id="radioSample01" type="radio"> 국문
                         </label>
                         <label for="radioSample02" name="radioSample">
-                          <input id="radioSample02 " type="radio"> 미노출
+                          <input id="radioSample02 " type="radio"> 영문
                         </label>
                       </div>
                     </div>
+                </li>
+                  <li>
+                      <div class="title">노출 설정</div>
+                      <div class="info">
+                        <div class="input-wrap radio">
+                          <label for="radioSample03" name="radioSample">
+                            <input id="radioSample03" type="radio"> 노출
+                          </label>
+                          <label for="radioSample04" name="radioSample">
+                            <input id="radioSample04 " type="radio"> 미노출
+                          </label>
+                        </div>
+                      </div>
                   </li>
-                </ul>
+              </ul>
             </section>
             <!-- mid AREA 중간 영역 끝 -->
             <!-- BOTTOM AREA 바텀 영역 시작 -->

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>콘텐츠 관리 > FAQ > FAQ 등록</title>
+    <link rel="stylesheet" type="text/css" href="/hyundai_robotics_admin/assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="/hyundai_robotics_admin/assets/css/common.css">
+    <link rel="stylesheet" type="text/css" href="/hyundai_robotics_admin/assets/css/form.css">
+    <link rel="stylesheet" type="text/css" href="/hyundai_robotics_admin/assets/css/style.css">
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src='//cdnjs.cloudflare.com/ajax/libs/jquery-throttle-debounce/1.1/jquery.ba-throttle-debounce.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/cupertino/jquery-ui.min.css'></script>
+    <script type="text/javascript" src="/hyundai_robotics_admin/assets/js/include.js"></script>
+    <script type="text/javascript" src="/hyundai_robotics_admin/assets/js/form.js"></script>
+</head>
+<body>
+    <div id="faqRegistration" class="wrap">
+        <!-- HEADER 헤더 시작 -->
+        <header id="header" class="bg"></header>
+        <!-- HEADER 헤더 끝 -->
+        <!-- 컨테이너 시작 -->
+        <div id="container">
+            <!-- TOP AREA 탑 영역 시작 -->
+            <section id="topArea">
+                <!-- 타이틀 영역 시작 -->
+                <div class="title-wrap">
+                    <nav id="navigation">
+                        <ul>
+                            <li class="depth01">
+                                <a href="javascript:void(0)" title="클릭시 해당 뎁스로 이동">콘텐츠 관리</a>
+                            </li>
+                            <li class="depth02">
+                                <a href="javascript:void(0)" title="클릭시 해당 뎁스로 이동">FAQ</a>
+                            </li>
+                            <li class="depth03">
+                                <a href="javascript:void(0)" title="클릭시 해당 뎁스로 이동">FAQ등록</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <h2 class="main-tit">FAQ 등록</h2>
+                </div>
+                <!-- 타이틀 영역 끝 -->
+            </section>
+            <!-- TOP AREA 탑 영역 끝 -->
+            <!-- mid AREA 중간 영역 시작 -->
+            <section id="midArea">
+              <ul class="info-list-type02">
+                <li>
+                  <div class="title">
+                    문의 유형
+                  </div>
+                  <div class="info">
+                    <div class="input-wrap radio">
+                      <label for="radioSample01" name="radioSample01">
+                        <input id="radioSample01" type="radio"> 제품 구입
+                      </label>
+                      <label for="radioSample02" name="radioSample01">
+                        <input id="radioSample02" type="radio"> 유지 보수
+                      </label>
+                      <label for="radioSample03" name="radioSample01">
+                        <input id="radioSample03" type="radio"> 서비스
+                      </label>
+                      <label for="radioSample04" name="radioSample01">
+                        <input id="radioSample04" type="radio"> 기능/성능
+                      </label>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="title">
+                    모델
+                  </div>
+                  <div class="info">
+                    <div class="input-wrap radio">
+                      <label for="radioSample01" name="radioSample02">
+                        <input id="radioSample01" type="radio"> 공통
+                      </label>
+                      <label for="radioSample02" name="radioSample02">
+                        <input id="radioSample02" type="radio"> 방역로봇
+                      </label>
+                      <label for="radioSample03" name="radioSample02">
+                        <input id="radioSample03" type="radio"> 서빙로봇
+                      </label>
+                      <label for="radioSample04" name="radioSample02">
+                        <input id="radioSample04" type="radio"> 호텔로봇
+                      </label>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="title">
+                    질문
+                  </div>
+                  <div class="info">
+                    <div class="input-wrap">
+                      <label for="inputSample">
+                        <input id="inputSample" type="text" placeholder="질문을 입력해 주세요.">
+                      </label>
+                    </div>
+                    <span class="alert">
+                      2021.06.04
+                    </span>
+                  </div>
+                </li>
+                <li>
+                  <div class="title">
+                    답변
+                  </div>
+                  <div class="info">
+                    <textarea cols="" rows="" placeholder="답변을 입력해 주세요."></textarea>
+                  </div>
+                </li>
+                <li>
+                    <div class="title">노출 설정</div>
+                    <div class="info">
+                      <div class="input-wrap radio">
+                        <label for="radioSample03" name="radioSample">
+                          <input id="radioSample03" type="radio"> 노출
+                        </label>
+                        <label for="radioSample04" name="radioSample">
+                          <input id="radioSample04 " type="radio"> 미노출
+                        </label>
+                      </div>
+                    </div>
+                </li>
+              </ul>
+            </section>
+            <!-- mid AREA 중간 영역 끝 -->
+            <!-- BOTTOM AREA 바텀 영역 시작 -->
+            <section id="bottomArea">
+                <div class="btn-wrap">
+                    <button type="button" class="common-btn">
+                        취소
+                    </button>
+                    <button type="button" class="common-btn">
+                        등록
+                    </button>
+                </div>
+            </section>
+            <!-- BOTTOM AREA 바텀 영역 끝 -->
+        </div>
+        <!-- 컨테이너 끝 -->
+    </div>
+</body>
+
+</html>
