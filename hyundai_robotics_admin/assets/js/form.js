@@ -118,8 +118,9 @@ $(document).ready(function() {
 
         // file custom
         $(".file #file").on('change',function(){
-            var fileName = $(".file #file").val();
-            $(".file input[type='text']").val(fileName);
+
+            var fileName = $(this).val();
+            $(this).parents('.file').find("input[type='text']").val(fileName);
         });
 
     }

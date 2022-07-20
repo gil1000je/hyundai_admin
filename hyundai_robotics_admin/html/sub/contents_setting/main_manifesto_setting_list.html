@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>콘텐츠 관리 > 메인 > Manifesto 설정</title>
+    <link rel="stylesheet" type="text/css" href="/hyundai_robotics_admin/assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="/hyundai_robotics_admin/assets/css/common.css">
+    <link rel="stylesheet" type="text/css" href="/hyundai_robotics_admin/assets/css/form.css">
+    <link rel="stylesheet" type="text/css" href="/hyundai_robotics_admin/assets/css/style.css">
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src='//cdnjs.cloudflare.com/ajax/libs/jquery-throttle-debounce/1.1/jquery.ba-throttle-debounce.min.js'></script>
+    <script type="text/javascript" src="/hyundai_robotics_admin/assets/js/include.js"></script>
+    <script src="/hyundai_robotics_admin/assets/js/form.js"></script>
+</head>
+<body>
+    <div id="contentsSetting" class="wrap">
+        <!-- HEADER 헤더 시작 -->
+        <header id="header" class="bg"></header>
+        <!-- HEADER 헤더 끝 -->
+        <!-- 컨테이너 시작 -->
+        <div id="container">
+            <!-- TOP AREA 탑 영역 시작 -->
+            <section id="topArea" class="tab">
+                <!-- 타이틀 영역 시작 -->
+                <div class="title-wrap">
+                  <nav id="navigation">
+                    <ul>
+                      <li class="depth01">
+                          <a href="javascript:void(0)" title="클릭시 해당 뎁스로 이동">콘텐츠 관리</a>
+                      </li>
+                      <li class="depth02">
+                          <a href="javascript:void(0)" title="클릭시 해당 뎁스로 이동">메인 관리</a>
+                      </li>
+                    </ul>
+                  </nav>
+                  <h2 class="main-tit">메인 관리</h2>
+                </div>
+                <!-- 타이틀 영역 끝 -->
+                <!-- 탭 영역 시작 -->
+                <div id="tab" class="width160">
+                  <ul class="tab-list">
+                    <li>
+                      <a href="javascript:void(0)" title="탭">
+                        히어로 설정
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0)" title="탭">
+                        배너 설정
+                      </a>
+                    </li>
+                    <li>
+                      <a class="active" href="javascript:void(0)" title="탭">
+                        Manifesto 설정
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0)" title="탭">
+                        제품 활용 사례
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- 탭 영역 끝 -->
+                <!-- 버튼 영역 시작 -->
+                <div class="button-wrap">
+                    <div class="alert">
+                        <strong>Manifesto 설정</strong>
+                    </div>
+                </div>
+                <!-- 버튼 영역 시작 -->
+            </section>
+            <!-- TOP AREA 탑 영역 끝 -->
+            <!-- mid AREA 중간 영역 시작 -->
+            <section id="midArea">
+                <div class="table-wrap">
+                    <table class="table-type04 manifesto">
+                      <caption>메인 관리 매니페스토 테이블</caption>
+                      <colgroup>
+                        <col width="8%">
+                        <col width="75%">
+                        <col width="17%">
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <th scope="col">
+                            구분
+                          </th>
+                          <th scope="col">
+                            이미지 / 동영상 첨부
+                          </th>
+                          <th scope="col">
+                            미리보기
+                          </th>
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td rowspan="3">국문</td>
+                          <td>
+                            <div class="media-wrap">
+                              <ul class="media-list">
+                                <li>
+                                  <div class="input-wrap radio">
+                                    <label for="radioSample01" name="radioSample">
+                                      <input id="radioSample01" type="radio"> 첨부파일
+                                    </label>
+                                    <label for="radioSample02" name="radioSample">
+                                      <input id="radioSample02" type="radio"> 링크
+                                    </label>
+                                  </div>
+                                  <div class="title">
+                                    PC
+                                  </div>
+                                  <div class="info">
+                                    <div class="input-wrap file">
+                                      <input class="hide" type="file" id="file">
+                                      <input type="text" placeholder="선택한 파일 없음">
+                                      <label class="common-btn" for="file">파일선택</label>
+                                    </div>
+                                    <span class="alert">
+                                      이미지 사이즈 1920*900px
+                                    </span>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                          </td>
+                          <td>
+                            <button class="common-btn" type="button">
+                                미리보기
+                            </button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="media-wrap">
+                              <ul class="media-list">
+                                <li>
+                                  <div class="title">
+                                    Mobile
+                                  </div>
+                                  <div class="info">
+                                    <div class="input-wrap file">
+                                      <input class="hide" type="file" id="file">
+                                      <input type="text" placeholder="선택한 파일 없음">
+                                      <label class="common-btn" for="file">파일선택</label>
+                                    </div>
+                                    <span class="alert">
+                                      이미지 사이즈 1920*900px
+                                    </span>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                          </td>
+                          <td>
+                            <button class="common-btn" type="button">
+                                미리보기
+                            </button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="media-wrap">
+                              <ul class="media-list">
+                                <li>
+                                  <div class="title">
+                                    링크
+                                  </div>
+                                  <div class="info">
+                                    <div class="input-wrap file">
+                                      <input class="hide" type="file" id="file">
+                                      <input type="text" placeholder="선택한 파일 없음">
+                                      <!-- <label class="common-btn" for="file">파일선택</label> -->
+                                    </div>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                          </td>
+                          <td>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td rowspan="3">영문</td>
+                          <td>
+                            <div class="media-wrap">
+                              <ul class="media-list">
+                                <li>
+                                  <div class="title">
+                                    PC
+                                  </div>
+                                  <div class="info">
+                                    <div class="input-wrap file">
+                                      <input class="hide" type="file" id="file">
+                                      <input type="text" placeholder="선택한 파일 없음">
+                                      <label class="common-btn" for="file">파일선택</label>
+                                    </div>
+                                    <span class="alert">
+                                      이미지 사이즈 1920*900px
+                                    </span>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                          </td>
+                          <td>
+                            <button class="common-btn" type="button">
+                                미리보기
+                            </button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="media-wrap">
+                              <ul class="media-list">
+                                <li>
+                                  <div class="title">
+                                    Mobile
+                                  </div>
+                                  <div class="info">
+                                    <div class="input-wrap file">
+                                      <input class="hide" type="file" id="file">
+                                      <input type="text" placeholder="선택한 파일 없음">
+                                      <label class="common-btn" for="file">파일선택</label>
+                                    </div>
+                                    <span class="alert">
+                                      이미지 사이즈 1920*900px
+                                    </span>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                          </td>
+                          <td>
+                            <button class="common-btn" type="button">
+                                미리보기
+                            </button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="media-wrap">
+                              <ul class="media-list">
+                                <li>
+                                  <div class="title">
+                                    링크
+                                  </div>
+                                  <div class="info">
+                                    <div class="input-wrap file">
+                                      <input class="hide" type="file" id="file">
+                                      <input type="text" placeholder="선택한 파일 없음">
+                                      <!-- <label class="common-btn" for="file">파일선택</label> -->
+                                    </div>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                          </td>
+                          <td>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                </div>
+            </section>
+            <!-- mid AREA 중간 영역 끝 -->
+            <!-- BOTTOM AREA 바텀 영역 시작 -->
+            <section id="bottomArea" class="no-line">
+                <div class="btn-wrap">
+                    <button type="button" class="common-btn">
+                        저장
+                    </button>
+                </div>
+            </section>
+            <!-- BOTTOM AREA 바텀 영역 끝 -->
+        </div>
+        <!-- 컨테이너 끝 -->
+    </div>
+</body>
+
+</html>
