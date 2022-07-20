@@ -16,6 +16,7 @@ $(document).ready(function() {
     }
     textAreaTextLength ()
 
+    // 라디오 버튼 중복 체크 방지 스크립트
     function radioCheck() {
         $('.radio input[type="radio"]').on('change', function(){
 
@@ -72,7 +73,7 @@ $(document).ready(function() {
     // 인풋 넘버 타입 스크립트
     function maxLengthCheck(){
 
-        $('.form-number-box input').on("keyup",function(){
+        $('.input[type="number"]').on("keyup",function(){
             
             if (this.value.length > this.maxLength) {
 
@@ -84,36 +85,53 @@ $(document).ready(function() {
     }
     maxLengthCheck()
 
-    // file custom
-    $(".file #file").on('change',function(){
-        var fileName = $(".file #file").val();
-        $(".file input[type='text']").val(fileName);
-    });
+    // 파일 타입 인풋박스 스크립트
+    function fileInput() {
+
+        // file custom
+        $(".file #file").on('change',function(){
+            var fileName = $(".file #file").val();
+            $(".file input[type='text']").val(fileName);
+        });
+
+    }
+    fileInput()
     
-    //select option custom
-    var selectTitle = $('.selected-option');
-    selectTitle.on('click', function(){
-      $(this).next('.option-list').stop().slideToggle('active');
-      $(this).toggleClass('active');
-    });
+    // 셀렉트 박스 스크립트
+    function selectBox() {
 
-    $('.option-list > li').on('click', function(){
+        //select option custom
+        var selectTitle = $('.selected-option');
+        selectTitle.on('click', function(){
+        $(this).next('.option-list').stop().slideToggle('active');
+        $(this).toggleClass('active');
+        });
 
-      var value = $(this).html();
-      $(this).parent().siblings(selectTitle).html(value);
-      $(this).parent().siblings(selectTitle).addClass('selectd');
-      $(this).parent().siblings(selectTitle).removeClass('active');
-      $(this).parent('.option-list').stop().slideToggle('active');
+        $('.option-list > li').on('click', function(){
 
-    });
+        var value = $(this).html();
+        $(this).parent().siblings(selectTitle).html(value);
+        $(this).parent().siblings(selectTitle).addClass('selectd');
+        $(this).parent().siblings(selectTitle).removeClass('active');
+        $(this).parent('.option-list').stop().slideToggle('active');
+
+        });
+
+    }
+    selectBox()
 
     //팝업
-    $('.popup-btn-wrap > a').on('click', function(){
-        var index = $(this).index();
-        $('.popup-cont').addClass('active');
+    function ShowPopup () {
 
-        $('.modal-wrap').eq(index).addClass('active').siblings().removeClass('active');
-    });
+        $('.popup-btn-wrap > a').on('click', function(){
+            var index = $(this).index();
+            $('.popup-cont').addClass('active');
+    
+            $('.modal-wrap').eq(index).addClass('active').siblings().removeClass('active');
+        });
+
+    }
+    ShowPopup ()
 
 });
 
