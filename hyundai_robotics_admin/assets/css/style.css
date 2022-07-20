@@ -24,7 +24,8 @@ input[type="radio"]:checked::after {background:url(/hyundai_robotics_admin/asset
 
 /* 인풋박스 */
 input[type="text"], input[type="password"], input[type="email"], input[type="number"]  { border:solid 1px #BBB; background:#fff; border-radius:3rem; height:44rem; padding:0 14rem; font-size:16rem; margin-top:20rem } 
-input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, input[type="number"]:focus { outline:solid 1.5px #222; border:solid 1px #fff; } 
+input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, 
+input[type="number"]:focus { outline:solid 1.5px #222; border:solid 1px #fff; } 
 input[type="text"]::placeholder, input[type="password"]::placeholder, input[type="email"]::placeholder, input[type="number"]::placeholder { color:#999; font-size:16rem } 
 input[type="text"]:disabled, input[type="password"]:disabled, input[type="email"]:disabled, input[type="number"]:disabled  { border:solid 1px #999; background:#ddd; } 
 input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0;}
@@ -71,7 +72,7 @@ input[type="text"] + button, input[type="text"] + button + button { margin-left:
 #tab .tab-list li a.active { background:#3BB88C; color:#fff; border:solid 1px #3BB88C; } 
 
 /* 타이틀 영역 */
-.title-wrap { width:1300rem; margin:0 auto; padding:33rem 0 70rem; } 
+.title-wrap { width:1300rem; margin:0 auto; /*padding:33rem 0 70rem;*/padding: 33rem 0 30rem; } 
 .title-wrap h2.main-tit { font-size:30rem; color:#222; font-weight:700; line-height:44rem; letter-spacing:-0.018em; } 
 
 /* 테이블 공통 */
@@ -87,7 +88,7 @@ input[type="text"] + button, input[type="text"] + button + button { margin-left:
 .table-type01 tr:last-child { border-bottom:0 } 
 .table-type01 tr:nth-child(odd) { background:#F5FCF9 } 
 .table-type01 tr:nth-child(even) { background:#fff } 
-.table-type01 th { font-size:16rem; background:#3BB88C; color:#fff; font-weight:400 } 
+.table-type01 th { font-size:16rem; background:#3BB88C; color:#fff; font-weight:500 } 
 .table-type01 td { font-size:14rem; text-align:center;/* border-right:solid 1px #BBB */ } 
 .table-type01 td:first-child, .table-type01 td:last-child { border-right:0 } 
 .table-type01 td div { height:30rem; display:flex; align-items:center; justify-content:center; } 
@@ -133,11 +134,20 @@ input[type="text"] + button, input[type="text"] + button + button { margin-left:
 .info-list-type02 li { display:flex; flex-direction:column; gap:9rem; }
 .info-list-type02 .title { font-size:18rem; font-weight:500; }
 .info-list-type02 li.info-item-col .info{display: flex;}
+.info-list-type02 li.info-item-col .input-wrap.file input[type="text"]{width: 446rem;}
 .info-list-type02 li.info-item-col .info .title { font-size:16rem; font-weight:normal;width: 86rem;color: #999;margin-top: 12rem;}
+.info-list-type02 .info textarea{max-width: 800rem;min-width: 800rem;max-height: 200rem;min-height: 200rem; border: 1px solid #bbb;border-radius: 3rem;}
+.info-list-type02 .info .select-wrap{max-width: 800rem;}
+.info-list-type02 .info .select-wrap .option-list li{align-items: flex-start;}
+.info-list-type02 .info .select-list{display: flex;gap: 14rem 12rem;}
+.info-list-type02 .info .select-list + .input-wrap{margin-top: 12rem;}
+.info-list-type02 .info .select-list .select-wrap{max-width: 160rem;}
 .info-list-type02 .info .alert { font-size:12rem; color:#999; } 
 .info-list-type02 input {margin:0; width:800rem;}
 .info-list-type02 .radio {display:flex; gap:40rem; align-items:center;}
 .info-list-type02 .radio label {width:120rem;}
+.info-list-type02 .check{display:grid; gap:20rem; align-items:center;grid-template-columns: 125rem 125rem 125rem 125rem;}
+.info-list-type02 .check label{width: 125rem;}
 
 .btn-wrap { display:flex; gap:14rem; } 
 
