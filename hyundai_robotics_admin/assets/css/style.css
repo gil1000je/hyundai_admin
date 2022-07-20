@@ -42,6 +42,7 @@ input[type="text"] + button, input[type="text"] + button + button { margin-left:
 .input-wrap.date{width: 160rem;position: relative;}
 .input-wrap.date::after{content: '';width: 24rem;height: 24rem;position: absolute;right: 10rem;bottom: 10rem;background: url(/hyundai_robotics_admin/assets/images/common/data_icon.png) no-repeat center/ contain;}
 .input-wrap.date input[type="text"] {width:160rem;height: 44rem;border: 1px solid #bbb;border-radius: 3rem;}
+.input-wrap.image{width: 200rem;height: 200rem;border: 1px solid #bbb;display: flex;align-items: center;justify-content: center;}
 
 /* 셀렉트 박스 (드롭박스) */
 .select-wrap { width:100%; max-width:160rem; position:relative; } 
@@ -146,7 +147,8 @@ input[type="text"] + button, input[type="text"] + button + button { margin-left:
 .info-list-type02 li.info-item-col .info{display: flex;}
 .info-list-type02 li.info-item-col .input-wrap.file input[type="text"]{width: 446rem;}
 .info-list-type02 li.info-item-col .info .title { font-size:16rem; font-weight:normal;width: 86rem;color: #999;margin-top: 12rem;}
-.info-list-type02 .info textarea{max-width: 800rem;min-width: 800rem;max-height: 200rem;min-height: 200rem; border: 1px solid #bbb;border-radius: 3rem;}
+.info-list-type02 .info .input-wrap:not(:first-child){margin-top: 12rem;}
+.info-list-type02 .info textarea{max-width: 800rem;min-width: 800rem;max-height: 200rem;min-height: 200rem; border: 1px solid #bbb;border-radius: 3rem;padding: 12rem;}
 .info-list-type02 .info .select-wrap{max-width: 800rem;}
 .info-list-type02 .info .select-wrap .option-list li{align-items: flex-start;}
 .info-list-type02 .info .select-list{display: flex;gap: 14rem 12rem;}
