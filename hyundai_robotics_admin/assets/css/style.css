@@ -39,6 +39,9 @@ input[type="text"] + button, input[type="text"] + button + button { margin-left:
 .login-modal input:not(input[type="button"]) { border-radius: 3rem; } 
 .input-wrap.file { display:flex; gap:14rem }
 .input-wrap.file input[type="text"] {width:666rem}
+.input-wrap.date{width: 160rem;position: relative;}
+.input-wrap.date::after{content: '';width: 24rem;height: 24rem;position: absolute;right: 10rem;bottom: 10rem;background: url(/hyundai_robotics_admin/assets/images/common/data_icon.png) no-repeat center/ contain;}
+.input-wrap.date input[type="text"] {width:160rem;height: 44rem;border: 1px solid #bbb;border-radius: 3rem;}
 
 /* 셀렉트 박스 (드롭박스) */
 .select-wrap { width:100%; max-width:160rem; position:relative; } 
@@ -127,11 +130,13 @@ input[type="text"] + button, input[type="text"] + button + button { margin-left:
 
 /* 인포 리스트 */
 .info-list-type01 { display:flex; gap:20rem; flex-direction:column; } 
+.info-list-type01.dividing-line{border-bottom: 1px solid #bbb;padding-bottom: 22rem;margin-bottom: 22rem;}
 .info-list-type01 li { display:flex; min-height:44rem; align-items:center; } 
 .info-list-type01 .title { width:160rem; font-size:18rem; font-weight:500; word-break:nowrap } 
 .info-list-type01 .info { width:100% } 
 .info-list-type01 li.table-li { align-items:flex-start; } 
 .info-list-type01 input, .info-list-type01 .select-wrap { display:inline-block; margin:0; width:390rem; max-width:100%; } 
+.info-list-type01 input.main-title{width: 658rem;}
 .info-list-type01 input + input, .info-list-type01 .select-wrap + .select-wrap { margin-left:16rem } 
 .info-list-type01 li .input-wrap.red .alert { top:-17rem } 
 
@@ -153,6 +158,8 @@ input[type="text"] + button, input[type="text"] + button + button { margin-left:
 .info-list-type02 .radio label {width:120rem;}
 .info-list-type02 .check{display:grid; gap:20rem; align-items:center;grid-template-columns: 125rem 125rem 125rem 125rem;}
 .info-list-type02 .check label{width: 125rem;}
+.info-list-type02 .info-list-item{display: flex;align-items: center;gap: 14rem;}
+.info-list-type02 .info-list-item .info input{max-width: 80rem;}
 
 .btn-wrap { display:flex; gap:14rem; } 
 
@@ -223,3 +230,67 @@ input[type="text"] + button, input[type="text"] + button + button { margin-left:
 .modal-info-table .input-wrap{align-items: center;justify-content: center;}
 .modal-info-table .input-wrap input[type="checkbox"]::after{width: 16rem;height: 16rem;background-repeat: no-repeat;background-size: contain;background-position: center;}
 
+.ui-widget-header { border: 0rem solid #dddddd; background: #fff; } 
+
+ .ui-datepicker-calendar>thead>tr>th { font-size: 16rem !important;font-weight: 500!important; } 
+
+ .ui-datepicker .ui-datepicker-header { position: relative; padding: 10rem; } 
+
+ .ui-state-default,
+ .ui-widget-content .ui-state-default,
+ .ui-widget-header .ui-state-default,
+ .ui-button,
+ html .ui-button.ui-state-disabled:hover,
+ html .ui-button.ui-state-disabled:active { border: 0px solid #c5c5c5; background-color: transparent; font-weight: normal; color: #454545; text-align: center; } 
+
+ .ui-datepicker .ui-datepicker-title { margin: 0 0em; line-height: 32rem; text-align: center; font-size: 24px; padding: 0px; font-weight: bold;position: absolute;left: 50%;transform: translateX(-50%);top: 8rem;} 
+
+ .ui-datepicker { display: none; background-color: #fff; border-radius: 4px; margin-top: 10rem; margin-left: 0px; margin-right: 0px; padding: 8rem; padding-bottom: 10px; width: 350rem; box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.1); } 
+
+ .ui-widget.ui-widget-content { border: 1px solid #eee; } 
+
+ #datepicker:focus>.ui-datepicker { display: block; } 
+
+ .ui-datepicker-prev,
+ .ui-datepicker-next { cursor: pointer; } 
+
+ .ui-datepicker-next { float: right; } 
+
+ .ui-state-disabled { cursor: auto; color: hsla(0, 0%, 80%, 1); } 
+
+ .ui-datepicker-title { text-align: center; padding: 10px; font-weight: 100; font-size: 20px; } 
+
+ .ui-datepicker-calendar { width: 100%;margin-top: 15rem;}  
+
+ .ui-datepicker-calendar>thead>tr>th { padding: 5px; font-size: 20px; font-weight: 400; } 
+
+ .ui-datepicker-calendar>tbody>tr>td>a { color: #000; font-size: 16px !important; font-weight: normal !important; text-decoration: none;}
+
+ .ui-datepicker-calendar>tbody>tr>.ui-state-disabled:hover { cursor: auto; background-color: #fff; } 
+
+ .ui-datepicker-calendar>tbody>tr>td { border-radius: 100%; width: 24rem; height: 24rem; cursor: pointer; padding: 5px; font-weight: 100; text-align: center; font-size: 16px;position: relative;} 
+ .ui-datepicker-calendar>tbody>tr>td.ui-datepicker-current-day::after{width: 24rem;height: 24rem;border-radius: 50%;background: #3BB88C;opacity: 0.2;position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);content: '';}
+ .ui-datepicker-calendar>tbody>tr>td:hover { background-color: transparent; opacity: 0.6; } 
+
+ .ui-state-hover,
+ .ui-widget-content .ui-state-hover,
+ .ui-widget-header .ui-state-hover,
+ .ui-state-focus,
+ .ui-widget-content .ui-state-focus,
+ .ui-widget-header .ui-state-focus,
+ .ui-button:hover,
+ .ui-button:focus { border: 0px solid #cccccc; background-color: transparent; font-weight: normal; color: #2b2b2b; } 
+
+ .ui-widget-header .ui-icon {width: 24rem;height: 24rem;text-indent: -9999em;display: block;background: url(/hyundai_robotics_admin/assets/images/common/date_prev_arrow.png) no-repeat center/ contain; } 
+ .ui-widget-header .ui-icon-circle-triangle-e{background: url(/hyundai_robotics_admin/assets/images/common/date_next_arrow.png) no-repeat center/ contain;}
+
+ .ui-icon-circle-triangle-e { background-position: -20px 0px; background-size: 36px; } 
+
+ .ui-icon-circle-triangle-w { background-position: -0px -0px; background-size: 36px; } 
+ .ui-state-highlight,
+ .ui-widget-content .ui-state-highlight,
+ .ui-widget-header .ui-state-highlight { border: 0px; background: #f1f1f1; border-radius: 50%; padding-top: 10px; padding-bottom: 10px; } 
+
+ .inp { padding: 10px 10px; background-color: #f1f1f1; border-radius: 4px; border: 0px; } 
+
+ .inp:focus { outline: none; background-color: #eee; } 
