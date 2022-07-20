@@ -1,5 +1,6 @@
 /* common */
 html { font-size:1px; width:100%; min-height:100vh; overflow:auto } 
+body, #header {min-width:1300rem}
 .wrap { width:100%; min-height:100vh; margin:0 auto; margin-top:107rem; overflow:auto; font-size:16rem } 
 #container { width:100%; max-width:1300rem; margin: 0 auto; } 
 
@@ -77,8 +78,8 @@ input[type="text"] + button, input[type="text"] + button + button { margin-left:
 #tab.width160 .tab-list li a { width:160rem; }
 
 /* 타이틀 영역 */
-.title-wrap { width:1300rem; margin:0 auto; /*padding:33rem 0 70rem;*/padding: 33rem 0 30rem; } 
-.title-wrap h2.main-tit { font-size:30rem; color:#222; font-weight:700; line-height:44rem; letter-spacing:-0.018em; } 
+#topArea .title-wrap { width:1300rem; margin:0 auto; /*padding:33rem 0 70rem;*/padding: 33rem 0 30rem; } 
+#topArea .title-wrap h2.main-tit { font-size:30rem; color:#222; font-weight:700; line-height:44rem; letter-spacing:-0.018em; } 
 
 /* 테이블 공통 */
 .table-wrap .all {margin-bottom:10rem;}
@@ -88,6 +89,9 @@ input[type="text"] + button, input[type="text"] + button + button { margin-left:
 .table-wrap.empty .empty-info p { margin-top:55rem; font-size:20rem; color:#7B7B7B;}
 .table-alert { display:flex; align-items:center; height:52rem; gap:8rem } 
 .table-alert strong { font-size:18rem; font-weight:500; } 
+.table-wrap + .table-wrap { margin-top:26rem; }
+.table-wrap .btn-wrap {display:flex; justify-content:flex-end; margin-top:26rem;}
+.table-wrap .input-wrap.radio label {font-size:14rem}
 
 /* 테이블 타입 1 */
 .table-type01 { width:100%; max-width:1300rem; border-radius:3rem; background:#fff; outline:solid 1px #BBB; } 
@@ -125,10 +129,11 @@ input[type="text"] + button, input[type="text"] + button + button { margin-left:
 .table-type03 th { font-size:16rem; background:#3BB88C; color:#fff; font-weight:500 } 
 .table-type03 td { font-size:14rem; text-align:center; border-right:solid 1px #BBB } 
 .table-type03 td:first-child, .table-type03 td:last-child { border-right:0 } 
-.table-type03 td div { height:30rem; display:flex; align-items:center; justify-content:center; } 
+.table-type03 td div { height:30rem; display:flex; align-items:center; justify-content:center; white-space:nowrap } 
 .table-type03 td div:first-child { border-bottom:solid 1px #bbb; } 
 .table-type03 td.setting .input-wrap { display:flex; gap:60rem; justify-content:center; } 
 .table-type03 input[type="checkbox"] {margin-left:10rem;}
+.table-type03 .radio label {font-size:14rem}
 
 /* 테이블 타입 4 ( 콘텐츠 관리 - 메인배너) */
 .table-type04 { width:100%; max-width:1300rem; border-radius:3rem; background:#fff; outline:solid 1px #BBB; } 
@@ -143,16 +148,56 @@ input[type="text"] + button, input[type="text"] + button + button { margin-left:
 .table-type04 td:first-child, .table-type04 td:last-child { border-right:0 } 
 .table-type04 td .media-list li { display:flex; align-items:center; } 
 .table-type04 td .media-list li .title {width:115rem; font-size:14rem }
-.table-type04 td .media-list li .title {}
-.table-type04 input, .table-type04 .common-btn { height:32rem; min-height:32rem; font-size:14rem;}
+.table-type04 td .media-list li .title { }
+.table-type04 input, .table-type04 .common-btn { height:32rem; min-height:32rem; width:120rem; font-size:14rem;}
+.table-type04 .common-btn { padding:0; }
 .table-type04 input[type="text"] { margin-top:0; font-size:14rem; width:660rem !important }
 .table-type04 input::placeholder {font-size:14rem;}
 .table-type04 .info {text-align:left}
 .table-type04 .alert {color:#999; font-size:12rem; margin-top:3rem; display:inline-block; }
+.table-type04 td:last-child , .manifesto.table-type04 td:last-child {border-right:0}
 
-.manifesto.table-type04 { }
-.table-type04 input[type="text"] { width:535rem !important }
+.manifesto.table-type04 {}
+.manifesto.table-type04 tbody tr {min-height:92rem; height:auto;}
+.manifesto.table-type04 tbody tr td { padding:12rem 0}
+.manifesto.table-type04 .input-wrap.radio {  width:180rem; display:flex; flex-direction:column; align-items:flex-start; padding-left:40rem  }
+.manifesto.table-type04 .input-wrap.radio label {font-size:14rem}
+.manifesto.table-type04 li > .title { width:180rem !important }
+.manifesto.table-type04 li > .title-wrap { display:flex; flex-direction:column; gap:21rem }
+.manifesto.table-type04 .input-wrap.file + .input-wrap.file {margin-top:9rem}
+.manifesto.table-type04 input[type="text"] { width:535rem !important }
+.manifesto.table-type04 .btn-wrap {display:flex; align-items:center; justify-content:center; flex-direction:column }
+.manifesto.table-type04 span.alert + .input-wrap {margin-top:10rem}
+.manifesto.table-type04 tbody tr { background:#F5FCF9 } 
+.manifesto.table-type04 tbody tr:nth-child(n+3) { background:#fff } 
+.manifesto.table-type04 tbody tr:nth-child(even) .title-wrap { gap:41rem; }
+.manifesto.table-type04 .link {display:none}
 
+/* 테이블 타입 5 ( 콘텐츠 관리 - 메인배너) */
+.table-type05 { width:100%; max-width:1300rem; border-radius:3rem; background:#fff; outline:solid 1px #BBB; } 
+.table-type05 .num { width:100rem; } 
+.table-type05 tr { height:72rem; border-bottom:solid 1px #BBB } 
+.table-type05 thead tr {height:34rem}
+.table-type05 tr:last-child { border-bottom:0 } 
+.table-type05 tbody tr { background:#F5FCF9 } 
+.table-type05 tbody tr:nth-child(n+4) { background:#fff } 
+.table-type05 th { font-size:16rem; background:#3BB88C; color:#fff; font-weight:400 } 
+.table-type05 td { font-size:14rem; text-align:center; border-right:solid 1px #BBB } 
+.table-type05 td:last-child { border-right:0 } 
+.table-type05 td .media-list li { display:flex; align-items:center; } 
+.table-type05 td .media-list li .title {width:115rem; font-size:14rem }
+.table-type05 td .media-list li .title { }
+.table-type05 input, .table-type05 .common-btn { height:32rem; min-height:32rem; width:120rem; font-size:14rem;}
+.table-type05 .common-btn { padding:0; }
+.table-type05 input[type="text"] { margin-top:0; font-size:14rem; width:660rem !important }
+.table-type05 input::placeholder {font-size:14rem;}
+.table-type05 .info {text-align:left}
+.table-type05 .alert {color:#999; font-size:12rem; margin-top:3rem; display:inline-block; }
+.table-type05 td:last-child , .manifesto.table-type04 td:last-child {border-right:0}
+.table-type05 li {min-height:70rem; display:flex; align-items:center; flex-direction:column; justify-content:center; padding:20rem; word-break:keep-all; line-height:24rem; letter-spacing:-0.08em}
+.table-type05 li:first-child {border-bottom:solid 1px #bbb;}
+.table-type05 img {width:120rem; height:120rem; border-radius:3rem; border:solid 1px #BBB; object-fit:cover;}
+.table-type05 .input-wrap.radio { display:flex; flex-direction:column; align-items:flex-start; gap:30rem; padding-left:45rem; }
 
 /* 레이아웃 LAY OUT */
 
@@ -169,6 +214,9 @@ input[type="text"] + button, input[type="text"] + button + button { margin-left:
 #topArea .button-wrap { position:relative; display:flex; justify-content:flex-end; min-height:44rem }
 #topArea .button-wrap .alert {position:absolute; top:50%; transform:translateY(-50%); left:0;}
 #topArea .button-wrap .alert strong { font-size:18rem; margin-right:8rem; font-weight:500 }
+#topArea .button-wrap .alert .common-btn { width:80rem; padding:0; height:32rem; min-height:32rem; font-size:14rem; margin-top:8rem; margin-left:10rem; }
+#topArea .button-wrap + .search-wrap .right input {margin-top:0;}
+#topArea .button-wrap + .search-wrap {padding-bottom:0;}
 
 /* MID AREA 중간영역 *
 

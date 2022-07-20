@@ -1,5 +1,32 @@
 $(document).ready(function() {
 
+    // 테이블 타입 4의 메니페스토 설정 페이지 관련 스크립트
+    function manifesto() {
+
+        $('.manifesto .input-wrap.radio input[type="radio"]').on('change',function(){
+            
+
+            if($(this).hasClass('link_btn')) {
+
+                $(this).parents('tr').find('.btn-wrap .common-btn').hide()
+                $(this).parents('tr').find('.input-wrap.file').hide()
+                $(this).parents('tr').find('.title').hide()
+                $(this).parents('tr').find('.link').show()
+
+            } else {
+                $(this).parents('tr').find('.btn-wrap .common-btn').show()
+                $(this).parents('tr').find('.input-wrap.file').show()
+                $(this).parents('tr').find('.title').show()
+                $(this).parents('tr').find('.link').hide()
+
+                
+            }
+
+        })
+
+    }
+    manifesto()
+    
     // table-wrap에 empty 부여하면 TD 내용 제거
     function tableEmpty() {
         $('.table-wrap.empty').find('td').html("")
