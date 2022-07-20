@@ -71,7 +71,7 @@ input[type="text"] + button, input[type="text"] + button + button { margin-left:
 #tab .tab-list li a.active { background:#3BB88C; color:#fff; border:solid 1px #3BB88C; } 
 
 /* 타이틀 영역 */
-.title-wrap { width:1300rem; margin:0 auto; padding:33rem 0 70rem; } 
+.title-wrap { width:1300rem; margin:0 auto; /*padding:33rem 0 70rem;*/padding: 33rem 0 30rem; } 
 .title-wrap h2.main-tit { font-size:30rem; color:#222; font-weight:700; line-height:44rem; letter-spacing:-0.018em; } 
 
 /* 테이블 공통 */
@@ -133,6 +133,7 @@ input[type="text"] + button, input[type="text"] + button + button { margin-left:
 .info-list-type02 li { display:flex; flex-direction:column; gap:9rem; }
 .info-list-type02 .title { font-size:18rem; font-weight:500; }
 .info-list-type02 li.info-item-col .info{display: flex;}
+.info-list-type02 li.info-item-col .input-wrap.file input[type="text"]{width: 446rem;}
 .info-list-type02 li.info-item-col .info .title { font-size:16rem; font-weight:normal;width: 86rem;color: #999;margin-top: 12rem;}
 .info-list-type02 .info .alert { font-size:12rem; color:#999; } 
 .info-list-type02 input {margin:0; width:800rem;}
