@@ -39,6 +39,10 @@ input[type="text"] + button, input[type="text"] + button + button { margin-left:
 .login-modal input:not(input[type="button"]) { border-radius: 3rem; } 
 .input-wrap.file { display:flex; gap:14rem }
 .input-wrap.file input[type="text"] {width:666rem}
+.info-list-type02 .info.date-list .input-wrap:not(:first-child){margin-top: 0;}
+.info.date-list{display: flex;align-items: center;}
+.info.date-list > span{display: block;margin: 0 18rem;font-size: 16rem;color: #999;}
+.info.date-list input[type="button"]{width: 120rem!important;margin-left: 14rem;padding: 0;}
 .input-wrap.date{width: 160rem;position: relative;}
 .input-wrap.date::after{content: '';width: 24rem;height: 24rem;position: absolute;right: 10rem;bottom: 10rem;background: url(/hyundai_robotics_admin/assets/images/common/data_icon.png) no-repeat center/ contain;}
 .input-wrap.date input[type="text"] {width:160rem;height: 44rem;border: 1px solid #bbb;border-radius: 3rem;}
@@ -162,9 +166,8 @@ input[type="text"] + button, input[type="text"] + button + button { margin-left:
 .info-list-type02 .check label{width: 125rem;}
 .info-list-type02 .info-list-item{display: flex;align-items: center;gap: 14rem;}
 .info-list-type02 .info-list-item .info input{max-width: 80rem;}
-
 .btn-wrap { display:flex; gap:14rem; } 
-
+#referenceRegistration .info-list-type02 .info .select-wrap{width: 160rem;} 
 
 /* BOTTOM AREA 하단영역 */
 #bottomArea { width:100%; max-width:1300rem; min-height:44rem; margin:0 auto; margin-bottom:250rem; position:relative; display:flex; align-items:center; margin-top:53rem; } 
@@ -232,6 +235,7 @@ input[type="text"] + button, input[type="text"] + button + button { margin-left:
 .modal-info-table .input-wrap{align-items: center;justify-content: center;}
 .modal-info-table .input-wrap input[type="checkbox"]::after{width: 16rem;height: 16rem;background-repeat: no-repeat;background-size: contain;background-position: center;}
 
+/* datepicker custom */
 .ui-widget-header { border: 0rem solid #dddddd; background: #fff; } 
 
  .ui-datepicker-calendar>thead>tr>th { font-size: 16rem !important;font-weight: 500!important; } 
@@ -243,13 +247,13 @@ input[type="text"] + button, input[type="text"] + button + button { margin-left:
  .ui-widget-header .ui-state-default,
  .ui-button,
  html .ui-button.ui-state-disabled:hover,
- html .ui-button.ui-state-disabled:active { border: 0px solid #c5c5c5; background-color: transparent; font-weight: normal; color: #454545; text-align: center; } 
+ html .ui-button.ui-state-disabled:active { border: 0rem solid #c5c5c5; background-color: transparent; font-weight: normal; color: #454545; text-align: center; } 
 
- .ui-datepicker .ui-datepicker-title { margin: 0 0em; line-height: 32rem; text-align: center; font-size: 24px; padding: 0px; font-weight: bold;position: absolute;left: 50%;transform: translateX(-50%);top: 8rem;} 
+ .ui-datepicker .ui-datepicker-title { margin: 0 0em; line-height: 32rem; text-align: center; font-size: 24rem; padding: 0rem; font-weight: bold;position: absolute;left: 50%;transform: translateX(-50%);top: 8rem;} 
 
- .ui-datepicker { display: none; background-color: #fff; border-radius: 4px; margin-top: 10rem; margin-left: 0px; margin-right: 0px; padding: 8rem; padding-bottom: 10px; width: 350rem; box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.1); } 
+ .ui-datepicker { display: none; background-color: #fff; border-radius: 4rem; margin-top: 10rem; margin-left: 0rem; margin-right: 0rem; padding: 8rem; padding-bottom: 10rem; width: 350rem; box-shadow: 10rem 10rem 40rem rgba(0, 0, 0, 0.1); } 
 
- .ui-widget.ui-widget-content { border: 1px solid #eee; } 
+ .ui-widget.ui-widget-content { border: 1rem solid #eee; } 
 
  #datepicker:focus>.ui-datepicker { display: block; } 
 
@@ -260,18 +264,18 @@ input[type="text"] + button, input[type="text"] + button + button { margin-left:
 
  .ui-state-disabled { cursor: auto; color: hsla(0, 0%, 80%, 1); } 
 
- .ui-datepicker-title { text-align: center; padding: 10px; font-weight: 100; font-size: 20px; } 
+ .ui-datepicker-title { text-align: center; padding: 10rem; font-weight: 100; font-size: 20rem; } 
 
  .ui-datepicker-calendar { width: 100%;margin-top: 15rem;}  
 
- .ui-datepicker-calendar>thead>tr>th { padding: 5px; font-size: 20px; font-weight: 400; } 
+ .ui-datepicker-calendar>thead>tr>th { padding: 5rem; font-size: 20rem; font-weight: 400; } 
 
- .ui-datepicker-calendar>tbody>tr>td>a { color: #000; font-size: 16px !important; font-weight: normal !important; text-decoration: none;}
+ .ui-datepicker-calendar>tbody>tr>td>a { color: #000; font-size: 16rem !important; font-weight: normal !important; text-decoration: none;}
 
  .ui-datepicker-calendar>tbody>tr>.ui-state-disabled:hover { cursor: auto; background-color: #fff; } 
 
- .ui-datepicker-calendar>tbody>tr>td { border-radius: 100%; width: 24rem; height: 24rem; cursor: pointer; padding: 5px; font-weight: 100; text-align: center; font-size: 16px;position: relative;} 
- .ui-datepicker-calendar>tbody>tr>td.ui-datepicker-current-day::after{width: 24rem;height: 24rem;border-radius: 50%;background: #3BB88C;opacity: 0.2;position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);content: '';}
+ .ui-datepicker-calendar>tbody>tr>td { border-radius: 100%; width: 24rem; height: 24rem; cursor: pointer; padding: 5rem; font-weight: 100; text-align: center; font-size: 16rem;position: relative;} 
+ .ui-datepicker-calendar>tbody>tr>td.ui-datepicker-current-day a{content: '';width: 24rem;height: 24rem;border-radius: 50%;background: rgba(59,184,150,0.2);position: absolute;left: 50%;top: 50%;transform: translate(-50%, -50%);}
  .ui-datepicker-calendar>tbody>tr>td:hover { background-color: transparent; opacity: 0.6; } 
 
  .ui-state-hover,
@@ -281,18 +285,18 @@ input[type="text"] + button, input[type="text"] + button + button { margin-left:
  .ui-widget-content .ui-state-focus,
  .ui-widget-header .ui-state-focus,
  .ui-button:hover,
- .ui-button:focus { border: 0px solid #cccccc; background-color: transparent; font-weight: normal; color: #2b2b2b; } 
+ .ui-button:focus { border: 0rem solid #cccccc; background-color: transparent; font-weight: normal; color: #2b2b2b; } 
 
  .ui-widget-header .ui-icon {width: 24rem;height: 24rem;text-indent: -9999em;display: block;background: url(/hyundai_robotics_admin/assets/images/common/date_prev_arrow.png) no-repeat center/ contain; } 
  .ui-widget-header .ui-icon-circle-triangle-e{background: url(/hyundai_robotics_admin/assets/images/common/date_next_arrow.png) no-repeat center/ contain;}
 
- .ui-icon-circle-triangle-e { background-position: -20px 0px; background-size: 36px; } 
+ .ui-icon-circle-triangle-e { background-position: -20rem 0rem; background-size: 36rem; } 
 
- .ui-icon-circle-triangle-w { background-position: -0px -0px; background-size: 36px; } 
+ .ui-icon-circle-triangle-w { background-position: -0rem -0rem; background-size: 36rem; } 
  .ui-state-highlight,
- .ui-widget-content .ui-state-highlight,
- .ui-widget-header .ui-state-highlight { border: 0px; background: #f1f1f1; border-radius: 50%; padding-top: 10px; padding-bottom: 10px; } 
+ /* .ui-widget-content .ui-state-highlight,
+ .ui-widget-header .ui-state-highlight { border: 0rem;background: rgba(59, 184, 140, 0.2);border-radius: 50%; padding-top: 10rem; padding-bottom: 10rem;width: 100%;height: 100%;}  */
 
- .inp { padding: 10px 10px; background-color: #f1f1f1; border-radius: 4px; border: 0px; } 
+ .inp { padding: 10rem 10rem; background-color: #f1f1f1; border-radius: 4rem; border: 0rem; } 
 
  .inp:focus { outline: none; background-color: #eee; } 
