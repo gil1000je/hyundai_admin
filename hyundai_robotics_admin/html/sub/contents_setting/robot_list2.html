@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>콘텐츠 관리 > 로봇활용사례</title>
+    <link rel="stylesheet" type="text/css" href="/hyundai_robotics_admin/assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="/hyundai_robotics_admin/assets/css/common.css">
+    <link rel="stylesheet" type="text/css" href="/hyundai_robotics_admin/assets/css/form.css">
+    <link rel="stylesheet" type="text/css" href="/hyundai_robotics_admin/assets/css/style.css">
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src='//cdnjs.cloudflare.com/ajax/libs/jquery-throttle-debounce/1.1/jquery.ba-throttle-debounce.min.js'></script>
+    <script type="text/javascript" src="/hyundai_robotics_admin/assets/js/include.js"></script>
+    <script src="/hyundai_robotics_admin/assets/js/form.js"></script>
+</head>
+<body>
+    <div id="robotCompanyList" class="wrap">
+        <!-- HEADER 헤더 시작 -->
+        <header id="header" class="bg"></header>
+        <!-- HEADER 헤더 끝 -->
+        <!-- 컨테이너 시작 -->
+        <div id="container">
+            <!-- TOP AREA 탑 영역 시작 -->
+            <section id="topArea" class="tab search">
+              <!-- 타이틀 영역 시작 -->
+              <div class="title-wrap">
+                <nav id="navigation">
+                  <ul>
+                    <li class="depth01">
+                        <a href="javascript:void(0)" title="클릭시 해당 뎁스로 이동">콘텐츠 관리</a>
+                    </li>
+                    <li class="depth02">
+                        <a href="javascript:void(0)" title="클릭시 해당 뎁스로 이동">로봇활용사례</a>
+                    </li>
+                  </ul>
+                </nav>
+                <h2 class="main-tit">로봇활용사례</h2>
+              </div>
+              <!-- 타이틀 영역 끝 -->
+              <!-- 탭 영역 시작 -->
+              <div id="tab">
+                <ul class="tab-list">
+                  <li>
+                    <a href="javascript:void(0)" title="탭">
+                      기업
+                    </a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" title="탭">
+                      숙박
+                    </a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" title="탭">
+                      의료
+                    </a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" title="탭">
+                      문화
+                    </a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" title="탭">
+                      음식점
+                    </a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" title="탭">
+                      호텔
+                    </a>
+                  </li>
+                  <li>
+                    <a class="active" href="javascript:void(0)" title="탭">
+                      도입 업체
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <!-- 탭 영역 끝 -->
+              <!-- 버튼 영역 시작 -->
+              <div class="button-wrap">
+                  <div class="alert">
+                      <strong>도입 업체</strong>
+                  </div>
+              </div>
+              <!-- 버튼 영역 시작 -->
+              <div class="search-wrap">
+                <div class="left">
+                  <div class="select-wrap">
+                    <a href="javascript:void(0)" class="selected-option">25개</a>
+                    <ul class="option-list">
+                      <li>
+                        <a href="javascript:void(0)">지역 1</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">지역 2</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">지역 3</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">지역 4</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">지역 5</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">지역 6</a>
+                      </li>
+                    </ul>
+                  </div> 
+                </div>
+                <div class="right">
+                  <div class="input-wrap">
+                    <input id="inputSample" type="text" placeholder="검색어 입력">
+                    <button class="common-btn" type="submit">
+                      검색
+                    </button>
+                  </div>
+                </div>
+              </div>
+          </section>
+            <!-- TOP AREA 탑 영역 끝 -->
+            <!-- mid AREA 중간 영역 시작 -->
+            <section id="midArea">
+              <div class="table-wrap">
+                <table class="table-type05">
+                  <caption>로봇활용사례 도입 업체 설정 테이블</caption>
+                  <colgroup>
+                    <col width="60rem">
+                    <col width="80rem">
+                    <col width="120rem">
+                    <col width="180rem">
+                    <col width="340rem">
+                    <col width="120rem">
+                    <col width="120rem">
+                    <col width="120rem">
+                    <col width="160rem">
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th scope="col">
+                        <label for="checkSample" name="checkSample">
+                          <input id="checkSample" type="checkbox" class="active">
+                        </label>
+                      </th>
+                      <th scope="col">
+                        No.
+                      </th>
+                      <th scope="col">
+                        업체명
+                      </th>
+                      <th scope="col">
+                        대표 이미지
+                      </th>
+                      <th scope="col">
+                        소재지
+                      </th>
+                      <th scope="col">
+                        방역로봇
+                      </th>
+                      <th scope="col">
+                        서빙로봇
+                      </th>
+                      <th scope="col">
+                        호텔로봇
+                      </th>
+                      <th scope="col">
+                        노출 설정
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <label for="checkSample1" name="checkSample">
+                          <input id="checkSample1" type="checkbox">
+                        </label>
+                      </td>
+                      <td>
+                        <div>25</div>
+                      </td>
+                      <td>
+                        <ul>
+                          <li>황소포차</li>
+                          <li>Hwangso Pocha</li>
+                        </ul>
+                      </td>
+                      <td>
+                        <div>
+                          <img src="/hyundai_robotics_admin/assets/images/include/header/admin_logo.png" alt="대표 이미지">
+                        </div>
+                      </td>
+                      <td>
+                        <ul>
+                          <li>서울특별시 종로구 종로로 12</li>
+                          <li>12, Jongno-ro, Jongno-gu, Seoul</li>
+                        </ul>
+                      </td>
+                      <td>
+                        <div>0대</div>
+                      </td>
+                      <td>
+                        <div>1대</div>
+                      </td>
+                      <td>
+                        <div>0대</div>
+                      </td>
+                      <td>
+                        <div class="input-wrap radio">
+                          <label for="radioSample5" name="radioSample5">
+                            <input id="radioSample5" type="radio"> 노출
+                          </label>
+                          <label for="radioSample6" name="radioSample6">
+                            <input id="radioSample6" type="radio"> 미노출
+                          </label>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <label for="checkSample1" name="checkSample">
+                          <input id="checkSample1" type="checkbox">
+                        </label>
+                      </td>
+                      <td>
+                        <div>25</div>
+                      </td>
+                      <td>
+                        <ul>
+                          <li>황소포차</li>
+                          <li>Hwangso Pocha</li>
+                        </ul>
+                      </td>
+                      <td>
+                        <div>
+                          <img src="/hyundai_robotics_admin/assets/images/include/header/admin_logo.png" alt="대표 이미지">
+                        </div>
+                      </td>
+                      <td>
+                        <ul>
+                          <li>서울특별시 종로구 종로로 12</li>
+                          <li>12, Jongno-ro, Jongno-gu, Seoul</li>
+                        </ul>
+                      </td>
+                      <td>
+                        <div>0대</div>
+                      </td>
+                      <td>
+                        <div>1대</div>
+                      </td>
+                      <td>
+                        <div>0대</div>
+                      </td>
+                      <td>
+                        <div class="input-wrap radio">
+                          <label for="radioSample5" name="radioSample5">
+                            <input id="radioSample5" type="radio"> 노출
+                          </label>
+                          <label for="radioSample6" name="radioSample6">
+                            <input id="radioSample6" type="radio"> 미노출
+                          </label>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <label for="checkSample1" name="checkSample">
+                          <input id="checkSample1" type="checkbox">
+                        </label>
+                      </td>
+                      <td>
+                        <div>25</div>
+                      </td>
+                      <td>
+                        <ul>
+                          <li>황소포차</li>
+                          <li>Hwangso Pocha</li>
+                        </ul>
+                      </td>
+                      <td>
+                        <div>
+                          <img src="/hyundai_robotics_admin/assets/images/include/header/admin_logo.png" alt="대표 이미지">
+                        </div>
+                      </td>
+                      <td>
+                        <ul>
+                          <li>서울특별시 종로구 종로로 12</li>
+                          <li>12, Jongno-ro, Jongno-gu, Seoul</li>
+                        </ul>
+                      </td>
+                      <td>
+                        <div>0대</div>
+                      </td>
+                      <td>
+                        <div>1대</div>
+                      </td>
+                      <td>
+                        <div>0대</div>
+                      </td>
+                      <td>
+                        <div class="input-wrap radio">
+                          <label for="radioSample5" name="radioSample5">
+                            <input id="radioSample5" type="radio"> 노출
+                          </label>
+                          <label for="radioSample6" name="radioSample6">
+                            <input id="radioSample6" type="radio"> 미노출
+                          </label>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+            <!-- mid AREA 중간 영역 끝 -->
+            <!-- BOTTOM AREA 바텀 영역 시작 -->
+            <div id="bottomArea" class="no-line">
+              <div id="pagination"></div>
+              <div class="btn-wrap">
+                <button type="button" class="common-btn">
+                  삭제
+                </button>
+                <button type="button" class="common-btn">
+                  등록
+                </button>
+              </div>
+            </div>
+            <!-- BOTTOM AREA 바텀 영역 끝 -->
+          </div>
+        <!-- 컨테이너 끝 -->
+    </div>
+</body>
+
+</html>
