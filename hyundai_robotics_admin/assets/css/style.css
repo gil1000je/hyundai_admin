@@ -1,7 +1,6 @@
 /* common */
-html { font-size:1px; width:100%; overflow:auto } 
-body,#header { min-width:1920rem } 
-.wrap { width:100%; margin:0 auto; margin-top:107rem; overflow:auto; font-size:16rem } 
+html { font-size:1px; width:100%; min-height:100vh; overflow:auto } 
+.wrap { width:100%; min-height:100vh; margin:0 auto; margin-top:107rem; overflow:auto; font-size:16rem } 
 #container { width:100%; max-width:1300rem; margin: 0 auto; } 
 
 /* 버튼 */
@@ -32,8 +31,9 @@ input[type="text"] + button, input[type="text"] + button + button { margin-left:
 .input-wrap { display:flex; align-items:flex-end } 
 .login-modal .input-wrap { flex-direction: column; } 
 .input-wrap.red { position:relative; display:inline-block; } 
-.input-wrap.red input[type="text"] { outline:solid 1.5px #E81953; border:solid 1px #fff; } 
-.input-wrap.red .alert { position:absolute; right:0; top:2rem; font-size:12rem; font-weight:700; color:#e81953 } 
+.input-wrap.red input[type="text"], .input-wrap.red input[type="password"], .input-wrap.red input[type="number"], .input-wrap.red input[type="email"] { outline:solid 1.5px #E81953; border:solid 1px #fff; } 
+.input-wrap .alert { display:none }
+.input-wrap.red .alert { display:block; position:absolute; right:0; top:2rem; font-size:12rem; font-weight:700; color:#e81953 } 
 .login-modal input:not(input[type="button"]) { border-radius: 3rem; } 
 .input-wrap.file { display:flex; gap:14rem }
 .input-wrap.file input[type="text"] {width:666rem}
@@ -140,12 +140,12 @@ input[type="text"] + button, input[type="text"] + button + button { margin-left:
 
 
 /* BOTTOM AREA 하단영역 */
-#bottomArea { width:100%; max-width:1300rem; margin:0 auto; margin-bottom:250rem; position:relative; display:flex; align-items:center; margin-top:26rem; padding-top:26rem } 
+#bottomArea { width:100%; max-width:1300rem; min-height:44rem; margin:0 auto; margin-bottom:250rem; position:relative; display:flex; align-items:center; margin-top:53rem; } 
+#bottomArea::before { content:""; display:inline-block; width:100%; height:1px; background:#bbb; position:absolute; top:-27rem; left:50%; transform:translateX(-50%) }
+#bottomArea.no-line {margin-top:26rem;}
+#bottomArea.no-line::before {display:none}
 #bottomArea .btn-wrap:last-child {position:absolute; top:50%; right:0; transform:translateY(-50%)}
 #bottomArea #pagination {position:absolute; top:50%; left:50%; transform:translate(-50%, -50%)}
-
-
-
 
 
 /* 팝업 */
