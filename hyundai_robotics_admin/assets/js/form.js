@@ -122,13 +122,24 @@ $(document).ready(function() {
 
         })
 
+        $('.check.all').find('input').on('change',function(){
+
+            if($(this).is(':checked')){
+                $(this).parents('.table-wrap').find('input').prop('checked', true);
+            } else {
+                $(this).parents('.table-wrap').find('input').prop('checked', false);
+            }
+
+        })
+
     }
+
     checkAll()
 
     // 인풋 넘버 타입 스크립트
     function maxLengthCheck(){
 
-        $('.input[type="number"]').on("keyup",function(){
+        $('input[type="number"]').on("keyup",function(){
             
             if (this.value.length > this.maxLength) {
 
