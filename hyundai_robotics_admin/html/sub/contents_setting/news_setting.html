@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>콘텐츠 관리 > 새소식</title>
+    <link rel="stylesheet" type="text/css" href="/hyundai_robotics_admin/assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="/hyundai_robotics_admin/assets/css/common.css">
+    <link rel="stylesheet" type="text/css" href="/hyundai_robotics_admin/assets/css/form.css">
+    <link rel="stylesheet" type="text/css" href="/hyundai_robotics_admin/assets/css/style.css">
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src='//cdnjs.cloudflare.com/ajax/libs/jquery-throttle-debounce/1.1/jquery.ba-throttle-debounce.min.js'></script>
+    <script type="text/javascript" src="/hyundai_robotics_admin/assets/js/include.js"></script>
+    <script src="/hyundai_robotics_admin/assets/js/form.js"></script>
+</head>
+<body>
+    <div id="newsList" class="wrap">
+        <!-- HEADER 헤더 시작 -->
+        <header id="header" class="bg"></header>
+        <!-- HEADER 헤더 끝 -->
+        <!-- 컨테이너 시작 -->
+        <div id="container">
+            <!-- mid AREA 중간 영역 시작 -->
+            <section id="midArea">
+                <div id="topArea" class="search tab">
+
+                    <!-- 타이틀 영역 시작 -->
+                    <div class="title-wrap">
+                      <nav id="navigation">
+                        <ul>
+                          <li class="depth01">
+                              <a href="javascript:void(0)" title="클릭시 해당 뎁스로 이동">설정</a>
+                          </li>
+                          <li class="depth02">
+                              <a href="javascript:void(0)" title="클릭시 해당 뎁스로 이동">관리자 계정 관리</a>
+                          </li>
+                        </ul>
+                      </nav>
+                      <h2 class="main-tit">관리자 계정 관리</h2>
+                    </div>
+                    <!-- 타이틀 영역 끝 -->
+                    <!-- 탭 영역 시작 -->
+                    <div id="tab">
+                      <ul class="tab-list">
+                        <li>
+                          <a class="active" href="javascript:void(0)" title="탭">
+                            뉴스
+                          </a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" title="탭">
+                            이벤트
+                          </a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" title="탭">
+                            전시회
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- 탭 영역 끝 -->
+                    <!-- 검색 영역 시작 -->
+                    <div class="search-wrap">
+                      <div class="left">
+                        <div class="select-wrap wd160">
+                          <a href="javascript:void(0)" class="selected-option">지역전체</a>
+                          <ul class="option-list">
+                            <li>
+                              <a href="javascript:void(0)">지역 1</a>
+                            </li>
+                            <li>
+                              <a href="javascript:void(0)">지역 2</a>
+                            </li>
+                            <li>
+                              <a href="javascript:void(0)">지역 3</a>
+                            </li>
+                            <li>
+                              <a href="javascript:void(0)">지역 4</a>
+                            </li>
+                            <li>
+                              <a href="javascript:void(0)">지역 5</a>
+                            </li>
+                            <li>
+                              <a href="javascript:void(0)">지역 6</a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="select-wrap">
+                          <a href="javascript:void(0)" class="selected-option">25개</a>
+                          <ul class="option-list">
+                            <li>
+                              <a href="javascript:void(0)">지역 1</a>
+                            </li>
+                            <li>
+                              <a href="javascript:void(0)">지역 2</a>
+                            </li>
+                            <li>
+                              <a href="javascript:void(0)">지역 3</a>
+                            </li>
+                            <li>
+                              <a href="javascript:void(0)">지역 4</a>
+                            </li>
+                            <li>
+                              <a href="javascript:void(0)">지역 5</a>
+                            </li>
+                            <li>
+                              <a href="javascript:void(0)">지역 6</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="right">
+                        <div class="input-wrap">
+                          <input id="inputSample" type="text" placeholder="검색어 입력">
+                          <button class="common-btn" type="submit">
+                            검색
+                          </button>
+                          <button class="common-btn" type="submit">
+                            등록
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- 검색 영역 끝 -->
+          
+                  </div>
+                <div id="tableWrap" class="dont-copy-this-div">
+                    <div class="table-wrap">
+                      <table class="table-type01">
+                        <caption>메인 관리 히어로 설정 테이블</caption>
+                        <colgroup>
+                          <col width="2%">
+                          <col width="14%">
+                          <col width="14%">
+                          <col width="14%">
+                          <col width="14%">
+                          <col width="14%">
+                        </colgroup>
+                        <thead>
+                          <tr>
+                            <th scope="col">
+                              <label for="checkSample" name="checkSample">
+                                <input id="checkSample" type="checkbox">
+                              </label>
+                            </th>
+                            <th scope="col">
+                              No.
+                            </th>
+                            <th scope="col">
+                              제목
+                            </th>
+                            <th scope="col">
+                              등록일
+                            </th>
+                            <th scope="col">
+                              조회수
+                            </th>
+                            <th scope="col">
+                              노출설정
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <label for="checkSample" name="checkSample">
+                                <input id="checkSample" type="checkbox">
+                              </label>
+                            </td>
+                            <td>
+                              <div>admin3</div>
+                            </td>
+                            <td>
+                              <div>김기동</div>
+                            </td>
+                            <td>
+                              <div>사업본부</div>
+                            </td>
+                            <td>
+                              <div>사원</div>
+                            </td>
+                            <td class="setting">
+                                <div class="input-wrap radio">
+                                    <label for="radioSample1" name="radioSample1">
+                                      <input id="radioSample1" type="radio"> 노출
+                                    </label>
+                                    <label for="radioSample2" name="radioSample2">
+                                      <input id="radioSample2" type="radio"> 미노출
+                                    </label>
+                                </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <label for="checkSample" name="checkSample">
+                                <input id="checkSample" type="checkbox">
+                              </label>
+                            </td>
+                            <td>
+                              <div>admin3</div>
+                            </td>
+                            <td>
+                              <div>김기동</div>
+                            </td>
+                            <td>
+                              <div>사업본부</div>
+                            </td>
+                            <td>
+                              <div>사원</div>
+                            </td>
+                            <td class="setting">
+                                <div class="input-wrap radio">
+                                    <label for="radioSample1" name="radioSample1">
+                                      <input id="radioSample1" type="radio"> 노출
+                                    </label>
+                                    <label for="radioSample2" name="radioSample2">
+                                      <input id="radioSample2" type="radio"> 미노출
+                                    </label>
+                                </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <label for="checkSample" name="checkSample">
+                                <input id="checkSample" type="checkbox">
+                              </label>
+                            </td>
+                            <td>
+                              <div>admin3</div>
+                            </td>
+                            <td>
+                              <div>김기동</div>
+                            </td>
+                            <td>
+                              <div>사업본부</div>
+                            </td>
+                            <td>
+                              <div>사원</div>
+                            </td>
+                            <td>
+                              <div>010-1234-5678</div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <label for="checkSample" name="checkSample">
+                                <input id="checkSample" type="checkbox">
+                              </label>
+                            </td>
+                            <td>
+                              <div>admin3</div>
+                            </td>
+                            <td>
+                              <div>김기동</div>
+                            </td>
+                            <td>
+                              <div>사업본부</div>
+                            </td>
+                            <td>
+                              <div>사원</div>
+                            </td>
+                            <td>
+                              <div>010-1234-5678</div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <label for="checkSample" name="checkSample">
+                                <input id="checkSample" type="checkbox">
+                              </label>
+                            </td>
+                            <td>
+                              <div>admin3</div>
+                            </td>
+                            <td>
+                              <div>김기동</div>
+                            </td>
+                            <td>
+                              <div>사업본부</div>
+                            </td>
+                            <td>
+                              <div>사원</div>
+                            </td>
+                            <td>
+                              <div>010-1234-5678</div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <label for="checkSample" name="checkSample">
+                                <input id="checkSample" type="checkbox">
+                              </label>
+                            </td>
+                            <td>
+                              <div>admin3</div>
+                            </td>
+                            <td>
+                              <div>김기동</div>
+                            </td>
+                            <td>
+                              <div>사업본부</div>
+                            </td>
+                            <td>
+                              <div>사원</div>
+                            </td>
+                            <td>
+                              <div>010-1234-5678</div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <label for="checkSample" name="checkSample">
+                                <input id="checkSample" type="checkbox">
+                              </label>
+                            </td>
+                            <td>
+                              <div>admin3</div>
+                            </td>
+                            <td>
+                              <div>김기동</div>
+                            </td>
+                            <td>
+                              <div>사업본부</div>
+                            </td>
+                            <td>
+                              <div>사원</div>
+                            </td>
+                            <td>
+                              <div>010-1234-5678</div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <label for="checkSample" name="checkSample">
+                                <input id="checkSample" type="checkbox">
+                              </label>
+                            </td>
+                            <td>
+                              <div>admin3</div>
+                            </td>
+                            <td>
+                              <div>김기동</div>
+                            </td>
+                            <td>
+                              <div>사업본부</div>
+                            </td>
+                            <td>
+                              <div>사원</div>
+                            </td>
+                            <td>
+                              <div>010-1234-5678</div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <label for="checkSample" name="checkSample">
+                                <input id="checkSample" type="checkbox">
+                              </label>
+                            </td>
+                            <td>
+                              <div>admin3</div>
+                            </td>
+                            <td>
+                              <div>김기동</div>
+                            </td>
+                            <td>
+                              <div>사업본부</div>
+                            </td>
+                            <td>
+                              <div>사원</div>
+                            </td>
+                            <td>
+                              <div>010-1234-5678</div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <label for="checkSample" name="checkSample">
+                                <input id="checkSample" type="checkbox">
+                              </label>
+                            </td>
+                            <td>
+                              <div>admin3</div>
+                            </td>
+                            <td>
+                              <div>김기동</div>
+                            </td>
+                            <td>
+                              <div>사업본부</div>
+                            </td>
+                            <td>
+                              <div>사원</div>
+                            </td>
+                            <td>
+                              <div>010-1234-5678</div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <label for="checkSample" name="checkSample">
+                                <input id="checkSample" type="checkbox">
+                              </label>
+                            </td>
+                            <td>
+                              <div>admin3</div>
+                            </td>
+                            <td>
+                              <div>김기동</div>
+                            </td>
+                            <td>
+                              <div>사업본부</div>
+                            </td>
+                            <td>
+                              <div>사원</div>
+                            </td>
+                            <td>
+                              <div>010-1234-5678</div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <label for="checkSample" name="checkSample">
+                                <input id="checkSample" type="checkbox">
+                              </label>
+                            </td>
+                            <td>
+                              <div>admin3</div>
+                            </td>
+                            <td>
+                              <div>김기동</div>
+                            </td>
+                            <td>
+                              <div>사업본부</div>
+                            </td>
+                            <td>
+                              <div>사원</div>
+                            </td>
+                            <td>
+                              <div>010-1234-5678</div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <label for="checkSample" name="checkSample">
+                                <input id="checkSample" type="checkbox">
+                              </label>
+                            </td>
+                            <td>
+                              <div>admin3</div>
+                            </td>
+                            <td>
+                              <div>김기동</div>
+                            </td>
+                            <td>
+                              <div>사업본부</div>
+                            </td>
+                            <td>
+                              <div>사원</div>
+                            </td>
+                            <td>
+                              <div>010-1234-5678</div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <label for="checkSample" name="checkSample">
+                                <input id="checkSample" type="checkbox">
+                              </label>
+                            </td>
+                            <td>
+                              <div>admin3</div>
+                            </td>
+                            <td>
+                              <div>김기동</div>
+                            </td>
+                            <td>
+                              <div>사업본부</div>
+                            </td>
+                            <td>
+                              <div>사원</div>
+                            </td>
+                            <td>
+                              <div>010-1234-5678</div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <label for="checkSample" name="checkSample">
+                                <input id="checkSample" type="checkbox">
+                              </label>
+                            </td>
+                            <td>
+                              <div>admin3</div>
+                            </td>
+                            <td>
+                              <div>김기동</div>
+                            </td>
+                            <td>
+                              <div>사업본부</div>
+                            </td>
+                            <td>
+                              <div>사원</div>
+                            </td>
+                            <td>
+                              <div>010-1234-5678</div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <label for="checkSample" name="checkSample">
+                                <input id="checkSample" type="checkbox">
+                              </label>
+                            </td>
+                            <td>
+                              <div>admin3</div>
+                            </td>
+                            <td>
+                              <div>김기동</div>
+                            </td>
+                            <td>
+                              <div>사업본부</div>
+                            </td>
+                            <td>
+                              <div>사원</div>
+                            </td>
+                            <td>
+                              <div>010-1234-5678</div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <label for="checkSample" name="checkSample">
+                                <input id="checkSample" type="checkbox">
+                              </label>
+                            </td>
+                            <td>
+                              <div>admin3</div>
+                            </td>
+                            <td>
+                              <div>김기동</div>
+                            </td>
+                            <td>
+                              <div>사업본부</div>
+                            </td>
+                            <td>
+                              <div>사원</div>
+                            </td>
+                            <td>
+                              <div>010-1234-5678</div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <label for="checkSample" name="checkSample">
+                                <input id="checkSample" type="checkbox">
+                              </label>
+                            </td>
+                            <td>
+                              <div>admin3</div>
+                            </td>
+                            <td>
+                              <div>김기동</div>
+                            </td>
+                            <td>
+                              <div>사업본부</div>
+                            </td>
+                            <td>
+                              <div>사원</div>
+                            </td>
+                            <td>
+                              <div>010-1234-5678</div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <label for="checkSample" name="checkSample">
+                                <input id="checkSample" type="checkbox">
+                              </label>
+                            </td>
+                            <td>
+                              <div>admin3</div>
+                            </td>
+                            <td>
+                              <div>김기동</div>
+                            </td>
+                            <td>
+                              <div>사업본부</div>
+                            </td>
+                            <td>
+                              <div>사원</div>
+                            </td>
+                            <td>
+                              <div>010-1234-5678</div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <label for="checkSample" name="checkSample">
+                                <input id="checkSample" type="checkbox">
+                              </label>
+                            </td>
+                            <td>
+                              <div>admin3</div>
+                            </td>
+                            <td>
+                              <div>김기동</div>
+                            </td>
+                            <td>
+                              <div>사업본부</div>
+                            </td>
+                            <td>
+                              <div>사원</div>
+                            </td>
+                            <td>
+                              <div>010-1234-5678</div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                </div>
+                <div id="bottomArea" class="no-line">
+                    <div id="pagination">
+          
+                    </div>
+                    <div class="btn-wrap">
+                      <button type="button" class="common-btn">
+                        삭제
+                      </button>
+                      <button type="button" class="common-btn">
+                        등록
+                      </button>
+                    </div>
+                  </div>
+            </section>
+            <!-- mid AREA 중간 영역 끝 -->
+        </div>
+        <!-- 컨테이너 끝 -->
+    </div>
+</body>
+
+</html>
