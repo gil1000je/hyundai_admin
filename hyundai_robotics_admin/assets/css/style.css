@@ -255,7 +255,7 @@ display:none}
 /* MID AREA 중간영역 *
 
 /* 인포 리스트 타입 01 */
-.info-list-type01 { display:flex; gap:20rem; flex-direction:column; } 
+.info-list-type01 { display:flex; gap:22rem; flex-direction:column; } 
 .info-list-type01.dividing-line{border-bottom: 1px solid #bbb;padding-bottom: 22rem;margin-bottom: 22rem;}
 .info-list-type01 li { display:flex; min-height:44rem; align-items:center; } 
 .info-list-type01 .title { width:160rem; font-size:18rem; font-weight:500; word-break:nowrap } 
@@ -423,3 +423,40 @@ display:none}
  .inp { padding: 10rem 10rem; background-color: #f1f1f1; border-radius: 4rem; border: 0rem; } 
 
  .inp:focus { outline: none; background-color: #eee; } 
+
+
+ #dashboard { margin-top:74rem; background:#F4F4F4; padding-bottom:32rem}
+ #dashboard .title-wrap { display:flex; align-items:center; padding:12rem 0; }
+ #dashboard .title-wrap h2.title { font-size:30rem; font-weight:700; color:#222; line-height:45rem;}
+ #dashboard .title-wrap .last-update { white-space:nowrap; color:#999; font-size:14rem; line-height:24rem; font-weight:500;}
+ #dashboard .title-wrap > a { display:inline-block; width:18rem; height:18rem; background:red; margin:0 8rem 0 15rem}
+ #dashboard .title-wrap .last-update span { color:#999; font-size:14rem; font-weight:400;}
+
+ #dashboard .dashboard-list { width:100%; display:grid; grid-template-columns:repeat(2, 1fr); gap:12rem;}
+ #dashboard .dashboard-list > li { height:294rem; background:#fff; border-radius:3rem; overflow:hidden;}
+ #dashboard .dashboard-list > li .title-wrap { display:flex; width:100%; height:44rem; align-items:center; justify-content:space-between; padding:0 20rem; background:#3BB88C;}
+ #dashboard .dashboard-list > li .title {  color:#fff; font-size:18rem; font-weight:700; }
+ #dashboard .dashboard-list > li .title-wrap > button { width:80rem; height:32rem; border-radius:22rem; background:#fff; color:#339A76; font-size:14rem; font-weight:500;}
+ #dashboard .dashboard-list > li .info { padding:20rem }
+ #dashboard .dashboard-list  li#boxVisit {}
+ #dashboard .dashboard-list li#boxVisit .tab { display:flex; gap:5rem; margin-bottom:20rem; }
+ #dashboard .dashboard-list li#boxVisit .tab li {}
+ #dashboard .dashboard-list li#boxVisit .tab li a { display:inline-block; padding:0 5rem; color:#999; font-size:14rem; font-weight:500; }
+ #dashboard .dashboard-list li#boxVisit .tab li.active a { position:relative; color:#339A76; font-size:16rem; font-weight:700; }
+ #dashboard .dashboard-list li#boxVisit .tab li.active a::after {content:""; display:inline-block; width:100%; height:2px; background:#339A76; position:absolute; bottom:-5rem; left:0; }
+ #dashboard .dashboard-list li#boxVisit .graph { width:100%; height:150rem; background:red}
+ #dashboard .table-wrap {width:100%;}
+ #dashboard .table-type-dashboard { width:100%; }
+ #dashboard .table-type-dashboard thead tr { width:100%; background:#F4F4F4; height:36rem; border-radius:3rem 3rem 0 0  }
+ #dashboard .table-type-dashboard thead th {text-align:center;}
+ #dashboard .table-type-dashboard thead th:last-child, #dashboard .table-type-dashboard tbody td:last-child { padding-right:20rem; text-align:right}
+ #dashboard .table-type-dashboard tbody td { height:36rem; text-align:center; font-weight:500; color:#222;}
+ #dashboard .table-type-dashboard tbody td.num { font-size:20rem; font-weight:700; }
+ #dashboard .table-type-dashboard tbody td.target {text-align:left;}
+
+ #dashboard .dashboard-list li#boxInquiry {grid-column-end:span 2;}
+ #dashboard .dashboard-list li#boxInquiry .info {display:flex; }
+ #dashboard .dashboard-list li#boxInquiry .tab {width:220rem; display:flex; flex-direction:column; gap:22rem; margin-top:10rem}
+ #dashboard .dashboard-list li#boxInquiry .tab a {font-size:14rem; font-weight:500; color:#999; line-height:20rem;}
+ #dashboard .dashboard-list li#boxInquiry .tab .active a { position:relative; font-size:16rem; color:#339A76; font-weight:700; line-height:24rem; }
+ #dashboard .dashboard-list li#boxInquiry .tab .active a::before { content:""; display:inline-block; width:100%; height:2px; background:#339A76; position:absolute; bottom:-2rem; left:0;}
