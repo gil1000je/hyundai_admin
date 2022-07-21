@@ -15,7 +15,7 @@
     <script src="/hyundai_robotics_admin/assets/js/form.js"></script>
 </head>
 <body>
-    <div id="newsSetting" class="wrap">
+    <div id="newsEmptySetting" class="wrap">
         <!-- HEADER 헤더 시작 -->
         <header id="header" class="bg"></header>
         <!-- HEADER 헤더 끝 -->
@@ -125,8 +125,12 @@
             <!-- mid AREA 중간 영역 시작 -->
             <section id="midArea">
                 <div id="tableWrap" class="dont-copy-this-div">
-                    <div class="table-wrap">
-                      <table class="table-type01 border-td">
+                    <div class="table-wrap empty">
+                      <div class="empty-info">
+                        <img src="/hyundai_robotics_admin/assets/images/common/noresult_icon.png" alt="결과없음">
+                        <p>뉴스가 없습니다.</p>
+                      </div>
+                      <table class="table-type01">
                         <caption>새소식 노출 여부 테이블</caption>
                         <colgroup>
                           <col width="5%">

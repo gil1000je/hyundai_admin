@@ -90,6 +90,8 @@ input[type="text"] + button, input[type="text"] + button + button { margin-left:
 .table-wrap .all {margin-bottom:10rem;}
 .table-wrap .table-info { margin-top:12rem; color:#999; line-height:24rem;}
 .table-wrap.empty { position:relative;}
+.table-wrap.empty table{outline: 0;}
+.table-wrap.empty table tr{border-bottom: 0;}
 .table-wrap.empty .empty-info { position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); text-align:center}
 .table-wrap.empty .empty-info p { margin-top:55rem; font-size:20rem; color:#7B7B7B;}
 .table-alert { display:flex; align-items:center; height:52rem; gap:8rem } 
@@ -99,7 +101,7 @@ input[type="text"] + button, input[type="text"] + button + button { margin-left:
 .table-wrap .input-wrap.radio label {font-size:14rem}
 
 /* 테이블 타입 1 */
-.table-type01 { width:100%; max-width:1300rem; border-radius:3rem; background:#fff; outline:solid 1px #BBB; } 
+.table-type01 { width:100%; max-width:1300rem; border-radius:3rem; background:#fff; outline:solid 1px #BBB;overflow: hidden;} 
 .table-type01 .num { width:100rem; } 
 .table-type01 tr { height:30rem; border-bottom:solid 1px #BBB } 
 .table-type01 tr:last-child { border-bottom:0 } 
@@ -115,6 +117,7 @@ input[type="text"] + button, input[type="text"] + button + button { margin-left:
 
 .table-type01.border-td td{border-right:solid 1px #BBB}
 .table-type01.border-td td:last-child { border-right:0 } 
+.table-type01.border-td input[type="checkbox"] {margin-left:0;}
 
 /* 테이블 타입 2*/
 .table-type02 { width:100%; max-width:800rem; border-radius:3rem; background:#fff; outline:solid 1px #BBB; } 
