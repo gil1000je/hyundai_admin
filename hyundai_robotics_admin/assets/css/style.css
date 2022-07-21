@@ -13,7 +13,10 @@ body, #header {min-width:1300rem}
 label.common-btn { width:120rem; display:flex; align-items:center; justify-content:center;}
 .common-btn.preview-btn { width:120rem; display:flex; align-items:center; justify-content:center;}
 .login-modal .common-btn { border: 1px solid #eee; border-radius: 8rem; font-size: 14rem; font-weight: bold; min-height: 48rem;width: 100%;display: flex;align-items: center;justify-content: center;} 
-.common-btn.regist {background:#3BB88C; color:#fff; border:solid 1px #3BB88C; }
+.common-btn.regist {background:#3BB88C; color:#fff; border:solid 1px #3BB88C;width: 120rem;padding: 0;display: flex;align-items: center;justify-content: center;}
+.common-btn.regist::after{content: '';width: 28rem;height: 28rem;display: inline-block;background: url(/hyundai_robotics_admin/assets/images/common/regist_active_icon.png) no-repeat center/ contain;margin-left: 5rem;}
+.common-btn.regist:disabled{background: #ddd;border: 1px solid #999;color: #999;}
+.common-btn.regist:disabled::after{background: url(/hyundai_robotics_admin/assets/images/common/regist_icon.png) no-repeat center/ contain;}
 
 /* 체크박스 및 라디오 버튼 */
 .input-wrap.check label, .input-wrap.radio label { display:flex; align-items:center; line-height:1; gap:8rem; font-size:16rem } 
@@ -25,8 +28,8 @@ input[type="radio"]::after { content:''; width: 20rem !important; height: 20rem 
 input[type="radio"]:checked::after {background:url(/hyundai_robotics_admin/assets/images/common/icon_radio_checked.svg);} 
 
 /* 인풋박스 */
-input[type="text"], input[type="password"], input[type="email"], input[type="number"]  { border:solid 1px #BBB; background:#fff; border-radius:3rem; height:44rem; padding:0 14rem; font-size:16rem; margin-top:20rem } 
-input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, 
+input[type="text"],input[type="search"], input[type="password"], input[type="email"], input[type="number"]  { border:solid 1px #BBB; background:#fff; border-radius:3rem; height:44rem; padding:0 14rem; font-size:16rem; margin-top:20rem } 
+input[type="text"]:focus, input[type="search"]:focus, input[type="password"]:focus, input[type="email"]:focus, 
 input[type="number"]:focus { outline:solid 1.5px #222; border:solid 1px #fff; } 
 input[type="text"]::placeholder, input[type="password"]::placeholder, input[type="email"]::placeholder, input[type="number"]::placeholder { color:#999; font-size:16rem } 
 input[type="text"]:disabled, input[type="password"]:disabled, input[type="email"]:disabled, input[type="number"]:disabled  { border:solid 1px #999; background:#ddd; } 
@@ -86,7 +89,7 @@ input[type="text"] + button, input[type="text"] + button + button { margin-left:
 #tab .tab-list li a { width:120rem; font-size:16rem; display:flex; align-items:center; justify-content:center; min-height:44rem; padding:0 42rem; border:solid 1px #bbb; color:#999; background:#F5FCF9; border-radius:3rem; white-space:nowrap; } 
 #tab .tab-list li a.active { background:#3BB88C; color:#fff; border:solid 1px #3BB88C; } 
 #tab.width160 .tab-list li a { width:160rem; }
-
+#tab + .search-wrap{margin-top: 12rem;}
 /* 타이틀 영역 */
 #topArea .title-wrap { width:1300rem; margin:0 auto; /*padding:33rem 0 70rem;*/padding: 33rem 0 30rem; } 
 #topArea .title-wrap h2.main-tit { font-size:30rem; color:#222; font-weight:700; line-height:44rem; letter-spacing:-0.018em; } 
@@ -224,13 +227,24 @@ input[type="text"] + button, input[type="text"] + button + button { margin-left:
 #topArea .alert { display:inline-block; font-size:16rem; color:#999; margin-top:3rem; }
 #topArea.tab { padding-bottom:12rem } 
 #topArea.tab .title-wrap, #topArea.search .title-wrap { padding-bottom:16rem } 
-#topArea.search .search-wrap { display:flex; justify-content:space-between; padding-bottom:12rem }
+#topArea.search .search-wrap {}
+#topArea.search .search-wrap-inner { display:flex; justify-content:space-between; padding-bottom:12rem }
 #topArea.search .search-wrap .select-wrap { width:120rem; }
+#topArea.search .search-wrap .select-wrap:not(:first-child){margin-left: 14rem;}
 #topArea.search .search-wrap .select-wrap.wd160 { width:160rem; }
 #topArea.search .search-wrap .select-wrap a {color:#222;}
 #topArea.search .search-wrap .left {position:relative; display:flex; align-items:flex-end; gap:12rem}
-#topArea.search .search-wrap .left .num {margin-bottom:5rem}
-#topArea.search .search-wrap input[type="text"] {width:380rem;}
+#topArea.search .search-wrap .right{display: flex;align-items: center;}
+#topArea.search .search-wrap .right .regist{margin-left: 14rem;width: 120rem;}
+#topArea.search .search-wrap .num {margin-bottom:5rem}
+#topArea.search .search-wrap .search-input{width:380rem;position: relative;margin-right: 14rem;}
+#topArea.search .search-wrap .search-input input {width:100%;margin-top: 0;}
+#topArea.search .search-wrap .search-input input::-webkit-search-decoration,
+#topArea.search .search-wrap .search-input input::-webkit-search-cancel-button,
+#topArea.search .search-wrap .search-input input::-webkit-search-results-button,
+#topArea.search .search-wrap .search-input input::-webkit-search-results-decoration{
+display:none}
+#topArea.search .search-wrap .search-input .btn-clear{width: 20rem;height: 20rem;position: absolute;right: 14rem;top: 50%;transform: translateY(-50%);}
 #topArea .button-wrap { position:relative; display:flex; justify-content:flex-end; min-height:44rem }
 #topArea .button-wrap .alert {position:absolute; top:50%; transform:translateY(-50%); left:0;}
 #topArea .button-wrap .alert strong { font-size:18rem; margin-right:8rem; font-weight:500 }

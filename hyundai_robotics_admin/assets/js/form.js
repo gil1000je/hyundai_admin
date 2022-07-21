@@ -199,7 +199,8 @@ $(document).ready(function() {
 
     }
     ShowPopup ()
-      
+    
+    //캘린더
     $.datepicker.setDefaults({
         dateFormat: 'yy-mm-dd',
         dayNames: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
@@ -210,6 +211,13 @@ $(document).ready(function() {
         $('.datepicker').datepicker();
     })
 
+    //검색
+    var btnClear = document.querySelectorAll('.btn-clear');
+    btnClear.forEach(function(btn){
+        btn.addEventListener('click', function(){
+            btn.parentNode.querySelector('input[type="search"]').value = "";
+        })
+    })
 });
 
 
