@@ -42,7 +42,7 @@
     <!-- HEADER 헤더 끝 -->
 
     <!-- CONTAINER 컨테이너 시작 -->
-    <div id="container" style="padding-top:180rem;">
+    <div id="container" style=" max-width:1400rem; padding-top:180rem;">
 
       <!-- 0. 탭 섹션 시작 -->
       <section id="tab" class="style-box">
@@ -185,8 +185,34 @@
         <!-- 네비게이션 끝 -->
         <!-- 탭 시작 -->
         <div id="tabWrap" class="dont-copy-this-div">
-          <span class="sub-tit">탭</span>
+          <span class="sub-tit">#tab (width : 120)</span>
           <div id="tab">
+            <ul class="tab-list">
+              <li>
+                <a class="active" href="javascript:void(0)" title="탭">
+                  기업
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" title="탭">
+                  도입 업체
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" title="탭">
+                  활성화 (399,999)
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" title="탭">
+                  비활성화 (3,999)
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <span class="sub-tit">#tab.width160 클래스 추가시 (width : 160)</span>
+          <div id="tab" class="width160">
             <ul class="tab-list">
               <li>
                 <a class="active" href="javascript:void(0)" title="탭">
@@ -876,9 +902,9 @@
               </tbody>
             </table>
           </div>
-          <span class="sub-tit">테이블 3</span>
+          <span class="sub-tit">테이블 ( 콘텐츠 관리 - 메인 히어로) </span>
           <div class="table-wrap">
-            <table class="table-type01">
+            <table class="table-type03">
               <caption>메인 관리 히어로 설정 테이블</caption>
               <colgroup>
                 <col width="4%">
@@ -1588,613 +1614,186 @@
               </tbody>
             </table>
           </div>
-          <span class="sub-tit">테이블 5 ()</span>
-          <div class="table-wrap empty">
-            <div class="empty-info">
-              <img src="/hyundai_robotics_admin/assets/images/common/noresult_icon.png" alt="결과없음">
-              <p>뉴스가 없습니다.</p>
-            </div>
-            <table class="table-type01">
+          <span class="sub-tit">테이블 5 ( 콘텐츠 관리 - 메인 히어로) </span>
+          <div class="table-wrap">
+            <table class="table-type04">
               <caption>메인 관리 히어로 설정 테이블</caption>
               <colgroup>
-                <col width="2%">
-                <col width="14%">
-                <col width="14%">
-                <col width="14%">
-                <col width="14%">
-                <col width="14%">
-                <col width="14%">
-                <col width="14%">
+                <col width="8%">
+                <col width="75%">
+                <col width="17%">
               </colgroup>
               <thead>
                 <tr>
                   <th scope="col">
-                    <label for="checkSample" name="checkSample">
-                      <input id="checkSample" type="checkbox">
-                    </label>
+                    구분
                   </th>
                   <th scope="col">
-                    아이디
+                    이미지 / 동영상 첨부
                   </th>
                   <th scope="col">
-                    이름
+                    미리보기
                   </th>
-                  <th scope="col">
-                    부서
-                  </th>
-                  <th scope="col">
-                    직급
-                  </th>
-                  <th scope="col">
-                    연락처
-                  </th>
-                  <th scope="col">
-                    이메일
-                  </th>
-                  <th scope="col">
-                    발급일자
                   </th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
+                  <td rowspan="3">국문</td>
                   <td>
-                    <label for="checkSample" name="checkSample">
-                      <input id="checkSample" type="checkbox">
-                    </label>
+                    <div class="media-wrap">
+                      <ul class="media-list">
+                        <li>
+                          <div class="title">
+                            PC
+                          </div>
+                          <div class="info">
+                            <div class="input-wrap file">
+                              <input class="hide" type="file" id="file">
+                              <input type="text" placeholder="선택한 파일 없음">
+                              <label class="common-btn" for="file">파일선택</label>
+                            </div>
+                            <span class="alert">
+                              이미지 사이즈 1920*900px
+                            </span>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
                   </td>
                   <td>
-                    <div>admin3</div>
-                  </td>
-                  <td>
-                    <div>김기동</div>
-                  </td>
-                  <td>
-                    <div>사업본부</div>
-                  </td>
-                  <td>
-                    <div>사원</div>
-                  </td>
-                  <td>
-                    <div>010-1234-5678</div>
-                  </td>
-                  <td>
-                    <div>one2@HYUNDAIrobotics.com</div>
-                  </td>
-                  <td>
-                    <div>2021-11-01</div>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <label for="checkSample" name="checkSample">
-                      <input id="checkSample" type="checkbox">
-                    </label>
-                  </td>
-                  <td>
-                    <div>admin3</div>
-                  </td>
-                  <td>
-                    <div>김기동</div>
-                  </td>
-                  <td>
-                    <div>사업본부</div>
-                  </td>
-                  <td>
-                    <div>사원</div>
-                  </td>
-                  <td>
-                    <div>010-1234-5678</div>
-                  </td>
-                  <td>
-                    <div>one2@HYUNDAIrobotics.com</div>
-                  </td>
-                  <td>
-                    <div>2021-11-01</div>
+                    <button class="common-btn" type="button">
+                        미리보기
+                    </button>
                   </td>
                 </tr>
                 <tr>
                   <td>
-                    <label for="checkSample" name="checkSample">
-                      <input id="checkSample" type="checkbox">
-                    </label>
+                    <div class="media-wrap">
+                      <ul class="media-list">
+                        <li>
+                          <div class="title">
+                            Mobile
+                          </div>
+                          <div class="info">
+                            <div class="input-wrap file">
+                              <input class="hide" type="file" id="file">
+                              <input type="text" placeholder="선택한 파일 없음">
+                              <label class="common-btn" for="file">파일선택</label>
+                            </div>
+                            <span class="alert">
+                              이미지 사이즈 1920*900px
+                            </span>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
                   </td>
                   <td>
-                    <div>admin3</div>
-                  </td>
-                  <td>
-                    <div>김기동</div>
-                  </td>
-                  <td>
-                    <div>사업본부</div>
-                  </td>
-                  <td>
-                    <div>사원</div>
-                  </td>
-                  <td>
-                    <div>010-1234-5678</div>
-                  </td>
-                  <td>
-                    <div>one2@HYUNDAIrobotics.com</div>
-                  </td>
-                  <td>
-                    <div>2021-11-01</div>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <label for="checkSample" name="checkSample">
-                      <input id="checkSample" type="checkbox">
-                    </label>
-                  </td>
-                  <td>
-                    <div>admin3</div>
-                  </td>
-                  <td>
-                    <div>김기동</div>
-                  </td>
-                  <td>
-                    <div>사업본부</div>
-                  </td>
-                  <td>
-                    <div>사원</div>
-                  </td>
-                  <td>
-                    <div>010-1234-5678</div>
-                  </td>
-                  <td>
-                    <div>one2@HYUNDAIrobotics.com</div>
-                  </td>
-                  <td>
-                    <div>2021-11-01</div>
+                    <button class="common-btn" type="button">
+                        미리보기
+                    </button>
                   </td>
                 </tr>
                 <tr>
                   <td>
-                    <label for="checkSample" name="checkSample">
-                      <input id="checkSample" type="checkbox">
-                    </label>
+                    <div class="media-wrap">
+                      <ul class="media-list">
+                        <li>
+                          <div class="title">
+                            링크
+                          </div>
+                          <div class="info">
+                            <div class="input-wrap file">
+                              <input class="hide" type="file" id="file">
+                              <input type="text" placeholder="선택한 파일 없음">
+                              <!-- <label class="common-btn" for="file">파일선택</label> -->
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
                   </td>
                   <td>
-                    <div>admin3</div>
+                  </td>
+                </tr>
+                <tr>
+                  <td rowspan="3">영문</td>
+                  <td>
+                    <div class="media-wrap">
+                      <ul class="media-list">
+                        <li>
+                          <div class="title">
+                            PC
+                          </div>
+                          <div class="info">
+                            <div class="input-wrap file">
+                              <input class="hide" type="file" id="file">
+                              <input type="text" placeholder="선택한 파일 없음">
+                              <label class="common-btn" for="file">파일선택</label>
+                            </div>
+                            <span class="alert">
+                              이미지 사이즈 1920*900px
+                            </span>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
                   </td>
                   <td>
-                    <div>김기동</div>
-                  </td>
-                  <td>
-                    <div>사업본부</div>
-                  </td>
-                  <td>
-                    <div>사원</div>
-                  </td>
-                  <td>
-                    <div>010-1234-5678</div>
-                  </td>
-                  <td>
-                    <div>one2@HYUNDAIrobotics.com</div>
-                  </td>
-                  <td>
-                    <div>2021-11-01</div>
+                    <button class="common-btn" type="button">
+                        미리보기
+                    </button>
                   </td>
                 </tr>
                 <tr>
                   <td>
-                    <label for="checkSample" name="checkSample">
-                      <input id="checkSample" type="checkbox">
-                    </label>
+                    <div class="media-wrap">
+                      <ul class="media-list">
+                        <li>
+                          <div class="title">
+                            Mobile
+                          </div>
+                          <div class="info">
+                            <div class="input-wrap file">
+                              <input class="hide" type="file" id="file">
+                              <input type="text" placeholder="선택한 파일 없음">
+                              <label class="common-btn" for="file">파일선택</label>
+                            </div>
+                            <span class="alert">
+                              이미지 사이즈 1920*900px
+                            </span>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
                   </td>
                   <td>
-                    <div>admin3</div>
-                  </td>
-                  <td>
-                    <div>김기동</div>
-                  </td>
-                  <td>
-                    <div>사업본부</div>
-                  </td>
-                  <td>
-                    <div>사원</div>
-                  </td>
-                  <td>
-                    <div>010-1234-5678</div>
-                  </td>
-                  <td>
-                    <div>one2@HYUNDAIrobotics.com</div>
-                  </td>
-                  <td>
-                    <div>2021-11-01</div>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <label for="checkSample" name="checkSample">
-                      <input id="checkSample" type="checkbox">
-                    </label>
-                  </td>
-                  <td>
-                    <div>admin3</div>
-                  </td>
-                  <td>
-                    <div>김기동</div>
-                  </td>
-                  <td>
-                    <div>사업본부</div>
-                  </td>
-                  <td>
-                    <div>사원</div>
-                  </td>
-                  <td>
-                    <div>010-1234-5678</div>
-                  </td>
-                  <td>
-                    <div>one2@HYUNDAIrobotics.com</div>
-                  </td>
-                  <td>
-                    <div>2021-11-01</div>
+                    <button class="common-btn" type="button">
+                        미리보기
+                    </button>
                   </td>
                 </tr>
                 <tr>
                   <td>
-                    <label for="checkSample" name="checkSample">
-                      <input id="checkSample" type="checkbox">
-                    </label>
+                    <div class="media-wrap">
+                      <ul class="media-list">
+                        <li>
+                          <div class="title">
+                            링크
+                          </div>
+                          <div class="info">
+                            <div class="input-wrap file">
+                              <input class="hide" type="file" id="file">
+                              <input type="text" placeholder="선택한 파일 없음">
+                              <!-- <label class="common-btn" for="file">파일선택</label> -->
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
                   </td>
                   <td>
-                    <div>admin3</div>
-                  </td>
-                  <td>
-                    <div>김기동</div>
-                  </td>
-                  <td>
-                    <div>사업본부</div>
-                  </td>
-                  <td>
-                    <div>사원</div>
-                  </td>
-                  <td>
-                    <div>010-1234-5678</div>
-                  </td>
-                  <td>
-                    <div>one2@HYUNDAIrobotics.com</div>
-                  </td>
-                  <td>
-                    <div>2021-11-01</div>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <label for="checkSample" name="checkSample">
-                      <input id="checkSample" type="checkbox">
-                    </label>
-                  </td>
-                  <td>
-                    <div>admin3</div>
-                  </td>
-                  <td>
-                    <div>김기동</div>
-                  </td>
-                  <td>
-                    <div>사업본부</div>
-                  </td>
-                  <td>
-                    <div>사원</div>
-                  </td>
-                  <td>
-                    <div>010-1234-5678</div>
-                  </td>
-                  <td>
-                    <div>one2@HYUNDAIrobotics.com</div>
-                  </td>
-                  <td>
-                    <div>2021-11-01</div>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <label for="checkSample" name="checkSample">
-                      <input id="checkSample" type="checkbox">
-                    </label>
-                  </td>
-                  <td>
-                    <div>admin3</div>
-                  </td>
-                  <td>
-                    <div>김기동</div>
-                  </td>
-                  <td>
-                    <div>사업본부</div>
-                  </td>
-                  <td>
-                    <div>사원</div>
-                  </td>
-                  <td>
-                    <div>010-1234-5678</div>
-                  </td>
-                  <td>
-                    <div>one2@HYUNDAIrobotics.com</div>
-                  </td>
-                  <td>
-                    <div>2021-11-01</div>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <label for="checkSample" name="checkSample">
-                      <input id="checkSample" type="checkbox">
-                    </label>
-                  </td>
-                  <td>
-                    <div>admin3</div>
-                  </td>
-                  <td>
-                    <div>김기동</div>
-                  </td>
-                  <td>
-                    <div>사업본부</div>
-                  </td>
-                  <td>
-                    <div>사원</div>
-                  </td>
-                  <td>
-                    <div>010-1234-5678</div>
-                  </td>
-                  <td>
-                    <div>one2@HYUNDAIrobotics.com</div>
-                  </td>
-                  <td>
-                    <div>2021-11-01</div>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <label for="checkSample" name="checkSample">
-                      <input id="checkSample" type="checkbox">
-                    </label>
-                  </td>
-                  <td>
-                    <div>admin3</div>
-                  </td>
-                  <td>
-                    <div>김기동</div>
-                  </td>
-                  <td>
-                    <div>사업본부</div>
-                  </td>
-                  <td>
-                    <div>사원</div>
-                  </td>
-                  <td>
-                    <div>010-1234-5678</div>
-                  </td>
-                  <td>
-                    <div>one2@HYUNDAIrobotics.com</div>
-                  </td>
-                  <td>
-                    <div>2021-11-01</div>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <label for="checkSample" name="checkSample">
-                      <input id="checkSample" type="checkbox">
-                    </label>
-                  </td>
-                  <td>
-                    <div>admin3</div>
-                  </td>
-                  <td>
-                    <div>김기동</div>
-                  </td>
-                  <td>
-                    <div>사업본부</div>
-                  </td>
-                  <td>
-                    <div>사원</div>
-                  </td>
-                  <td>
-                    <div>010-1234-5678</div>
-                  </td>
-                  <td>
-                    <div>one2@HYUNDAIrobotics.com</div>
-                  </td>
-                  <td>
-                    <div>2021-11-01</div>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <label for="checkSample" name="checkSample">
-                      <input id="checkSample" type="checkbox">
-                    </label>
-                  </td>
-                  <td>
-                    <div>admin3</div>
-                  </td>
-                  <td>
-                    <div>김기동</div>
-                  </td>
-                  <td>
-                    <div>사업본부</div>
-                  </td>
-                  <td>
-                    <div>사원</div>
-                  </td>
-                  <td>
-                    <div>010-1234-5678</div>
-                  </td>
-                  <td>
-                    <div>one2@HYUNDAIrobotics.com</div>
-                  </td>
-                  <td>
-                    <div>2021-11-01</div>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <label for="checkSample" name="checkSample">
-                      <input id="checkSample" type="checkbox">
-                    </label>
-                  </td>
-                  <td>
-                    <div>admin3</div>
-                  </td>
-                  <td>
-                    <div>김기동</div>
-                  </td>
-                  <td>
-                    <div>사업본부</div>
-                  </td>
-                  <td>
-                    <div>사원</div>
-                  </td>
-                  <td>
-                    <div>010-1234-5678</div>
-                  </td>
-                  <td>
-                    <div>one2@HYUNDAIrobotics.com</div>
-                  </td>
-                  <td>
-                    <div>2021-11-01</div>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <label for="checkSample" name="checkSample">
-                      <input id="checkSample" type="checkbox">
-                    </label>
-                  </td>
-                  <td>
-                    <div>admin3</div>
-                  </td>
-                  <td>
-                    <div>김기동</div>
-                  </td>
-                  <td>
-                    <div>사업본부</div>
-                  </td>
-                  <td>
-                    <div>사원</div>
-                  </td>
-                  <td>
-                    <div>010-1234-5678</div>
-                  </td>
-                  <td>
-                    <div>one2@HYUNDAIrobotics.com</div>
-                  </td>
-                  <td>
-                    <div>2021-11-01</div>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <label for="checkSample" name="checkSample">
-                      <input id="checkSample" type="checkbox">
-                    </label>
-                  </td>
-                  <td>
-                    <div>admin3</div>
-                  </td>
-                  <td>
-                    <div>김기동</div>
-                  </td>
-                  <td>
-                    <div>사업본부</div>
-                  </td>
-                  <td>
-                    <div>사원</div>
-                  </td>
-                  <td>
-                    <div>010-1234-5678</div>
-                  </td>
-                  <td>
-                    <div>one2@HYUNDAIrobotics.com</div>
-                  </td>
-                  <td>
-                    <div>2021-11-01</div>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <label for="checkSample" name="checkSample">
-                      <input id="checkSample" type="checkbox">
-                    </label>
-                  </td>
-                  <td>
-                    <div>admin3</div>
-                  </td>
-                  <td>
-                    <div>김기동</div>
-                  </td>
-                  <td>
-                    <div>사업본부</div>
-                  </td>
-                  <td>
-                    <div>사원</div>
-                  </td>
-                  <td>
-                    <div>010-1234-5678</div>
-                  </td>
-                  <td>
-                    <div>one2@HYUNDAIrobotics.com</div>
-                  </td>
-                  <td>
-                    <div>2021-11-01</div>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <label for="checkSample" name="checkSample">
-                      <input id="checkSample" type="checkbox">
-                    </label>
-                  </td>
-                  <td>
-                    <div>admin3</div>
-                  </td>
-                  <td>
-                    <div>김기동</div>
-                  </td>
-                  <td>
-                    <div>사업본부</div>
-                  </td>
-                  <td>
-                    <div>사원</div>
-                  </td>
-                  <td>
-                    <div>010-1234-5678</div>
-                  </td>
-                  <td>
-                    <div>one2@HYUNDAIrobotics.com</div>
-                  </td>
-                  <td>
-                    <div>2021-11-01</div>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <label for="checkSample" name="checkSample">
-                      <input id="checkSample" type="checkbox">
-                    </label>
-                  </td>
-                  <td>
-                    <div>admin3</div>
-                  </td>
-                  <td>
-                    <div>김기동</div>
-                  </td>
-                  <td>
-                    <div>사업본부</div>
-                  </td>
-                  <td>
-                    <div>사원</div>
-                  </td>
-                  <td>
-                    <div>010-1234-5678</div>
-                  </td>
-                  <td>
-                    <div>one2@HYUNDAIrobotics.com</div>
-                  </td>
-                  <td>
-                    <div>2021-11-01</div>
                   </td>
                 </tr>
               </tbody>
@@ -2450,7 +2049,7 @@
         <span class="sub-tit">1. 기본 (네비 + 타이틀)</span>
 
         <!-- 1. TOP AREA 기본 탑 영역 시작 -->
-        <div id="topArea">
+        <section id="topArea">
 
           <!-- 타이틀 영역 시작 -->
           <div class="title-wrap">
@@ -2469,13 +2068,13 @@
           </div>
           <!-- 1. 타이틀 영역 끝 -->
 
-        </div>
+        </section>
         <!-- TOP AREA 기본 탑 영역 끝 -->
 
         <span class="sub-tit" style="margin-top:50rem;">2. 탭 있음 (네비 + 타이틀 + 탭)</span>
 
         <!-- 2. TOP AREA 탑 영역 (탭) 시작 -->
-        <div id="topArea" class="tab">
+        <section id="topArea" class="tab">
 
           <!-- 타이틀 영역 시작 -->
           <div class="title-wrap">
@@ -2534,13 +2133,13 @@
           </div>
           <!-- 탭 영역 끝 -->
 
-        </div>
+        </section>
         <!-- 2. TOP AREA 탑 영역 (탭) 끝 -->
 
         <span class="sub-tit" style="margin-top:50rem;">3. 셀렉트박스 및 검색박스 있음 (네비 + 타이틀 + 셀렉트박스 + 검색박스)</span>
 
         <!-- 3. TOP AREA 샐렉트 + 검색 영역 (셀렉트 + 검색) 시작 -->
-        <div id="topArea" class="search">
+        <section id="topArea" class="search">
 
           <!-- 타이틀 영역 시작 -->
           <div class="title-wrap">
@@ -2601,13 +2200,13 @@
           </div>
           <!-- 검색 영역 끝 -->
 
-        </div>
+        </section>
         <!-- 3. TOP AREA 탑 영역 (탭) 끝 -->
 
         <span class="sub-tit" style="margin-top:50rem;">4. 셀렉트박스 및 검색박스, 탭 있음 (네비 + 타이틀 + 셀렉트박스 + 검색박스 + 탭)</span>
 
         <!-- 4. TOP AREA 샐렉트 + 검색 영역 + 탭 (셀렉트 + 검색 + 탭) 시작 -->
-        <div id="topArea" class="search tab">
+        <section id="topArea" class="search tab">
 
           <!-- 타이틀 영역 시작 -->
           <div class="title-wrap">
@@ -2729,8 +2328,68 @@
           </div>
           <!-- 검색 영역 끝 -->
 
-        </div>
+        </section>
         <!-- 4. TOP AREA 샐렉트 + 검색 영역 + 탭 (셀렉트 + 검색 + 탭) 끝 -->
+
+        <span class="sub-tit" style="margin-top:50rem;">5. 탭 + alert + 버튼</span>
+        <!-- TOP AREA 탑 영역 시작 -->
+        <section id="topArea" class="tab">
+            <!-- 타이틀 영역 시작 -->
+            <div class="title-wrap">
+              <nav id="navigation">
+                <ul>
+                  <li class="depth01">
+                      <a href="javascript:void(0)" title="클릭시 해당 뎁스로 이동">콘텐츠 관리</a>
+                  </li>
+                  <li class="depth02">
+                      <a href="javascript:void(0)" title="클릭시 해당 뎁스로 이동">메인 관리</a>
+                  </li>
+                </ul>
+              </nav>
+              <h2 class="main-tit">메인 관리</h2>
+            </div>
+            <!-- 타이틀 영역 끝 -->
+            <!-- 탭 영역 시작 -->
+            <div id="tab">
+              <ul class="tab-list">
+                <li>
+                  <a class="active" href="javascript:void(0)" title="탭">
+                    히어로 설정
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)" title="탭">
+                    배너 설정
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)" title="탭">
+                    Manifesto 설정
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)" title="탭">
+                    제품 활용 사례
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!-- 탭 영역 끝 -->
+            <!-- 버튼 영역 시작 -->
+            <div class="button-wrap">
+                <div class="alert">
+                    <strong>히어로</strong>
+                    * 히어로 이미지는 8개까지 등록 가능합니다.
+                </div>
+                <div class="input-wrap">
+                <button class="common-btn" type="submit">
+                    등록
+                </button>
+                </div>
+            </div>
+            <!-- 버튼 영역 시작 -->
+        </section>
+        <!-- TOP AREA 탑 영역 끝 -->
 
       </section>
       <!-- 3. 상단영역 (#topArea) 섹션 끝 -->
