@@ -113,6 +113,9 @@ input[type="text"] + button, input[type="text"] + button + button { margin-left:
 .table-type01 td.setting .input-wrap { display:flex; gap:60rem; justify-content:center; } 
 .table-type01 input[type="checkbox"] {margin-left:10rem;}
 
+.table-type01.border-td td{border-right:solid 1px #BBB}
+.table-type01.border-td td:last-child { border-right:0 } 
+
 /* 테이블 타입 2*/
 .table-type02 { width:100%; max-width:800rem; border-radius:3rem; background:#fff; outline:solid 1px #BBB; } 
 .table-type02 .col:first-child { width:30% } 

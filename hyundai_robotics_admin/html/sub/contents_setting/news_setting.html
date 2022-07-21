@@ -15,120 +15,118 @@
     <script src="/hyundai_robotics_admin/assets/js/form.js"></script>
 </head>
 <body>
-    <div id="newsList" class="wrap">
+    <div id="newsSetting" class="wrap">
         <!-- HEADER 헤더 시작 -->
         <header id="header" class="bg"></header>
         <!-- HEADER 헤더 끝 -->
         <!-- 컨테이너 시작 -->
         <div id="container">
+          <!-- TOP AREA 탑 영역 시작 -->
+          <section id="topArea" class="search tab">
+              <!-- 타이틀 영역 시작 -->
+              <div class="title-wrap">
+                <nav id="navigation">
+                  <ul>
+                    <li class="depth01">
+                        <a href="javascript:void(0)" title="클릭시 해당 뎁스로 이동">콘텐츠 관리</a>
+                    </li>
+                    <li class="depth02">
+                        <a href="javascript:void(0)" title="클릭시 해당 뎁스로 이동">새소식</a>
+                    </li>
+                  </ul>
+                </nav>
+                <h2 class="main-tit">새소식</h2>
+              </div>
+              <!-- 타이틀 영역 끝 -->
+              <!-- 탭 영역 시작 -->
+              <div id="tab">
+                <ul class="tab-list">
+                  <li>
+                    <a class="active" href="javascript:void(0)" title="탭">
+                      뉴스
+                    </a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" title="탭">
+                      이벤트
+                    </a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" title="탭">
+                      전시회
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <!-- 탭 영역 끝 -->
+              <!-- 검색 영역 시작 -->
+              <div class="search-wrap">
+                <div class="left">
+                  <div class="select-wrap wd160">
+                    <a href="javascript:void(0)" class="selected-option">지역전체</a>
+                    <ul class="option-list">
+                      <li>
+                        <a href="javascript:void(0)">지역 1</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">지역 2</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">지역 3</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">지역 4</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">지역 5</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">지역 6</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="select-wrap">
+                    <a href="javascript:void(0)" class="selected-option">25개</a>
+                    <ul class="option-list">
+                      <li>
+                        <a href="javascript:void(0)">지역 1</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">지역 2</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">지역 3</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">지역 4</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">지역 5</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">지역 6</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="right">
+                  <div class="input-wrap">
+                    <input id="inputSample" type="text" placeholder="검색어 입력">
+                    <button class="common-btn" type="submit">
+                      검색
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- 검색 영역 끝 -->
+    
+            </section>
+            <!-- TOP AREA 탑 영역 끝 -->
             <!-- mid AREA 중간 영역 시작 -->
             <section id="midArea">
-                <div id="topArea" class="search tab">
-
-                    <!-- 타이틀 영역 시작 -->
-                    <div class="title-wrap">
-                      <nav id="navigation">
-                        <ul>
-                          <li class="depth01">
-                              <a href="javascript:void(0)" title="클릭시 해당 뎁스로 이동">설정</a>
-                          </li>
-                          <li class="depth02">
-                              <a href="javascript:void(0)" title="클릭시 해당 뎁스로 이동">관리자 계정 관리</a>
-                          </li>
-                        </ul>
-                      </nav>
-                      <h2 class="main-tit">관리자 계정 관리</h2>
-                    </div>
-                    <!-- 타이틀 영역 끝 -->
-                    <!-- 탭 영역 시작 -->
-                    <div id="tab">
-                      <ul class="tab-list">
-                        <li>
-                          <a class="active" href="javascript:void(0)" title="탭">
-                            뉴스
-                          </a>
-                        </li>
-                        <li>
-                          <a href="javascript:void(0)" title="탭">
-                            이벤트
-                          </a>
-                        </li>
-                        <li>
-                          <a href="javascript:void(0)" title="탭">
-                            전시회
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                    <!-- 탭 영역 끝 -->
-                    <!-- 검색 영역 시작 -->
-                    <div class="search-wrap">
-                      <div class="left">
-                        <div class="select-wrap wd160">
-                          <a href="javascript:void(0)" class="selected-option">지역전체</a>
-                          <ul class="option-list">
-                            <li>
-                              <a href="javascript:void(0)">지역 1</a>
-                            </li>
-                            <li>
-                              <a href="javascript:void(0)">지역 2</a>
-                            </li>
-                            <li>
-                              <a href="javascript:void(0)">지역 3</a>
-                            </li>
-                            <li>
-                              <a href="javascript:void(0)">지역 4</a>
-                            </li>
-                            <li>
-                              <a href="javascript:void(0)">지역 5</a>
-                            </li>
-                            <li>
-                              <a href="javascript:void(0)">지역 6</a>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="select-wrap">
-                          <a href="javascript:void(0)" class="selected-option">25개</a>
-                          <ul class="option-list">
-                            <li>
-                              <a href="javascript:void(0)">지역 1</a>
-                            </li>
-                            <li>
-                              <a href="javascript:void(0)">지역 2</a>
-                            </li>
-                            <li>
-                              <a href="javascript:void(0)">지역 3</a>
-                            </li>
-                            <li>
-                              <a href="javascript:void(0)">지역 4</a>
-                            </li>
-                            <li>
-                              <a href="javascript:void(0)">지역 5</a>
-                            </li>
-                            <li>
-                              <a href="javascript:void(0)">지역 6</a>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div class="right">
-                        <div class="input-wrap">
-                          <input id="inputSample" type="text" placeholder="검색어 입력">
-                          <button class="common-btn" type="submit">
-                            검색
-                          </button>
-                          <button class="common-btn" type="submit">
-                            등록
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- 검색 영역 끝 -->
-          
-                  </div>
                 <div id="tableWrap" class="dont-copy-this-div">
                     <div class="table-wrap">
-                      <table class="table-type01">
+                      <table class="table-type01 border-td">
                         <caption>메인 관리 히어로 설정 테이블</caption>
                         <colgroup>
                           <col width="2%">
@@ -170,7 +168,7 @@
                               </label>
                             </td>
                             <td>
-                              <div>admin3</div>
+                              <div>25</div>
                             </td>
                             <td>
                               <div>김기동</div>
@@ -199,7 +197,7 @@
                               </label>
                             </td>
                             <td>
-                              <div>admin3</div>
+                              <div>24</div>
                             </td>
                             <td>
                               <div>김기동</div>
@@ -228,7 +226,7 @@
                               </label>
                             </td>
                             <td>
-                              <div>admin3</div>
+                              <div>23</div>
                             </td>
                             <td>
                               <div>김기동</div>
@@ -239,8 +237,15 @@
                             <td>
                               <div>사원</div>
                             </td>
-                            <td>
-                              <div>010-1234-5678</div>
+                            <td class="setting">
+                                <div class="input-wrap radio">
+                                    <label for="radioSample1" name="radioSample1">
+                                      <input id="radioSample1" type="radio"> 노출
+                                    </label>
+                                    <label for="radioSample2" name="radioSample2">
+                                      <input id="radioSample2" type="radio"> 미노출
+                                    </label>
+                                </div>
                             </td>
                           </tr>
                           <tr>
@@ -250,7 +255,7 @@
                               </label>
                             </td>
                             <td>
-                              <div>admin3</div>
+                              <div>22</div>
                             </td>
                             <td>
                               <div>김기동</div>
@@ -261,8 +266,15 @@
                             <td>
                               <div>사원</div>
                             </td>
-                            <td>
-                              <div>010-1234-5678</div>
+                            <td class="setting">
+                                <div class="input-wrap radio">
+                                    <label for="radioSample1" name="radioSample1">
+                                      <input id="radioSample1" type="radio"> 노출
+                                    </label>
+                                    <label for="radioSample2" name="radioSample2">
+                                      <input id="radioSample2" type="radio"> 미노출
+                                    </label>
+                                </div>
                             </td>
                           </tr>
                           <tr>
@@ -272,7 +284,7 @@
                               </label>
                             </td>
                             <td>
-                              <div>admin3</div>
+                              <div>21</div>
                             </td>
                             <td>
                               <div>김기동</div>
@@ -283,8 +295,15 @@
                             <td>
                               <div>사원</div>
                             </td>
-                            <td>
-                              <div>010-1234-5678</div>
+                            <td class="setting">
+                                <div class="input-wrap radio">
+                                    <label for="radioSample1" name="radioSample1">
+                                      <input id="radioSample1" type="radio"> 노출
+                                    </label>
+                                    <label for="radioSample2" name="radioSample2">
+                                      <input id="radioSample2" type="radio"> 미노출
+                                    </label>
+                                </div>
                             </td>
                           </tr>
                           <tr>
@@ -294,7 +313,7 @@
                               </label>
                             </td>
                             <td>
-                              <div>admin3</div>
+                              <div>20</div>
                             </td>
                             <td>
                               <div>김기동</div>
@@ -305,8 +324,15 @@
                             <td>
                               <div>사원</div>
                             </td>
-                            <td>
-                              <div>010-1234-5678</div>
+                            <td class="setting">
+                                <div class="input-wrap radio">
+                                    <label for="radioSample1" name="radioSample1">
+                                      <input id="radioSample1" type="radio"> 노출
+                                    </label>
+                                    <label for="radioSample2" name="radioSample2">
+                                      <input id="radioSample2" type="radio"> 미노출
+                                    </label>
+                                </div>
                             </td>
                           </tr>
                           <tr>
@@ -316,7 +342,7 @@
                               </label>
                             </td>
                             <td>
-                              <div>admin3</div>
+                              <div>19</div>
                             </td>
                             <td>
                               <div>김기동</div>
@@ -327,8 +353,15 @@
                             <td>
                               <div>사원</div>
                             </td>
-                            <td>
-                              <div>010-1234-5678</div>
+                            <td class="setting">
+                                <div class="input-wrap radio">
+                                    <label for="radioSample1" name="radioSample1">
+                                      <input id="radioSample1" type="radio"> 노출
+                                    </label>
+                                    <label for="radioSample2" name="radioSample2">
+                                      <input id="radioSample2" type="radio"> 미노출
+                                    </label>
+                                </div>
                             </td>
                           </tr>
                           <tr>
@@ -338,7 +371,7 @@
                               </label>
                             </td>
                             <td>
-                              <div>admin3</div>
+                              <div>18</div>
                             </td>
                             <td>
                               <div>김기동</div>
@@ -349,9 +382,16 @@
                             <td>
                               <div>사원</div>
                             </td>
-                            <td>
-                              <div>010-1234-5678</div>
-                            </td>
+                            <td class="setting">
+                              <div class="input-wrap radio">
+                                  <label for="radioSample1" name="radioSample1">
+                                    <input id="radioSample1" type="radio"> 노출
+                                  </label>
+                                  <label for="radioSample2" name="radioSample2">
+                                    <input id="radioSample2" type="radio"> 미노출
+                                  </label>
+                              </div>
+                          </td>
                           </tr>
                           <tr>
                             <td>
@@ -360,7 +400,7 @@
                               </label>
                             </td>
                             <td>
-                              <div>admin3</div>
+                              <div>17</div>
                             </td>
                             <td>
                               <div>김기동</div>
@@ -371,9 +411,16 @@
                             <td>
                               <div>사원</div>
                             </td>
-                            <td>
-                              <div>010-1234-5678</div>
-                            </td>
+                            <td class="setting">
+                              <div class="input-wrap radio">
+                                  <label for="radioSample1" name="radioSample1">
+                                    <input id="radioSample1" type="radio"> 노출
+                                  </label>
+                                  <label for="radioSample2" name="radioSample2">
+                                    <input id="radioSample2" type="radio"> 미노출
+                                  </label>
+                              </div>
+                          </td>
                           </tr>
                           <tr>
                             <td>
@@ -382,7 +429,7 @@
                               </label>
                             </td>
                             <td>
-                              <div>admin3</div>
+                              <div>16</div>
                             </td>
                             <td>
                               <div>김기동</div>
@@ -393,9 +440,16 @@
                             <td>
                               <div>사원</div>
                             </td>
-                            <td>
-                              <div>010-1234-5678</div>
-                            </td>
+                            <td class="setting">
+                              <div class="input-wrap radio">
+                                  <label for="radioSample1" name="radioSample1">
+                                    <input id="radioSample1" type="radio"> 노출
+                                  </label>
+                                  <label for="radioSample2" name="radioSample2">
+                                    <input id="radioSample2" type="radio"> 미노출
+                                  </label>
+                              </div>
+                          </td>
                           </tr>
                           <tr>
                             <td>
@@ -404,7 +458,7 @@
                               </label>
                             </td>
                             <td>
-                              <div>admin3</div>
+                              <div>15</div>
                             </td>
                             <td>
                               <div>김기동</div>
@@ -415,9 +469,16 @@
                             <td>
                               <div>사원</div>
                             </td>
-                            <td>
-                              <div>010-1234-5678</div>
-                            </td>
+                            <td class="setting">
+                              <div class="input-wrap radio">
+                                  <label for="radioSample1" name="radioSample1">
+                                    <input id="radioSample1" type="radio"> 노출
+                                  </label>
+                                  <label for="radioSample2" name="radioSample2">
+                                    <input id="radioSample2" type="radio"> 미노출
+                                  </label>
+                              </div>
+                          </td>
                           </tr>
                           <tr>
                             <td>
@@ -426,7 +487,7 @@
                               </label>
                             </td>
                             <td>
-                              <div>admin3</div>
+                              <div>14</div>
                             </td>
                             <td>
                               <div>김기동</div>
@@ -437,9 +498,16 @@
                             <td>
                               <div>사원</div>
                             </td>
-                            <td>
-                              <div>010-1234-5678</div>
-                            </td>
+                            <td class="setting">
+                              <div class="input-wrap radio">
+                                  <label for="radioSample1" name="radioSample1">
+                                    <input id="radioSample1" type="radio"> 노출
+                                  </label>
+                                  <label for="radioSample2" name="radioSample2">
+                                    <input id="radioSample2" type="radio"> 미노출
+                                  </label>
+                              </div>
+                          </td>
                           </tr>
                           <tr>
                             <td>
@@ -448,7 +516,7 @@
                               </label>
                             </td>
                             <td>
-                              <div>admin3</div>
+                              <div>13</div>
                             </td>
                             <td>
                               <div>김기동</div>
@@ -459,9 +527,16 @@
                             <td>
                               <div>사원</div>
                             </td>
-                            <td>
-                              <div>010-1234-5678</div>
-                            </td>
+                            <td class="setting">
+                              <div class="input-wrap radio">
+                                  <label for="radioSample1" name="radioSample1">
+                                    <input id="radioSample1" type="radio"> 노출
+                                  </label>
+                                  <label for="radioSample2" name="radioSample2">
+                                    <input id="radioSample2" type="radio"> 미노출
+                                  </label>
+                              </div>
+                          </td>
                           </tr>
                           <tr>
                             <td>
@@ -470,7 +545,7 @@
                               </label>
                             </td>
                             <td>
-                              <div>admin3</div>
+                              <div>12</div>
                             </td>
                             <td>
                               <div>김기동</div>
@@ -481,9 +556,16 @@
                             <td>
                               <div>사원</div>
                             </td>
-                            <td>
-                              <div>010-1234-5678</div>
-                            </td>
+                            <td class="setting">
+                              <div class="input-wrap radio">
+                                  <label for="radioSample1" name="radioSample1">
+                                    <input id="radioSample1" type="radio"> 노출
+                                  </label>
+                                  <label for="radioSample2" name="radioSample2">
+                                    <input id="radioSample2" type="radio"> 미노출
+                                  </label>
+                              </div>
+                          </td>
                           </tr>
                           <tr>
                             <td>
@@ -492,7 +574,7 @@
                               </label>
                             </td>
                             <td>
-                              <div>admin3</div>
+                              <div>11</div>
                             </td>
                             <td>
                               <div>김기동</div>
@@ -503,9 +585,16 @@
                             <td>
                               <div>사원</div>
                             </td>
-                            <td>
-                              <div>010-1234-5678</div>
-                            </td>
+                            <td class="setting">
+                              <div class="input-wrap radio">
+                                  <label for="radioSample1" name="radioSample1">
+                                    <input id="radioSample1" type="radio"> 노출
+                                  </label>
+                                  <label for="radioSample2" name="radioSample2">
+                                    <input id="radioSample2" type="radio"> 미노출
+                                  </label>
+                              </div>
+                          </td>
                           </tr>
                           <tr>
                             <td>
@@ -514,7 +603,7 @@
                               </label>
                             </td>
                             <td>
-                              <div>admin3</div>
+                              <div>10</div>
                             </td>
                             <td>
                               <div>김기동</div>
@@ -525,9 +614,16 @@
                             <td>
                               <div>사원</div>
                             </td>
-                            <td>
-                              <div>010-1234-5678</div>
-                            </td>
+                            <td class="setting">
+                              <div class="input-wrap radio">
+                                  <label for="radioSample1" name="radioSample1">
+                                    <input id="radioSample1" type="radio"> 노출
+                                  </label>
+                                  <label for="radioSample2" name="radioSample2">
+                                    <input id="radioSample2" type="radio"> 미노출
+                                  </label>
+                              </div>
+                          </td>
                           </tr>
                           <tr>
                             <td>
@@ -536,7 +632,7 @@
                               </label>
                             </td>
                             <td>
-                              <div>admin3</div>
+                              <div>9</div>
                             </td>
                             <td>
                               <div>김기동</div>
@@ -547,9 +643,16 @@
                             <td>
                               <div>사원</div>
                             </td>
-                            <td>
-                              <div>010-1234-5678</div>
-                            </td>
+                            <td class="setting">
+                              <div class="input-wrap radio">
+                                  <label for="radioSample1" name="radioSample1">
+                                    <input id="radioSample1" type="radio"> 노출
+                                  </label>
+                                  <label for="radioSample2" name="radioSample2">
+                                    <input id="radioSample2" type="radio"> 미노출
+                                  </label>
+                              </div>
+                          </td>
                           </tr>
                           <tr>
                             <td>
@@ -558,7 +661,7 @@
                               </label>
                             </td>
                             <td>
-                              <div>admin3</div>
+                              <div>8</div>
                             </td>
                             <td>
                               <div>김기동</div>
@@ -569,9 +672,16 @@
                             <td>
                               <div>사원</div>
                             </td>
-                            <td>
-                              <div>010-1234-5678</div>
-                            </td>
+                            <td class="setting">
+                              <div class="input-wrap radio">
+                                  <label for="radioSample1" name="radioSample1">
+                                    <input id="radioSample1" type="radio"> 노출
+                                  </label>
+                                  <label for="radioSample2" name="radioSample2">
+                                    <input id="radioSample2" type="radio"> 미노출
+                                  </label>
+                              </div>
+                          </td>
                           </tr>
                           <tr>
                             <td>
@@ -580,7 +690,7 @@
                               </label>
                             </td>
                             <td>
-                              <div>admin3</div>
+                              <div>7</div>
                             </td>
                             <td>
                               <div>김기동</div>
@@ -591,9 +701,16 @@
                             <td>
                               <div>사원</div>
                             </td>
-                            <td>
-                              <div>010-1234-5678</div>
-                            </td>
+                            <td class="setting">
+                              <div class="input-wrap radio">
+                                  <label for="radioSample1" name="radioSample1">
+                                    <input id="radioSample1" type="radio"> 노출
+                                  </label>
+                                  <label for="radioSample2" name="radioSample2">
+                                    <input id="radioSample2" type="radio"> 미노출
+                                  </label>
+                              </div>
+                          </td>
                           </tr>
                           <tr>
                             <td>
@@ -602,7 +719,7 @@
                               </label>
                             </td>
                             <td>
-                              <div>admin3</div>
+                              <div>6</div>
                             </td>
                             <td>
                               <div>김기동</div>
@@ -613,29 +730,181 @@
                             <td>
                               <div>사원</div>
                             </td>
+                            <td class="setting">
+                              <div class="input-wrap radio">
+                                  <label for="radioSample1" name="radioSample1">
+                                    <input id="radioSample1" type="radio"> 노출
+                                  </label>
+                                  <label for="radioSample2" name="radioSample2">
+                                    <input id="radioSample2" type="radio"> 미노출
+                                  </label>
+                              </div>
+                          </td>
+                          </tr>
+                          <tr>
                             <td>
-                              <div>010-1234-5678</div>
+                              <label for="checkSample" name="checkSample">
+                                <input id="checkSample" type="checkbox">
+                              </label>
                             </td>
+                            <td>
+                              <div>5</div>
+                            </td>
+                            <td>
+                              <div>김기동</div>
+                            </td>
+                            <td>
+                              <div>사업본부</div>
+                            </td>
+                            <td>
+                              <div>사원</div>
+                            </td>
+                            <td class="setting">
+                              <div class="input-wrap radio">
+                                  <label for="radioSample1" name="radioSample1">
+                                    <input id="radioSample1" type="radio"> 노출
+                                  </label>
+                                  <label for="radioSample2" name="radioSample2">
+                                    <input id="radioSample2" type="radio"> 미노출
+                                  </label>
+                              </div>
+                          </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <label for="checkSample" name="checkSample">
+                                <input id="checkSample" type="checkbox">
+                              </label>
+                            </td>
+                            <td>
+                              <div>4</div>
+                            </td>
+                            <td>
+                              <div>김기동</div>
+                            </td>
+                            <td>
+                              <div>사업본부</div>
+                            </td>
+                            <td>
+                              <div>사원</div>
+                            </td>
+                            <td class="setting">
+                              <div class="input-wrap radio">
+                                  <label for="radioSample1" name="radioSample1">
+                                    <input id="radioSample1" type="radio"> 노출
+                                  </label>
+                                  <label for="radioSample2" name="radioSample2">
+                                    <input id="radioSample2" type="radio"> 미노출
+                                  </label>
+                              </div>
+                          </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <label for="checkSample" name="checkSample">
+                                <input id="checkSample" type="checkbox">
+                              </label>
+                            </td>
+                            <td>
+                              <div>3</div>
+                            </td>
+                            <td>
+                              <div>김기동</div>
+                            </td>
+                            <td>
+                              <div>사업본부</div>
+                            </td>
+                            <td>
+                              <div>사원</div>
+                            </td>
+                            <td class="setting">
+                              <div class="input-wrap radio">
+                                  <label for="radioSample1" name="radioSample1">
+                                    <input id="radioSample1" type="radio"> 노출
+                                  </label>
+                                  <label for="radioSample2" name="radioSample2">
+                                    <input id="radioSample2" type="radio"> 미노출
+                                  </label>
+                              </div>
+                          </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <label for="checkSample" name="checkSample">
+                                <input id="checkSample" type="checkbox">
+                              </label>
+                            </td>
+                            <td>
+                              <div>2</div>
+                            </td>
+                            <td>
+                              <div>김기동</div>
+                            </td>
+                            <td>
+                              <div>사업본부</div>
+                            </td>
+                            <td>
+                              <div>사원</div>
+                            </td>
+                            <td class="setting">
+                              <div class="input-wrap radio">
+                                  <label for="radioSample1" name="radioSample1">
+                                    <input id="radioSample1" type="radio"> 노출
+                                  </label>
+                                  <label for="radioSample2" name="radioSample2">
+                                    <input id="radioSample2" type="radio"> 미노출
+                                  </label>
+                              </div>
+                          </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <label for="checkSample" name="checkSample">
+                                <input id="checkSample" type="checkbox">
+                              </label>
+                            </td>
+                            <td>
+                              <div>1</div>
+                            </td>
+                            <td>
+                              <div>김기동</div>
+                            </td>
+                            <td>
+                              <div>사업본부</div>
+                            </td>
+                            <td>
+                              <div>사원</div>
+                            </td>
+                            <td class="setting">
+                              <div class="input-wrap radio">
+                                  <label for="radioSample1" name="radioSample1">
+                                    <input id="radioSample1" type="radio"> 노출
+                                  </label>
+                                  <label for="radioSample2" name="radioSample2">
+                                    <input id="radioSample2" type="radio"> 미노출
+                                  </label>
+                              </div>
+                          </td>
                           </tr>
                         </tbody>
                       </table>
                     </div>
                 </div>
-                <div id="bottomArea" class="no-line">
-                    <div id="pagination">
-          
-                    </div>
-                    <div class="btn-wrap">
-                      <button type="button" class="common-btn">
-                        삭제
-                      </button>
-                      <button type="button" class="common-btn">
-                        등록
-                      </button>
-                    </div>
-                  </div>
             </section>
             <!-- mid AREA 중간 영역 끝 -->
+            <!-- BOTTOM AREA 바텀 영역 시작 -->
+            <section id="bottomArea" class="no-line">
+                <div id="pagination"></div>
+                <div class="btn-wrap">
+                  <button type="button" class="common-btn">
+                    삭제
+                  </button>
+                  <button type="button" class="common-btn">
+                    등록
+                  </button>
+                </div>
+            </section>
+            <!-- BOTTOM AREA 바텀 영역 끝 -->
         </div>
         <!-- 컨테이너 끝 -->
     </div>
