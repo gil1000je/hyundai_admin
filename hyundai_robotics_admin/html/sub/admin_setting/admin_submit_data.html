@@ -75,11 +75,51 @@
                             부서/직급
                         </div>
                         <div class="info">
-                            <div class="input-wrap">
-                                <label for="input01" class="hide">부서</label>
-                                <label for="input02" class="hide">직급</label>
-                                <input id="input01" type="text" placeholder="부서 선택">
-                                <input id="input02" type="text" placeholder="직급 선택">
+                            <div class="select-wrap">
+                              <a href="javascript:void(0)" class="selected-option">부서 선택</a>
+                              <ul class="option-list">
+                                <li>
+                                  <a href="javascript:void(0)">지역 1</a>
+                                </li>
+                                <li>
+                                  <a href="javascript:void(0)">지역 2</a>
+                                </li>
+                                <li>
+                                  <a href="javascript:void(0)">지역 3</a>
+                                </li>
+                                <li>
+                                  <a href="javascript:void(0)">지역 4</a>
+                                </li>
+                                <li>
+                                  <a href="javascript:void(0)">지역 5</a>
+                                </li>
+                                <li>
+                                  <a href="javascript:void(0)">지역 6</a>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="select-wrap">
+                              <a href="javascript:void(0)" class="selected-option">직급 선택</a>
+                              <ul class="option-list">
+                                <li>
+                                  <a href="javascript:void(0)">지역 1</a>
+                                </li>
+                                <li>
+                                  <a href="javascript:void(0)">지역 2</a>
+                                </li>
+                                <li>
+                                  <a href="javascript:void(0)">지역 3</a>
+                                </li>
+                                <li>
+                                  <a href="javascript:void(0)">지역 4</a>
+                                </li>
+                                <li>
+                                  <a href="javascript:void(0)">지역 5</a>
+                                </li>
+                                <li>
+                                  <a href="javascript:void(0)">지역 6</a>
+                                </li>
+                              </ul>
                             </div>
                         </div>
                     </li>
@@ -90,7 +130,7 @@
                         <div class="info">
                             <div class="input-wrap">
                                 <label for="input01" class="hide">연락처</label>
-                                <input id="input01" type="text" placeholder="연락처 입력">
+                                <input id="input01" type="number" maxlength="11" placeholder="연락처 입력">
                             </div>
                         </div>
                     </li>
@@ -101,7 +141,7 @@
                         <div class="info">
                             <div class="input-wrap">
                                 <label for="input01" class="hide">이메일</label>
-                                <input id="input01" type="text" placeholder="@포함 전체 메일 주소 입력">
+                                <input id="input01" type="email" placeholder="@포함 전체 메일 주소 입력">
                             </div>
                         </div>
                     </li>
@@ -136,81 +176,121 @@
                                         <tr>
                                             <td>대리점회원</td>
                                             <td>
-                                                <label for="checkSample" name="checkSample">
-                                                    <input id="checkSample" type="checkbox"> 전체
-                                                    <input id="checkSample" type="checkbox"> 보기
-                                                    <input id="checkSample" type="checkbox"> 관리
-                                                </label>                                               
+                                                <div class="input-wrap check">
+                                                    <label for="checkSample1" name="checkSample">
+                                                        <input id="checkSample1" type="checkbox"> 전체
+                                                    </label> 
+                                                    <label for="checkSample2" name="checkSample">
+                                                        <input id="checkSample2" type="checkbox"> 보기
+                                                    </label> <label for="checkSample3" name="checkSample">
+                                                        <input id="checkSample4" type="checkbox"> 관리
+                                                    </label>    
+                                                </div>                                              
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>상담신청</td>
                                             <td>
-                                                <label for="checkSample" name="checkSample">
-                                                    <input id="checkSample" type="checkbox"> 전체
-                                                    <input id="checkSample" type="checkbox"> 보기
-                                                    <input id="checkSample" type="checkbox"> 관리
-                                                </label>                                               
+                                                <div class="input-wrap check">
+                                                    <label for="checkSample1" name="checkSample">
+                                                        <input id="checkSample1" type="checkbox"> 전체
+                                                    </label> 
+                                                    <label for="checkSample2" name="checkSample">
+                                                        <input id="checkSample2" type="checkbox"> 보기
+                                                    </label> <label for="checkSample3" name="checkSample">
+                                                        <input id="checkSample4" type="checkbox"> 관리
+                                                    </label>    
+                                                </div>                                              
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>시연신청</td>
                                             <td>
-                                                <label for="checkSample" name="checkSample">
-                                                    <input id="checkSample" type="checkbox"> 전체
-                                                    <input id="checkSample" type="checkbox"> 보기
-                                                    <input id="checkSample" type="checkbox"> 관리
-                                                </label>                                               
+                                                <div class="input-wrap check">
+                                                    <label for="checkSample1" name="checkSample">
+                                                        <input id="checkSample1" type="checkbox"> 전체
+                                                    </label> 
+                                                    <label for="checkSample2" name="checkSample">
+                                                        <input id="checkSample2" type="checkbox"> 보기
+                                                    </label> <label for="checkSample3" name="checkSample">
+                                                        <input id="checkSample4" type="checkbox"> 관리
+                                                    </label>    
+                                                </div>                                              
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>대리점 문의</td>
                                             <td>
-                                                <label for="checkSample" name="checkSample">
-                                                    <input id="checkSample" type="checkbox"> 전체
-                                                    <input id="checkSample" type="checkbox"> 보기
-                                                    <input id="checkSample" type="checkbox"> 관리
-                                                </label>                                               
+                                                <div class="input-wrap check">
+                                                    <label for="checkSample1" name="checkSample">
+                                                        <input id="checkSample1" type="checkbox"> 전체
+                                                    </label> 
+                                                    <label for="checkSample2" name="checkSample">
+                                                        <input id="checkSample2" type="checkbox"> 보기
+                                                    </label> <label for="checkSample3" name="checkSample">
+                                                        <input id="checkSample4" type="checkbox"> 관리
+                                                    </label>    
+                                                </div>                                              
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>A/S신청</td>
                                             <td>
-                                                <label for="checkSample" name="checkSample">
-                                                    <input id="checkSample" type="checkbox"> 전체
-                                                    <input id="checkSample" type="checkbox"> 보기
-                                                    <input id="checkSample" type="checkbox"> 관리
-                                                </label>                                               
+                                                <div class="input-wrap check">
+                                                    <label for="checkSample1" name="checkSample">
+                                                        <input id="checkSample1" type="checkbox"> 전체
+                                                    </label> 
+                                                    <label for="checkSample2" name="checkSample">
+                                                        <input id="checkSample2" type="checkbox"> 보기
+                                                    </label> <label for="checkSample3" name="checkSample">
+                                                        <input id="checkSample4" type="checkbox"> 관리
+                                                    </label>    
+                                                </div>                                              
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>제휴문의</td>
                                             <td>
-                                                <label for="checkSample" name="checkSample">
-                                                    <input id="checkSample" type="checkbox"> 전체
-                                                    <input id="checkSample" type="checkbox"> 보기
-                                                    <input id="checkSample" type="checkbox"> 관리
-                                                </label>                                               
+                                                <div class="input-wrap check">
+                                                    <label for="checkSample1" name="checkSample">
+                                                        <input id="checkSample1" type="checkbox"> 전체
+                                                    </label> 
+                                                    <label for="checkSample2" name="checkSample">
+                                                        <input id="checkSample2" type="checkbox"> 보기
+                                                    </label> <label for="checkSample3" name="checkSample">
+                                                        <input id="checkSample4" type="checkbox"> 관리
+                                                    </label>    
+                                                </div>                                              
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>콘텐츠관리</td>
                                             <td>
-                                                <label for="checkSample" name="checkSample">
-                                                    <input id="checkSample" type="checkbox"> 전체
-                                                    <input id="checkSample" type="checkbox"> 보기
-                                                    <input id="checkSample" type="checkbox"> 관리
-                                                </label>                                               
+                                                <div class="input-wrap check">
+                                                    <label for="checkSample1" name="checkSample">
+                                                        <input id="checkSample1" type="checkbox"> 전체
+                                                    </label> 
+                                                    <label for="checkSample2" name="checkSample">
+                                                        <input id="checkSample2" type="checkbox"> 보기
+                                                    </label> <label for="checkSample3" name="checkSample">
+                                                        <input id="checkSample4" type="checkbox"> 관리
+                                                    </label>    
+                                                </div>                                              
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>설정</td>
                                             <td>
-                                                <label for="checkSample" name="checkSample">
-                                                    <input id="checkSample" type="checkbox"> 전체
-                                                    <input id="checkSample" type="checkbox"> 보기
-                                                    <input id="checkSample" type="checkbox"> 관리
-                                                </label>                                               
+                                                <div class="input-wrap check">
+                                                    <label for="checkSample1" name="checkSample">
+                                                        <input id="checkSample1" type="checkbox"> 전체
+                                                    </label> 
+                                                    <label for="checkSample2" name="checkSample">
+                                                        <input id="checkSample2" type="checkbox"> 보기
+                                                    </label> <label for="checkSample3" name="checkSample">
+                                                        <input id="checkSample4" type="checkbox"> 관리
+                                                    </label>    
+                                                </div>                                              
                                             </td>
                                         </tr>
                                     </tbody>

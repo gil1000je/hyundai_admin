@@ -52,7 +52,10 @@ input[type="text"] + button, input[type="text"] + button + button { margin-left:
 
 /* 셀렉트 박스 (드롭박스) */
 .select-wrap { width:100%; max-width:160rem; position:relative; } 
-.select-wrap .selected-option { font-size:16rem; color:#222; display:flex; align-items:center; height:44rem; padding:0 40rem 0 14rem; border-radius:3rem; background:#fff; border:solid 1px #bbb } 
+.select-wrap.disabled .selected-option {pointer-events:none; border:solid 1px #999; background:#ddd;}
+.select-wrap.disabled .selected-option::before { display:none }
+.select-wrap .selected-option { font-size:16rem; color:#999; display:flex; align-items:center; height:44rem; padding:0 40rem 0 14rem; border-radius:3rem; background:#fff; border:solid 1px #bbb } 
+.select-wrap .selected-option.selected {font-size:#222;}
 .select-wrap .option-list { display:none; width:100%; border-radius:3rem; border:solid 1px #bbb; background:#fff; position:absolute; left:0; top:48rem; padding:8rem 13rem; z-index:3; } 
 .select-wrap .option-list li { height:32rem; display:flex; align-items:center; border-radius:3rem; padding:0 13rem; } 
 .select-wrap .option-list li:hover { background:#F4F4F4; }
@@ -91,6 +94,7 @@ input[type="text"] + button, input[type="text"] + button + button { margin-left:
 .table-wrap .table-info { margin-top:12rem; color:#999; line-height:24rem;}
 .table-wrap.empty { position:relative;}
 .table-wrap.empty .empty-info { position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); text-align:center}
+.table-wrap.empty .empty-info img {width:190rem; }
 .table-wrap.empty .empty-info p { margin-top:55rem; font-size:20rem; color:#7B7B7B;}
 .table-alert { display:flex; align-items:center; height:52rem; gap:8rem } 
 .table-alert strong { font-size:18rem; font-weight:500; } 
@@ -123,6 +127,8 @@ input[type="text"] + button, input[type="text"] + button + button { margin-left:
 .table-type02 th { font-weight:500; color:#222; } 
 .table-type02 th, .table-type02 td { border-right:solid 1px #bbb; padding:7rem 14rem; font-size:15rem; } 
 .table-type02 th:last-child, .table-type02 td:last-child { border-right:0 } 
+.table-type02 .input-wrap.check {gap:60rem}
+.table-type02 .input-wrap.check input {margin:0}
 
 /* 테이블 타입 3 ( 콘텐츠 관리 - 히어로 설정) */
 .table-type03 { width:100%; max-width:1300rem; border-radius:3rem; background:#fff; outline:solid 1px #BBB; } 
@@ -213,6 +219,7 @@ input[type="text"] + button, input[type="text"] + button + button { margin-left:
 #topArea.search .search-wrap { display:flex; justify-content:space-between; padding-bottom:12rem }
 #topArea.search .search-wrap .select-wrap { width:120rem; }
 #topArea.search .search-wrap .select-wrap.wd160 { width:160rem; }
+#topArea.search .search-wrap .select-wrap a {color:#222;}
 #topArea.search .search-wrap .left {position:relative; display:flex; align-items:flex-end; gap:12rem}
 #topArea.search .search-wrap .left .num {margin-bottom:5rem}
 #topArea.search .search-wrap input[type="text"] {width:380rem;}
