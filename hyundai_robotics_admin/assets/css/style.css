@@ -237,14 +237,18 @@ input[type="text"] + button, input[type="text"] + button + button { margin-left:
 #topArea.search .search-wrap .right{display: flex;align-items: center;}
 #topArea.search .search-wrap .right .regist{margin-left: 14rem;width: 120rem;}
 #topArea.search .search-wrap .num {margin-bottom:5rem}
-#topArea.search .search-wrap .search-input{width:380rem;position: relative;margin-right: 14rem;}
-#topArea.search .search-wrap .search-input input {width:100%;margin-top: 0;}
-#topArea.search .search-wrap .search-input input::-webkit-search-decoration,
-#topArea.search .search-wrap .search-input input::-webkit-search-cancel-button,
-#topArea.search .search-wrap .search-input input::-webkit-search-results-button,
-#topArea.search .search-wrap .search-input input::-webkit-search-results-decoration{
-display:none}
-#topArea.search .search-wrap .search-input .btn-clear{width: 20rem;height: 20rem;position: absolute;right: 14rem;top: 50%;transform: translateY(-50%);}
+#topArea.search .search-wrap input[type="search"]{width:380rem;margin: 0 14rem 0 0;}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration{
+    -webkit-appearance: none;
+    width: 20rem; 
+    height: 20rem; 
+    background: url(/hyundai_robotics_admin/assets/images/common/search_reset_btn.png) no-repeat center/ contain;
+    cursor: pointer;
+}
 #topArea .button-wrap { position:relative; display:flex; justify-content:flex-end; min-height:44rem }
 #topArea .button-wrap .alert {position:absolute; top:50%; transform:translateY(-50%); left:0;}
 #topArea .button-wrap .alert strong { font-size:18rem; margin-right:8rem; font-weight:500 }
