@@ -39,6 +39,7 @@ input[type="text"] + button, input[type="text"] + button + button { margin-left:
 .input-wrap .alert { display:none }
 .input-wrap.red .alert { display:block; position:absolute; right:0; top:2rem; font-size:12rem; font-weight:700; color:#e81953 } 
 .login-modal input:not(input[type="button"]) { border-radius: 3rem; } 
+.input-wrap.categorie .select-wrap{width: 160rem;} 
 .input-wrap.file { display:flex; gap:14rem }
 .input-wrap.file input[type="text"] {width:666rem}
 .info-list-type02 .info.date-list .input-wrap:not(:first-child){margin-top: 0;}
@@ -255,9 +256,11 @@ input[type="text"] + button, input[type="text"] + button + button { margin-left:
 .info-list-type02 { display:flex; flex-direction:column; gap:22rem;}
 .info-list-type02 li { display:flex; flex-direction:column; gap:9rem; }
 .info-list-type02 .title { font-size:18rem; font-weight:500; }
-.info-list-type02 li.info-item-col .info{display: flex;}
-.info-list-type02 li.info-item-col .input-wrap.file input[type="text"]{width: 446rem;}
-.info-list-type02 li.info-item-col .info .title { font-size:16rem; font-weight:normal;width: 86rem;color: #999;margin-top: 12rem;}
+.info-list-type02 li.info-item-col .info, .info-list-type02 li.info-item-no-preview .info{display: flex;}
+.info-list-type02 li.info-item-col .input-wrap.file input{width: 446rem;}
+.info-list-type02 li.info-item-no-preview .input-wrap.file input[type="text"]{width: 580rem;}
+.info-list-type02 li.info-item-col .info .title,
+.info-list-type02 li.info-item-no-preview .info .title { font-size:16rem; font-weight:normal;width: 86rem;color: #999;margin-top: 12rem;}
 .info-list-type02 .info .input-wrap:not(:first-child){margin-top: 12rem;}
 .info-list-type02 .info textarea{max-width: 800rem;min-width: 800rem;max-height: 200rem;min-height: 200rem; border: 1px solid #bbb;border-radius: 3rem;padding: 12rem;}
 .info-list-type02 .info .select-wrap{max-width: 800rem;}
@@ -274,7 +277,6 @@ input[type="text"] + button, input[type="text"] + button + button { margin-left:
 .info-list-type02 .info-list-item{display: flex;align-items: center;gap: 14rem;}
 .info-list-type02 .info-list-item .info input{max-width: 80rem;}
 .btn-wrap { display:flex; gap:14rem; } 
-#referenceRegistration .info-list-type02 .info .select-wrap{width: 160rem;} 
 
 /* BOTTOM AREA 하단영역 */
 #bottomArea { width:100%; max-width:1300rem; min-height:44rem; margin:0 auto; margin-bottom:250rem; position:relative; display:flex; align-items:center; margin-top:53rem; } 
