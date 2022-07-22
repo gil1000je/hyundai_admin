@@ -15,14 +15,15 @@
     <script src="/hyundai_robotics_admin/assets/js/form.js"></script>
 </head>
 <body>
-    <div id="newsEmptySetting" class="wrap">
+    <div class="wrap">
         <!-- HEADER 헤더 시작 -->
         <header id="header" class="bg"></header>
         <!-- HEADER 헤더 끝 -->
         <!-- 컨테이너 시작 -->
         <div id="container">
-          <!-- TOP AREA 탑 영역 시작 -->
-          <section id="topArea" class="search tab">
+            <!-- TOP AREA 탑 영역 시작 -->
+            <section id="topArea" class="search tab">
+
               <!-- 타이틀 영역 시작 -->
               <div class="title-wrap">
                 <nav id="navigation">
@@ -61,59 +62,64 @@
               <!-- 탭 영역 끝 -->
               <!-- 검색 영역 시작 -->
               <div class="search-wrap">
-                <div class="left">
-                  <div class="select-wrap wd160">
-                    <a href="javascript:void(0)" class="selected-option">지역전체</a>
-                    <ul class="option-list">
-                      <li>
-                        <a href="javascript:void(0)">지역 1</a>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0)">지역 2</a>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0)">지역 3</a>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0)">지역 4</a>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0)">지역 5</a>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0)">지역 6</a>
-                      </li>
-                    </ul>
+                <div class="search-wrap-inner">
+                  <div class="left">
+                    <div class="input-wrap">
+                      <input id="inputSample" type="search" placeholder="검색어 입력">
+                      <button class="common-btn" type="submit" disabled>
+                        검색
+                      </button>
+                    </div>
                   </div>
-                  <div class="select-wrap">
-                    <a href="javascript:void(0)" class="selected-option">25개</a>
-                    <ul class="option-list">
-                      <li>
-                        <a href="javascript:void(0)">지역 1</a>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0)">지역 2</a>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0)">지역 3</a>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0)">지역 4</a>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0)">지역 5</a>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0)">지역 6</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="right">
-                  <div class="input-wrap">
-                    <input id="inputSample" type="search" placeholder="검색어 입력">
-                    <button class="common-btn" type="submit">
-                      검색
+                  <div class="right">
+                    <div class="select-wrap wd160">
+                      <a href="javascript:void(0)" class="selected-option">지역전체</a>
+                      <ul class="option-list">
+                        <li>
+                          <a href="javascript:void(0)">지역 1</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)">지역 2</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)">지역 3</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)">지역 4</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)">지역 5</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)">지역 6</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="select-wrap">
+                      <a href="javascript:void(0)" class="selected-option">25개</a>
+                      <ul class="option-list">
+                        <li>
+                          <a href="javascript:void(0)">지역 1</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)">지역 2</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)">지역 3</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)">지역 4</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)">지역 5</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)">지역 6</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <button class="common-btn regist" type="submit">
+                      등록
                     </button>
                   </div>
                 </div>
@@ -896,19 +902,6 @@
                 </div>
             </section>
             <!-- mid AREA 중간 영역 끝 -->
-            <!-- BOTTOM AREA 바텀 영역 시작 -->
-            <section id="bottomArea" class="no-line">
-                <div id="pagination"></div>
-                <div class="btn-wrap">
-                  <button type="button" class="common-btn">
-                    삭제
-                  </button>
-                  <button type="button" class="common-btn regist">
-                    등록
-                  </button>
-                </div>
-            </section>
-            <!-- BOTTOM AREA 바텀 영역 끝 -->
         </div>
         <!-- 컨테이너 끝 -->
     </div>

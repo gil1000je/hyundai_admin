@@ -120,7 +120,7 @@ input[type="text"] + button, input[type="text"] + button + button { margin-left:
 .table-type01 td { font-size:14rem; text-align:center;/* border-right:solid 1px #BBB */ } 
 .table-type01 td:first-child, .table-type01 td:last-child { border-right:0 } 
 .table-type01 td div { height:30rem; display:flex; align-items:center; justify-content:center; } 
-/* .table-type01 td div:first-child { border-bottom:solid 1px #bbb; }  */
+.table-type01 td.text-align-left div {justify-content: flex-start;padding-left: 40rem;}
 .table-type01 td.setting .input-wrap { display:flex; gap:60rem; justify-content:center; } 
 .table-type01 input[type="checkbox"] {margin-left:10rem;}
 
@@ -249,12 +249,18 @@ input[type="search"]::-webkit-search-results-decoration{
     background: url(/hyundai_robotics_admin/assets/images/common/search_reset_btn.png) no-repeat center/ contain;
     cursor: pointer;
 }
-#topArea .button-wrap { position:relative; display:flex; justify-content:flex-end; min-height:44rem }
-#topArea .button-wrap .alert {position:absolute; top:50%; transform:translateY(-50%); left:0;}
+/* #topArea .button-wrap { position:relative; display:flex; justify-content:flex-end; min-height:44rem }
+#topArea .button-wrap .alert {position:absolute; top:50%; transform:translateY(-50%); left:0;} */
+#topArea #tab + .button-wrap{margin-top: 8rem;}
+#topArea .button-wrap { position:relative; display:flex; justify-content:space-between;align-items: center;}
+#topArea .button-wrap .alert {}
+#topArea .button-wrap .right{display: flex;align-items: center;}
 #topArea .button-wrap .alert strong { font-size:18rem; margin-right:8rem; font-weight:500 }
 #topArea .button-wrap .alert .common-btn { width:80rem; padding:0; height:32rem; min-height:32rem; font-size:14rem; margin-top:8rem; margin-left:10rem; }
 #topArea .button-wrap + .search-wrap .right input {margin-top:0;}
 #topArea .button-wrap + .search-wrap {padding-bottom:0;}
+#topArea .button-wrap .select-wrap{width: 120rem;}
+#topArea .button-wrap .common-btn.regist{margin-left: 14rem;}
 
 /* MID AREA 중간영역 *
 

@@ -15,7 +15,7 @@
     <script src="/hyundai_robotics_admin/assets/js/form.js"></script>
 </head>
 <body>
-    <div id="faqSetting" class="wrap">
+    <div class="wrap">
         <!-- HEADER 헤더 시작 -->
         <header id="header" class="bg"></header>
         <!-- HEADER 헤더 끝 -->
@@ -40,36 +40,64 @@
               <!-- 타이틀 영역 끝 -->
               <!-- 검색 영역 시작 -->
               <div class="search-wrap">
-                <div class="left">
-                  <div class="select-wrap">
-                    <a href="javascript:void(0)" class="selected-option">25개</a>
-                    <ul class="option-list">
-                      <li>
-                        <a href="javascript:void(0)">지역 1</a>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0)">지역 2</a>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0)">지역 3</a>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0)">지역 4</a>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0)">지역 5</a>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0)">지역 6</a>
-                      </li>
-                    </ul>
+                <div class="search-wrap-inner">
+                  <div class="left">
+                    <div class="input-wrap">
+                      <input id="inputSample" type="search" placeholder="검색어 입력">
+                      <button class="common-btn" type="submit" disabled>
+                        검색
+                      </button>
+                    </div>
                   </div>
-                </div>
-                <div class="right">
-                  <div class="input-wrap">
-                    <input id="inputSample" type="search" placeholder="검색어 입력">
-                    <button class="common-btn" type="submit">
-                      검색
+                  <div class="right">
+                    <div class="select-wrap">
+                      <a href="javascript:void(0)" class="selected-option">국문</a>
+                      <ul class="option-list">
+                        <li>
+                          <a href="javascript:void(0)">지역 1</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)">지역 2</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)">지역 3</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)">지역 4</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)">지역 5</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)">지역 6</a>
+                        </li>
+                      </ul>
+                    </div> 
+                    <div class="select-wrap">
+                      <a href="javascript:void(0)" class="selected-option">25개</a>
+                      <ul class="option-list">
+                        <li>
+                          <a href="javascript:void(0)">지역 1</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)">지역 2</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)">지역 3</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)">지역 4</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)">지역 5</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)">지역 6</a>
+                        </li>
+                      </ul>
+                    </div> 
+                    <button class="common-btn regist" type="submit">
+                      등록
                     </button>
                   </div>
                 </div>
@@ -129,7 +157,7 @@
                             <td>
                               <div>서빙로봇</div>
                             </td>
-                            <td>
+                            <td class="text-align-left">
                               <div>방역로봇의 살균/공기청정 기능은 공식 인증 기관을 통해 증명된 것인가요?</div>
                             </td>
                             <td>
@@ -158,7 +186,7 @@
                             <td>
                               <div>서빙로봇</div>
                             </td>
-                            <td>
+                            <td class="text-align-left">
                               <div>방역로봇의 살균/공기청정 기능은 공식 인증 기관을 통해 증명된 것인가요?</div>
                             </td>
                             <td>
@@ -187,7 +215,7 @@
                             <td>
                               <div>서빙로봇</div>
                             </td>
-                            <td>
+                            <td class="text-align-left">
                               <div>방역로봇의 살균/공기청정 기능은 공식 인증 기관을 통해 증명된 것인가요?</div>
                             </td>
                             <td>
@@ -216,7 +244,7 @@
                             <td>
                               <div>서빙로봇</div>
                             </td>
-                            <td>
+                            <td class="text-align-left">
                               <div>방역로봇의 살균/공기청정 기능은 공식 인증 기관을 통해 증명된 것인가요?</div>
                             </td>
                             <td>
@@ -245,7 +273,7 @@
                             <td>
                               <div>서빙로봇</div>
                             </td>
-                            <td>
+                            <td class="text-align-left">
                               <div>방역로봇의 살균/공기청정 기능은 공식 인증 기관을 통해 증명된 것인가요?</div>
                             </td>
                             <td>
@@ -274,7 +302,7 @@
                             <td>
                               <div>서빙로봇</div>
                             </td>
-                            <td>
+                            <td class="text-align-left">
                               <div>방역로봇의 살균/공기청정 기능은 공식 인증 기관을 통해 증명된 것인가요?</div>
                             </td>
                             <td>
@@ -303,7 +331,7 @@
                             <td>
                               <div>서빙로봇</div>
                             </td>
-                            <td>
+                            <td class="text-align-left">
                               <div>방역로봇의 살균/공기청정 기능은 공식 인증 기관을 통해 증명된 것인가요?</div>
                             </td>
                             <td>
@@ -332,7 +360,7 @@
                             <td>
                               <div>서빙로봇</div>
                             </td>
-                            <td>
+                            <td class="text-align-left">
                               <div>방역로봇의 살균/공기청정 기능은 공식 인증 기관을 통해 증명된 것인가요?</div>
                             </td>
                             <td>
@@ -361,7 +389,7 @@
                             <td>
                               <div>서빙로봇</div>
                             </td>
-                            <td>
+                            <td class="text-align-left">
                               <div>방역로봇의 살균/공기청정 기능은 공식 인증 기관을 통해 증명된 것인가요?</div>
                             </td>
                             <td>
@@ -390,7 +418,7 @@
                             <td>
                               <div>서빙로봇</div>
                             </td>
-                            <td>
+                            <td class="text-align-left">
                               <div>방역로봇의 살균/공기청정 기능은 공식 인증 기관을 통해 증명된 것인가요?</div>
                             </td>
                             <td>
@@ -419,7 +447,7 @@
                             <td>
                               <div>서빙로봇</div>
                             </td>
-                            <td>
+                            <td class="text-align-left">
                               <div>방역로봇의 살균/공기청정 기능은 공식 인증 기관을 통해 증명된 것인가요?</div>
                             </td>
                             <td>
@@ -448,7 +476,7 @@
                             <td>
                               <div>서빙로봇</div>
                             </td>
-                            <td>
+                            <td class="text-align-left">
                               <div>방역로봇의 살균/공기청정 기능은 공식 인증 기관을 통해 증명된 것인가요?</div>
                             </td>
                             <td>
@@ -477,7 +505,7 @@
                             <td>
                               <div>서빙로봇</div>
                             </td>
-                            <td>
+                            <td class="text-align-left">
                               <div>방역로봇의 살균/공기청정 기능은 공식 인증 기관을 통해 증명된 것인가요?</div>
                             </td>
                             <td>
@@ -506,7 +534,7 @@
                             <td>
                               <div>서빙로봇</div>
                             </td>
-                            <td>
+                            <td class="text-align-left">
                               <div>방역로봇의 살균/공기청정 기능은 공식 인증 기관을 통해 증명된 것인가요?</div>
                             </td>
                             <td>
@@ -535,7 +563,7 @@
                             <td>
                               <div>서빙로봇</div>
                             </td>
-                            <td>
+                            <td class="text-align-left">
                               <div>방역로봇의 살균/공기청정 기능은 공식 인증 기관을 통해 증명된 것인가요?</div>
                             </td>
                             <td>
@@ -564,7 +592,7 @@
                             <td>
                               <div>서빙로봇</div>
                             </td>
-                            <td>
+                            <td class="text-align-left">
                               <div>방역로봇의 살균/공기청정 기능은 공식 인증 기관을 통해 증명된 것인가요?</div>
                             </td>
                             <td>
@@ -593,7 +621,7 @@
                             <td>
                               <div>서빙로봇</div>
                             </td>
-                            <td>
+                            <td class="text-align-left">
                               <div>방역로봇의 살균/공기청정 기능은 공식 인증 기관을 통해 증명된 것인가요?</div>
                             </td>
                             <td>
@@ -622,7 +650,7 @@
                             <td>
                               <div>서빙로봇</div>
                             </td>
-                            <td>
+                            <td class="text-align-left">
                               <div>방역로봇의 살균/공기청정 기능은 공식 인증 기관을 통해 증명된 것인가요?</div>
                             </td>
                             <td>
@@ -651,7 +679,7 @@
                             <td>
                               <div>서빙로봇</div>
                             </td>
-                            <td>
+                            <td class="text-align-left">
                               <div>방역로봇의 살균/공기청정 기능은 공식 인증 기관을 통해 증명된 것인가요?</div>
                             </td>
                             <td>
@@ -680,7 +708,7 @@
                             <td>
                               <div>서빙로봇</div>
                             </td>
-                            <td>
+                            <td class="text-align-left">
                               <div>방역로봇의 살균/공기청정 기능은 공식 인증 기관을 통해 증명된 것인가요?</div>
                             </td>
                             <td>
@@ -709,7 +737,7 @@
                             <td>
                               <div>서빙로봇</div>
                             </td>
-                            <td>
+                            <td class="text-align-left">
                               <div>방역로봇의 살균/공기청정 기능은 공식 인증 기관을 통해 증명된 것인가요?</div>
                             </td>
                             <td>
@@ -738,7 +766,7 @@
                             <td>
                               <div>서빙로봇</div>
                             </td>
-                            <td>
+                            <td class="text-align-left">
                               <div>방역로봇의 살균/공기청정 기능은 공식 인증 기관을 통해 증명된 것인가요?</div>
                             </td>
                             <td>
@@ -767,7 +795,7 @@
                             <td>
                               <div>서빙로봇</div>
                             </td>
-                            <td>
+                            <td class="text-align-left">
                               <div>방역로봇의 살균/공기청정 기능은 공식 인증 기관을 통해 증명된 것인가요?</div>
                             </td>
                             <td>
@@ -796,7 +824,7 @@
                             <td>
                               <div>서빙로봇</div>
                             </td>
-                            <td>
+                            <td class="text-align-left">
                               <div>방역로봇의 살균/공기청정 기능은 공식 인증 기관을 통해 증명된 것인가요?</div>
                             </td>
                             <td>
@@ -825,7 +853,7 @@
                             <td>
                               <div>서빙로봇</div>
                             </td>
-                            <td>
+                            <td class="text-align-left">
                               <div>방역로봇의 살균/공기청정 기능은 공식 인증 기관을 통해 증명된 것인가요?</div>
                             </td>
                             <td>
@@ -854,9 +882,6 @@
                 <div class="btn-wrap">
                   <button type="button" class="common-btn">
                     삭제
-                  </button>
-                  <button type="button" class="common-btn regist">
-                    등록
                   </button>
                 </div>
             </section>
