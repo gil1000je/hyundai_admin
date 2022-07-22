@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>콘텐츠 관리 > FAQ > FAQ 등록</title>
+    <title>콘텐츠 관리 > 자료실 > 자료실 등록</title>
     <link rel="stylesheet" type="text/css" href="/hyundai_robotics_admin/assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="/hyundai_robotics_admin/assets/css/common.css">
     <link rel="stylesheet" type="text/css" href="/hyundai_robotics_admin/assets/css/form.css">
@@ -33,14 +33,14 @@
                                 <a href="javascript:void(0)" title="클릭시 해당 뎁스로 이동">콘텐츠 관리</a>
                             </li>
                             <li class="depth02">
-                                <a href="javascript:void(0)" title="클릭시 해당 뎁스로 이동">FAQ</a>
+                                <a href="javascript:void(0)" title="클릭시 해당 뎁스로 이동">자료실</a>
                             </li>
                             <li class="depth03">
-                                <a href="javascript:void(0)" title="클릭시 해당 뎁스로 이동">FAQ등록</a>
+                                <a href="javascript:void(0)" title="클릭시 해당 뎁스로 이동">자료실 등록</a>
                             </li>
                         </ul>
                     </nav>
-                    <h2 class="main-tit">FAQ 등록</h2>
+                    <h2 class="main-tit">자료실 등록</h2>
                 </div>
                 <!-- 타이틀 영역 끝 -->
             </section>
@@ -50,54 +50,35 @@
               <ul class="info-list-type02">
                 <li>
                   <div class="title">
-                    문의 유형
+                    카테고리
                   </div>
                   <div class="info">
-                    <div class="input-wrap radio">
-                      <label for="radioSample01" name="radioSample01">
-                        <input id="radioSample01" type="radio"> 제품 구입
-                      </label>
-                      <label for="radioSample02" name="radioSample01">
-                        <input id="radioSample02" type="radio"> 유지 보수
-                      </label>
-                      <label for="radioSample03" name="radioSample01">
-                        <input id="radioSample03" type="radio"> 서비스
-                      </label>
-                      <label for="radioSample04" name="radioSample01">
-                        <input id="radioSample04" type="radio"> 기능/성능
-                      </label>
+                    <div class="input-wrap categorie">
+                      <div class="select-wrap">
+                        <a href="javascript:void(0)" class="selected-option">카테고리</a>
+                        <ul class="option-list">
+                          <li>
+                            <a href="javascript:void(0)">카테고리 1</a>
+                          </li>
+                          <li>
+                            <a href="javascript:void(0)">카테고리 2</a>
+                          </li>
+                          <li>
+                            <a href="javascript:void(0)">카테고리 3</a>
+                          </li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
                 </li>
                 <li>
                   <div class="title">
-                    모델
-                  </div>
-                  <div class="info">
-                    <div class="input-wrap radio">
-                      <label for="radioSample01" name="radioSample02">
-                        <input id="radioSample01" type="radio"> 공통
-                      </label>
-                      <label for="radioSample02" name="radioSample02">
-                        <input id="radioSample02" type="radio"> 방역로봇
-                      </label>
-                      <label for="radioSample03" name="radioSample02">
-                        <input id="radioSample03" type="radio"> 서빙로봇
-                      </label>
-                      <label for="radioSample04" name="radioSample02">
-                        <input id="radioSample04" type="radio"> 호텔로봇
-                      </label>
-                    </div>
-                  </div>
-                </li>
-                <li>
-                  <div class="title">
-                    질문
+                    자료명
                   </div>
                   <div class="info">
                     <div class="input-wrap">
                       <label for="inputSample">
-                        <input id="inputSample" type="text" placeholder="질문을 입력해 주세요.">
+                        <input id="inputSample" type="text" placeholder="자료명을 입력해 주세요.">
                       </label>
                     </div>
                     <span class="alert">
@@ -107,10 +88,24 @@
                 </li>
                 <li>
                   <div class="title">
-                    답변
+                    등록일
                   </div>
                   <div class="info">
-                    <textarea cols="" rows="" placeholder="답변을 입력해 주세요."></textarea>
+                    <div class="input-wrap date">
+                      <input type="text" class="datepicker" placeholder="등록일 선택">
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="title">
+                    첨부파일
+                  </div>
+                  <div class="info">
+                    <div class="input-wrap file">
+                      <input class="hide" type="file" id="file">
+                      <input type="text" placeholder="">
+                      <label class="common-btn" for="file">파일 첨부</label>
+                    </div>
                   </div>
                 </li>
                 <li>
@@ -135,7 +130,7 @@
                     <button type="button" class="common-btn">
                         취소
                     </button>
-                    <button type="button" class="common-btn">
+                    <button type="button" class="common-btn regist">
                         등록
                     </button>
                 </div>

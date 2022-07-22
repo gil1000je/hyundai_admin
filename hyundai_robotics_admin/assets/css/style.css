@@ -2,7 +2,7 @@
 html { font-size:1px; width:100%; min-height:100vh; overflow:auto } 
 body, #header {min-width:1300rem}
 .wrap { width:100%; min-height:100vh; margin:0 auto; margin-top:107rem; overflow:auto; font-size:16rem } 
-#container { width:100%; max-width:1300rem; margin: 0 auto; } 
+#container { width:calc(100% - 40rem); max-width:1300rem; margin: 0 auto; } 
 
 /* 버튼 */
 .common-btn { font-size:16rem; white-space:nowrap; border-radius:3rem; background:#F4F4F4; border:solid 1px #BBB; color:#666; min-height:44rem; padding:0 42rem; display:inline-block; } 
@@ -15,7 +15,7 @@ label.common-btn { width:120rem; display:flex; align-items:center; justify-conte
 .login-modal .common-btn { border: 1px solid #eee; border-radius: 8rem; font-size: 14rem; font-weight: bold; min-height: 48rem;width: 100%;display: flex;align-items: center;justify-content: center;} 
 .common-btn.regist {background:#3BB88C; color:#fff; border:solid 1px #3BB88C;width: 120rem;padding: 0;display: flex;align-items: center;justify-content: center;}
 .common-btn.regist::after{content: '';width: 28rem;height: 28rem;display: inline-block;background: url(/hyundai_robotics_admin/assets/images/common/regist_active_icon.png) no-repeat center/ contain;margin-left: 5rem;}
-.common-btn.regist:disabled{background: #ddd;border: 1px solid #999;color: #999;}
+.common-btn.regist:disabled {background: #ddd;border: 1px solid #999;color: #999;}
 .common-btn.regist:disabled::after{background: url(/hyundai_robotics_admin/assets/images/common/regist_icon.png) no-repeat center/ contain;}
 
 /* 체크박스 및 라디오 버튼 */
@@ -430,6 +430,7 @@ input[type="search"]::-webkit-search-results-decoration{
 
 
  #dashboard { margin-top:74rem; background:#F4F4F4; padding-bottom:32rem}
+ #dashboard #container {max-width:1780rem}
  #dashboard .title-wrap { display:flex; align-items:center; padding:12rem 0; }
  #dashboard .title-wrap h2.title { font-size:30rem; font-weight:700; color:#222; line-height:45rem;}
  #dashboard .title-wrap .last-update { white-space:nowrap; color:#999; font-size:14rem; line-height:24rem; font-weight:500;}
@@ -437,18 +438,22 @@ input[type="search"]::-webkit-search-results-decoration{
  #dashboard .title-wrap .last-update span { color:#999; font-size:14rem; font-weight:400;}
 
  #dashboard .dashboard-list { width:100%; display:grid; grid-template-columns:repeat(2, 1fr); gap:12rem;}
- #dashboard .dashboard-list > li { height:294rem; background:#fff; border-radius:3rem; overflow:hidden;}
+ #dashboard .dashboard-list > li { height:294rem; background:#fff; border-radius:3rem; overflow:hidden; box-shadow:0 3rem 10rem rgba(0,0,0,0.15)} 
  #dashboard .dashboard-list > li .title-wrap { display:flex; width:100%; height:44rem; align-items:center; justify-content:space-between; padding:0 20rem; background:#3BB88C;}
  #dashboard .dashboard-list > li .title {  color:#fff; font-size:18rem; font-weight:700; }
  #dashboard .dashboard-list > li .title-wrap > button { width:80rem; height:32rem; border-radius:22rem; background:#fff; color:#339A76; font-size:14rem; font-weight:500;}
  #dashboard .dashboard-list > li .info { padding:20rem }
  #dashboard .dashboard-list  li#boxVisit {}
- #dashboard .dashboard-list li#boxVisit .tab { display:flex; gap:5rem; margin-bottom:20rem; }
+ #dashboard .dashboard-list  li#boxVisit .info { display:flex; flex-direction:column;}
+ #dashboard .dashboard-list li#boxVisit .tab { display:flex; gap:5rem; margin-bottom:20rem; position:relative; z-index:1; }
  #dashboard .dashboard-list li#boxVisit .tab li {}
  #dashboard .dashboard-list li#boxVisit .tab li a { display:inline-block; padding:0 5rem; color:#999; font-size:14rem; font-weight:500; }
  #dashboard .dashboard-list li#boxVisit .tab li.active a { position:relative; color:#339A76; font-size:16rem; font-weight:700; }
  #dashboard .dashboard-list li#boxVisit .tab li.active a::after {content:""; display:inline-block; width:100%; height:2px; background:#339A76; position:absolute; bottom:-5rem; left:0; }
- #dashboard .dashboard-list li#boxVisit .graph { width:100%; height:150rem; background:red}
+ #dashboard .dashboard-list li#boxVisit .graph { width:100%; height:500rem; overflow:hidden; position:relative; top:0; left:0; z-index:0; }
+ #dashboard .dashboard-list li#boxVisit .graph .graph-view-point { width:70rem; height:100%; display:flex; gap:15rem; flex-direction:column; position:absolute; padding-left:20rem; right:0rem; top:0; z-index:1; background: #fff;}
+ #dashboard .dashboard-list li#boxVisit .graph .graph-view-point li { font-size:12rem; color:#999 }
+ #dashboard .dashboard-list li#boxVisit .graph #curve_chart { position:absolute; top:-40rem; left:-250rem}
  #dashboard .table-wrap {width:100%;}
  #dashboard .table-type-dashboard { width:100%; }
  #dashboard .table-type-dashboard thead tr { width:100%; background:#F4F4F4; height:36rem; border-radius:3rem 3rem 0 0  }
