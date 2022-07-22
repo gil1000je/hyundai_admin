@@ -95,6 +95,7 @@ input[type="text"] + button, input[type="text"] + button + button { margin-left:
 #topArea .title-wrap h2.main-tit { font-size:30rem; color:#222; font-weight:700; line-height:44rem; letter-spacing:-0.018em; } 
 
 /* 테이블 공통 */
+.table-wrap{position: relative;}
 .table-wrap .all {margin-bottom:10rem;}
 .table-wrap .table-info { margin-top:12rem; color:#999; line-height:24rem;}
 .table-wrap.empty { position:relative;}
@@ -109,6 +110,9 @@ input[type="text"] + button, input[type="text"] + button + button { margin-left:
 .table-wrap .btn-wrap {display:flex; justify-content:flex-end; margin-top:26rem;}
 .table-wrap .input-wrap.radio label {font-size:14rem}
 
+.table-wrap #pagination {margin-top: 32rem;}
+.table-wrap #pagination .pagination-inner{justify-content: center;}
+
 /* 테이블 타입 1 */
 .table-type01 { width:100%; max-width:1300rem; border-radius:3rem; background:#fff; outline:solid 1px #BBB;overflow: hidden;} 
 .table-type01 .num { width:100rem; } 
@@ -117,6 +121,7 @@ input[type="text"] + button, input[type="text"] + button + button { margin-left:
 .table-type01 tr:nth-child(odd) { background:#F5FCF9 } 
 .table-type01 tr:nth-child(even) { background:#fff } 
 .table-type01 th { font-size:16rem; background:#3BB88C; color:#fff; font-weight:500 } 
+.table-type01 th.text-align-center {text-align: center;} 
 .table-type01 td { font-size:14rem; text-align:center;/* border-right:solid 1px #BBB */ } 
 .table-type01 td:first-child, .table-type01 td:last-child { border-right:0 } 
 .table-type01 td div { height:30rem; display:flex; align-items:center; justify-content:center; } 
@@ -228,7 +233,7 @@ input[type="text"] + button, input[type="text"] + button + button { margin-left:
 #topArea.tab { padding-bottom:12rem } 
 #topArea.tab .title-wrap, #topArea.search .title-wrap { padding-bottom:16rem } 
 #topArea.search .search-wrap {}
-#topArea.search .search-wrap-inner { display:flex; justify-content:space-between; padding-bottom:12rem }
+#topArea.search .search-wrap-inner { display:flex; justify-content:space-between; }
 #topArea.search .search-wrap .select-wrap { width:120rem; }
 #topArea.search .search-wrap .select-wrap:not(:first-child){margin-left: 14rem;}
 #topArea.search .search-wrap .select-wrap.wd160 { width:160rem; }
@@ -239,6 +244,8 @@ input[type="text"] + button, input[type="text"] + button + button { margin-left:
 #topArea.search .search-wrap .num {margin-bottom:5rem}
 #topArea.search .search-wrap input[type="search"]{width:380rem;margin: 0 14rem 0 0;}
 
+input[type="search"]::-ms-clear,
+input[type="search"]::-ms-reveal {display: none; width : 0; height: 0;}
 input[type="search"]::-webkit-search-decoration,
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-results-button,
