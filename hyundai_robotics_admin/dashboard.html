@@ -10,79 +10,406 @@
     <link rel="stylesheet" type="text/css" href="/hyundai_robotics_admin/assets/css/form.css">
     <link rel="stylesheet" type="text/css" href="/hyundai_robotics_admin/assets/css/style.css">
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <script src='//cdnjs.cloudflare.com/ajax/libs/jquery-throttle-debounce/1.1/jquery.ba-throttle-debounce.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/cupertino/jquery-ui.min.css'></script>
     <script type="text/javascript" src="/hyundai_robotics_admin/assets/js/include.js"></script>
     <script src="/hyundai_robotics_admin/assets/js/form.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="/hyundai_robotics_admin/assets/js/dashboard.js"></script>
 </head>
-<body>
-    <div id="dashboard" class="wrap">
-        <!-- HEADER 헤더 시작 -->
-        <header id="header" class="bg"></header>
-        <!-- HEADER 헤더 끝 -->
-        <!-- 컨테이너 시작 -->
-        <div id="container">
-            <div class="inner">
-                <div class="title-wrap">
-                    <h2 class="title">
-                        #Dashboard
-                    </h2>
-                    <a href="javascript:void(0)" title="새로고침">
-                    </a>
-                    <div class="last-update">
-                        Last Update : <span class="date">2022-04-02 10:21:16</span>
+    <body>
+        <div id="dashboard" class="wrap">
+            <!-- HEADER 헤더 시작 -->
+            <header id="header"></header>
+            <!-- HEADER 헤더 끝 -->
+            <!-- 컨테이너 시작 -->
+            <div id="container">
+                <div class="inner">
+                    <div class="title-wrap">
+                        <h2 class="title">
+                            #Dashboard
+                        </h2>
+                        <a href="javascript:void(0)" title="새로고침">
+                        </a>
+                        <div class="last-update">
+                            Last Update <span class="date">: 2022-04-02 10:21:16</span>
+                        </div>
                     </div>
+                    <ul class="dashboard-list">
+                        <!-- 방문자 -->
+                        <li id="boxVisit">
+                            <div class="title-wrap">
+                                <h3 class="title">방문자</h3>
+                            </div>
+                            <div class="info">
+                                <ul class="tab">
+                                    <li class="active">
+                                        <a href="javascript:void(0)">Daily</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Weekly</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Monthly</a>
+                                    </li>
+                                </ul>
+                                <div class="graph">
+                                    <div id="curve_chart" style="width:100%; height:100%"></div>
+                                    <ul class="graph-view-point">
+                                        <li>5,000</li>
+                                        <li>4,000</li>
+                                        <li>3,000</li>
+                                        <li>2,000</li>
+                                        <li>1,000</li>
+                                        <li>0</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- 인기 사용 페이지 -->
+                        <li id="boxPopularPages">
+                            <div class="title-wrap">
+                                <h3 class="title">인기 사용 페이지</h3>
+                                <button type="button">더보기</button>
+                            </div>
+                            <div class="info">
+                                <div class="table-wrap">
+                                    <table class="table-type-dashboard">
+                                        <caption>인기 사용 페이지 테이블</caption>
+                                        <colgroup>
+                                            <col width="126rem">
+                                            <col width="*">
+                                            <col width="*">
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">순위</th>
+                                                <th scope="col">페이지</th>
+                                                <th scope="col">페이지뷰 수</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="num">
+                                                    1
+                                                </td>
+                                                <td class="target">
+                                                    로봇활용사례-방역로봇-기업
+                                                </td>
+                                                <td class="view">
+                                                    1
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="num">
+                                                    2
+                                                </td>
+                                                <td class="target">
+                                                    로봇활용사례-방역로봇-기업
+                                                </td>
+                                                <td class="view">
+                                                    10
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="num">
+                                                    3
+                                                </td>
+                                                <td class="target">
+                                                    로봇활용사례-방역로봇-기업
+                                                </td>
+                                                <td class="view">
+                                                    100
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="num">
+                                                    4
+                                                </td>
+                                                <td class="target">
+                                                    로봇활용사례-방역로봇-기업
+                                                </td>
+                                                <td class="view">
+                                                    1000
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="num">
+                                                    5
+                                                </td>
+                                                <td class="target">
+                                                    로봇활용사례-방역로봇-기업
+                                                </td>
+                                                <td class="view">
+                                                    10000
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- 지역 -->
+                        <li id="boxLocal">
+                            <div class="title-wrap">
+                                <h3 class="title">지역</h3>
+                                <button type="button">더보기</button>
+                            </div>
+                            <div class="info">
+                                <div class="table-wrap">
+                                    <table class="table-type-dashboard">
+                                        <caption>인기 사용 페이지 테이블</caption>
+                                        <colgroup>
+                                            <col width="126rem">
+                                            <col width="*">
+                                            <col width="*">
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">순위</th>
+                                                <th scope="col">도시</th>
+                                                <th scope="col">사용자 수</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="num">
+                                                    1
+                                                </td>
+                                                <td class="target">
+                                                    수원시
+                                                </td>
+                                                <td class="view">
+                                                    <span class="num">1</span>명
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="num">
+                                                    2
+                                                </td>
+                                                <td class="target">
+                                                    수원시
+                                                </td>
+                                                <td class="view">
+                                                    <span class="num">10</span>명
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="num">
+                                                    3
+                                                </td>
+                                                <td class="target">
+                                                    수원시
+                                                </td>
+                                                <td class="view">
+                                                    <span class="num">100</span>명
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="num">
+                                                    4
+                                                </td>
+                                                <td class="target">
+                                                    수원시
+                                                </td>
+                                                <td class="view">
+                                                    <span class="num">1000</span>명
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="num">
+                                                    5
+                                                </td>
+                                                <td class="target">
+                                                    수원시
+                                                </td>
+                                                <td class="view">
+                                                    <span class="num">1000000</span>명
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- 유입경로 -->
+                        <li id="boxInflowRoute">
+                            <div class="title-wrap">
+                                <h3 class="title">유입경로</h3>
+                                <button type="button">더보기</button>
+                            </div>
+                            <div class="info">
+                                <div class="table-wrap">
+                                    <table class="table-type-dashboard">
+                                        <caption>인기 사용 페이지 테이블</caption>
+                                        <colgroup>
+                                            <col width="126rem">
+                                            <col width="*">
+                                            <col width="*">
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">순위</th>
+                                                <th scope="col">매체</th>
+                                                <th scope="col">사용자 수</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="num">
+                                                    1
+                                                </td>
+                                                <td class="target">
+                                                    홍길동님의 상담신청입니다.
+                                                </td>
+                                                <td class="view">
+                                                    <span class="num">1</span>명
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="num">
+                                                    2
+                                                </td>
+                                                <td class="target">
+                                                    Youtube
+                                                </td>
+                                                <td class="view">
+                                                    <span class="num">10</span>명
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="num">
+                                                    3
+                                                </td>
+                                                <td class="target">
+                                                    Youtube
+                                                </td>
+                                                <td class="view">
+                                                    <span class="num">100</span>명
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="num">
+                                                    4
+                                                </td>
+                                                <td class="target">
+                                                    Youtube
+                                                </td>
+                                                <td class="view">
+                                                    <span class="num">1000</span>명
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="num">
+                                                    5
+                                                </td>
+                                                <td class="target">
+                                                    Youtube
+                                                </td>
+                                                <td class="view">
+                                                    <span class="num">1000000000</span>명
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- 상담 / 문의 -->
+                        <li id="boxInquiry">
+                            <div class="title-wrap">
+                                <h3 class="title">상담/문의</h3>
+                                <button type="button">더보기</button>
+                            </div>
+                            <div class="info">
+                                <ul class="tab">
+                                    <li class="active"><a href="javascript:void(0)">상담신청(10)</a></li>
+                                    <li><a href="javascript:void(0)">시연신청(100)</a></li>
+                                    <li><a href="javascript:void(0)">A/S신청(1,000)</a></li>
+                                    <li><a href="javascript:void(0)">대리점모집문의(10,000)</a></li>
+                                    <li><a href="javascript:void(0)">제휴문의(100,000)</a></li>
+                                </ul>
+                                <div class="table-wrap">
+                                    <table class="table-type-dashboard">
+                                        <caption>인기 사용 페이지 테이블</caption>
+                                        <colgroup>
+                                            <col width="126rem">
+                                            <col width="*">
+                                            <col width="*">
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">순위</th>
+                                                <th scope="col">도시</th>
+                                                <th scope="col">문의/신청일</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="num">
+                                                    1
+                                                </td>
+                                                <td class="target">
+                                                    홍길동님의 상담신청입니다.
+                                                </td>
+                                                <td class="date">
+                                                    2022-06-08
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="num">
+                                                    2
+                                                </td>
+                                                <td class="target">
+                                                    홍길동님의 상담신청입니다.
+                                                </td>
+                                                <td class="date">
+                                                    2022-06-08
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="num">
+                                                    3
+                                                </td>
+                                                <td class="target">
+                                                    홍길동님의 상담신청입니다.
+                                                </td>
+                                                <td class="date">
+                                                    2022-06-08
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="num">
+                                                    4
+                                                </td>
+                                                <td class="target">
+                                                    홍길동님의 상담신청입니다.
+                                                </td>
+                                                <td class="date">
+                                                    2022-06-08
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="num">
+                                                    5
+                                                </td>
+                                                <td class="target">
+                                                    홍길동님의 상담신청입니다.
+                                                </td>
+                                                <td class="date">
+                                                    2022-06-08
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-                <ul class="dashboard-list">
-                    <!-- 방문자 -->
-                    <li id="boxVisit">
-                        <div class="title-wrap">
-                            <h3 class="title">방문자</h3>
-                        </div>
-                        <div class="info">
-                            
-                        </div>
-                    </li>
-                    <!-- 인기 사용 페이지 -->
-                    <li id="boxPopularPages">
-                        <div class="title-wrap">
-                            <h3 class="title">방문자</h3>
-                        </div>
-                        <div class="info">
-                            
-                        </div>
-                    </li>
-                    <!-- 지역 -->
-                    <li id="boxLocal">
-                        <div class="title-wrap">
-                            <h3 class="title">방문자</h3>
-                        </div>
-                        <div class="info">
-                            
-                        </div>
-                    </li>
-                    <!-- 유입경로 -->
-                    <li id="boxInflowRoute">
-                        <div class="title-wrap">
-                            <h3 class="title">방문자</h3>
-                        </div>
-                        <div class="info">
-                            
-                        </div>
-                    </li>
-                     <!-- 상담 / 문의 -->
-                    <li id="boxInquiry">
-                        <div class="title-wrap">
-                            <h3 class="title">방문자</h3>
-                        </div>
-                        <div class="info">
-                            
-                        </div>
-                    </li>
-                </ul>
             </div>
+            <!-- 컨테이너 끝 -->
         </div>
-        <!-- 컨테이너 끝 -->
-    </div>
-</body>
-
+    </body>
 </html>
