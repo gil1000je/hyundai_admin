@@ -79,44 +79,42 @@
                 </ul>
               </div>
               <!-- 탭 영역 끝 -->
-              <!-- 버튼 영역 시작 -->
-              <div class="button-wrap">
-                  <div class="alert">
-                      <strong>도입 업체</strong>
-                  </div>
-              </div>
-              <!-- 버튼 영역 시작 -->
               <div class="search-wrap">
-                <div class="left">
-                  <div class="select-wrap">
-                    <a href="javascript:void(0)" class="selected-option">25개</a>
-                    <ul class="option-list">
-                      <li>
-                        <a href="javascript:void(0)">지역 1</a>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0)">지역 2</a>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0)">지역 3</a>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0)">지역 4</a>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0)">지역 5</a>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0)">지역 6</a>
-                      </li>
-                    </ul>
-                  </div> 
-                </div>
-                <div class="right">
-                  <div class="input-wrap">
-                    <input id="inputSample" type="search" placeholder="검색어 입력">
-                    <button class="common-btn" type="submit">
-                      검색
+                <div class="search-wrap-inner">
+                  <div class="left">
+                    <div class="input-wrap">
+                      <input id="inputSample" type="search" placeholder="검색어 입력">
+                      <button class="common-btn" type="submit" disabled="">
+                        검색
+                      </button>
+                    </div>
+                  </div>
+                  <div class="right">
+                    <div class="select-wrap">
+                      <a href="javascript:void(0)" class="selected-option">25개</a>
+                      <ul class="option-list">
+                        <li>
+                          <a href="javascript:void(0)">지역 1</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)">지역 2</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)">지역 3</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)">지역 4</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)">지역 5</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)">지역 6</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <button class="common-btn regist" type="submit">
+                      등록
                     </button>
                   </div>
                 </div>
@@ -211,7 +209,7 @@
                       <td>
                         <div class="input-wrap radio">
                           <label for="radioSample5" name="radioSample5">
-                            <input id="radioSample5" type="radio"> 노출
+                            <input id="radioSample5" type="radio" checked> 노출
                           </label>
                           <label for="radioSample6" name="radioSample6">
                             <input id="radioSample6" type="radio"> 미노출
@@ -257,7 +255,7 @@
                       <td>
                         <div class="input-wrap radio">
                           <label for="radioSample5" name="radioSample5">
-                            <input id="radioSample5" type="radio"> 노출
+                            <input id="radioSample5" type="radio" checked> 노출
                           </label>
                           <label for="radioSample6" name="radioSample6">
                             <input id="radioSample6" type="radio"> 미노출
@@ -303,7 +301,7 @@
                       <td>
                         <div class="input-wrap radio">
                           <label for="radioSample5" name="radioSample5">
-                            <input id="radioSample5" type="radio"> 노출
+                            <input id="radioSample5" type="radio" checked> 노출
                           </label>
                           <label for="radioSample6" name="radioSample6">
                             <input id="radioSample6" type="radio"> 미노출
@@ -320,11 +318,8 @@
             <div id="bottomArea" class="no-line">
               <div id="pagination"></div>
               <div class="btn-wrap">
-                <button type="button" class="common-btn">
+                <button type="button" class="common-btn" disabled>
                   삭제
-                </button>
-                <button type="button" class="common-btn">
-                  등록
                 </button>
               </div>
             </div>
