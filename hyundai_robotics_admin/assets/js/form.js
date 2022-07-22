@@ -210,36 +210,6 @@ $(document).ready(function() {
     $(function(){
         $('.datepicker').datepicker();
     })
-
-    //검색
-    // var btnClear = document.querySelectorAll('.btn-clear');
-    // btnClear.forEach(function(btn){
-    //     btn.addEventListener('click', function(){
-    //         btn.parentNode.querySelector('input[type="search"]').value = "";
-    //     })
-    // });
-
-    // $('.search-input').each(function(){
-    //   $(this).find('input[type="search"]').on('keyup focus', function(){
-    //     $(this).siblings('.btn-clear').attr('style', 'visibility: visible');
-  
-    //     if($(this).val().length == 0){
-    //       $(this).siblings('.btn-clear').attr('style', 'visibility: hidden');
-    //     } else {
-    //       $(this).siblings('.btn-clear').attr('style', 'visibility: visible');
-    //     }
-    //   });
-    
-    //   $(this).find('input[type="search"]').on('blur', function(){
-    //     $(this).siblings('.btn-clear').attr('style', 'visibility: hidden');
-    //   });
-    
-    //   $(this).find('.btn-clear').on('click touchstart', function(){
-    //     $(this).closest('.search-input').find('input[type="search"]').val('');
-    //     $(this).closest('.search-input').find('.btn-clear').attr('style', 'visibility: hidden');
-    //     return false;
-    //   });
-    // });
 });
 
 
