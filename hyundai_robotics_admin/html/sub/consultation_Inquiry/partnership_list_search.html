@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>상담/문의 > 제휴문의</title>
+    <link rel="stylesheet" type="text/css" href="/hyundai_robotics_admin/assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="/hyundai_robotics_admin/assets/css/common.css">
+    <link rel="stylesheet" type="text/css" href="/hyundai_robotics_admin/assets/css/form.css">
+    <link rel="stylesheet" type="text/css" href="/hyundai_robotics_admin/assets/css/style.css">
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src='//cdnjs.cloudflare.com/ajax/libs/jquery-throttle-debounce/1.1/jquery.ba-throttle-debounce.min.js'></script>
+    <script type="text/javascript" src="/hyundai_robotics_admin/assets/js/include.js"></script>
+    <script src="/hyundai_robotics_admin/assets/js/form.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <!-- HEADER 헤더 시작 -->
+        <header id="header" class="bg"></header>
+        <!-- HEADER 헤더 끝 -->
+        <!-- 컨테이너 시작 -->
+        <div id="container">
+          <!-- TOP AREA 탑 영역 시작 -->
+          <section id="topArea" class="search tab">
+              <!-- 타이틀 영역 시작 -->
+              <div class="title-wrap">
+                <nav id="navigation">
+                  <ul>
+                    <li class="depth01">
+                        <a href="javascript:void(0)" title="클릭시 해당 뎁스로 이동">상담/문의</a>
+                    </li>
+                    <li class="depth02">
+                        <a href="javascript:void(0)" title="클릭시 해당 뎁스로 이동">제휴문의</a>
+                    </li>
+                  </ul>
+                </nav>
+                <h2 class="main-tit">제휴문의</h2>
+              </div>
+              <!-- 타이틀 영역 끝 -->
+              <!-- 검색 영역 시작 -->
+              <div class="search-wrap">
+                <div class="search-wrap-inner">
+                  <div class="left">
+                    <div class="input-wrap">
+                      <input id="inputSample" type="search" placeholder="" value="홍길동">
+                      <button class="common-btn active" type="submit">
+                        검색
+                      </button>
+                    </div>
+                  </div>
+                  <div class="right">
+                    <div class="select-wrap wd160">
+                      <a href="javascript:void(0)" class="selected-option">지역전체</a>
+                      <ul class="option-list">
+                        <li>
+                          <a href="javascript:void(0)">지역 1</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)">지역 2</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)">지역 3</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)">지역 4</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)">지역 5</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)">지역 6</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="select-wrap">
+                      <a href="javascript:void(0)" class="selected-option">25개</a>
+                      <ul class="option-list">
+                        <li>
+                          <a href="javascript:void(0)">지역 1</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)">지역 2</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)">지역 3</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)">지역 4</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)">지역 5</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)">지역 6</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 검색 영역 끝 -->
+    
+            </section>
+            <!-- TOP AREA 탑 영역 끝 -->
+            <!-- mid AREA 중간 영역 시작 -->
+            <section id="midArea">
+                <div id="tableWrap" class="dont-copy-this-div">
+                    <div class="table-wrap">
+                      <table class="table-type01 border-td">
+                        <caption>제휴문의 테이블</caption>
+                        <colgroup>
+                          <col width="4%">
+                          <col width="8%">
+                          <col width="24%">
+                          <col width="8%">
+                          <col width="12%">
+                          <col width="10%">
+                          <col width="10%">
+                          <col width="10%">
+                        </colgroup>
+                        <thead>
+                          <tr>
+                            <th scope="col">
+                              No.
+                            </th>
+                            <th scope="col">
+                              업체명
+                            </th>
+                            <th scope="col">
+                              소재지
+                            </th>
+                            <th scope="col">
+                              신청인
+                            </th>
+                            <th scope="col">
+                              신청인 소속
+                            </th>
+                            <th scope="col">
+                              연락처(전화)
+                            </th>
+                            <th scope="col">
+                              연락처(E-Mail)
+                            </th>
+                            <th scope="col">
+                              문의 일자
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <div>1000</div>
+                            </td>
+                            <td>
+                              <div>황소포차</div>
+                            </td>
+                            <td>
+                              <div>세종특별자치시 조치원읍 세종로 2639</div>
+                            </td>
+                            <td>
+                              <div>홍길동</div>
+                            </td>
+                            <td>
+                              <div>시설관리팀</div>
+                            </td>
+                            <td>
+                              <div>01044690223</div>
+                            </td>
+                            <td>
+                              <div>alsdp0820@gmail.com</div>
+                            </td>
+                            <td>
+                              <div>2022-06-22</div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div>999</div>
+                            </td>
+                            <td>
+                              <div>황소포차</div>
+                            </td>
+                            <td>
+                              <div>세종특별자치시 조치원읍 세종로 2639</div>
+                            </td>
+                            <td>
+                              <div>홍길동</div>
+                            </td>
+                            <td>
+                              <div>시설관리팀</div>
+                            </td>
+                            <td>
+                              <div>01044690223</div>
+                            </td>
+                            <td>
+                              <div>alsdp0820@gmail.com</div>
+                            </td>
+                            <td>
+                              <div>2022-06-22</div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div>998</div>
+                            </td>
+                            <td>
+                              <div>황소포차</div>
+                            </td>
+                            <td>
+                              <div>세종특별자치시 조치원읍 세종로 2639</div>
+                            </td>
+                            <td>
+                              <div>홍길동</div>
+                            </td>
+                            <td>
+                              <div>시설관리팀</div>
+                            </td>
+                            <td>
+                              <div>01044690223</div>
+                            </td>
+                            <td>
+                              <div>alsdp0820@gmail.com</div>
+                            </td>
+                            <td>
+                              <div>2022-06-22</div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div>997</div>
+                            </td>
+                            <td>
+                              <div>황소포차</div>
+                            </td>
+                            <td>
+                              <div>세종특별자치시 조치원읍 세종로 2639</div>
+                            </td>
+                            <td>
+                              <div>홍길동</div>
+                            </td>
+                            <td>
+                              <div>시설관리팀</div>
+                            </td>
+                            <td>
+                              <div>01044690223</div>
+                            </td>
+                            <td>
+                              <div>alsdp0820@gmail.com</div>
+                            </td>
+                            <td>
+                              <div>2022-06-22</div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div>996</div>
+                            </td>
+                            <td>
+                              <div>황소포차</div>
+                            </td>
+                            <td>
+                              <div>세종특별자치시 조치원읍 세종로 2639</div>
+                            </td>
+                            <td>
+                              <div>홍길동</div>
+                            </td>
+                            <td>
+                              <div>시설관리팀</div>
+                            </td>
+                            <td>
+                              <div>01044690223</div>
+                            </td>
+                            <td>
+                              <div>alsdp0820@gmail.com</div>
+                            </td>
+                            <td>
+                              <div>2022-06-22</div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div>995</div>
+                            </td>
+                            <td>
+                              <div>황소포차</div>
+                            </td>
+                            <td>
+                              <div>세종특별자치시 조치원읍 세종로 2639</div>
+                            </td>
+                            <td>
+                              <div>홍길동</div>
+                            </td>
+                            <td>
+                              <div>시설관리팀</div>
+                            </td>
+                            <td>
+                              <div>01044690223</div>
+                            </td>
+                            <td>
+                              <div>alsdp0820@gmail.com</div>
+                            </td>
+                            <td>
+                              <div>2022-06-22</div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div>994</div>
+                            </td>
+                            <td>
+                              <div>황소포차</div>
+                            </td>
+                            <td>
+                              <div>세종특별자치시 조치원읍 세종로 2639</div>
+                            </td>
+                            <td>
+                              <div>홍길동</div>
+                            </td>
+                            <td>
+                              <div>시설관리팀</div>
+                            </td>
+                            <td>
+                              <div>01044690223</div>
+                            </td>
+                            <td>
+                              <div>alsdp0820@gmail.com</div>
+                            </td>
+                            <td>
+                              <div>2022-06-22</div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div>993</div>
+                            </td>
+                            <td>
+                              <div>황소포차</div>
+                            </td>
+                            <td>
+                              <div>세종특별자치시 조치원읍 세종로 2639</div>
+                            </td>
+                            <td>
+                              <div>홍길동</div>
+                            </td>
+                            <td>
+                              <div>시설관리팀</div>
+                            </td>
+                            <td>
+                              <div>01044690223</div>
+                            </td>
+                            <td>
+                              <div>alsdp0820@gmail.com</div>
+                            </td>
+                            <td>
+                              <div>2022-06-22</div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div>992</div>
+                            </td>
+                            <td>
+                              <div>황소포차</div>
+                            </td>
+                            <td>
+                              <div>세종특별자치시 조치원읍 세종로 2639</div>
+                            </td>
+                            <td>
+                              <div>홍길동</div>
+                            </td>
+                            <td>
+                              <div>시설관리팀</div>
+                            </td>
+                            <td>
+                              <div>01044690223</div>
+                            </td>
+                            <td>
+                              <div>alsdp0820@gmail.com</div>
+                            </td>
+                            <td>
+                              <div>2022-06-22</div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div>991</div>
+                            </td>
+                            <td>
+                              <div>황소포차</div>
+                            </td>
+                            <td>
+                              <div>세종특별자치시 조치원읍 세종로 2639</div>
+                            </td>
+                            <td>
+                              <div>홍길동</div>
+                            </td>
+                            <td>
+                              <div>시설관리팀</div>
+                            </td>
+                            <td>
+                              <div>01044690223</div>
+                            </td>
+                            <td>
+                              <div>alsdp0820@gmail.com</div>
+                            </td>
+                            <td>
+                              <div>2022-06-22</div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div>990</div>
+                            </td>
+                            <td>
+                              <div>황소포차</div>
+                            </td>
+                            <td>
+                              <div>세종특별자치시 조치원읍 세종로 2639</div>
+                            </td>
+                            <td>
+                              <div>홍길동</div>
+                            </td>
+                            <td>
+                              <div>시설관리팀</div>
+                            </td>
+                            <td>
+                              <div>01044690223</div>
+                            </td>
+                            <td>
+                              <div>alsdp0820@gmail.com</div>
+                            </td>
+                            <td>
+                              <div>2022-06-22</div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div>989</div>
+                            </td>
+                            <td>
+                              <div>황소포차</div>
+                            </td>
+                            <td>
+                              <div>세종특별자치시 조치원읍 세종로 2639</div>
+                            </td>
+                            <td>
+                              <div>홍길동</div>
+                            </td>
+                            <td>
+                              <div>시설관리팀</div>
+                            </td>
+                            <td>
+                              <div>01044690223</div>
+                            </td>
+                            <td>
+                              <div>alsdp0820@gmail.com</div>
+                            </td>
+                            <td>
+                              <div>2022-06-22</div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div>988</div>
+                            </td>
+                            <td>
+                              <div>황소포차</div>
+                            </td>
+                            <td>
+                              <div>세종특별자치시 조치원읍 세종로 2639</div>
+                            </td>
+                            <td>
+                              <div>홍길동</div>
+                            </td>
+                            <td>
+                              <div>시설관리팀</div>
+                            </td>
+                            <td>
+                              <div>01044690223</div>
+                            </td>
+                            <td>
+                              <div>alsdp0820@gmail.com</div>
+                            </td>
+                            <td>
+                              <div>2022-06-22</div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div>987</div>
+                            </td>
+                            <td>
+                              <div>황소포차</div>
+                            </td>
+                            <td>
+                              <div>세종특별자치시 조치원읍 세종로 2639</div>
+                            </td>
+                            <td>
+                              <div>홍길동</div>
+                            </td>
+                            <td>
+                              <div>시설관리팀</div>
+                            </td>
+                            <td>
+                              <div>01044690223</div>
+                            </td>
+                            <td>
+                              <div>alsdp0820@gmail.com</div>
+                            </td>
+                            <td>
+                              <div>2022-06-22</div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div>986</div>
+                            </td>
+                            <td>
+                              <div>황소포차</div>
+                            </td>
+                            <td>
+                              <div>세종특별자치시 조치원읍 세종로 2639</div>
+                            </td>
+                            <td>
+                              <div>홍길동</div>
+                            </td>
+                            <td>
+                              <div>시설관리팀</div>
+                            </td>
+                            <td>
+                              <div>01044690223</div>
+                            </td>
+                            <td>
+                              <div>alsdp0820@gmail.com</div>
+                            </td>
+                            <td>
+                              <div>2022-06-22</div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div>985</div>
+                            </td>
+                            <td>
+                              <div>황소포차</div>
+                            </td>
+                            <td>
+                              <div>세종특별자치시 조치원읍 세종로 2639</div>
+                            </td>
+                            <td>
+                              <div>홍길동</div>
+                            </td>
+                            <td>
+                              <div>시설관리팀</div>
+                            </td>
+                            <td>
+                              <div>01044690223</div>
+                            </td>
+                            <td>
+                              <div>alsdp0820@gmail.com</div>
+                            </td>
+                            <td>
+                              <div>2022-06-22</div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div>984</div>
+                            </td>
+                            <td>
+                              <div>황소포차</div>
+                            </td>
+                            <td>
+                              <div>세종특별자치시 조치원읍 세종로 2639</div>
+                            </td>
+                            <td>
+                              <div>홍길동</div>
+                            </td>
+                            <td>
+                              <div>시설관리팀</div>
+                            </td>
+                            <td>
+                              <div>01044690223</div>
+                            </td>
+                            <td>
+                              <div>alsdp0820@gmail.com</div>
+                            </td>
+                            <td>
+                              <div>2022-06-22</div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div>983</div>
+                            </td>
+                            <td>
+                              <div>황소포차</div>
+                            </td>
+                            <td>
+                              <div>세종특별자치시 조치원읍 세종로 2639</div>
+                            </td>
+                            <td>
+                              <div>홍길동</div>
+                            </td>
+                            <td>
+                              <div>시설관리팀</div>
+                            </td>
+                            <td>
+                              <div>01044690223</div>
+                            </td>
+                            <td>
+                              <div>alsdp0820@gmail.com</div>
+                            </td>
+                            <td>
+                              <div>2022-06-22</div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div>982</div>
+                            </td>
+                            <td>
+                              <div>황소포차</div>
+                            </td>
+                            <td>
+                              <div>세종특별자치시 조치원읍 세종로 2639</div>
+                            </td>
+                            <td>
+                              <div>홍길동</div>
+                            </td>
+                            <td>
+                              <div>시설관리팀</div>
+                            </td>
+                            <td>
+                              <div>01044690223</div>
+                            </td>
+                            <td>
+                              <div>alsdp0820@gmail.com</div>
+                            </td>
+                            <td>
+                              <div>2022-06-22</div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div>981</div>
+                            </td>
+                            <td>
+                              <div>황소포차</div>
+                            </td>
+                            <td>
+                              <div>세종특별자치시 조치원읍 세종로 2639</div>
+                            </td>
+                            <td>
+                              <div>홍길동</div>
+                            </td>
+                            <td>
+                              <div>시설관리팀</div>
+                            </td>
+                            <td>
+                              <div>01044690223</div>
+                            </td>
+                            <td>
+                              <div>alsdp0820@gmail.com</div>
+                            </td>
+                            <td>
+                              <div>2022-06-22</div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div>980</div>
+                            </td>
+                            <td>
+                              <div>황소포차</div>
+                            </td>
+                            <td>
+                              <div>세종특별자치시 조치원읍 세종로 2639</div>
+                            </td>
+                            <td>
+                              <div>홍길동</div>
+                            </td>
+                            <td>
+                              <div>시설관리팀</div>
+                            </td>
+                            <td>
+                              <div>01044690223</div>
+                            </td>
+                            <td>
+                              <div>alsdp0820@gmail.com</div>
+                            </td>
+                            <td>
+                              <div>2022-06-22</div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div>979</div>
+                            </td>
+                            <td>
+                              <div>황소포차</div>
+                            </td>
+                            <td>
+                              <div>세종특별자치시 조치원읍 세종로 2639</div>
+                            </td>
+                            <td>
+                              <div>홍길동</div>
+                            </td>
+                            <td>
+                              <div>시설관리팀</div>
+                            </td>
+                            <td>
+                              <div>01044690223</div>
+                            </td>
+                            <td>
+                              <div>alsdp0820@gmail.com</div>
+                            </td>
+                            <td>
+                              <div>2022-06-22</div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div>978</div>
+                            </td>
+                            <td>
+                              <div>황소포차</div>
+                            </td>
+                            <td>
+                              <div>세종특별자치시 조치원읍 세종로 2639</div>
+                            </td>
+                            <td>
+                              <div>홍길동</div>
+                            </td>
+                            <td>
+                              <div>시설관리팀</div>
+                            </td>
+                            <td>
+                              <div>01044690223</div>
+                            </td>
+                            <td>
+                              <div>alsdp0820@gmail.com</div>
+                            </td>
+                            <td>
+                              <div>2022-06-22</div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div>977</div>
+                            </td>
+                            <td>
+                              <div>황소포차</div>
+                            </td>
+                            <td>
+                              <div>세종특별자치시 조치원읍 세종로 2639</div>
+                            </td>
+                            <td>
+                              <div>홍길동</div>
+                            </td>
+                            <td>
+                              <div>시설관리팀</div>
+                            </td>
+                            <td>
+                              <div>01044690223</div>
+                            </td>
+                            <td>
+                              <div>alsdp0820@gmail.com</div>
+                            </td>
+                            <td>
+                              <div>2022-06-22</div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div>976</div>
+                            </td>
+                            <td>
+                              <div>황소포차</div>
+                            </td>
+                            <td>
+                              <div>세종특별자치시 조치원읍 세종로 2639</div>
+                            </td>
+                            <td>
+                              <div>홍길동</div>
+                            </td>
+                            <td>
+                              <div>시설관리팀</div>
+                            </td>
+                            <td>
+                              <div>01044690223</div>
+                            </td>
+                            <td>
+                              <div>alsdp0820@gmail.com</div>
+                            </td>
+                            <td>
+                              <div>2022-06-22</div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                </div>
+            </section>
+            <!-- mid AREA 중간 영역 끝 -->
+            <!-- BOTTOM AREA 바텀 영역 시작 -->
+            <section id="bottomArea" class="no-line">
+                <div id="pagination"></div>
+            </section>
+            <!-- BOTTOM AREA 바텀 영역 끝 -->
+        </div>
+        <!-- 컨테이너 끝 -->
+    </div>
+</body>
+
+</html>
