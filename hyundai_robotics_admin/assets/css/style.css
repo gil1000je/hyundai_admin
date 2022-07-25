@@ -55,8 +55,12 @@ input[type="text"] + button, input[type="text"] + button + button { margin-left:
 .input-wrap.date::after{content: '';width: 24rem;height: 24rem;position: absolute;right: 10rem;bottom: 10rem;background: url(/hyundai_robotics_admin/assets/images/common/data_icon.png) no-repeat center/ contain;}
 .input-wrap.date input[type="text"] {width:160rem;height: 44rem;border: 1px solid #bbb;border-radius: 3rem;}
 .input-wrap.image{width: 200rem;height: 200rem;border: 1px solid #bbb;display: flex;align-items: center;justify-content: center;}
-.input-wrap.image-type02{width: 800rem;height: 200rem;overflow-y: auto;}
+.input-wrap.image-type02{width: 800rem;height: 200rem;overflow-y: auto;border-radius: 3rem;}
 .input-wrap.image-type02 img{width: 100%;}
+.info-wrap{position: relative;}
+.info-wrap .file-download {display: flex;align-items: center;}
+.info-wrap .file-download .file-icon{width: 24rem;height: 24rem;}
+.info-wrap .file-download span{color: #666;text-decoration: underline;font-size: 16rem;display: block;margin-left: 8rem;}
 /* 셀렉트 박스 (드롭박스) */
 .select-wrap { width:100%; max-width:160rem; position:relative; } 
 .select-wrap.disabled .selected-option {pointer-events:none; border:solid 1px #999; background:#ddd;}
@@ -300,7 +304,11 @@ input[type="search"]::-webkit-search-results-decoration{
 .info-list-type02 > li.info-item-col .info .title,
 .info-list-type02 > li.info-item-no-preview .info .title { font-size:16rem; font-weight:normal;width: 86rem;color: #999;margin-top: 12rem;}
 .info-list-type02 .info .input-wrap:not(:first-child){margin-top: 12rem;}
-.info-list-type02 .info textarea{max-width: 800rem;min-width: 800rem;max-height: 200rem;min-height: 200rem; border: 1px solid #bbb;border-radius: 3rem;padding: 12rem;}
+.info-list-type02 .info textarea{max-width: 800rem;min-width: 800rem;max-height: 200rem;min-height: 200rem;border: 1px solid #bbb;border-radius: 3rem;padding: 12rem;overflow-y: auto;}
+/* .info-list-type02 .info .info-wrap.textarea{width: 800rem;height: 200rem;}
+.info-list-type02 .info .info-wrap.textarea textarea{width: 100%;height: 100%;max-width: 800rem;min-width: 800rem;max-height: 200rem;min-height: 200rem;border: 1px solid #bbb;border-radius: 3rem;padding: 12rem;overflow-y: auto;}
+.info-list-type02 .info textarea + .count{font-size: 16rem;color: #999;position: absolute;bottom: 12rem;right: 12rem;background: #fff;display: none;}
+.info-list-type02 .info textarea + .count.active{display: block;} */
 .info-list-type02 .info .select-wrap{max-width: 800rem;}
 .info-list-type02 .info .select-wrap .option-list li{align-items: flex-start;}
 .info-list-type02 .info .select-list, .info-list-type02 .info .info-input-list{display: flex;gap: 14rem 12rem;}
