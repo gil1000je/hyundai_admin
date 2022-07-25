@@ -17,6 +17,7 @@ label.common-btn { width:120rem; display:flex; align-items:center; justify-conte
 .common-btn.regist::after{content: '';width: 28rem;height: 28rem;display: inline-block;background: url(/hyundai_robotics_admin/assets/images/common/regist_active_icon.png) no-repeat center/ contain;margin-left: 5rem;}
 .common-btn.regist:disabled {background: #ddd;border: 1px solid #999;color: #999;}
 .common-btn.regist:disabled::after{background: url(/hyundai_robotics_admin/assets/images/common/regist_icon.png) no-repeat center/ contain;}
+.shipment-btn{width: 80rem;height: 24rem;display: flex;align-items: center;justify-content: center;color: #fff;background: #3BB88C;font-size: 14rem;border-radius: 3rem;}
 
 /* 체크박스 및 라디오 버튼 */
 .input-wrap.check label, .input-wrap.radio label { white-space:nowrap; display:flex; align-items:center; line-height:1; gap:8rem; font-size:16rem } 
