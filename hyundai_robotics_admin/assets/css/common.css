@@ -2,7 +2,7 @@
 /* ////////////////////////공통 시작////////////////////////////////// */
 /* //////////////////////////////////////////////////////////////// */
 
-body.fixed { width:100%; height:100%; overflow:hidden; }
+.fixed { width:100%; height:100%; overflow:hidden; }
 
 .no-scrollbar {
     -ms-overflow-style: none; /* IE and Edge */
@@ -28,7 +28,7 @@ body.fixed { width:100%; height:100%; overflow:hidden; }
 /* ////////////////////////HEADER (헤더) 시작//////////////////////// */
 /* //////////////////////////////////////////////////////////////// */
 
-#header { width:100%; height:74rem; position:fixed; top:0; overflow:hidden; transition: all 0.6s; z-index: 999;    box-shadow: 5rem 2rem 10rem rgb(0 0 0 / 20%);} 
+#header { width:100%; height:74rem; min-width:1500rem; background:#fff; position:absolute; top:0; overflow:hidden; transition: all 0.6s; z-index: 999; box-shadow: 5rem 2rem 10rem rgb(0 0 0 / 20%);} 
 #header .header-inner-wrap { width: 100%; height: 74rem;box-shadow: 2rem 2rem 10rem rgba(0,0,0,0.1);} 
 #header .header-inner { width: calc(100% - 72rem); /*max-width:1800rem;*/ height:100%; margin:0 auto; display:flex; justify-content:space-between; align-items: center; } 
 #header #logo { width:236rem;}
@@ -60,7 +60,7 @@ body.fixed { width:100%; height:100%; overflow:hidden; }
 #header.bg { background: #fff; box-shadow: 0 5rem 10rem 0 rgba(0,0,0,0.1); } 
 #header.bg nav > ul > li .depth-1-item,
 #header.active nav > ul > li .depth-1-item { color: #16161b; } 
-#header.active .header-inner-wrap { border-bottom: 1rem solid #eee; } 
+/* #header.active .header-inner-wrap { border-bottom: 1rem solid #eee; }  */
 
 /* 헤더 모바일 타입 */
 #header.mobile-type { height:100rem; z-index:9999; /*transition: 0s;*/transition: background-color .35s; }

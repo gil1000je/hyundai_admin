@@ -1,7 +1,8 @@
 /* common */
 html { font-size:1px; width:100%; min-height:100vh; overflow:auto } 
-body, #header {min-width:1300rem}
-.wrap { width:100%; min-height:100vh; margin:0 auto; margin-top:107rem; overflow:auto; font-size:16rem } 
+body {min-width:1300rem}
+body.fixed {width:100vw; height:100vh; overflow:hidden;}
+.wrap { width:100%; min-height:100vh; margin:0 auto; padding-top:74rem; overflow:auto; font-size:16rem; position:relative; } 
 #container { width:calc(100% - 40rem); max-width:1300rem; margin: 0 auto; } 
 
 /* 버튼 */
@@ -347,7 +348,7 @@ input[type="search"]::-webkit-search-results-decoration{
 
 /* 팝업 */
 #popupWrap{position: relative;}
-.popup-cont{width: 100vw;height: 100vh;background: rgba(0,0,0,0.5);display: none;}
+.popup-cont{width: 100vw;height: 100vh;background: rgba(0,0,0,0.5);display: none; position:fixed; top:50%; left:50%; transform:translate(-50%,-50%); z-index:999}
 .popup-cont.active{display: block;}
 .popup-btn-wrap {position: absolute;top: 30rem;left: 30rem;display: flex;align-items: center;max-width:1240rem;flex-wrap: wrap;z-index: 9999;}
 .popup-btn-wrap > a{display: block;padding: 0 25rem;height: 48rem;border: 1px solid #000;font-size: 16rem;display: flex;align-items: center;justify-content: center;border-radius: 30rem;margin-right: 20rem;margin-top: 10rem;background: #fff;}
@@ -355,7 +356,7 @@ input[type="search"]::-webkit-search-results-decoration{
 .modal-wrap{border: 1px solid #bbb;background: #fff;border-radius: 3rem;width: 100%;max-width: 400rem;padding: 48rem 14rem 26rem;position: absolute;left: 50%;top:50%;transform: translate(-50%,-50%);display: none;}
 .modal-wrap.active{display: block;}
 .modal-wrap.txt-align-left .modal-tit, .modal-wrap.txt-align-left .modal-info > p{text-align: left;}
-.modal-wrap .modal-closed{width: 28rem;height: 28rem;position: absolute;top: 15rem;right: 10rem;}
+.modal-wrap .modal-close{width: 28rem;height: 28rem;position: absolute;top: 15rem;right: 10rem;}
 .modal-wrap .modal-tit{font-size: 24rem;line-height: 32rem;font-weight: bold;text-align: center;margin-bottom: 10rem;}
 .modal-wrap .modal-info p{text-align: center;font-size: 14rem;line-height: 22rem;color: #646464;}
 .modal-wrap .modal-logo{width: 100%;}
@@ -402,6 +403,19 @@ input[type="search"]::-webkit-search-results-decoration{
 .modal-info-table .input-wrap{align-items: center;justify-content: center;}
 .modal-info-table .input-wrap input[type="checkbox"]::after{width: 16rem;height: 16rem;background-repeat: no-repeat;background-size: contain;background-position: center;}
 
+/* 대시보드 테이블 추가 */
+.dashboard.modal-wrap { padding-top:30rem}
+.dashboard.modal-wrap .modal-tit {text-align:left;}
+.dashboard.modal-wrap table {width:100%; border:1px solid #bbb; border-radius:3rem;}
+.dashboard.modal-wrap thead {height:30rem; text-align:center; background:#3BB88C;}
+.dashboard.modal-wrap tbody tr {border-bottom:1px solid #bbb; }
+.dashboard.modal-wrap thead th {font-size:12rem; font-weight:500; color:#fff;}
+.dashboard.modal-wrap tbody tr:last-child {border-bottom:0;}
+.dashboard.modal-wrap tbody td { height:30rem; text-align:center; border-right:1px solid #bbb; font-size:12rem}
+.dashboard.modal-wrap tbody td:last-child { border-right:1px solid #bbb; }
+.dashboard.modal-wrap .num {width:48rem}
+.dashboard.modal-wrap .view {width:108rem}
+.dashboard.modal-wrap td > p { font-size:12rem; text-align:left; padding-left:10rem; width:100%; max-width:215rem; white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
 /* datepicker custom */
 .ui-widget-header { border: 0rem solid #dddddd; background: #fff; } 
 
@@ -469,12 +483,12 @@ input[type="search"]::-webkit-search-results-decoration{
  .inp:focus { outline: none; background-color: #eee; } 
 
 
- #dashboard { margin-top:74rem; background:#F4F4F4; padding-bottom:32rem}
+ #dashboard { background:#F4F4F4; padding-bottom:32rem}
  #dashboard #container {max-width:1780rem}
  #dashboard .title-wrap { display:flex; align-items:center; padding:12rem 0; }
  #dashboard .title-wrap h2.title { font-size:30rem; font-weight:700; color:#222; line-height:45rem;}
  #dashboard .title-wrap .last-update { white-space:nowrap; color:#999; font-size:14rem; line-height:24rem; font-weight:500;}
- #dashboard .title-wrap > a { display:inline-block; width:18rem; height:18rem; background:red; margin:0 8rem 0 15rem}
+ #dashboard .title-wrap > a { display:inline-block; width:28rem; height:28rem; background:url('/hyundai_robotics_admin/assets/images/common/icon_refresh.png') no-repeat center; background-size:contain; margin:0 8rem 0 15rem}
  #dashboard .title-wrap .last-update span { color:#999; font-size:14rem; font-weight:400;}
 
  #dashboard .dashboard-list { width:100%; display:grid; grid-template-columns:repeat(2, 1fr); gap:12rem;}
@@ -484,13 +498,13 @@ input[type="search"]::-webkit-search-results-decoration{
  #dashboard .dashboard-list > li .title-wrap > button { width:80rem; height:32rem; border-radius:22rem; background:#fff; color:#339A76; font-size:14rem; font-weight:500;}
  #dashboard .dashboard-list > li .info { padding:20rem }
  #dashboard .dashboard-list  li#boxVisit {}
- #dashboard .dashboard-list  li#boxVisit .info { display:flex; flex-direction:column;}
+ #dashboard .dashboard-list  li#boxVisit .info { width:calc(100% - 42rem); margin:0 auto; padding:20rem 0; overflow:hidden; display:flex; flex-direction:column;}
  #dashboard .dashboard-list li#boxVisit .tab { display:flex; gap:5rem; margin-bottom:20rem; position:relative; z-index:1; }
  #dashboard .dashboard-list li#boxVisit .tab li {}
  #dashboard .dashboard-list li#boxVisit .tab li a { display:inline-block; padding:0 5rem; color:#999; font-size:14rem; font-weight:500; }
  #dashboard .dashboard-list li#boxVisit .tab li.active a { position:relative; color:#339A76; font-size:16rem; font-weight:700; }
  #dashboard .dashboard-list li#boxVisit .tab li.active a::after {content:""; display:inline-block; width:100%; height:2px; background:#339A76; position:absolute; bottom:-5rem; left:0; }
- #dashboard .dashboard-list li#boxVisit .graph { width:100%; height:500rem; overflow:hidden; position:relative; top:0; left:0; z-index:0; }
+ #dashboard .dashboard-list li#boxVisit .graph { width:100%; height:500rem; position:relative; top:0; left:0; z-index:0; }
  #dashboard .dashboard-list li#boxVisit .graph .graph-view-point { width:70rem; height:100%; display:flex; gap:15rem; flex-direction:column; position:absolute; padding-left:20rem; right:0rem; top:0; z-index:1; background: #fff;}
  #dashboard .dashboard-list li#boxVisit .graph .graph-view-point li { font-size:12rem; color:#999 }
  #dashboard .dashboard-list li#boxVisit .graph #curve_chart { position:absolute; top:-40rem; left:-250rem}
@@ -501,7 +515,8 @@ input[type="search"]::-webkit-search-results-decoration{
  #dashboard .table-type-dashboard thead th:last-child, #dashboard .table-type-dashboard tbody td:last-child { padding-right:20rem; text-align:right}
  #dashboard .table-type-dashboard tbody td { height:36rem; text-align:center; font-weight:500; color:#222;}
  #dashboard .table-type-dashboard tbody td.num { font-size:20rem; font-weight:700; }
- #dashboard .table-type-dashboard tbody td.target {text-align:left;}
+ #dashboard .table-type-dashboard tbody td.target {text-align:left; display:flex; align-items:center;}
+ #dashboard td img {width:auto; height:auto; margin-right:7rem;}
 
  #dashboard .dashboard-list li#boxInquiry {grid-column-end:span 2;}
  #dashboard .dashboard-list li#boxInquiry .info {display:flex; }
