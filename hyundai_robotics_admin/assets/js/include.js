@@ -3,7 +3,7 @@
         
         $("#header").load("/hyundai_robotics_admin/html/include/header.html"); // 헤더 INCLUDE  
         $("#footer").load("/hyundai_robotics_admin/html/include/footer.html"); // 푸터 INCLUDE
-        $("#quickMenu").load("/hyundai_robotics_admin/html/include/quick-menu.html"); // 퀵메뉴 INCLUDE
+        // $("#quickMenu").load("/hyundai_robotics_admin/html/include/quick-menu.html"); // 퀵메뉴 INCLUDE
         $("#pagination").load("/hyundai_robotics_admin/html/include/pagination.html"); // 페이지네이션 INCLUDE
 
     });

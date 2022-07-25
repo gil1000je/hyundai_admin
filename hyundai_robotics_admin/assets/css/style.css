@@ -55,7 +55,8 @@ input[type="text"] + button, input[type="text"] + button + button { margin-left:
 .input-wrap.date::after{content: '';width: 24rem;height: 24rem;position: absolute;right: 10rem;bottom: 10rem;background: url(/hyundai_robotics_admin/assets/images/common/data_icon.png) no-repeat center/ contain;}
 .input-wrap.date input[type="text"] {width:160rem;height: 44rem;border: 1px solid #bbb;border-radius: 3rem;}
 .input-wrap.image{width: 200rem;height: 200rem;border: 1px solid #bbb;display: flex;align-items: center;justify-content: center;}
-
+.input-wrap.image-type02{width: 800rem;height: 200rem;overflow-y: auto;}
+.input-wrap.image-type02 img{width: 100%;}
 /* 셀렉트 박스 (드롭박스) */
 .select-wrap { width:100%; max-width:160rem; position:relative; } 
 .select-wrap.disabled .selected-option {pointer-events:none; border:solid 1px #999; background:#ddd;}
@@ -274,7 +275,7 @@ input[type="search"]::-webkit-search-results-decoration{
 #topArea .button-wrap .common-btn.regist{margin-left: 14rem;}
 
 /* MID AREA 중간영역 */
-#midArea .title{font-size: 20rem;font-weight: 500;line-height: 27rem;margin: 20rem 0 10rem;}
+#midArea > .title{font-size: 20rem;font-weight: 500;line-height: 27rem;margin: 20rem 0 10rem;}
 /* 인포 리스트 타입 01 */
 .info-list-type01 { display:flex; gap:22rem; flex-direction:column; } 
 .info-list-type01.dividing-line{border-bottom: 1px solid #bbb;padding-bottom: 22rem;margin-bottom: 22rem;}
@@ -292,6 +293,7 @@ input[type="search"]::-webkit-search-results-decoration{
 .info-list-type02.dividing-line{border-bottom: 1px solid #bbb;padding-bottom: 22rem;margin-bottom: 22rem;}
 .info-list-type02 > li { display:flex; flex-direction:column; gap:9rem; }
 .info-list-type02 .title { font-size:18rem; font-weight:500; }
+.info-list-type02 .title span{font-size: 14rem;color: #999;line-height: 19rem;display: block;font-weight: normal;}
 .info-list-type02 > li.info-item-col .info, .info-list-type02 > li.info-item-no-preview .info{display: flex;}
 .info-list-type02 > li.info-item-col .input-wrap.file input{width: 446rem;}
 .info-list-type02 > li.info-item-no-preview .input-wrap.file input[type="text"]{width: 580rem;}
