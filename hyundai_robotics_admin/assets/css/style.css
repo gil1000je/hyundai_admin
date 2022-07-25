@@ -55,7 +55,12 @@ input[type="text"] + button, input[type="text"] + button + button { margin-left:
 .input-wrap.date::after{content: '';width: 24rem;height: 24rem;position: absolute;right: 10rem;bottom: 10rem;background: url(/hyundai_robotics_admin/assets/images/common/data_icon.png) no-repeat center/ contain;}
 .input-wrap.date input[type="text"] {width:160rem;height: 44rem;border: 1px solid #bbb;border-radius: 3rem;}
 .input-wrap.image{width: 200rem;height: 200rem;border: 1px solid #bbb;display: flex;align-items: center;justify-content: center;}
-
+.input-wrap.image-type02{width: 800rem;height: 200rem;overflow-y: auto;border-radius: 3rem;}
+.input-wrap.image-type02 img{width: 100%;}
+.info-wrap{position: relative;}
+.info-wrap .file-download {display: flex;align-items: center;}
+.info-wrap .file-download .file-icon{width: 24rem;height: 24rem;}
+.info-wrap .file-download span{color: #666;text-decoration: underline;font-size: 16rem;display: block;margin-left: 8rem;}
 /* 셀렉트 박스 (드롭박스) */
 .select-wrap { width:100%; max-width:160rem; position:relative; } 
 .select-wrap.disabled .selected-option {pointer-events:none; border:solid 1px #999; background:#ddd;}
@@ -273,8 +278,8 @@ input[type="search"]::-webkit-search-results-decoration{
 #topArea .button-wrap .select-wrap{width: 120rem;}
 #topArea .button-wrap .common-btn.regist{margin-left: 14rem;}
 
-/* MID AREA 중간영역 *
-
+/* MID AREA 중간영역 */
+#midArea > .title{font-size: 20rem;font-weight: 500;line-height: 27rem;margin: 20rem 0 10rem;}
 /* 인포 리스트 타입 01 */
 .info-list-type01 { display:flex; gap:22rem; flex-direction:column; } 
 .info-list-type01.dividing-line{border-bottom: 1px solid #bbb;padding-bottom: 22rem;margin-bottom: 22rem;}
@@ -290,20 +295,28 @@ input[type="search"]::-webkit-search-results-decoration{
 /* 인포 리스트 타입 02 */
 .info-list-type02 { display:flex; flex-direction:column; gap:22rem;}
 .info-list-type02.dividing-line{border-bottom: 1px solid #bbb;padding-bottom: 22rem;margin-bottom: 22rem;}
-.info-list-type02 li { display:flex; flex-direction:column; gap:9rem; }
+.info-list-type02 > li { display:flex; flex-direction:column; gap:9rem; }
 .info-list-type02 .title { font-size:18rem; font-weight:500; }
-.info-list-type02 li.info-item-col .info, .info-list-type02 li.info-item-no-preview .info{display: flex;}
-.info-list-type02 li.info-item-col .input-wrap.file input{width: 446rem;}
-.info-list-type02 li.info-item-no-preview .input-wrap.file input[type="text"]{width: 580rem;}
-.info-list-type02 li.info-item-col .info .title,
-.info-list-type02 li.info-item-no-preview .info .title { font-size:16rem; font-weight:normal;width: 86rem;color: #999;margin-top: 12rem;}
+.info-list-type02 .title span{font-size: 14rem;color: #999;line-height: 19rem;display: block;font-weight: normal;}
+.info-list-type02 > li.info-item-col .info, .info-list-type02 > li.info-item-no-preview .info{display: flex;}
+.info-list-type02 > li.info-item-col .input-wrap.file input{width: 446rem;}
+.info-list-type02 > li.info-item-no-preview .input-wrap.file input[type="text"]{width: 580rem;}
+.info-list-type02 > li.info-item-col .info .title,
+.info-list-type02 > li.info-item-no-preview .info .title { font-size:16rem; font-weight:normal;width: 86rem;color: #999;margin-top: 12rem;}
 .info-list-type02 .info .input-wrap:not(:first-child){margin-top: 12rem;}
-.info-list-type02 .info textarea{max-width: 800rem;min-width: 800rem;max-height: 200rem;min-height: 200rem; border: 1px solid #bbb;border-radius: 3rem;padding: 12rem;}
+.info-list-type02 .info textarea{max-width: 800rem;min-width: 800rem;max-height: 200rem;min-height: 200rem;border: 1px solid #bbb;border-radius: 3rem;padding: 12rem;overflow-y: auto;}
+/* .info-list-type02 .info .info-wrap.textarea{width: 800rem;height: 200rem;}
+.info-list-type02 .info .info-wrap.textarea textarea{width: 100%;height: 100%;max-width: 800rem;min-width: 800rem;max-height: 200rem;min-height: 200rem;border: 1px solid #bbb;border-radius: 3rem;padding: 12rem;overflow-y: auto;}
+.info-list-type02 .info textarea + .count{font-size: 16rem;color: #999;position: absolute;bottom: 12rem;right: 12rem;background: #fff;display: none;}
+.info-list-type02 .info textarea + .count.active{display: block;} */
 .info-list-type02 .info .select-wrap{max-width: 800rem;}
 .info-list-type02 .info .select-wrap .option-list li{align-items: flex-start;}
-.info-list-type02 .info .select-list{display: flex;gap: 14rem 12rem;}
-.info-list-type02 .info .select-list + .input-wrap{margin-top: 12rem;}
-.info-list-type02 .info .select-list .select-wrap{max-width: 160rem;}
+.info-list-type02 .info .select-list, .info-list-type02 .info .info-input-list{display: flex;gap: 14rem 12rem;}
+.info-list-type02 .info .select-list + .input-wrap,
+.info-list-type02 .info .info-input-list + .input-wrap{margin-top: 12rem;}
+.info-list-type02 .info .select-list .select-wrap,
+.info-list-type02 .info .info-input-list > .input-wrap{max-width: 160rem;}
+.info-list-type02 .info .info-input-list > .input-wrap input{width: 100%;}
 .info-list-type02 .info .alert { font-size:12rem; color:#999; } 
 .info-list-type02 input {margin:0; width:800rem;}
 .info-list-type02 .radio {display:flex; align-items:center;}
@@ -313,6 +326,15 @@ input[type="search"]::-webkit-search-results-decoration{
 .info-list-type02 .info-list-item{display: flex;align-items: center;gap: 14rem;}
 .info-list-type02 .info-list-item .info input{max-width: 80rem;}
 .btn-wrap { display:flex; gap:14rem; } 
+
+.info-list-type02 .check.check-type02{display: block;}
+.info-list-type02 .check.check-type02 > ul{display: flex;flex-direction: column;}
+.info-list-type02 .check.check-type02 > ul > li{display: flex; align-items: center;}
+.info-list-type02 .check.check-type02 > ul > li:not(:first-child){margin-top: 20rem;}
+.info-list-type02 .check.check-type02 > ul > li.check-input{margin-top: 8rem;}
+.info-list-type02 .check.check-type02 > ul > li label{width: auto;}
+.info-list-type02 .check.check-type02 > ul > li.check-input label{min-width: 100rem;max-width: 100rem;}
+.info-list-type02 .check.check-type02 > ul > li label + input[type="text"]{width: 694rem;margin-left: 6rem;}
 
 /* BOTTOM AREA 하단영역 */
 #bottomArea { width:100%; max-width:1300rem; min-height:44rem; margin:0 auto; margin-bottom:250rem; position:relative; display:flex; align-items:center; margin-top:53rem; } 
