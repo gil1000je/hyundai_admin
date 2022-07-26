@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>회원관리 > 대리점 회원</title>
+    <title>상담/문의 > 제휴문의</title>
     <link rel="stylesheet" type="text/css" href="/hyundai_robotics_admin/assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="/hyundai_robotics_admin/assets/css/common.css">
     <link rel="stylesheet" type="text/css" href="/hyundai_robotics_admin/assets/css/form.css">
@@ -28,32 +28,16 @@
                 <nav id="navigation">
                   <ul>
                     <li class="depth01">
-                        <a href="javascript:void(0)" title="클릭시 해당 뎁스로 이동">회원관리</a>
+                        <a href="javascript:void(0)" title="클릭시 해당 뎁스로 이동">상담/문의</a>
                     </li>
                     <li class="depth02">
-                        <a href="javascript:void(0)" title="클릭시 해당 뎁스로 이동">대리점 회원</a>
+                        <a href="javascript:void(0)" title="클릭시 해당 뎁스로 이동">대리점 모집 문의</a>
                     </li>
                   </ul>
                 </nav>
-                <h2 class="main-tit">대리점 회원</h2>
+                <h2 class="main-tit">대리점 모집 문의</h2>
               </div>
               <!-- 타이틀 영역 끝 -->
-              <!-- 탭 영역 시작 -->
-              <div id="tab" class="width160">
-                <ul class="tab-list">
-                  <li>
-                    <a href="javascript:void(0)" title="탭">
-                      활성(10,345)
-                    </a>
-                  </li>
-                  <li>
-                    <a class="active" href="javascript:void(0)" title="탭">
-                      비활성화(1,345)
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <!-- 탭 영역 끝 -->
               <!-- 검색 영역 시작 -->
               <div class="search-wrap">
                 <div class="search-wrap-inner">
@@ -67,7 +51,7 @@
                   </div>
                   <div class="right">
                     <div class="select-wrap wd160">
-                      <a href="javascript:void(0)" class="selected-option">국문</a>
+                      <a href="javascript:void(0)" class="selected-option">지역전체</a>
                       <ul class="option-list">
                         <li>
                           <a href="javascript:void(0)">지역 1</a>
@@ -88,7 +72,7 @@
                           <a href="javascript:void(0)">지역 6</a>
                         </li>
                       </ul>
-                    </div> 
+                    </div>
                     <div class="select-wrap">
                       <a href="javascript:void(0)" class="selected-option">25개</a>
                       <ul class="option-list">
@@ -111,10 +95,7 @@
                           <a href="javascript:void(0)">지역 6</a>
                         </li>
                       </ul>
-                    </div> 
-                    <button class="common-btn regist" type="submit">
-                      등록
-                    </button>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -127,749 +108,697 @@
               <div class="table-wrap empty">
                 <div class="empty-info">
                   <img src="/hyundai_robotics_admin/assets/images/common/noresult_icon.png" alt="결과없음">
-                  <p>등록된 대리점 회원이 없습니다.</p>
+                  <p>대리점 모집 문의가 없습니다.</p>
                 </div>
                 <table class="table-type01">
-                  <caption>회원관리 대리점 회원 테이블</caption>
+                  <caption>대리점 모집 문의 테이블</caption>
                   <colgroup>
-                    <col width="5%">
+                    <col width="4%">
+                    <col width="8%">
                     <col width="10%">
-                    <col width="10%">
+                    <col width="8%">
+                    <col width="12%">
+                    <col width="*">
                     <col width="20%">
-                    <col width="10%">
-                    <col width="10%">
-                    <col width="25%">
                     <col width="10%">
                   </colgroup>
                   <thead>
                     <tr>
                       <th scope="col">
-                        <label for="checkSample" name="checkSample">
-                          <input id="checkSample" type="checkbox">
-                        </label>
+                        No.
                       </th>
                       <th scope="col">
-                        대리점명
+                        신청인
                       </th>
                       <th scope="col">
                         연락처
                       </th>
                       <th scope="col">
-                        이메일
+                        업체명
                       </th>
                       <th scope="col">
-                        가입일
+                        업종
                       </th>
                       <th scope="col">
-                        대리점 번호
+                        주소
                       </th>
                       <th scope="col">
-                        대리점 주소
+                        영업희망 지역
                       </th>
                       <th scope="col">
-                        상담
+                        문의 일자
                       </th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
                       <td>
-                        <label for="checkSample" name="checkSample">
-                          <input id="checkSample" type="checkbox">
-                        </label>
-                      </td>
-                      <td class="text-align-left">
-                        <div>마신2점</div>
+                        <div>1000</div>
                       </td>
                       <td>
-                        <div>010-1234-5678</div>
+                        <div>황소포차</div>
                       </td>
                       <td>
-                        <div>masan@HYUNDAIrobotics.com</div>
+                        <div>01044690222</div>
                       </td>
                       <td>
-                        <div>2021-06-08</div>
+                        <div>홍길동</div>
                       </td>
                       <td>
-                        <div>29</div>
+                        <div>시설관리팀</div>
                       </td>
                       <td>
-                        <div>마산시 마산회원구 구암1동 구암로 12</div>
+                        <div>세종특별자치시 조치원읍 세종로 2639</div>
                       </td>
                       <td>
-                        <div>13건</div>
+                        <div>alsdp0820@gmail.com</div>
+                      </td>
+                      <td>
+                        <div>2022-06-22</div>
                       </td>
                     </tr>
                     <tr>
                       <td>
-                        <label for="checkSample" name="checkSample">
-                          <input id="checkSample" type="checkbox">
-                        </label>
-                      </td>
-                      <td class="text-align-left">
-                        <div>마신2점</div>
+                        <div>999</div>
                       </td>
                       <td>
-                        <div>010-1234-5678</div>
+                        <div>황소포차</div>
                       </td>
                       <td>
-                        <div>masan@HYUNDAIrobotics.com</div>
+                        <div>01044690222</div>
                       </td>
                       <td>
-                        <div>2021-06-08</div>
+                        <div>홍길동</div>
                       </td>
                       <td>
-                        <div>29</div>
+                        <div>시설관리팀</div>
                       </td>
                       <td>
-                        <div>마산시 마산회원구 구암1동 구암로 12</div>
+                        <div>세종특별자치시 조치원읍 세종로 2639</div>
                       </td>
                       <td>
-                        <div>13건</div>
+                        <div>alsdp0820@gmail.com</div>
+                      </td>
+                      <td>
+                        <div>2022-06-22</div>
                       </td>
                     </tr>
                     <tr>
                       <td>
-                        <label for="checkSample" name="checkSample">
-                          <input id="checkSample" type="checkbox">
-                        </label>
-                      </td>
-                      <td class="text-align-left">
-                        <div>마신2점</div>
+                        <div>998</div>
                       </td>
                       <td>
-                        <div>010-1234-5678</div>
+                        <div>황소포차</div>
                       </td>
                       <td>
-                        <div>masan@HYUNDAIrobotics.com</div>
+                        <div>01044690222</div>
                       </td>
                       <td>
-                        <div>2021-06-08</div>
+                        <div>홍길동</div>
                       </td>
                       <td>
-                        <div>29</div>
+                        <div>시설관리팀</div>
                       </td>
                       <td>
-                        <div>마산시 마산회원구 구암1동 구암로 12</div>
+                        <div>세종특별자치시 조치원읍 세종로 2639</div>
                       </td>
                       <td>
-                        <div>13건</div>
+                        <div>alsdp0820@gmail.com</div>
+                      </td>
+                      <td>
+                        <div>2022-06-22</div>
                       </td>
                     </tr>
                     <tr>
                       <td>
-                        <label for="checkSample" name="checkSample">
-                          <input id="checkSample" type="checkbox">
-                        </label>
-                      </td>
-                      <td class="text-align-left">
-                        <div>마신2점</div>
+                        <div>997</div>
                       </td>
                       <td>
-                        <div>010-1234-5678</div>
+                        <div>황소포차</div>
                       </td>
                       <td>
-                        <div>masan@HYUNDAIrobotics.com</div>
+                        <div>01044690222</div>
                       </td>
                       <td>
-                        <div>2021-06-08</div>
+                        <div>홍길동</div>
                       </td>
                       <td>
-                        <div>29</div>
+                        <div>시설관리팀</div>
                       </td>
                       <td>
-                        <div>마산시 마산회원구 구암1동 구암로 12</div>
+                        <div>세종특별자치시 조치원읍 세종로 2639</div>
                       </td>
                       <td>
-                        <div>13건</div>
+                        <div>alsdp0820@gmail.com</div>
+                      </td>
+                      <td>
+                        <div>2022-06-22</div>
                       </td>
                     </tr>
                     <tr>
                       <td>
-                        <label for="checkSample" name="checkSample">
-                          <input id="checkSample" type="checkbox">
-                        </label>
-                      </td>
-                      <td class="text-align-left">
-                        <div>마신2점</div>
+                        <div>996</div>
                       </td>
                       <td>
-                        <div>010-1234-5678</div>
+                        <div>황소포차</div>
                       </td>
                       <td>
-                        <div>masan@HYUNDAIrobotics.com</div>
+                        <div>01044690222</div>
                       </td>
                       <td>
-                        <div>2021-06-08</div>
+                        <div>홍길동</div>
                       </td>
                       <td>
-                        <div>29</div>
+                        <div>시설관리팀</div>
                       </td>
                       <td>
-                        <div>마산시 마산회원구 구암1동 구암로 12</div>
+                        <div>세종특별자치시 조치원읍 세종로 2639</div>
                       </td>
                       <td>
-                        <div>13건</div>
+                        <div>alsdp0820@gmail.com</div>
+                      </td>
+                      <td>
+                        <div>2022-06-22</div>
                       </td>
                     </tr>
                     <tr>
                       <td>
-                        <label for="checkSample" name="checkSample">
-                          <input id="checkSample" type="checkbox">
-                        </label>
-                      </td>
-                      <td class="text-align-left">
-                        <div>마신2점</div>
+                        <div>995</div>
                       </td>
                       <td>
-                        <div>010-1234-5678</div>
+                        <div>황소포차</div>
                       </td>
                       <td>
-                        <div>masan@HYUNDAIrobotics.com</div>
+                        <div>01044690222</div>
                       </td>
                       <td>
-                        <div>2021-06-08</div>
+                        <div>홍길동</div>
                       </td>
                       <td>
-                        <div>29</div>
+                        <div>시설관리팀</div>
                       </td>
                       <td>
-                        <div>마산시 마산회원구 구암1동 구암로 12</div>
+                        <div>세종특별자치시 조치원읍 세종로 2639</div>
                       </td>
                       <td>
-                        <div>13건</div>
+                        <div>alsdp0820@gmail.com</div>
+                      </td>
+                      <td>
+                        <div>2022-06-22</div>
                       </td>
                     </tr>
                     <tr>
                       <td>
-                        <label for="checkSample" name="checkSample">
-                          <input id="checkSample" type="checkbox">
-                        </label>
-                      </td>
-                      <td class="text-align-left">
-                        <div>마신2점</div>
+                        <div>994</div>
                       </td>
                       <td>
-                        <div>010-1234-5678</div>
+                        <div>황소포차</div>
                       </td>
                       <td>
-                        <div>masan@HYUNDAIrobotics.com</div>
+                        <div>01044690222</div>
                       </td>
                       <td>
-                        <div>2021-06-08</div>
+                        <div>홍길동</div>
                       </td>
                       <td>
-                        <div>29</div>
+                        <div>시설관리팀</div>
                       </td>
                       <td>
-                        <div>마산시 마산회원구 구암1동 구암로 12</div>
+                        <div>세종특별자치시 조치원읍 세종로 2639</div>
                       </td>
                       <td>
-                        <div>13건</div>
+                        <div>alsdp0820@gmail.com</div>
+                      </td>
+                      <td>
+                        <div>2022-06-22</div>
                       </td>
                     </tr>
                     <tr>
                       <td>
-                        <label for="checkSample" name="checkSample">
-                          <input id="checkSample" type="checkbox">
-                        </label>
-                      </td>
-                      <td class="text-align-left">
-                        <div>마신2점</div>
+                        <div>993</div>
                       </td>
                       <td>
-                        <div>010-1234-5678</div>
+                        <div>황소포차</div>
                       </td>
                       <td>
-                        <div>masan@HYUNDAIrobotics.com</div>
+                        <div>01044690222</div>
                       </td>
                       <td>
-                        <div>2021-06-08</div>
+                        <div>홍길동</div>
                       </td>
                       <td>
-                        <div>29</div>
+                        <div>시설관리팀</div>
                       </td>
                       <td>
-                        <div>마산시 마산회원구 구암1동 구암로 12</div>
+                        <div>세종특별자치시 조치원읍 세종로 2639</div>
                       </td>
                       <td>
-                        <div>13건</div>
+                        <div>alsdp0820@gmail.com</div>
+                      </td>
+                      <td>
+                        <div>2022-06-22</div>
                       </td>
                     </tr>
                     <tr>
                       <td>
-                        <label for="checkSample" name="checkSample">
-                          <input id="checkSample" type="checkbox">
-                        </label>
-                      </td>
-                      <td class="text-align-left">
-                        <div>마신2점</div>
+                        <div>992</div>
                       </td>
                       <td>
-                        <div>010-1234-5678</div>
+                        <div>황소포차</div>
                       </td>
                       <td>
-                        <div>masan@HYUNDAIrobotics.com</div>
+                        <div>01044690222</div>
                       </td>
                       <td>
-                        <div>2021-06-08</div>
+                        <div>홍길동</div>
                       </td>
                       <td>
-                        <div>29</div>
+                        <div>시설관리팀</div>
                       </td>
                       <td>
-                        <div>마산시 마산회원구 구암1동 구암로 12</div>
+                        <div>세종특별자치시 조치원읍 세종로 2639</div>
                       </td>
                       <td>
-                        <div>13건</div>
+                        <div>alsdp0820@gmail.com</div>
+                      </td>
+                      <td>
+                        <div>2022-06-22</div>
                       </td>
                     </tr>
                     <tr>
                       <td>
-                        <label for="checkSample" name="checkSample">
-                          <input id="checkSample" type="checkbox">
-                        </label>
-                      </td>
-                      <td class="text-align-left">
-                        <div>마신2점</div>
+                        <div>991</div>
                       </td>
                       <td>
-                        <div>010-1234-5678</div>
+                        <div>황소포차</div>
                       </td>
                       <td>
-                        <div>masan@HYUNDAIrobotics.com</div>
+                        <div>01044690222</div>
                       </td>
                       <td>
-                        <div>2021-06-08</div>
+                        <div>홍길동</div>
                       </td>
                       <td>
-                        <div>29</div>
+                        <div>시설관리팀</div>
                       </td>
                       <td>
-                        <div>마산시 마산회원구 구암1동 구암로 12</div>
+                        <div>세종특별자치시 조치원읍 세종로 2639</div>
                       </td>
                       <td>
-                        <div>13건</div>
+                        <div>alsdp0820@gmail.com</div>
+                      </td>
+                      <td>
+                        <div>2022-06-22</div>
                       </td>
                     </tr>
                     <tr>
                       <td>
-                        <label for="checkSample" name="checkSample">
-                          <input id="checkSample" type="checkbox">
-                        </label>
-                      </td>
-                      <td class="text-align-left">
-                        <div>마신2점</div>
+                        <div>990</div>
                       </td>
                       <td>
-                        <div>010-1234-5678</div>
+                        <div>황소포차</div>
                       </td>
                       <td>
-                        <div>masan@HYUNDAIrobotics.com</div>
+                        <div>01044690222</div>
                       </td>
                       <td>
-                        <div>2021-06-08</div>
+                        <div>홍길동</div>
                       </td>
                       <td>
-                        <div>29</div>
+                        <div>시설관리팀</div>
                       </td>
                       <td>
-                        <div>마산시 마산회원구 구암1동 구암로 12</div>
+                        <div>세종특별자치시 조치원읍 세종로 2639</div>
                       </td>
                       <td>
-                        <div>13건</div>
+                        <div>alsdp0820@gmail.com</div>
+                      </td>
+                      <td>
+                        <div>2022-06-22</div>
                       </td>
                     </tr>
                     <tr>
                       <td>
-                        <label for="checkSample" name="checkSample">
-                          <input id="checkSample" type="checkbox">
-                        </label>
-                      </td>
-                      <td class="text-align-left">
-                        <div>마신2점</div>
+                        <div>989</div>
                       </td>
                       <td>
-                        <div>010-1234-5678</div>
+                        <div>황소포차</div>
                       </td>
                       <td>
-                        <div>masan@HYUNDAIrobotics.com</div>
+                        <div>01044690222</div>
                       </td>
                       <td>
-                        <div>2021-06-08</div>
+                        <div>홍길동</div>
                       </td>
                       <td>
-                        <div>29</div>
+                        <div>시설관리팀</div>
                       </td>
                       <td>
-                        <div>마산시 마산회원구 구암1동 구암로 12</div>
+                        <div>세종특별자치시 조치원읍 세종로 2639</div>
                       </td>
                       <td>
-                        <div>13건</div>
+                        <div>alsdp0820@gmail.com</div>
+                      </td>
+                      <td>
+                        <div>2022-06-22</div>
                       </td>
                     </tr>
                     <tr>
                       <td>
-                        <label for="checkSample" name="checkSample">
-                          <input id="checkSample" type="checkbox">
-                        </label>
-                      </td>
-                      <td class="text-align-left">
-                        <div>마신2점</div>
+                        <div>988</div>
                       </td>
                       <td>
-                        <div>010-1234-5678</div>
+                        <div>황소포차</div>
                       </td>
                       <td>
-                        <div>masan@HYUNDAIrobotics.com</div>
+                        <div>01044690222</div>
                       </td>
                       <td>
-                        <div>2021-06-08</div>
+                        <div>홍길동</div>
                       </td>
                       <td>
-                        <div>29</div>
+                        <div>시설관리팀</div>
                       </td>
                       <td>
-                        <div>마산시 마산회원구 구암1동 구암로 12</div>
+                        <div>세종특별자치시 조치원읍 세종로 2639</div>
                       </td>
                       <td>
-                        <div>13건</div>
+                        <div>alsdp0820@gmail.com</div>
+                      </td>
+                      <td>
+                        <div>2022-06-22</div>
                       </td>
                     </tr>
                     <tr>
                       <td>
-                        <label for="checkSample" name="checkSample">
-                          <input id="checkSample" type="checkbox">
-                        </label>
-                      </td>
-                      <td class="text-align-left">
-                        <div>마신2점</div>
+                        <div>987</div>
                       </td>
                       <td>
-                        <div>010-1234-5678</div>
+                        <div>황소포차</div>
                       </td>
                       <td>
-                        <div>masan@HYUNDAIrobotics.com</div>
+                        <div>01044690222</div>
                       </td>
                       <td>
-                        <div>2021-06-08</div>
+                        <div>홍길동</div>
                       </td>
                       <td>
-                        <div>29</div>
+                        <div>시설관리팀</div>
                       </td>
                       <td>
-                        <div>마산시 마산회원구 구암1동 구암로 12</div>
+                        <div>세종특별자치시 조치원읍 세종로 2639</div>
                       </td>
                       <td>
-                        <div>13건</div>
+                        <div>alsdp0820@gmail.com</div>
+                      </td>
+                      <td>
+                        <div>2022-06-22</div>
                       </td>
                     </tr>
                     <tr>
                       <td>
-                        <label for="checkSample" name="checkSample">
-                          <input id="checkSample" type="checkbox">
-                        </label>
-                      </td>
-                      <td class="text-align-left">
-                        <div>마신2점</div>
+                        <div>986</div>
                       </td>
                       <td>
-                        <div>010-1234-5678</div>
+                        <div>황소포차</div>
                       </td>
                       <td>
-                        <div>masan@HYUNDAIrobotics.com</div>
+                        <div>01044690222</div>
                       </td>
                       <td>
-                        <div>2021-06-08</div>
+                        <div>홍길동</div>
                       </td>
                       <td>
-                        <div>29</div>
+                        <div>시설관리팀</div>
                       </td>
                       <td>
-                        <div>마산시 마산회원구 구암1동 구암로 12</div>
+                        <div>세종특별자치시 조치원읍 세종로 2639</div>
                       </td>
                       <td>
-                        <div>13건</div>
+                        <div>alsdp0820@gmail.com</div>
+                      </td>
+                      <td>
+                        <div>2022-06-22</div>
                       </td>
                     </tr>
                     <tr>
                       <td>
-                        <label for="checkSample" name="checkSample">
-                          <input id="checkSample" type="checkbox">
-                        </label>
-                      </td>
-                      <td class="text-align-left">
-                        <div>마신2점</div>
+                        <div>985</div>
                       </td>
                       <td>
-                        <div>010-1234-5678</div>
+                        <div>황소포차</div>
                       </td>
                       <td>
-                        <div>masan@HYUNDAIrobotics.com</div>
+                        <div>01044690222</div>
                       </td>
                       <td>
-                        <div>2021-06-08</div>
+                        <div>홍길동</div>
                       </td>
                       <td>
-                        <div>29</div>
+                        <div>시설관리팀</div>
                       </td>
                       <td>
-                        <div>마산시 마산회원구 구암1동 구암로 12</div>
+                        <div>세종특별자치시 조치원읍 세종로 2639</div>
                       </td>
                       <td>
-                        <div>13건</div>
+                        <div>alsdp0820@gmail.com</div>
+                      </td>
+                      <td>
+                        <div>2022-06-22</div>
                       </td>
                     </tr>
                     <tr>
                       <td>
-                        <label for="checkSample" name="checkSample">
-                          <input id="checkSample" type="checkbox">
-                        </label>
-                      </td>
-                      <td class="text-align-left">
-                        <div>마신2점</div>
+                        <div>984</div>
                       </td>
                       <td>
-                        <div>010-1234-5678</div>
+                        <div>황소포차</div>
                       </td>
                       <td>
-                        <div>masan@HYUNDAIrobotics.com</div>
+                        <div>01044690222</div>
                       </td>
                       <td>
-                        <div>2021-06-08</div>
+                        <div>홍길동</div>
                       </td>
                       <td>
-                        <div>29</div>
+                        <div>시설관리팀</div>
                       </td>
                       <td>
-                        <div>마산시 마산회원구 구암1동 구암로 12</div>
+                        <div>세종특별자치시 조치원읍 세종로 2639</div>
                       </td>
                       <td>
-                        <div>13건</div>
+                        <div>alsdp0820@gmail.com</div>
+                      </td>
+                      <td>
+                        <div>2022-06-22</div>
                       </td>
                     </tr>
                     <tr>
                       <td>
-                        <label for="checkSample" name="checkSample">
-                          <input id="checkSample" type="checkbox">
-                        </label>
-                      </td>
-                      <td class="text-align-left">
-                        <div>마신2점</div>
+                        <div>983</div>
                       </td>
                       <td>
-                        <div>010-1234-5678</div>
+                        <div>황소포차</div>
                       </td>
                       <td>
-                        <div>masan@HYUNDAIrobotics.com</div>
+                        <div>01044690222</div>
                       </td>
                       <td>
-                        <div>2021-06-08</div>
+                        <div>홍길동</div>
                       </td>
                       <td>
-                        <div>29</div>
+                        <div>시설관리팀</div>
                       </td>
                       <td>
-                        <div>마산시 마산회원구 구암1동 구암로 12</div>
+                        <div>세종특별자치시 조치원읍 세종로 2639</div>
                       </td>
                       <td>
-                        <div>13건</div>
+                        <div>alsdp0820@gmail.com</div>
+                      </td>
+                      <td>
+                        <div>2022-06-22</div>
                       </td>
                     </tr>
                     <tr>
                       <td>
-                        <label for="checkSample" name="checkSample">
-                          <input id="checkSample" type="checkbox">
-                        </label>
-                      </td>
-                      <td class="text-align-left">
-                        <div>마신2점</div>
+                        <div>982</div>
                       </td>
                       <td>
-                        <div>010-1234-5678</div>
+                        <div>황소포차</div>
                       </td>
                       <td>
-                        <div>masan@HYUNDAIrobotics.com</div>
+                        <div>01044690222</div>
                       </td>
                       <td>
-                        <div>2021-06-08</div>
+                        <div>홍길동</div>
                       </td>
                       <td>
-                        <div>29</div>
+                        <div>시설관리팀</div>
                       </td>
                       <td>
-                        <div>마산시 마산회원구 구암1동 구암로 12</div>
+                        <div>세종특별자치시 조치원읍 세종로 2639</div>
                       </td>
                       <td>
-                        <div>13건</div>
+                        <div>alsdp0820@gmail.com</div>
+                      </td>
+                      <td>
+                        <div>2022-06-22</div>
                       </td>
                     </tr>
                     <tr>
                       <td>
-                        <label for="checkSample" name="checkSample">
-                          <input id="checkSample" type="checkbox">
-                        </label>
-                      </td>
-                      <td class="text-align-left">
-                        <div>마신2점</div>
+                        <div>981</div>
                       </td>
                       <td>
-                        <div>010-1234-5678</div>
+                        <div>황소포차</div>
                       </td>
                       <td>
-                        <div>masan@HYUNDAIrobotics.com</div>
+                        <div>01044690222</div>
                       </td>
                       <td>
-                        <div>2021-06-08</div>
+                        <div>홍길동</div>
                       </td>
                       <td>
-                        <div>29</div>
+                        <div>시설관리팀</div>
                       </td>
                       <td>
-                        <div>마산시 마산회원구 구암1동 구암로 12</div>
+                        <div>세종특별자치시 조치원읍 세종로 2639</div>
                       </td>
                       <td>
-                        <div>13건</div>
+                        <div>alsdp0820@gmail.com</div>
+                      </td>
+                      <td>
+                        <div>2022-06-22</div>
                       </td>
                     </tr>
                     <tr>
                       <td>
-                        <label for="checkSample" name="checkSample">
-                          <input id="checkSample" type="checkbox">
-                        </label>
-                      </td>
-                      <td class="text-align-left">
-                        <div>마신2점</div>
+                        <div>980</div>
                       </td>
                       <td>
-                        <div>010-1234-5678</div>
+                        <div>황소포차</div>
                       </td>
                       <td>
-                        <div>masan@HYUNDAIrobotics.com</div>
+                        <div>01044690222</div>
                       </td>
                       <td>
-                        <div>2021-06-08</div>
+                        <div>홍길동</div>
                       </td>
                       <td>
-                        <div>29</div>
+                        <div>시설관리팀</div>
                       </td>
                       <td>
-                        <div>마산시 마산회원구 구암1동 구암로 12</div>
+                        <div>세종특별자치시 조치원읍 세종로 2639</div>
                       </td>
                       <td>
-                        <div>13건</div>
+                        <div>alsdp0820@gmail.com</div>
+                      </td>
+                      <td>
+                        <div>2022-06-22</div>
                       </td>
                     </tr>
                     <tr>
                       <td>
-                        <label for="checkSample" name="checkSample">
-                          <input id="checkSample" type="checkbox">
-                        </label>
-                      </td>
-                      <td class="text-align-left">
-                        <div>마신2점</div>
+                        <div>979</div>
                       </td>
                       <td>
-                        <div>010-1234-5678</div>
+                        <div>황소포차</div>
                       </td>
                       <td>
-                        <div>masan@HYUNDAIrobotics.com</div>
+                        <div>01044690222</div>
                       </td>
                       <td>
-                        <div>2021-06-08</div>
+                        <div>홍길동</div>
                       </td>
                       <td>
-                        <div>29</div>
+                        <div>시설관리팀</div>
                       </td>
                       <td>
-                        <div>마산시 마산회원구 구암1동 구암로 12</div>
+                        <div>세종특별자치시 조치원읍 세종로 2639</div>
                       </td>
                       <td>
-                        <div>13건</div>
+                        <div>alsdp0820@gmail.com</div>
+                      </td>
+                      <td>
+                        <div>2022-06-22</div>
                       </td>
                     </tr>
                     <tr>
                       <td>
-                        <label for="checkSample" name="checkSample">
-                          <input id="checkSample" type="checkbox">
-                        </label>
-                      </td>
-                      <td class="text-align-left">
-                        <div>마신2점</div>
+                        <div>978</div>
                       </td>
                       <td>
-                        <div>010-1234-5678</div>
+                        <div>황소포차</div>
                       </td>
                       <td>
-                        <div>masan@HYUNDAIrobotics.com</div>
+                        <div>01044690222</div>
                       </td>
                       <td>
-                        <div>2021-06-08</div>
+                        <div>홍길동</div>
                       </td>
                       <td>
-                        <div>29</div>
+                        <div>시설관리팀</div>
                       </td>
                       <td>
-                        <div>마산시 마산회원구 구암1동 구암로 12</div>
+                        <div>세종특별자치시 조치원읍 세종로 2639</div>
                       </td>
                       <td>
-                        <div>13건</div>
+                        <div>alsdp0820@gmail.com</div>
+                      </td>
+                      <td>
+                        <div>2022-06-22</div>
                       </td>
                     </tr>
                     <tr>
                       <td>
-                        <label for="checkSample" name="checkSample">
-                          <input id="checkSample" type="checkbox">
-                        </label>
-                      </td>
-                      <td class="text-align-left">
-                        <div>마신2점</div>
+                        <div>977</div>
                       </td>
                       <td>
-                        <div>010-1234-5678</div>
+                        <div>황소포차</div>
                       </td>
                       <td>
-                        <div>masan@HYUNDAIrobotics.com</div>
+                        <div>01044690222</div>
                       </td>
                       <td>
-                        <div>2021-06-08</div>
+                        <div>홍길동</div>
                       </td>
                       <td>
-                        <div>29</div>
+                        <div>시설관리팀</div>
                       </td>
                       <td>
-                        <div>마산시 마산회원구 구암1동 구암로 12</div>
+                        <div>세종특별자치시 조치원읍 세종로 2639</div>
                       </td>
                       <td>
-                        <div>13건</div>
+                        <div>alsdp0820@gmail.com</div>
+                      </td>
+                      <td>
+                        <div>2022-06-22</div>
                       </td>
                     </tr>
                     <tr>
                       <td>
-                        <label for="checkSample" name="checkSample">
-                          <input id="checkSample" type="checkbox">
-                        </label>
-                      </td>
-                      <td class="text-align-left">
-                        <div>마신2점</div>
+                        <div>976</div>
                       </td>
                       <td>
-                        <div>010-1234-5678</div>
+                        <div>황소포차</div>
                       </td>
                       <td>
-                        <div>masan@HYUNDAIrobotics.com</div>
+                        <div>01044690222</div>
                       </td>
                       <td>
-                        <div>2021-06-08</div>
+                        <div>홍길동</div>
                       </td>
                       <td>
-                        <div>29</div>
+                        <div>시설관리팀</div>
                       </td>
                       <td>
-                        <div>마산시 마산회원구 구암1동 구암로 12</div>
+                        <div>세종특별자치시 조치원읍 세종로 2639</div>
                       </td>
                       <td>
-                        <div>13건</div>
+                        <div>alsdp0820@gmail.com</div>
+                      </td>
+                      <td>
+                        <div>2022-06-22</div>
                       </td>
                     </tr>
                   </tbody>
@@ -879,6 +808,7 @@
             <!-- mid AREA 중간 영역 끝 -->
             <!-- BOTTOM AREA 바텀 영역 시작 -->
             <section id="bottomArea" class="no-line">
+                <div id="pagination"></div>
             </section>
             <!-- BOTTOM AREA 바텀 영역 끝 -->
         </div>
