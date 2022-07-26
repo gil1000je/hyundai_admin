@@ -256,7 +256,7 @@ td {white-space:nowrap}
 #topArea.search .search-wrap .left {position:relative; display:flex; align-items:flex-end; gap:12rem}
 #topArea.search .search-wrap .right{display: flex;align-items: center;}
 #topArea.search .search-wrap .right .regist{margin-left: 14rem;width: 120rem;}
-#topArea.search .search-wrap .num {margin-bottom:5rem}
+#topArea.search .search-wrap .num {margin:12rem 0 15rem}
 #topArea.search .search-wrap input[type="search"]{width:380rem;margin: 0 14rem 0 0;}
 
 input[type="search"]::-ms-clear,
