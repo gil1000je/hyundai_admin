@@ -102,7 +102,7 @@ input[type="text"] + button, input[type="text"] + button + button { margin-left:
 /* 타이틀 영역 */
 #topArea .title-wrap { width:1300rem; margin:0 auto; /*padding:33rem 0 70rem;*/padding: 33rem 0 30rem; } 
 #topArea .title-wrap h2.main-tit { font-size:30rem; color:#222; font-weight:700; line-height:44rem; letter-spacing:-0.018em; } 
-
+#topArea .title-wrap span.alert {color: #999999;}
 /* 테이블 공통 */
 .table-wrap{position: relative;}
 .table-wrap .all {margin-bottom:10rem;}

@@ -18,14 +18,14 @@
 </head>
 
 <body>
-  <div id="profileSetting" class="wrap">
+  <div id="adminSetting" class="wrap">
     <!-- HEADER 헤더 시작 -->
     <header id="header" class="bg"></header>
     <!-- HEADER 헤더 끝 -->
     <!-- 컨테이너 시작 -->
     <div id="container">
-      <!-- TOP AREA 샐렉트 + 검색 영역 (셀렉트 + 검색) 시작 -->
-      <div id="topArea" class="search">
+      <!-- 3. TOP AREA 샐렉트 + 검색 영역 (셀렉트 + 검색) 시작 -->
+      <section id="topArea" class="search">
 
         <!-- 타이틀 영역 시작 -->
         <div class="title-wrap">
@@ -44,57 +44,54 @@
         <!-- 타이틀 영역 끝 -->
         <!-- 검색 영역 시작 -->
         <div class="search-wrap">
-          <div class="left">
-            <div class="select-wrap">
-              <a href="javascript:void(0)" class="selected-option">25개</a>
-              <ul class="option-list">
-                <li>
-                  <a href="javascript:void(0)">지역 1</a>
-                </li>
-                <li>
-                  <a href="javascript:void(0)">지역 2</a>
-                </li>
-                <li>
-                  <a href="javascript:void(0)">지역 3</a>
-                </li>
-                <li>
-                  <a href="javascript:void(0)">지역 4</a>
-                </li>
-                <li>
-                  <a href="javascript:void(0)">지역 5</a>
-                </li>
-                <li>
-                  <a href="javascript:void(0)">지역 6</a>
-                </li>
-              </ul>
+          <div class="search-wrap-inner">
+            <div class="left">
+              <div class="input-wrap">
+                <input id="inputSample" type="search" placeholder="검색어 입력">
+                <button class="common-btn" type="submit" disabled>
+                  검색
+                </button>
+              </div>
             </div>
-            <div class="num">
-              전체 <strong>201</strong>명
-            </div>
-          </div>
-          <div class="right">
-            <div class="input-wrap">
-              <input id="inputSample" type="search" placeholder="검색어 입력">
-              <button class="common-btn" type="submit">
-                검색
+            <div class="right">
+              <div class="select-wrap">
+                <a href="javascript:void(0)" class="selected-option">25개</a>
+                <ul class="option-list">
+                  <li>
+                    <a href="javascript:void(0)">지역 1</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">지역 2</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">지역 3</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">지역 4</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">지역 5</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">지역 6</a>
+                  </li>
+                </ul>
+              </div>
+              <button class="common-btn regist" type="submit">
+                등록
               </button>
             </div>
+          </div>
+          <div class="num">
+            전체 <strong>201</strong>명
           </div>
         </div>
         <!-- 검색 영역 끝 -->
 
-      </div>
-      <!-- TOP AREA 탑 영역 (탭) 끝 -->
-
       </section>
-      <!-- 3. 상단영역 (#topArea) 섹션 끝 -->
+      <!-- 3. TOP AREA 탑 영역 (탭) 끝 -->
       <!-- mid AREA 중간 영역 시작 -->
       <section id="midArea">
-        <div class="table-wrap empty">
-          <div class="empty-info">
-            <img src="/hyundai_robotics_admin/assets/images/common/noresult_icon.png" alt="결과없음">
-            <p>뉴스가 없습니다.</p>
-          </div>
         <div class="table-wrap">
           <table class="table-type01">
             <caption>메인 관리 히어로 설정 테이블</caption>
@@ -705,15 +702,18 @@
         </div>
       </section>
       <!-- mid AREA 중간 영역 끝 -->
-        <!-- 3. BOTTOM AREA 바텀 영역 (페이지 네이션 있음) 시작 -->
-        <div id="bottomArea" class="no-line">
-          <div class="btn-wrap">
-            <button type="button" class="common-btn regist">
-              등록
-            </button>
-          </div>
+      <!-- 3. BOTTOM AREA 바텀 영역 (페이지 네이션 있음) 시작 -->
+      <div id="bottomArea" class="no-line">
+        <div id="pagination">
+
         </div>
-        <!-- 3. BOTTOM AREA 바텀 영역 (페이지 네이션 있음) 끝 -->
+        <div class="btn-wrap">
+          <button type="button" class="common-btn" disabled>
+            삭제
+          </button>
+        </div>
+      </div>
+      <!-- 3. BOTTOM AREA 바텀 영역 (페이지 네이션 있음) 끝 -->
     </div>
     <!-- 컨테이너 끝 -->
   </div>
