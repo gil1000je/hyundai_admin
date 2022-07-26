@@ -37,6 +37,10 @@ $(document).ready(function() {
     // 텍스트에어리어 태그에 작성가능한 텍스트 수를 실시간으로 입력해주는 스크립트
     function textAreaTextLength () {
 
+        const count = "<div class='count'>0/1,000</div>"
+
+        $('textarea').after(count);
+
         $('textarea').on('keyup', function() {
 
             $(this).siblings('.count').html("("+$(this).val().length+" / 1,000)");
