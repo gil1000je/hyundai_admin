@@ -184,7 +184,10 @@ td {white-space:nowrap}
 .table-type04 tbody tr:nth-child(n+4) { background:#fff } 
 .table-type04 th { font-size:16rem; background:#3BB88C; color:#fff; font-weight:400 } 
 .table-type04 td { font-size:14rem; text-align:center; border-right:solid 1px #BBB } 
-.table-type04 td:first-child, .table-type04 td:last-child { border-right:0 } 
+/* .table-type04 td:first-child, .table-type04 td:last-child { border-right:0 }  */
+.table-type04 tr.sortation-first-tr td:first-child,
+.table-type04 tr.sortation-last-tr td:first-child,
+.table-type04 td:last-child { border-right:0 } 
 .table-type04 td .media-list li { display:flex; align-items:center; } 
 .table-type04 td .media-list li .title {width:115rem; font-size:14rem }
 .table-type04 td .media-list li .title { }
