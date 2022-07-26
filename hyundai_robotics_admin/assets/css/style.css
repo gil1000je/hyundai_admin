@@ -96,9 +96,10 @@ input[type="text"] + button, input[type="text"] + button + button { margin-left:
 #tab .tab-list li a { width:120rem; font-size:16rem; display:flex; align-items:center; justify-content:center; min-height:44rem; padding:0 42rem; border:solid 1px #bbb; color:#999; background:#F5FCF9; border-radius:3rem; white-space:nowrap; } 
 #tab .tab-list li a.active { background:#3BB88C; color:#fff; border:solid 1px #3BB88C; } 
 #tab.width160 .tab-list li a { width:160rem; }
-#tab + .search-wrap{margin-top: 12rem;}
+#tab + .search-wrap {margin-top: 12rem;}
+
 /* 타이틀 영역 */
-#topArea .title-wrap { width:1300rem; margin:0 auto; /*padding:33rem 0 70rem;*/padding: 0 0 30rem; } 
+#topArea .title-wrap { width:1300rem; margin:0 auto; /*padding:33rem 0 70rem;*/ padding: 30rem 0; } 
 #topArea .title-wrap h2.main-tit { font-size:30rem; color:#222; font-weight:700; line-height:44rem; letter-spacing:-0.018em; } 
 
 /* 테이블 공통 */
@@ -116,9 +117,10 @@ input[type="text"] + button, input[type="text"] + button + button { margin-left:
 .table-wrap + .table-wrap { margin-top:26rem; }
 .table-wrap .btn-wrap {display:flex; justify-content:flex-end; margin-top:26rem;}
 .table-wrap .input-wrap.radio label {font-size:14rem}
-
 .table-wrap #pagination {margin-top: 32rem;}
 .table-wrap #pagination .pagination-inner{justify-content: center;}
+td {white-space:nowrap}
+/* td.adress, td.adress div {text-align:left; justify-content:left !important} */
 
 /* 테이블 타입 1 */
 .table-type01 { width:100%; max-width:1300rem; border-radius:3rem; background:#fff; outline:solid 1px #BBB;overflow: hidden;} 
@@ -135,7 +137,6 @@ input[type="text"] + button, input[type="text"] + button + button { margin-left:
 .table-type01 td.text-align-left div {justify-content: flex-start;padding-left: 40rem;}
 .table-type01 td.setting .input-wrap { display:flex; gap:60rem; justify-content:center; } 
 .table-type01 input[type="checkbox"] {margin-left:10rem;}
-
 .table-type01.border-td td{border-right:solid 1px #BBB}
 .table-type01.border-td td:last-child { border-right:0 } 
 .table-type01.border-td input[type="checkbox"] {margin-left:0;}
@@ -306,10 +307,11 @@ input[type="search"]::-webkit-search-results-decoration{
 .info-list-type02 > li.info-item-no-preview .info .title { font-size:16rem; font-weight:normal;width: 86rem;color: #999;margin-top: 12rem;}
 .info-list-type02 .info .input-wrap:not(:first-child){margin-top: 12rem;}
 .info-list-type02 .info textarea{max-width: 800rem;min-width: 800rem;max-height: 200rem;min-height: 200rem;border: 1px solid #bbb;border-radius: 3rem;padding: 12rem;overflow-y: auto;}
-/* .info-list-type02 .info .info-wrap.textarea{width: 800rem;height: 200rem;}
+.info-list-type02 .info .info-wrap.textarea {width: 800rem;height: 200rem;}
 .info-list-type02 .info .info-wrap.textarea textarea{width: 100%;height: 100%;max-width: 800rem;min-width: 800rem;max-height: 200rem;min-height: 200rem;border: 1px solid #bbb;border-radius: 3rem;padding: 12rem;overflow-y: auto;}
-.info-list-type02 .info textarea + .count{font-size: 16rem;color: #999;position: absolute;bottom: 12rem;right: 12rem;background: #fff;display: none;}
-.info-list-type02 .info textarea + .count.active{display: block;} */
+.info-list-type02 .info {position:relative;}
+.info-list-type02 .info textarea + .count { white-space:nowrap; font-size: 16rem;color: #999;position: absolute;bottom: 12rem;right: 520rem;background: #fff;}
+.info-list-type02 .info textarea + .count.active{}
 .info-list-type02 .info .select-wrap{max-width: 800rem;}
 .info-list-type02 .info .select-wrap .option-list li{align-items: flex-start;}
 .info-list-type02 .info .select-list, .info-list-type02 .info .info-input-list{display: flex;gap: 14rem 12rem;}
@@ -409,7 +411,7 @@ input[type="search"]::-webkit-search-results-decoration{
 .dashboard.modal-wrap table {width:100%; border:1px solid #bbb; border-radius:3rem;}
 .dashboard.modal-wrap thead {height:30rem; text-align:center; background:#3BB88C;}
 .dashboard.modal-wrap tbody tr {border-bottom:1px solid #bbb; }
-.dashboard.modal-wrap thead th {font-size:12rem; font-weight:500; color:#fff;}
+.dashboard.modal-wrap thead th { height:30rem; font-size:12rem; font-weight:500; color:#fff;}
 .dashboard.modal-wrap tbody tr:last-child {border-bottom:0;}
 .dashboard.modal-wrap tbody td { height:30rem; text-align:center; border-right:1px solid #bbb; font-size:12rem}
 .dashboard.modal-wrap tbody td:last-child { border-right:1px solid #bbb; }

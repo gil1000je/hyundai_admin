@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>상담/문의 > 대리점 모집 문의</title>
+    <title>회원관리 > 대리점 회원</title>
     <link rel="stylesheet" type="text/css" href="/hyundai_robotics_admin/assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="/hyundai_robotics_admin/assets/css/common.css">
     <link rel="stylesheet" type="text/css" href="/hyundai_robotics_admin/assets/css/form.css">
@@ -28,16 +28,32 @@
                 <nav id="navigation">
                   <ul>
                     <li class="depth01">
-                        <a href="javascript:void(0)" title="클릭시 해당 뎁스로 이동">상담/문의</a>
+                        <a href="javascript:void(0)" title="클릭시 해당 뎁스로 이동">회원관리</a>
                     </li>
                     <li class="depth02">
-                        <a href="javascript:void(0)" title="클릭시 해당 뎁스로 이동">대리점 모집 문의</a>
+                        <a href="javascript:void(0)" title="클릭시 해당 뎁스로 이동">대리점 회원</a>
                     </li>
                   </ul>
                 </nav>
-                <h2 class="main-tit">대리점 모집 문의</h2>
+                <h2 class="main-tit">대리점 회원</h2>
               </div>
               <!-- 타이틀 영역 끝 -->
+              <!-- 탭 영역 시작 -->
+              <div id="tab" class="width160">
+                <ul class="tab-list">
+                  <li>
+                    <a class="active" href="javascript:void(0)" title="탭">
+                      활성(10,345)
+                    </a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" title="탭">
+                      비활성화(1,345)
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <!-- 탭 영역 끝 -->
               <!-- 검색 영역 시작 -->
               <div class="search-wrap">
                 <div class="search-wrap-inner">
@@ -51,7 +67,7 @@
                   </div>
                   <div class="right">
                     <div class="select-wrap wd160">
-                      <a href="javascript:void(0)" class="selected-option">지역전체</a>
+                      <a href="javascript:void(0)" class="selected-option">국문</a>
                       <ul class="option-list">
                         <li>
                           <a href="javascript:void(0)">지역 1</a>
@@ -72,7 +88,7 @@
                           <a href="javascript:void(0)">지역 6</a>
                         </li>
                       </ul>
-                    </div>
+                    </div> 
                     <div class="select-wrap">
                       <a href="javascript:void(0)" class="selected-option">25개</a>
                       <ul class="option-list">
@@ -95,7 +111,10 @@
                           <a href="javascript:void(0)">지역 6</a>
                         </li>
                       </ul>
-                    </div>
+                    </div> 
+                    <button class="common-btn regist" type="submit">
+                      등록
+                    </button>
                   </div>
                 </div>
               </div>
@@ -108,694 +127,746 @@
                 <div id="tableWrap" class="dont-copy-this-div">
                     <div class="table-wrap">
                       <table class="table-type01 border-td">
-                        <caption>브로슈어/카탈로그 테이블</caption>
+                        <caption>대리점회원 테이블</caption>
                         <colgroup>
                           <col width="5%">
-                          <col width="8%">
-                          <col width="15%">
-                          <col width="8%">
                           <col width="10%">
-                          <col width="*">
                           <col width="10%">
+                          <col width="20%">
+                          <col width="10%">
+                          <col width="10%">
+                          <col width="25%">
                           <col width="10%">
                         </colgroup>
                         <thead>
                           <tr>
                             <th scope="col">
-                              No.
+                              <label for="checkSample" name="checkSample">
+                                <input id="checkSample" type="checkbox">
+                              </label>
                             </th>
                             <th scope="col">
-                              신청인
+                              대리점명
                             </th>
                             <th scope="col">
                               연락처
                             </th>
                             <th scope="col">
-                              업체명
+                              이메일
                             </th>
                             <th scope="col">
-                              업종
+                              가입일
                             </th>
                             <th scope="col">
-                              소재지
+                              대리점 번호
                             </th>
                             <th scope="col">
-                              영업희망 지역
+                              대리점 주소
                             </th>
                             <th scope="col">
-                              문의 일자
+                              상담
                             </th>
                           </tr>
                         </thead>
                         <tbody>
                           <tr>
                             <td>
-                              <div>25</div>
+                              <label for="checkSample" name="checkSample">
+                                <input id="checkSample" type="checkbox">
+                              </label>
                             </td>
-                            <td>
-                              <div>홍길동</div>
+                            <td class="text-align-left">
+                              <div>마신2점</div>
                             </td>
                             <td>
                               <div>010-1234-5678</div>
                             </td>
                             <td>
-                              <div>황소포차</div>
+                              <div>masan@HYUNDAIrobotics.com</div>
                             </td>
                             <td>
-                              <div>식당</div>
+                              <div>2021-06-08</div>
                             </td>
                             <td>
-                              <div>서울특별시 종로구 종로로 12</div>
+                              <div>29</div>
                             </td>
                             <td>
-                              <div>서울특별시</div>
+                              <div>마산시 마산회원구 구암1동 구암로 12</div>
                             </td>
                             <td>
-                              <div>2022-06-22</div>
+                              <div>13건</div>
                             </td>
                           </tr>
                           <tr>
                             <td>
-                              <div>24</div>
+                              <label for="checkSample" name="checkSample">
+                                <input id="checkSample" type="checkbox">
+                              </label>
                             </td>
-                            <td>
-                              <div>홍길동</div>
+                            <td class="text-align-left">
+                              <div>마신2점</div>
                             </td>
                             <td>
                               <div>010-1234-5678</div>
                             </td>
                             <td>
-                              <div>황소포차</div>
+                              <div>masan@HYUNDAIrobotics.com</div>
                             </td>
                             <td>
-                              <div>식당</div>
+                              <div>2021-06-08</div>
                             </td>
                             <td>
-                              <div>서울특별시 종로구 종로로 12</div>
+                              <div>29</div>
                             </td>
                             <td>
-                              <div>서울특별시</div>
+                              <div>마산시 마산회원구 구암1동 구암로 12</div>
                             </td>
                             <td>
-                              <div>2022-06-22</div>
+                              <div>13건</div>
                             </td>
                           </tr>
                           <tr>
                             <td>
-                              <div>23</div>
+                              <label for="checkSample" name="checkSample">
+                                <input id="checkSample" type="checkbox">
+                              </label>
                             </td>
-                            <td>
-                              <div>홍길동</div>
+                            <td class="text-align-left">
+                              <div>마신2점</div>
                             </td>
                             <td>
                               <div>010-1234-5678</div>
                             </td>
                             <td>
-                              <div>황소포차</div>
+                              <div>masan@HYUNDAIrobotics.com</div>
                             </td>
                             <td>
-                              <div>식당</div>
+                              <div>2021-06-08</div>
                             </td>
                             <td>
-                              <div>서울특별시 종로구 종로로 12</div>
+                              <div>29</div>
                             </td>
                             <td>
-                              <div>서울특별시</div>
+                              <div>마산시 마산회원구 구암1동 구암로 12</div>
                             </td>
                             <td>
-                              <div>2022-06-22</div>
+                              <div>13건</div>
                             </td>
                           </tr>
                           <tr>
                             <td>
-                              <div>22</div>
+                              <label for="checkSample" name="checkSample">
+                                <input id="checkSample" type="checkbox">
+                              </label>
                             </td>
-                            <td>
-                              <div>홍길동</div>
+                            <td class="text-align-left">
+                              <div>마신2점</div>
                             </td>
                             <td>
                               <div>010-1234-5678</div>
                             </td>
                             <td>
-                              <div>황소포차</div>
+                              <div>masan@HYUNDAIrobotics.com</div>
                             </td>
                             <td>
-                              <div>식당</div>
+                              <div>2021-06-08</div>
                             </td>
                             <td>
-                              <div>서울특별시 종로구 종로로 12</div>
+                              <div>29</div>
                             </td>
                             <td>
-                              <div>서울특별시</div>
+                              <div>마산시 마산회원구 구암1동 구암로 12</div>
                             </td>
                             <td>
-                              <div>2022-06-22</div>
+                              <div>13건</div>
                             </td>
                           </tr>
                           <tr>
                             <td>
-                              <div>21</div>
+                              <label for="checkSample" name="checkSample">
+                                <input id="checkSample" type="checkbox">
+                              </label>
                             </td>
-                            <td>
-                              <div>홍길동</div>
+                            <td class="text-align-left">
+                              <div>마신2점</div>
                             </td>
                             <td>
                               <div>010-1234-5678</div>
                             </td>
                             <td>
-                              <div>황소포차</div>
+                              <div>masan@HYUNDAIrobotics.com</div>
                             </td>
                             <td>
-                              <div>식당</div>
+                              <div>2021-06-08</div>
                             </td>
                             <td>
-                              <div>서울특별시 종로구 종로로 12</div>
+                              <div>29</div>
                             </td>
                             <td>
-                              <div>서울특별시</div>
+                              <div>마산시 마산회원구 구암1동 구암로 12</div>
                             </td>
                             <td>
-                              <div>2022-06-22</div>
+                              <div>13건</div>
                             </td>
                           </tr>
                           <tr>
                             <td>
-                              <div>20</div>
+                              <label for="checkSample" name="checkSample">
+                                <input id="checkSample" type="checkbox">
+                              </label>
                             </td>
-                            <td>
-                              <div>홍길동</div>
+                            <td class="text-align-left">
+                              <div>마신2점</div>
                             </td>
                             <td>
                               <div>010-1234-5678</div>
                             </td>
                             <td>
-                              <div>황소포차</div>
+                              <div>masan@HYUNDAIrobotics.com</div>
                             </td>
                             <td>
-                              <div>식당</div>
+                              <div>2021-06-08</div>
                             </td>
                             <td>
-                              <div>서울특별시 종로구 종로로 12</div>
+                              <div>29</div>
                             </td>
                             <td>
-                              <div>서울특별시</div>
+                              <div>마산시 마산회원구 구암1동 구암로 12</div>
                             </td>
                             <td>
-                              <div>2022-06-22</div>
+                              <div>13건</div>
                             </td>
                           </tr>
                           <tr>
                             <td>
-                              <div>19</div>
+                              <label for="checkSample" name="checkSample">
+                                <input id="checkSample" type="checkbox">
+                              </label>
                             </td>
-                            <td>
-                              <div>홍길동</div>
+                            <td class="text-align-left">
+                              <div>마신2점</div>
                             </td>
                             <td>
                               <div>010-1234-5678</div>
                             </td>
                             <td>
-                              <div>황소포차</div>
+                              <div>masan@HYUNDAIrobotics.com</div>
                             </td>
                             <td>
-                              <div>식당</div>
+                              <div>2021-06-08</div>
                             </td>
                             <td>
-                              <div>서울특별시 종로구 종로로 12</div>
+                              <div>29</div>
                             </td>
                             <td>
-                              <div>서울특별시</div>
+                              <div>마산시 마산회원구 구암1동 구암로 12</div>
                             </td>
                             <td>
-                              <div>2022-06-22</div>
+                              <div>13건</div>
                             </td>
                           </tr>
                           <tr>
                             <td>
-                              <div>18</div>
+                              <label for="checkSample" name="checkSample">
+                                <input id="checkSample" type="checkbox">
+                              </label>
                             </td>
-                            <td>
-                              <div>홍길동</div>
+                            <td class="text-align-left">
+                              <div>마신2점</div>
                             </td>
                             <td>
                               <div>010-1234-5678</div>
                             </td>
                             <td>
-                              <div>황소포차</div>
+                              <div>masan@HYUNDAIrobotics.com</div>
                             </td>
                             <td>
-                              <div>식당</div>
+                              <div>2021-06-08</div>
                             </td>
                             <td>
-                              <div>서울특별시 종로구 종로로 12</div>
+                              <div>29</div>
                             </td>
                             <td>
-                              <div>서울특별시</div>
+                              <div>마산시 마산회원구 구암1동 구암로 12</div>
                             </td>
                             <td>
-                              <div>2022-06-22</div>
+                              <div>13건</div>
                             </td>
                           </tr>
                           <tr>
                             <td>
-                              <div>17</div>
+                              <label for="checkSample" name="checkSample">
+                                <input id="checkSample" type="checkbox">
+                              </label>
                             </td>
-                            <td>
-                              <div>홍길동</div>
+                            <td class="text-align-left">
+                              <div>마신2점</div>
                             </td>
                             <td>
                               <div>010-1234-5678</div>
                             </td>
                             <td>
-                              <div>황소포차</div>
+                              <div>masan@HYUNDAIrobotics.com</div>
                             </td>
                             <td>
-                              <div>식당</div>
+                              <div>2021-06-08</div>
                             </td>
                             <td>
-                              <div>서울특별시 종로구 종로로 12</div>
+                              <div>29</div>
                             </td>
                             <td>
-                              <div>서울특별시</div>
+                              <div>마산시 마산회원구 구암1동 구암로 12</div>
                             </td>
                             <td>
-                              <div>2022-06-22</div>
+                              <div>13건</div>
                             </td>
                           </tr>
                           <tr>
                             <td>
-                              <div>16</div>
+                              <label for="checkSample" name="checkSample">
+                                <input id="checkSample" type="checkbox">
+                              </label>
                             </td>
-                            <td>
-                              <div>홍길동</div>
+                            <td class="text-align-left">
+                              <div>마신2점</div>
                             </td>
                             <td>
                               <div>010-1234-5678</div>
                             </td>
                             <td>
-                              <div>황소포차</div>
+                              <div>masan@HYUNDAIrobotics.com</div>
                             </td>
                             <td>
-                              <div>식당</div>
+                              <div>2021-06-08</div>
                             </td>
                             <td>
-                              <div>서울특별시 종로구 종로로 12</div>
+                              <div>29</div>
                             </td>
                             <td>
-                              <div>서울특별시</div>
+                              <div>마산시 마산회원구 구암1동 구암로 12</div>
                             </td>
                             <td>
-                              <div>2022-06-22</div>
+                              <div>13건</div>
                             </td>
                           </tr>
                           <tr>
                             <td>
-                              <div>15</div>
+                              <label for="checkSample" name="checkSample">
+                                <input id="checkSample" type="checkbox">
+                              </label>
                             </td>
-                            <td>
-                              <div>홍길동</div>
+                            <td class="text-align-left">
+                              <div>마신2점</div>
                             </td>
                             <td>
                               <div>010-1234-5678</div>
                             </td>
                             <td>
-                              <div>황소포차</div>
+                              <div>masan@HYUNDAIrobotics.com</div>
                             </td>
                             <td>
-                              <div>식당</div>
+                              <div>2021-06-08</div>
                             </td>
                             <td>
-                              <div>서울특별시 종로구 종로로 12</div>
+                              <div>29</div>
                             </td>
                             <td>
-                              <div>서울특별시</div>
+                              <div>마산시 마산회원구 구암1동 구암로 12</div>
                             </td>
                             <td>
-                              <div>2022-06-22</div>
+                              <div>13건</div>
                             </td>
                           </tr>
                           <tr>
                             <td>
-                              <div>14</div>
+                              <label for="checkSample" name="checkSample">
+                                <input id="checkSample" type="checkbox">
+                              </label>
                             </td>
-                            <td>
-                              <div>홍길동</div>
+                            <td class="text-align-left">
+                              <div>마신2점</div>
                             </td>
                             <td>
                               <div>010-1234-5678</div>
                             </td>
                             <td>
-                              <div>황소포차</div>
+                              <div>masan@HYUNDAIrobotics.com</div>
                             </td>
                             <td>
-                              <div>식당</div>
+                              <div>2021-06-08</div>
                             </td>
                             <td>
-                              <div>서울특별시 종로구 종로로 12</div>
+                              <div>29</div>
                             </td>
                             <td>
-                              <div>서울특별시</div>
+                              <div>마산시 마산회원구 구암1동 구암로 12</div>
                             </td>
                             <td>
-                              <div>2022-06-22</div>
+                              <div>13건</div>
                             </td>
                           </tr>
                           <tr>
                             <td>
-                              <div>13</div>
+                              <label for="checkSample" name="checkSample">
+                                <input id="checkSample" type="checkbox">
+                              </label>
                             </td>
-                            <td>
-                              <div>홍길동</div>
+                            <td class="text-align-left">
+                              <div>마신2점</div>
                             </td>
                             <td>
                               <div>010-1234-5678</div>
                             </td>
                             <td>
-                              <div>황소포차</div>
+                              <div>masan@HYUNDAIrobotics.com</div>
                             </td>
                             <td>
-                              <div>식당</div>
+                              <div>2021-06-08</div>
                             </td>
                             <td>
-                              <div>서울특별시 종로구 종로로 12</div>
+                              <div>29</div>
                             </td>
                             <td>
-                              <div>서울특별시</div>
+                              <div>마산시 마산회원구 구암1동 구암로 12</div>
                             </td>
                             <td>
-                              <div>2022-06-22</div>
+                              <div>13건</div>
                             </td>
                           </tr>
                           <tr>
                             <td>
-                              <div>12</div>
+                              <label for="checkSample" name="checkSample">
+                                <input id="checkSample" type="checkbox">
+                              </label>
                             </td>
-                            <td>
-                              <div>홍길동</div>
+                            <td class="text-align-left">
+                              <div>마신2점</div>
                             </td>
                             <td>
                               <div>010-1234-5678</div>
                             </td>
                             <td>
-                              <div>황소포차</div>
+                              <div>masan@HYUNDAIrobotics.com</div>
                             </td>
                             <td>
-                              <div>식당</div>
+                              <div>2021-06-08</div>
                             </td>
                             <td>
-                              <div>서울특별시 종로구 종로로 12</div>
+                              <div>29</div>
                             </td>
                             <td>
-                              <div>서울특별시</div>
+                              <div>마산시 마산회원구 구암1동 구암로 12</div>
                             </td>
                             <td>
-                              <div>2022-06-22</div>
+                              <div>13건</div>
                             </td>
                           </tr>
                           <tr>
                             <td>
-                              <div>11</div>
+                              <label for="checkSample" name="checkSample">
+                                <input id="checkSample" type="checkbox">
+                              </label>
                             </td>
-                            <td>
-                              <div>홍길동</div>
+                            <td class="text-align-left">
+                              <div>마신2점</div>
                             </td>
                             <td>
                               <div>010-1234-5678</div>
                             </td>
                             <td>
-                              <div>황소포차</div>
+                              <div>masan@HYUNDAIrobotics.com</div>
                             </td>
                             <td>
-                              <div>식당</div>
+                              <div>2021-06-08</div>
                             </td>
                             <td>
-                              <div>서울특별시 종로구 종로로 12</div>
+                              <div>29</div>
                             </td>
                             <td>
-                              <div>서울특별시</div>
+                              <div>마산시 마산회원구 구암1동 구암로 12</div>
                             </td>
                             <td>
-                              <div>2022-06-22</div>
+                              <div>13건</div>
                             </td>
                           </tr>
                           <tr>
                             <td>
-                              <div>10</div>
+                              <label for="checkSample" name="checkSample">
+                                <input id="checkSample" type="checkbox">
+                              </label>
                             </td>
-                            <td>
-                              <div>홍길동</div>
+                            <td class="text-align-left">
+                              <div>마신2점</div>
                             </td>
                             <td>
                               <div>010-1234-5678</div>
                             </td>
                             <td>
-                              <div>황소포차</div>
+                              <div>masan@HYUNDAIrobotics.com</div>
                             </td>
                             <td>
-                              <div>식당</div>
+                              <div>2021-06-08</div>
                             </td>
                             <td>
-                              <div>서울특별시 종로구 종로로 12</div>
+                              <div>29</div>
                             </td>
                             <td>
-                              <div>서울특별시</div>
+                              <div>마산시 마산회원구 구암1동 구암로 12</div>
                             </td>
                             <td>
-                              <div>2022-06-22</div>
+                              <div>13건</div>
                             </td>
                           </tr>
                           <tr>
                             <td>
-                              <div>9</div>
+                              <label for="checkSample" name="checkSample">
+                                <input id="checkSample" type="checkbox">
+                              </label>
                             </td>
-                            <td>
-                              <div>홍길동</div>
+                            <td class="text-align-left">
+                              <div>마신2점</div>
                             </td>
                             <td>
                               <div>010-1234-5678</div>
                             </td>
                             <td>
-                              <div>황소포차</div>
+                              <div>masan@HYUNDAIrobotics.com</div>
                             </td>
                             <td>
-                              <div>식당</div>
+                              <div>2021-06-08</div>
                             </td>
                             <td>
-                              <div>서울특별시 종로구 종로로 12</div>
+                              <div>29</div>
                             </td>
                             <td>
-                              <div>서울특별시</div>
+                              <div>마산시 마산회원구 구암1동 구암로 12</div>
                             </td>
                             <td>
-                              <div>2022-06-22</div>
+                              <div>13건</div>
                             </td>
                           </tr>
                           <tr>
                             <td>
-                              <div>8</div>
+                              <label for="checkSample" name="checkSample">
+                                <input id="checkSample" type="checkbox">
+                              </label>
                             </td>
-                            <td>
-                              <div>홍길동</div>
+                            <td class="text-align-left">
+                              <div>마신2점</div>
                             </td>
                             <td>
                               <div>010-1234-5678</div>
                             </td>
                             <td>
-                              <div>황소포차</div>
+                              <div>masan@HYUNDAIrobotics.com</div>
                             </td>
                             <td>
-                              <div>식당</div>
+                              <div>2021-06-08</div>
                             </td>
                             <td>
-                              <div>서울특별시 종로구 종로로 12</div>
+                              <div>29</div>
                             </td>
                             <td>
-                              <div>서울특별시</div>
+                              <div>마산시 마산회원구 구암1동 구암로 12</div>
                             </td>
                             <td>
-                              <div>2022-06-22</div>
+                              <div>13건</div>
                             </td>
                           </tr>
                           <tr>
                             <td>
-                              <div>7</div>
+                              <label for="checkSample" name="checkSample">
+                                <input id="checkSample" type="checkbox">
+                              </label>
                             </td>
-                            <td>
-                              <div>홍길동</div>
+                            <td class="text-align-left">
+                              <div>마신2점</div>
                             </td>
                             <td>
                               <div>010-1234-5678</div>
                             </td>
                             <td>
-                              <div>황소포차</div>
+                              <div>masan@HYUNDAIrobotics.com</div>
                             </td>
                             <td>
-                              <div>식당</div>
+                              <div>2021-06-08</div>
                             </td>
                             <td>
-                              <div>서울특별시 종로구 종로로 12</div>
+                              <div>29</div>
                             </td>
                             <td>
-                              <div>서울특별시</div>
+                              <div>마산시 마산회원구 구암1동 구암로 12</div>
                             </td>
                             <td>
-                              <div>2022-06-22</div>
+                              <div>13건</div>
                             </td>
                           </tr>
                           <tr>
                             <td>
-                              <div>6</div>
+                              <label for="checkSample" name="checkSample">
+                                <input id="checkSample" type="checkbox">
+                              </label>
                             </td>
-                            <td>
-                              <div>홍길동</div>
+                            <td class="text-align-left">
+                              <div>마신2점</div>
                             </td>
                             <td>
                               <div>010-1234-5678</div>
                             </td>
                             <td>
-                              <div>황소포차</div>
+                              <div>masan@HYUNDAIrobotics.com</div>
                             </td>
                             <td>
-                              <div>식당</div>
+                              <div>2021-06-08</div>
                             </td>
                             <td>
-                              <div>서울특별시 종로구 종로로 12</div>
+                              <div>29</div>
                             </td>
                             <td>
-                              <div>서울특별시</div>
+                              <div>마산시 마산회원구 구암1동 구암로 12</div>
                             </td>
                             <td>
-                              <div>2022-06-22</div>
+                              <div>13건</div>
                             </td>
                           </tr>
                           <tr>
                             <td>
-                              <div>5</div>
+                              <label for="checkSample" name="checkSample">
+                                <input id="checkSample" type="checkbox">
+                              </label>
                             </td>
-                            <td>
-                              <div>홍길동</div>
+                            <td class="text-align-left">
+                              <div>마신2점</div>
                             </td>
                             <td>
                               <div>010-1234-5678</div>
                             </td>
                             <td>
-                              <div>황소포차</div>
+                              <div>masan@HYUNDAIrobotics.com</div>
                             </td>
                             <td>
-                              <div>식당</div>
+                              <div>2021-06-08</div>
                             </td>
                             <td>
-                              <div>서울특별시 종로구 종로로 12</div>
+                              <div>29</div>
                             </td>
                             <td>
-                              <div>서울특별시</div>
+                              <div>마산시 마산회원구 구암1동 구암로 12</div>
                             </td>
                             <td>
-                              <div>2022-06-22</div>
+                              <div>13건</div>
                             </td>
                           </tr>
                           <tr>
                             <td>
-                              <div>4</div>
+                              <label for="checkSample" name="checkSample">
+                                <input id="checkSample" type="checkbox">
+                              </label>
                             </td>
-                            <td>
-                              <div>홍길동</div>
+                            <td class="text-align-left">
+                              <div>마신2점</div>
                             </td>
                             <td>
                               <div>010-1234-5678</div>
                             </td>
                             <td>
-                              <div>황소포차</div>
+                              <div>masan@HYUNDAIrobotics.com</div>
                             </td>
                             <td>
-                              <div>식당</div>
+                              <div>2021-06-08</div>
                             </td>
                             <td>
-                              <div>서울특별시 종로구 종로로 12</div>
+                              <div>29</div>
                             </td>
                             <td>
-                              <div>서울특별시</div>
+                              <div>마산시 마산회원구 구암1동 구암로 12</div>
                             </td>
                             <td>
-                              <div>2022-06-22</div>
+                              <div>13건</div>
                             </td>
                           </tr>
                           <tr>
                             <td>
-                              <div>3</div>
+                              <label for="checkSample" name="checkSample">
+                                <input id="checkSample" type="checkbox">
+                              </label>
                             </td>
-                            <td>
-                              <div>홍길동</div>
+                            <td class="text-align-left">
+                              <div>마신2점</div>
                             </td>
                             <td>
                               <div>010-1234-5678</div>
                             </td>
                             <td>
-                              <div>황소포차</div>
+                              <div>masan@HYUNDAIrobotics.com</div>
                             </td>
                             <td>
-                              <div>식당</div>
+                              <div>2021-06-08</div>
                             </td>
                             <td>
-                              <div>서울특별시 종로구 종로로 12</div>
+                              <div>29</div>
                             </td>
                             <td>
-                              <div>서울특별시</div>
+                              <div>마산시 마산회원구 구암1동 구암로 12</div>
                             </td>
                             <td>
-                              <div>2022-06-22</div>
+                              <div>13건</div>
                             </td>
                           </tr>
                           <tr>
                             <td>
-                              <div>2</div>
+                              <label for="checkSample" name="checkSample">
+                                <input id="checkSample" type="checkbox">
+                              </label>
                             </td>
-                            <td>
-                              <div>홍길동</div>
+                            <td class="text-align-left">
+                              <div>마신2점</div>
                             </td>
                             <td>
                               <div>010-1234-5678</div>
                             </td>
                             <td>
-                              <div>황소포차</div>
+                              <div>masan@HYUNDAIrobotics.com</div>
                             </td>
                             <td>
-                              <div>식당</div>
+                              <div>2021-06-08</div>
                             </td>
                             <td>
-                              <div>서울특별시 종로구 종로로 12</div>
+                              <div>29</div>
                             </td>
                             <td>
-                              <div>서울특별시</div>
+                              <div>마산시 마산회원구 구암1동 구암로 12</div>
                             </td>
                             <td>
-                              <div>2022-06-22</div>
+                              <div>13건</div>
                             </td>
                           </tr>
                           <tr>
                             <td>
-                              <div>1</div>
+                              <label for="checkSample" name="checkSample">
+                                <input id="checkSample" type="checkbox">
+                              </label>
                             </td>
-                            <td>
-                              <div>홍길동</div>
+                            <td class="text-align-left">
+                              <div>마신2점</div>
                             </td>
                             <td>
                               <div>010-1234-5678</div>
                             </td>
                             <td>
-                              <div>황소포차</div>
+                              <div>masan@HYUNDAIrobotics.com</div>
                             </td>
                             <td>
-                              <div>식당</div>
+                              <div>2021-06-08</div>
                             </td>
                             <td>
-                              <div>서울특별시 종로구 종로로 12</div>
+                              <div>29</div>
                             </td>
                             <td>
-                              <div>서울특별시</div>
+                              <div>마산시 마산회원구 구암1동 구암로 12</div>
                             </td>
                             <td>
-                              <div>2022-06-22</div>
+                              <div>13건</div>
                             </td>
                           </tr>
                         </tbody>
@@ -807,6 +878,11 @@
             <!-- BOTTOM AREA 바텀 영역 시작 -->
             <section id="bottomArea" class="no-line">
                 <div id="pagination"></div>
+                <div class="btn-wrap">
+                  <button type="button" class="common-btn" disabled>
+                    회원 비활성화
+                  </button>
+                </div>
             </section>
             <!-- BOTTOM AREA 바텀 영역 끝 -->
         </div>
