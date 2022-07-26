@@ -337,6 +337,7 @@ input[type="search"]::-webkit-search-results-decoration{
 .info-list-type02 .info-list-item{display: flex;align-items: center;gap: 14rem;}
 .info-list-type02 .info-list-item .title{margin-bottom: 10rem;}
 .info-list-type02 .info-list-item .info input{max-width: 80rem;}
+.info-list-type02 li .input-wrap.red .alert { top:-17rem; color:#e81953; } 
 .btn-wrap { display:flex; gap:14rem; } 
 
 .info-list-type02 .check.check-type02{display: block;}
