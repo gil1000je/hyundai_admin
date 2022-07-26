@@ -426,7 +426,7 @@ input[type="search"]::-webkit-search-results-decoration{
 .dashboard.modal-wrap tbody td:last-child { border-right:1px solid #bbb; }
 .dashboard.modal-wrap .num {width:48rem}
 .dashboard.modal-wrap .view {width:108rem}
-.dashboard.modal-wrap td > p { font-size:12rem; text-align:left; padding-left:10rem; width:100%; max-width:215rem; white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
+.dashboard.modal-wrap td > p { font-size:12rem; text-align:left; padding-left:10rem; width:100%; max-width:215rem; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; color:#222; }
 /* datepicker custom */
 .ui-widget-header { border: 0rem solid #dddddd; background: #fff; } 
 
