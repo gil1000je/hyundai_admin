@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>콘텐츠 관리 > 팝업 관리 > 팝업 등록</title>
+    <title>콘텐츠 관리 > SEO 관리</title>
     <link rel="stylesheet" type="text/css" href="/hyundai_robotics_admin/assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="/hyundai_robotics_admin/assets/css/common.css">
     <link rel="stylesheet" type="text/css" href="/hyundai_robotics_admin/assets/css/form.css">
@@ -33,14 +33,11 @@
                                 <a href="javascript:void(0)" title="클릭시 해당 뎁스로 이동">콘텐츠 관리</a>
                             </li>
                             <li class="depth02">
-                                <a href="javascript:void(0)" title="클릭시 해당 뎁스로 이동">팝업 관리</a>
-                            </li>
-                            <li class="depth03">
-                                <a href="javascript:void(0)" title="클릭시 해당 뎁스로 이동">팝업 등록</a>
+                                <a href="javascript:void(0)" title="클릭시 해당 뎁스로 이동">SEO 관리</a>
                             </li>
                         </ul>
                     </nav>
-                    <h2 class="main-tit">팝업 등록</h2>
+                    <h2 class="main-tit">SEO 관리</h2>
                 </div>
                 <!-- 타이틀 영역 끝 -->
             </section>
@@ -50,22 +47,31 @@
               <ul class="info-list-type02">
                 <li>
                   <div class="title">
-                    팝업명*
+                    타이틀
                   </div>
                   <div class="info">
                     <div class="input-wrap">
                       <label for="inputSample">
-                        <input id="inputSample" type="text" placeholder="팝업명을 입력해 주세요.">
+                        <input id="inputSample" type="text" placeholder="">
                       </label>
                     </div>
-                    <span class="alert">
-                      2021.06.04
-                    </span>
                   </div>
                 </li>
                 <li>
                   <div class="title">
-                    PC*
+                    서브 타이틀
+                  </div>
+                  <div class="info">
+                    <div class="input-wrap">
+                      <label for="inputSample">
+                        <input id="inputSample" type="text" placeholder="">
+                      </label>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="title">
+                    이미지
                   </div>
                   <div class="info">
                     <div class="input-wrap file">
@@ -74,65 +80,8 @@
                       <label class="common-btn" for="file">이미지 첨부</label>
                     </div>
                     <span class="alert">
-                      권장 사이즈 : 500*600px
+                      권장 사이즈 : 600*315px
                     </span>
-                  </div>
-                </li>
-                <li>
-                  <div class="title">
-                    Mobile*
-                  </div>
-                  <div class="info">
-                    <div class="input-wrap file">
-                      <input class="hide" type="file" id="file">
-                      <input type="text">
-                      <label class="common-btn" for="file">이미지 첨부</label>
-                    </div>
-                    <span class="alert">
-                      권장 사이즈 : 345*414px
-                    </span>
-                  </div>
-                </li>
-                <li>
-                  <div class="title">
-                    링크
-                  </div>
-                  <div class="info">
-                    <div class="input-wrap">
-                      <label for="inputSample">
-                        <input id="inputSample" type="text" placeholder="http://링크명">
-                      </label>
-                    </div>
-                  </div>
-                </li>
-                <li>
-                  <div class="title">
-                    노출설정
-                  </div>
-                  <div class="info">
-                    <div class="input-wrap radio">
-                      <label for="radioSample01" name="radioSample">
-                        <input id="radioSample01" type="radio" checked> 노출
-                      </label>
-                      <label for="radioSample02" name="radioSample">
-                        <input id="radioSample02" type="radio"> 미노출
-                      </label>
-                    </div>
-                  </div>
-                </li>
-                <li>
-                  <div class="title">
-                    노출 기간
-                  </div>
-                  <div class="info date-list">
-                    <div class="input-wrap date">
-                      <input type="text" class="datepicker" placeholder="YYYY.MM.DD">
-                    </div>
-                    <span>~</span>
-                    <div class="input-wrap date">
-                      <input type="text" class="datepicker" placeholder="YYYY.MM.DD">
-                    </div>
-                    <input type="button" value="초기화" class="common-btn">
                   </div>
                 </li>
               </ul>
@@ -141,11 +90,8 @@
             <!-- BOTTOM AREA 바텀 영역 시작 -->
             <section id="bottomArea">
                 <div class="btn-wrap">
-                    <button type="button" class="common-btn">
-                        취소
-                    </button>
-                    <button type="button" class="common-btn regist" disabled>
-                        등록
+                    <button type="button" class="common-btn" disabled>
+                        저장
                     </button>
                 </div>
             </section>

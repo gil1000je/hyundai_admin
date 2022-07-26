@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>콘텐츠 관리 > 자료실 > 자료실 등록</title>
+    <title>콘텐츠 관리 > 새소식 > 이벤트 등록</title>
     <link rel="stylesheet" type="text/css" href="/hyundai_robotics_admin/assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="/hyundai_robotics_admin/assets/css/common.css">
     <link rel="stylesheet" type="text/css" href="/hyundai_robotics_admin/assets/css/form.css">
@@ -33,57 +33,30 @@
                                 <a href="javascript:void(0)" title="클릭시 해당 뎁스로 이동">콘텐츠 관리</a>
                             </li>
                             <li class="depth02">
-                                <a href="javascript:void(0)" title="클릭시 해당 뎁스로 이동">자료실</a>
+                                <a href="javascript:void(0)" title="클릭시 해당 뎁스로 이동">새소식</a>
                             </li>
                             <li class="depth03">
-                                <a href="javascript:void(0)" title="클릭시 해당 뎁스로 이동">자료실 등록</a>
+                                <a href="javascript:void(0)" title="클릭시 해당 뎁스로 이동">이벤트 등록</a>
                             </li>
                         </ul>
                     </nav>
-                    <h2 class="main-tit">자료실 등록</h2>
+                    <h2 class="main-tit">이벤트 등록</h2>
                 </div>
                 <!-- 타이틀 영역 끝 -->
             </section>
             <!-- TOP AREA 탑 영역 끝 -->
             <!-- mid AREA 중간 영역 시작 -->
             <section id="midArea">
-              <ul class="info-list-type02">
+              <ul class="info-list-type02 dividing-line">
                 <li>
                   <div class="title">
-                    카테고리
+                    제목
                   </div>
                   <div class="info">
-                    <div class="input-wrap categorie">
-                      <div class="select-wrap">
-                        <a href="javascript:void(0)" class="selected-option">카테고리</a>
-                        <ul class="option-list">
-                          <li>
-                            <a href="javascript:void(0)">카테고리 1</a>
-                          </li>
-                          <li>
-                            <a href="javascript:void(0)">카테고리 2</a>
-                          </li>
-                          <li>
-                            <a href="javascript:void(0)">카테고리 3</a>
-                          </li>
-                        </ul>
+                      <div class="input-wrap">
+                        <lable for="input01" class="hide">제목입력</lable>
+                        <input id="input01" type="text" placeholder="제목입력" class="main-title">
                       </div>
-                    </div>
-                  </div>
-                </li>
-                <li>
-                  <div class="title">
-                    자료명
-                  </div>
-                  <div class="info">
-                    <div class="input-wrap">
-                      <label for="inputSample">
-                        <input id="inputSample" type="text" placeholder="자료명을 입력해 주세요.">
-                      </label>
-                    </div>
-                    <span class="alert">
-                      2021.06.04
-                    </span>
                   </div>
                 </li>
                 <li>
@@ -96,31 +69,78 @@
                     </div>
                   </div>
                 </li>
-                <li>
-                  <div class="title">
-                    첨부파일
-                  </div>
-                  <div class="info">
-                    <div class="input-wrap file">
-                      <input class="hide" type="file" id="file">
-                      <input type="text" placeholder="">
-                      <label class="common-btn" for="file">파일 첨부</label>
+              </ul>
+              <ul class="info-list-type02">
+                  <li>
+                    <div class="title">
+                      서브타이틀
                     </div>
-                  </div>
-                </li>
-                <li>
-                    <div class="title">노출 설정</div>
+                    <div class="info">
+                      <div class="input-wrap">
+                        <label for="inputSample">
+                          <input id="inputSample" type="text" placeholder="서브타이틀 입력">
+                        </label>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="title">
+                      본문
+                    </div>
+                    <div class="info">
+                      <textarea cols="" rows=""></textarea>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="title">
+                      썸네일 첨부
+                    </div>
+                    <div class="info">
+                      <div class="input-wrap file">
+                        <input class="hide" type="file" id="file">
+                        <input type="text" placeholder="Thumbnail.jpg">
+                        <label class="common-btn" for="file">이미지 첨부</label>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="title">
+                      첨부 파일
+                    </div>
+                    <div class="info">
+                      <div class="input-wrap file">
+                        <input class="hide" type="file" id="file">
+                        <input type="text" placeholder="Attachment.pdf">
+                        <label class="common-btn" for="file">파일 첨부</label>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="title">언어 설정</div>
                     <div class="info">
                       <div class="input-wrap radio">
-                        <label for="radioSample03" name="radioSample">
-                          <input id="radioSample03" type="radio"> 노출
+                        <label for="radioSample01" name="radioSample">
+                          <input id="radioSample01" type="radio" checked> 국문
                         </label>
-                        <label for="radioSample04" name="radioSample">
-                          <input id="radioSample04 " type="radio"> 미노출
+                        <label for="radioSample02" name="radioSample">
+                          <input id="radioSample02 " type="radio"> 영문
                         </label>
                       </div>
                     </div>
                 </li>
+                  <li>
+                      <div class="title">노출 설정</div>
+                      <div class="info">
+                        <div class="input-wrap radio">
+                          <label for="radioSample03" name="radioSample">
+                            <input id="radioSample03" type="radio" checked> 노출
+                          </label>
+                          <label for="radioSample04" name="radioSample">
+                            <input id="radioSample04 " type="radio"> 미노출
+                          </label>
+                        </div>
+                      </div>
+                  </li>
               </ul>
             </section>
             <!-- mid AREA 중간 영역 끝 -->
@@ -130,7 +150,7 @@
                     <button type="button" class="common-btn">
                         취소
                     </button>
-                    <button type="button" class="common-btn regist" disabled>
+                    <button type="button" class="common-btn" disabled>
                         등록
                     </button>
                 </div>
