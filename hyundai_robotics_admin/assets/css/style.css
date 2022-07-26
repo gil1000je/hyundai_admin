@@ -31,6 +31,7 @@ input[type="radio"]:checked::after {background:url(/hyundai_robotics_admin/asset
 
 /* 인풋박스 */
 input[type="text"],input[type="search"], input[type="password"], input[type="email"], input[type="number"]  { border:solid 1px #BBB; background:#fff; border-radius:3rem; height:44rem; padding:0 14rem; font-size:16rem; margin-top:20rem } 
+input[type="number"]{-webkit-appearance: none;}
 input[type="text"]:focus, input[type="search"]:focus, input[type="password"]:focus, input[type="email"]:focus, 
 input[type="number"]:focus { outline:solid 1.5px #222; border:solid 1px #fff; } 
 input[type="text"]::placeholder, input[type="password"]::placeholder, input[type="email"]::placeholder, input[type="number"]::placeholder { color:#999; font-size:16rem } 
