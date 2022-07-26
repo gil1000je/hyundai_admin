@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>콘텐츠 관리 > 브로슈어/카탈로그</title>
+    <title>콘텐츠 관리 > 팝업 관리</title>
     <link rel="stylesheet" type="text/css" href="/hyundai_robotics_admin/assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="/hyundai_robotics_admin/assets/css/common.css">
     <link rel="stylesheet" type="text/css" href="/hyundai_robotics_admin/assets/css/form.css">
@@ -31,48 +31,21 @@
                         <a href="javascript:void(0)" title="클릭시 해당 뎁스로 이동">콘텐츠 관리</a>
                     </li>
                     <li class="depth02">
-                        <a href="javascript:void(0)" title="클릭시 해당 뎁스로 이동">브로슈어/카탈로그</a>
+                        <a href="javascript:void(0)" title="클릭시 해당 뎁스로 이동">팝업 관리</a>
                     </li>
                   </ul>
                 </nav>
-                <h2 class="main-tit">브로슈어/카탈로그</h2>
+                <h2 class="main-tit">팝업 관리</h2>
               </div>
-              <!-- 타이틀 영역 끝 -->
-              <!-- 검색 영역 시작 -->
-              <div class="search-wrap">
-                <div class="search-wrap-inner">
-                  <div class="left">
-                    <div class="input-wrap">
-                      <input id="inputSample" type="search" placeholder="검색어 입력">
-                      <button class="common-btn" type="submit" disabled>
-                        검색
-                      </button>
-                    </div>
+              <!-- 타이틀 영역 끝 -->    
+              <!-- 버튼 영역 시작 -->
+              <div class="button-wrap">
+                <div class="left">
+                  <div class="alert">
+                    * 팝업은 15개 등록 가능하며 최대 5개까지 노출할 수 있습니다.
                   </div>
+                </div>
                   <div class="right">
-                    <div class="select-wrap">
-                      <a href="javascript:void(0)" class="selected-option">국문</a>
-                      <ul class="option-list">
-                        <li>
-                          <a href="javascript:void(0)">지역 1</a>
-                        </li>
-                        <li>
-                          <a href="javascript:void(0)">지역 2</a>
-                        </li>
-                        <li>
-                          <a href="javascript:void(0)">지역 3</a>
-                        </li>
-                        <li>
-                          <a href="javascript:void(0)">지역 4</a>
-                        </li>
-                        <li>
-                          <a href="javascript:void(0)">지역 5</a>
-                        </li>
-                        <li>
-                          <a href="javascript:void(0)">지역 6</a>
-                        </li>
-                      </ul>
-                    </div> 
                     <div class="select-wrap">
                       <a href="javascript:void(0)" class="selected-option">25개</a>
                       <ul class="option-list">
@@ -95,15 +68,15 @@
                           <a href="javascript:void(0)">지역 6</a>
                         </li>
                       </ul>
-                    </div> 
-                    <button class="common-btn regist" type="submit">
-                      등록
-                    </button>
+                    </div>
+                    <div class="input-wrap">
+                      <button class="common-btn regist" type="submit">
+                          등록
+                      </button>
+                    </div>
                   </div>
-                </div>
               </div>
-              <!-- 검색 영역 끝 -->
-    
+          <!-- 버튼 영역 시작 -->
             </section>
             <!-- TOP AREA 탑 영역 끝 -->
             <!-- mid AREA 중간 영역 시작 -->
@@ -111,13 +84,13 @@
                 <div id="tableWrap" class="dont-copy-this-div">
                     <div class="table-wrap">
                       <table class="table-type01 border-td">
-                        <caption>브로슈어/카탈로그 테이블</caption>
+                        <caption>자료실 테이블</caption>
                         <colgroup>
                           <col width="5%">
-                          <col width="*">
+                          <col width="25%">
                           <col width="25%">
                           <col width="10%">
-                          <col width="25%">
+                          <col width="20%">
                         </colgroup>
                         <thead>
                           <tr>
@@ -130,7 +103,7 @@
                               제목
                             </th>
                             <th scope="col">
-                              첨부파일
+                              노출기간
                             </th>
                             <th scope="col">
                               등록일
@@ -147,193 +120,11 @@
                                 <input id="checkSample" type="checkbox">
                               </label>
                             </td>
-                            <td class="text-align-left">
-                              <div>서비스로봇(영문)</div>
+                            <td>
+                              <div>이벤트 공지 및 홍보</div>
                             </td>
                             <td>
-                              <div>220427_서비스로봇(K)16P_현대키논.pdf</div>
-                            </td>
-                            <td>
-                              <div>2021-06-04</div>
-                            </td>
-                            <td class="setting">
-                                <div class="input-wrap radio">
-                                    <label for="radioSample1" name="radioSample1">
-                                      <input id="radioSample1" type="radio"> 노출
-                                    </label>
-                                    <label for="radioSample2" name="radioSample2">
-                                      <input id="radioSample2" type="radio"> 미노출
-                                    </label>
-                                </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <label for="checkSample" name="checkSample">
-                                <input id="checkSample" type="checkbox">
-                              </label>
-                            </td>
-                            <td class="text-align-left">
-                              <div>서비스로봇(영문)</div>
-                            </td>
-                            <td>
-                              <div>220427_서비스로봇(K)16P_현대키논.pdf</div>
-                            </td>
-                            <td>
-                              <div>2021-06-04</div>
-                            </td>
-                            <td class="setting">
-                                <div class="input-wrap radio">
-                                    <label for="radioSample1" name="radioSample1">
-                                      <input id="radioSample1" type="radio"> 노출
-                                    </label>
-                                    <label for="radioSample2" name="radioSample2">
-                                      <input id="radioSample2" type="radio"> 미노출
-                                    </label>
-                                </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <label for="checkSample" name="checkSample">
-                                <input id="checkSample" type="checkbox">
-                              </label>
-                            </td>
-                            <td class="text-align-left">
-                              <div>서비스로봇(영문)</div>
-                            </td>
-                            <td>
-                              <div>220427_서비스로봇(K)16P_현대키논.pdf</div>
-                            </td>
-                            <td>
-                              <div>2021-06-04</div>
-                            </td>
-                            <td class="setting">
-                                <div class="input-wrap radio">
-                                    <label for="radioSample1" name="radioSample1">
-                                      <input id="radioSample1" type="radio"> 노출
-                                    </label>
-                                    <label for="radioSample2" name="radioSample2">
-                                      <input id="radioSample2" type="radio"> 미노출
-                                    </label>
-                                </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <label for="checkSample" name="checkSample">
-                                <input id="checkSample" type="checkbox">
-                              </label>
-                            </td>
-                            <td class="text-align-left">
-                              <div>서비스로봇(영문)</div>
-                            </td>
-                            <td>
-                              <div>220427_서비스로봇(K)16P_현대키논.pdf</div>
-                            </td>
-                            <td>
-                              <div>2021-06-04</div>
-                            </td>
-                            <td class="setting">
-                                <div class="input-wrap radio">
-                                    <label for="radioSample1" name="radioSample1">
-                                      <input id="radioSample1" type="radio"> 노출
-                                    </label>
-                                    <label for="radioSample2" name="radioSample2">
-                                      <input id="radioSample2" type="radio"> 미노출
-                                    </label>
-                                </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <label for="checkSample" name="checkSample">
-                                <input id="checkSample" type="checkbox">
-                              </label>
-                            </td>
-                            <td class="text-align-left">
-                              <div>서비스로봇(영문)</div>
-                            </td>
-                            <td>
-                              <div>220427_서비스로봇(K)16P_현대키논.pdf</div>
-                            </td>
-                            <td>
-                              <div>2021-06-04</div>
-                            </td>
-                            <td class="setting">
-                                <div class="input-wrap radio">
-                                    <label for="radioSample1" name="radioSample1">
-                                      <input id="radioSample1" type="radio"> 노출
-                                    </label>
-                                    <label for="radioSample2" name="radioSample2">
-                                      <input id="radioSample2" type="radio"> 미노출
-                                    </label>
-                                </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <label for="checkSample" name="checkSample">
-                                <input id="checkSample" type="checkbox">
-                              </label>
-                            </td>
-                            <td class="text-align-left">
-                              <div>서비스로봇(영문)</div>
-                            </td>
-                            <td>
-                              <div>220427_서비스로봇(K)16P_현대키논.pdf</div>
-                            </td>
-                            <td>
-                              <div>2021-06-04</div>
-                            </td>
-                            <td class="setting">
-                                <div class="input-wrap radio">
-                                    <label for="radioSample1" name="radioSample1">
-                                      <input id="radioSample1" type="radio"> 노출
-                                    </label>
-                                    <label for="radioSample2" name="radioSample2">
-                                      <input id="radioSample2" type="radio"> 미노출
-                                    </label>
-                                </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <label for="checkSample" name="checkSample">
-                                <input id="checkSample" type="checkbox">
-                              </label>
-                            </td>
-                            <td class="text-align-left">
-                              <div>서비스로봇(영문)</div>
-                            </td>
-                            <td>
-                              <div>220427_서비스로봇(K)16P_현대키논.pdf</div>
-                            </td>
-                            <td>
-                              <div>2021-06-04</div>
-                            </td>
-                            <td class="setting">
-                                <div class="input-wrap radio">
-                                    <label for="radioSample1" name="radioSample1">
-                                      <input id="radioSample1" type="radio"> 노출
-                                    </label>
-                                    <label for="radioSample2" name="radioSample2">
-                                      <input id="radioSample2" type="radio"> 미노출
-                                    </label>
-                                </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <label for="checkSample" name="checkSample">
-                                <input id="checkSample" type="checkbox">
-                              </label>
-                            </td>
-                            <td class="text-align-left">
-                              <div>서비스로봇(영문)</div>
-                            </td>
-                            <td>
-                              <div>220427_서비스로봇(K)16P_현대키논.pdf</div>
+                              <div>2022.07.25 ~ 2022.07.28</div>
                             </td>
                             <td>
                               <div>2021-06-04</div>
@@ -355,37 +146,11 @@
                                 <input id="checkSample" type="checkbox">
                               </label>
                             </td>
-                            <td class="text-align-left">
-                              <div>서비스로봇(영문)</div>
+                            <td>
+                              <div>이벤트 공지 및 홍보</div>
                             </td>
                             <td>
-                              <div>220427_서비스로봇(K)16P_현대키논.pdf</div>
-                            </td>
-                            <td>
-                              <div>2021-06-04</div>
-                            </td>
-                            <td class="setting">
-                              <div class="input-wrap radio">
-                                  <label for="radioSample1" name="radioSample1">
-                                    <input id="radioSample1" type="radio"> 노출
-                                  </label>
-                                  <label for="radioSample2" name="radioSample2">
-                                    <input id="radioSample2" type="radio"> 미노출
-                                  </label>
-                              </div>
-                          </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <label for="checkSample" name="checkSample">
-                                <input id="checkSample" type="checkbox">
-                              </label>
-                            </td>
-                            <td class="text-align-left">
-                              <div>서비스로봇(영문)</div>
-                            </td>
-                            <td>
-                              <div>220427_서비스로봇(K)16P_현대키논.pdf</div>
+                              <div>2022.07.25 ~ 2022.07.28</div>
                             </td>
                             <td>
                               <div>2021-06-04</div>
@@ -407,37 +172,11 @@
                                 <input id="checkSample" type="checkbox">
                               </label>
                             </td>
-                            <td class="text-align-left">
-                              <div>서비스로봇(영문)</div>
+                            <td>
+                              <div>이벤트 공지 및 홍보</div>
                             </td>
                             <td>
-                              <div>220427_서비스로봇(K)16P_현대키논.pdf</div>
-                            </td>
-                            <td>
-                              <div>2021-06-04</div>
-                            </td>
-                            <td class="setting">
-                              <div class="input-wrap radio">
-                                  <label for="radioSample1" name="radioSample1">
-                                    <input id="radioSample1" type="radio"> 노출
-                                  </label>
-                                  <label for="radioSample2" name="radioSample2">
-                                    <input id="radioSample2" type="radio"> 미노출
-                                  </label>
-                              </div>
-                          </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <label for="checkSample" name="checkSample">
-                                <input id="checkSample" type="checkbox">
-                              </label>
-                            </td>
-                            <td class="text-align-left">
-                              <div>서비스로봇(영문)</div>
-                            </td>
-                            <td>
-                              <div>220427_서비스로봇(K)16P_현대키논.pdf</div>
+                              <div>2022.07.25 ~ 2022.07.28</div>
                             </td>
                             <td>
                               <div>2021-06-04</div>
@@ -459,37 +198,11 @@
                                 <input id="checkSample" type="checkbox">
                               </label>
                             </td>
-                            <td class="text-align-left">
-                              <div>서비스로봇(영문)</div>
+                            <td>
+                              <div>이벤트 공지 및 홍보</div>
                             </td>
                             <td>
-                              <div>220427_서비스로봇(K)16P_현대키논.pdf</div>
-                            </td>
-                            <td>
-                              <div>2021-06-04</div>
-                            </td>
-                            <td class="setting">
-                              <div class="input-wrap radio">
-                                  <label for="radioSample1" name="radioSample1">
-                                    <input id="radioSample1" type="radio"> 노출
-                                  </label>
-                                  <label for="radioSample2" name="radioSample2">
-                                    <input id="radioSample2" type="radio"> 미노출
-                                  </label>
-                              </div>
-                          </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <label for="checkSample" name="checkSample">
-                                <input id="checkSample" type="checkbox">
-                              </label>
-                            </td>
-                            <td class="text-align-left">
-                              <div>서비스로봇(영문)</div>
-                            </td>
-                            <td>
-                              <div>220427_서비스로봇(K)16P_현대키논.pdf</div>
+                              <div>2022.07.25 ~ 2022.07.28</div>
                             </td>
                             <td>
                               <div>2021-06-04</div>
@@ -511,37 +224,11 @@
                                 <input id="checkSample" type="checkbox">
                               </label>
                             </td>
-                            <td class="text-align-left">
-                              <div>서비스로봇(영문)</div>
+                            <td>
+                              <div>이벤트 공지 및 홍보</div>
                             </td>
                             <td>
-                              <div>220427_서비스로봇(K)16P_현대키논.pdf</div>
-                            </td>
-                            <td>
-                              <div>2021-06-04</div>
-                            </td>
-                            <td class="setting">
-                              <div class="input-wrap radio">
-                                  <label for="radioSample1" name="radioSample1">
-                                    <input id="radioSample1" type="radio"> 노출
-                                  </label>
-                                  <label for="radioSample2" name="radioSample2">
-                                    <input id="radioSample2" type="radio"> 미노출
-                                  </label>
-                              </div>
-                          </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <label for="checkSample" name="checkSample">
-                                <input id="checkSample" type="checkbox">
-                              </label>
-                            </td>
-                            <td class="text-align-left">
-                              <div>서비스로봇(영문)</div>
-                            </td>
-                            <td>
-                              <div>220427_서비스로봇(K)16P_현대키논.pdf</div>
+                              <div>2022.07.25 ~ 2022.07.28</div>
                             </td>
                             <td>
                               <div>2021-06-04</div>
@@ -563,37 +250,11 @@
                                 <input id="checkSample" type="checkbox">
                               </label>
                             </td>
-                            <td class="text-align-left">
-                              <div>서비스로봇(영문)</div>
+                            <td>
+                              <div>이벤트 공지 및 홍보</div>
                             </td>
                             <td>
-                              <div>220427_서비스로봇(K)16P_현대키논.pdf</div>
-                            </td>
-                            <td>
-                              <div>2021-06-04</div>
-                            </td>
-                            <td class="setting">
-                              <div class="input-wrap radio">
-                                  <label for="radioSample1" name="radioSample1">
-                                    <input id="radioSample1" type="radio"> 노출
-                                  </label>
-                                  <label for="radioSample2" name="radioSample2">
-                                    <input id="radioSample2" type="radio"> 미노출
-                                  </label>
-                              </div>
-                          </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <label for="checkSample" name="checkSample">
-                                <input id="checkSample" type="checkbox">
-                              </label>
-                            </td>
-                            <td class="text-align-left">
-                              <div>서비스로봇(영문)</div>
-                            </td>
-                            <td>
-                              <div>220427_서비스로봇(K)16P_현대키논.pdf</div>
+                              <div>2022.07.25 ~ 2022.07.28</div>
                             </td>
                             <td>
                               <div>2021-06-04</div>
@@ -615,37 +276,11 @@
                                 <input id="checkSample" type="checkbox">
                               </label>
                             </td>
-                            <td class="text-align-left">
-                              <div>서비스로봇(영문)</div>
+                            <td>
+                              <div>이벤트 공지 및 홍보</div>
                             </td>
                             <td>
-                              <div>220427_서비스로봇(K)16P_현대키논.pdf</div>
-                            </td>
-                            <td>
-                              <div>2021-06-04</div>
-                            </td>
-                            <td class="setting">
-                              <div class="input-wrap radio">
-                                  <label for="radioSample1" name="radioSample1">
-                                    <input id="radioSample1" type="radio"> 노출
-                                  </label>
-                                  <label for="radioSample2" name="radioSample2">
-                                    <input id="radioSample2" type="radio"> 미노출
-                                  </label>
-                              </div>
-                          </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <label for="checkSample" name="checkSample">
-                                <input id="checkSample" type="checkbox">
-                              </label>
-                            </td>
-                            <td class="text-align-left">
-                              <div>서비스로봇(영문)</div>
-                            </td>
-                            <td>
-                              <div>220427_서비스로봇(K)16P_현대키논.pdf</div>
+                              <div>2022.07.25 ~ 2022.07.28</div>
                             </td>
                             <td>
                               <div>2021-06-04</div>
@@ -667,37 +302,11 @@
                                 <input id="checkSample" type="checkbox">
                               </label>
                             </td>
-                            <td class="text-align-left">
-                              <div>서비스로봇(영문)</div>
+                            <td>
+                              <div>이벤트 공지 및 홍보</div>
                             </td>
                             <td>
-                              <div>220427_서비스로봇(K)16P_현대키논.pdf</div>
-                            </td>
-                            <td>
-                              <div>2021-06-04</div>
-                            </td>
-                            <td class="setting">
-                              <div class="input-wrap radio">
-                                  <label for="radioSample1" name="radioSample1">
-                                    <input id="radioSample1" type="radio"> 노출
-                                  </label>
-                                  <label for="radioSample2" name="radioSample2">
-                                    <input id="radioSample2" type="radio"> 미노출
-                                  </label>
-                              </div>
-                          </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <label for="checkSample" name="checkSample">
-                                <input id="checkSample" type="checkbox">
-                              </label>
-                            </td>
-                            <td class="text-align-left">
-                              <div>서비스로봇(영문)</div>
-                            </td>
-                            <td>
-                              <div>220427_서비스로봇(K)16P_현대키논.pdf</div>
+                              <div>2022.07.25 ~ 2022.07.28</div>
                             </td>
                             <td>
                               <div>2021-06-04</div>
@@ -719,37 +328,11 @@
                                 <input id="checkSample" type="checkbox">
                               </label>
                             </td>
-                            <td class="text-align-left">
-                              <div>서비스로봇(영문)</div>
+                            <td>
+                              <div>이벤트 공지 및 홍보</div>
                             </td>
                             <td>
-                              <div>220427_서비스로봇(K)16P_현대키논.pdf</div>
-                            </td>
-                            <td>
-                              <div>2021-06-04</div>
-                            </td>
-                            <td class="setting">
-                              <div class="input-wrap radio">
-                                  <label for="radioSample1" name="radioSample1">
-                                    <input id="radioSample1" type="radio"> 노출
-                                  </label>
-                                  <label for="radioSample2" name="radioSample2">
-                                    <input id="radioSample2" type="radio"> 미노출
-                                  </label>
-                              </div>
-                          </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <label for="checkSample" name="checkSample">
-                                <input id="checkSample" type="checkbox">
-                              </label>
-                            </td>
-                            <td class="text-align-left">
-                              <div>서비스로봇(영문)</div>
-                            </td>
-                            <td>
-                              <div>220427_서비스로봇(K)16P_현대키논.pdf</div>
+                              <div>2022.07.25 ~ 2022.07.28</div>
                             </td>
                             <td>
                               <div>2021-06-04</div>
@@ -771,11 +354,141 @@
                                 <input id="checkSample" type="checkbox">
                               </label>
                             </td>
-                            <td class="text-align-left">
-                              <div>서비스로봇(영문)</div>
+                            <td>
+                              <div>이벤트 공지 및 홍보</div>
                             </td>
                             <td>
-                              <div>220427_서비스로봇(K)16P_현대키논.pdf</div>
+                              <div>2022.07.25 ~ 2022.07.28</div>
+                            </td>
+                            <td>
+                              <div>2021-06-04</div>
+                            </td>
+                            <td class="setting">
+                              <div class="input-wrap radio">
+                                  <label for="radioSample1" name="radioSample1">
+                                    <input id="radioSample1" type="radio"> 노출
+                                  </label>
+                                  <label for="radioSample2" name="radioSample2">
+                                    <input id="radioSample2" type="radio"> 미노출
+                                  </label>
+                              </div>
+                          </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <label for="checkSample" name="checkSample">
+                                <input id="checkSample" type="checkbox">
+                              </label>
+                            </td>
+                            <td>
+                              <div>이벤트 공지 및 홍보</div>
+                            </td>
+                            <td>
+                              <div>2022.07.25 ~ 2022.07.28</div>
+                            </td>
+                            <td>
+                              <div>2021-06-04</div>
+                            </td>
+                            <td class="setting">
+                              <div class="input-wrap radio">
+                                  <label for="radioSample1" name="radioSample1">
+                                    <input id="radioSample1" type="radio"> 노출
+                                  </label>
+                                  <label for="radioSample2" name="radioSample2">
+                                    <input id="radioSample2" type="radio"> 미노출
+                                  </label>
+                              </div>
+                          </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <label for="checkSample" name="checkSample">
+                                <input id="checkSample" type="checkbox">
+                              </label>
+                            </td>
+                            <td>
+                              <div>이벤트 공지 및 홍보</div>
+                            </td>
+                            <td>
+                              <div>2022.07.25 ~ 2022.07.28</div>
+                            </td>
+                            <td>
+                              <div>2021-06-04</div>
+                            </td>
+                            <td class="setting">
+                              <div class="input-wrap radio">
+                                  <label for="radioSample1" name="radioSample1">
+                                    <input id="radioSample1" type="radio"> 노출
+                                  </label>
+                                  <label for="radioSample2" name="radioSample2">
+                                    <input id="radioSample2" type="radio"> 미노출
+                                  </label>
+                              </div>
+                          </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <label for="checkSample" name="checkSample">
+                                <input id="checkSample" type="checkbox">
+                              </label>
+                            </td>
+                            <td>
+                              <div>이벤트 공지 및 홍보</div>
+                            </td>
+                            <td>
+                              <div>2022.07.25 ~ 2022.07.28</div>
+                            </td>
+                            <td>
+                              <div>2021-06-04</div>
+                            </td>
+                            <td class="setting">
+                              <div class="input-wrap radio">
+                                  <label for="radioSample1" name="radioSample1">
+                                    <input id="radioSample1" type="radio"> 노출
+                                  </label>
+                                  <label for="radioSample2" name="radioSample2">
+                                    <input id="radioSample2" type="radio"> 미노출
+                                  </label>
+                              </div>
+                          </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <label for="checkSample" name="checkSample">
+                                <input id="checkSample" type="checkbox">
+                              </label>
+                            </td>
+                            <td>
+                              <div>이벤트 공지 및 홍보</div>
+                            </td>
+                            <td>
+                              <div>2022.07.25 ~ 2022.07.28</div>
+                            </td>
+                            <td>
+                              <div>2021-06-04</div>
+                            </td>
+                            <td class="setting">
+                              <div class="input-wrap radio">
+                                  <label for="radioSample1" name="radioSample1">
+                                    <input id="radioSample1" type="radio"> 노출
+                                  </label>
+                                  <label for="radioSample2" name="radioSample2">
+                                    <input id="radioSample2" type="radio"> 미노출
+                                  </label>
+                              </div>
+                          </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <label for="checkSample" name="checkSample">
+                                <input id="checkSample" type="checkbox">
+                              </label>
+                            </td>
+                            <td>
+                              <div>이벤트 공지 및 홍보</div>
+                            </td>
+                            <td>
+                              <div>2022.07.25 ~ 2022.07.28</div>
                             </td>
                             <td>
                               <div>2021-06-04</div>
@@ -801,7 +514,7 @@
             <section id="bottomArea" class="no-line">
                 <div id="pagination"></div>
                 <div class="btn-wrap">
-                  <button type="button" class="common-btn">
+                  <button type="button" class="common-btn" disabled>
                     삭제
                   </button>
                 </div>

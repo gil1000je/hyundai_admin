@@ -4,14 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>콘텐츠 관리 > 메인 > Manifesto 설정</title>
+    <title>콘텐츠 관리 > 메인 > 배너 설정</title>
     <link rel="stylesheet" type="text/css" href="/hyundai_robotics_admin/assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="/hyundai_robotics_admin/assets/css/common.css">
     <link rel="stylesheet" type="text/css" href="/hyundai_robotics_admin/assets/css/form.css">
     <link rel="stylesheet" type="text/css" href="/hyundai_robotics_admin/assets/css/style.css">
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/cupertino/jquery-ui.min.css'></script>
     <script src='//cdnjs.cloudflare.com/ajax/libs/jquery-throttle-debounce/1.1/jquery.ba-throttle-debounce.min.js'></script>
     <script type="text/javascript" src="/hyundai_robotics_admin/assets/js/include.js"></script>
     <script src="/hyundai_robotics_admin/assets/js/form.js"></script>
@@ -49,12 +47,12 @@
                       </a>
                     </li>
                     <li>
-                      <a href="javascript:void(0)" title="탭">
+                      <a class="active" href="javascript:void(0)" title="탭">
                         배너 설정
                       </a>
                     </li>
                     <li>
-                      <a class="active" href="javascript:void(0)" title="탭">
+                      <a href="javascript:void(0)" title="탭">
                         Manifesto 설정
                       </a>
                     </li>
@@ -69,7 +67,7 @@
                 <!-- 버튼 영역 시작 -->
                 <div class="button-wrap">
                     <div class="alert">
-                        <strong>Manifesto 설정</strong>
+                        <strong>배너</strong>
                     </div>
                 </div>
                 <!-- 버튼 영역 시작 -->
@@ -78,12 +76,12 @@
             <!-- mid AREA 중간 영역 시작 -->
             <section id="midArea">
                 <div class="table-wrap">
-                    <table class="table-type04 manifesto">
-                      <caption>메인 관리 매니페스토 테이블</caption>
+                    <table class="table-type04">
+                      <caption>메인 관리 히어로 설정 테이블</caption>
                       <colgroup>
                         <col width="8%">
-                        <col width="*">
-                        <col width="15%">
+                        <col width="75%">
+                        <col width="17%">
                       </colgroup>
                       <thead>
                         <tr>
@@ -101,29 +99,13 @@
                       </thead>
                       <tbody>
                         <tr>
-                          <td rowspan="2">국문</td>
+                          <td rowspan="3">국문</td>
                           <td>
                             <div class="media-wrap">
                               <ul class="media-list">
                                 <li>
-                                  <div class="input-wrap radio">
-                                    <label for="radioSample01" name="radioSample">
-                                      <input id="radioSample01" type="radio" checked> 첨부파일
-                                    </label>
-                                    <label for="radioSample02" name="radioSample">
-                                      <input class="link_btn" id="radioSample02" type="radio"> 링크
-                                    </label>
-                                  </div>
-                                  <div class="title-wrap">
-                                    <div class="title">
-                                      PC
-                                    </div>
-                                    <div class="title">
-                                      Mobile
-                                    </div>
-                                    <div class="title link">
-                                      링크
-                                    </div>
+                                  <div class="title">
+                                    PC
                                   </div>
                                   <div class="info">
                                     <div class="input-wrap file">
@@ -131,33 +113,18 @@
                                       <input type="text" placeholder="선택한 파일 없음">
                                       <label class="common-btn" for="file">파일선택</label>
                                     </div>
-                                    <div class="input-wrap file">
-                                      <input class="hide" type="file" id="file">
-                                      <input type="text" placeholder="선택한 파일 없음">
-                                      <label class="common-btn" for="file">파일선택</label>
-                                    </div>
-                                    <div class="input-wrap link">
-                                      <input id="link" type="text">
-                                      <label class="hide" for="link">링크</label>
-                                    </div>
+                                    <span class="alert">
+                                      이미지 사이즈 1216*300px
+                                    </span>
                                   </div>
                                 </li>
                               </ul>
                             </div>
                           </td>
                           <td>
-                            <div class="btn-wrap">
-                              <button class="common-btn active" type="button">
+                            <button class="common-btn preview-btn" type="button">
                                 미리보기
-                              </button>
-                              <button class="common-btn active" type="button">
-                                미리보기
-                              </button>
-                              <!-- 링크 전용 미리보기 버튼 -->
-                              <button class="common-btn active link" type="button">
-                                미리보기
-                              </button>
-                            </div>
+                            </button>
                           </td>
                         </tr>
                         <tr>
@@ -166,15 +133,7 @@
                               <ul class="media-list">
                                 <li>
                                   <div class="title">
-                                    썸네일
-                                  </div>
-                                  <div class="title-wrap">
-                                    <div class="title">
-                                      PC
-                                    </div>
-                                    <div class="title">
-                                      Mobile
-                                    </div>
+                                    Mobile
                                   </div>
                                   <div class="info">
                                     <div class="input-wrap file">
@@ -182,79 +141,18 @@
                                       <input type="text" placeholder="선택한 파일 없음">
                                       <label class="common-btn" for="file">파일선택</label>
                                     </div>
-                                    <span class="alert"> 이미지 사이즈 1920*900px </span>
-                                    <div class="input-wrap file">
-                                      <input class="hide" type="file" id="file">
-                                      <input type="text" placeholder="선택한 파일 없음">
-                                      <label class="common-btn" for="file">파일선택</label>
-                                    </div>
-                                    <span class="alert"> 이미지 사이즈 1920*900px </span>
+                                    <span class="alert">
+                                      이미지 사이즈 345*135px
+                                    </span>
                                   </div>
                                 </li>
                               </ul>
                             </div>
                           </td>
                           <td>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td rowspan="2">영문</td>
-                          <td>
-                            <div class="media-wrap">
-                              <ul class="media-list">
-                                <li>
-                                  <div class="input-wrap radio">
-                                    <label for="radioSample03" name="radioSample">
-                                      <input id="radioSample03" type="radio" checked> 첨부파일
-                                    </label>
-                                    <label for="radioSample04" name="radioSample">
-                                      <input class="link_btn" id="radioSample04" type="radio"> 링크
-                                    </label>
-                                  </div>
-                                  <div class="title-wrap">
-                                    <div class="title">
-                                      PC
-                                    </div>
-                                    <div class="title">
-                                      Mobile
-                                    </div>
-                                    <div class="title link">
-                                      링크
-                                    </div>
-                                  </div>
-                                  <div class="info">
-                                    <div class="input-wrap file">
-                                      <input class="hide" type="file" id="file">
-                                      <input type="text" placeholder="선택한 파일 없음">
-                                      <label class="common-btn" for="file">파일선택</label>
-                                    </div>
-                                    <div class="input-wrap file">
-                                      <input class="hide" type="file" id="file">
-                                      <input type="text" placeholder="선택한 파일 없음">
-                                      <label class="common-btn" for="file">파일선택</label>
-                                    </div>
-                                    <div class="input-wrap link">
-                                      <input id="link" type="text">
-                                      <label class="hide" for="link">링크</label>
-                                    </div>
-                                  </div>
-                                </li>
-                              </ul>
-                            </div>
-                          </td>
-                          <td>
-                            <div class="btn-wrap">
-                              <button class="common-btn active" type="button">
+                            <button class="common-btn preview-btn" type="button">
                                 미리보기
-                              </button>
-                              <button class="common-btn active" type="button">
-                                미리보기
-                              </button>
-                              <!-- 링크 전용 미리보기 버튼 -->
-                              <button class="common-btn active link" type="button">
-                                미리보기
-                              </button>
-                            </div>
+                            </button>
                           </td>
                         </tr>
                         <tr>
@@ -263,15 +161,32 @@
                               <ul class="media-list">
                                 <li>
                                   <div class="title">
-                                    썸네일
+                                    링크
                                   </div>
-                                  <div class="title-wrap">
-                                    <div class="title">
-                                      PC
+                                  <div class="info">
+                                    <div class="input-wrap">
+                                      <input id="link" type="text" placeholder="http://링크값">
+                                      <button class="common-btn" type="button" disabled>
+                                        삭제
+                                      </button>
+                                      <label class="hide" for="link">링크</label>
                                     </div>
-                                    <div class="title">
-                                      Mobile
-                                    </div>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                          </td>
+                          <td>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td rowspan="3">영문</td>
+                          <td>
+                            <div class="media-wrap">
+                              <ul class="media-list">
+                                <li>
+                                  <div class="title">
+                                    PC
                                   </div>
                                   <div class="info">
                                     <div class="input-wrap file">
@@ -279,13 +194,64 @@
                                       <input type="text" placeholder="선택한 파일 없음">
                                       <label class="common-btn" for="file">파일선택</label>
                                     </div>
-                                    <span class="alert"> 이미지 사이즈 1920*900px </span>
+                                    <span class="alert">
+                                      이미지 사이즈 1216*300px
+                                    </span>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                          </td>
+                          <td>
+                            <button class="common-btn preview-btn" type="button">
+                                미리보기
+                            </button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="media-wrap">
+                              <ul class="media-list">
+                                <li>
+                                  <div class="title">
+                                    Mobile
+                                  </div>
+                                  <div class="info">
                                     <div class="input-wrap file">
                                       <input class="hide" type="file" id="file">
                                       <input type="text" placeholder="선택한 파일 없음">
                                       <label class="common-btn" for="file">파일선택</label>
                                     </div>
-                                    <span class="alert"> 이미지 사이즈 1920*900px </span>
+                                    <span class="alert">
+                                      이미지 사이즈 345*135px
+                                    </span>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                          </td>
+                          <td>
+                            <button class="common-btn preview-btn" type="button">
+                                미리보기
+                            </button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="media-wrap">
+                              <ul class="media-list">
+                                <li>
+                                  <div class="title">
+                                    링크
+                                  </div>
+                                  <div class="info">
+                                    <div class="input-wrap">
+                                      <input id="link" type="text" placeholder="http://링크값">
+                                      <button class="common-btn" type="button" disabled>
+                                        삭제
+                                      </button>
+                                      <label class="hide" for="file">링크</label>
+                                    </div>
                                   </div>
                                 </li>
                               </ul>
@@ -302,7 +268,7 @@
             <!-- BOTTOM AREA 바텀 영역 시작 -->
             <section id="bottomArea" class="no-line">
                 <div class="btn-wrap">
-                    <button type="button" class="common-btn">
+                    <button type="button" class="common-btn" disabled>
                         저장
                     </button>
                 </div>

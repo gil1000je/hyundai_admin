@@ -12,6 +12,7 @@ $(document).ready(function() {
                 $(this).parents('tr').find('.input-wrap.file').hide()
                 $(this).parents('tr').find('.title').hide()
                 $(this).parents('tr').find('.link').show()
+                $(this).parents('tr').find('.input-wrap.link').css('display', 'flex')
 
             } else {
                 $(this).parents('tr').find('.btn-wrap .common-btn').show()
