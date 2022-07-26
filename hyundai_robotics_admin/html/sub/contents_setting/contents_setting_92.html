@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>콘텐츠 관리 > 로봇활용사례 > 공간 별 USP 이미지 상세</title>
+    <link rel="stylesheet" type="text/css" href="/hyundai_robotics_admin/assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="/hyundai_robotics_admin/assets/css/common.css">
+    <link rel="stylesheet" type="text/css" href="/hyundai_robotics_admin/assets/css/form.css">
+    <link rel="stylesheet" type="text/css" href="/hyundai_robotics_admin/assets/css/style.css">
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src='//cdnjs.cloudflare.com/ajax/libs/jquery-throttle-debounce/1.1/jquery.ba-throttle-debounce.min.js'></script>
+    <script type="text/javascript" src="/hyundai_robotics_admin/assets/js/include.js"></script>
+    <script src="/hyundai_robotics_admin/assets/js/form.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <!-- HEADER 헤더 시작 -->
+        <header id="header" class="bg"></header>
+        <!-- HEADER 헤더 끝 -->
+        <!-- 컨테이너 시작 -->
+        <div id="container">
+            <!-- TOP AREA 탑 영역 시작 -->
+            <section id="topArea">
+                <!-- 타이틀 영역 시작 -->
+                <div class="title-wrap">
+                    <nav id="navigation">
+                        <ul>
+                            <li class="depth01">
+                                <a href="javascript:void(0)" title="클릭시 해당 뎁스로 이동">콘텐츠 관리</a>
+                            </li>
+                            <li class="depth02">
+                                <a href="javascript:void(0)" title="클릭시 해당 뎁스로 이동">로봇활용사례</a>
+                            </li>
+                            <li class="depth03">
+                                <a href="javascript:void(0)" title="클릭시 해당 뎁스로 이동">공간 별 USP 이미지 상세</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <h2 class="main-tit">공간 별 USP 이미지 상세</h2>
+                </div>
+                <!-- 타이틀 영역 끝 -->
+            </section>
+            <!-- TOP AREA 탑 영역 끝 -->
+            <!-- mid AREA 중간 영역 시작 -->
+            <section id="midArea">
+                <ul class="info-list-type02">
+                  <li>
+                    <div class="title">
+                      이미지명
+                    </div>
+                    <div class="info">
+                      <div class="input-wrap">
+                        <label for="inputSample">
+                          <input id="inputSample" type="text">
+                        </label>
+                      </div>
+                    </div>
+                  </li>
+                    <li>
+                      <div class="title">
+                        모델
+                      </div>
+                      <div class="info">
+                        <div class="input-wrap check">
+                          <label for="checkSample01" name="checkSample">
+                            <input id="checkSample01" type="checkbox"> HYUNDAI D1
+                          </label>
+                          <label for="checkSample02" name="checkSample">
+                            <input id="checkSample02" type="checkbox"> HYUNDAI D2
+                          </label>
+                          <label for="checkSample03" name="checkSample">
+                            <input id="checkSample03" type="checkbox"> HYUNDAI S1
+                          </label>
+                          <label for="checkSample04" name="checkSample">
+                            <input id="checkSample04" type="checkbox"> HYUNDAI T1
+                          </label>
+                          <label for="checkSample05" name="checkSample">
+                            <input id="checkSample05" type="checkbox"> HYUNDAI T5
+                          </label>
+                          <label for="checkSample06" name="checkSample">
+                            <input id="checkSample06" type="checkbox"> HYUNDAI T6
+                          </label>
+                          <label for="checkSample07" name="checkSample">
+                            <input id="checkSample07" type="checkbox"> HYUNDAI T8
+                          </label>
+                          <label for="checkSample08" name="checkSample">
+                            <input id="checkSample08" type="checkbox"> HYUNDAI W3
+                          </label>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="info-item-no-preview">    
+                        <div class="title">
+                          파일첨부
+                        </div>
+                        <div class="info">
+                          <div class="title">PC</div>
+                          <div>
+                            <div class="input-wrap file">
+                              <input class="hide" type="file" id="file">
+                              <input type="text" placeholder="선택한 파일 없음">
+                              <label class="common-btn" for="file">파일선택</label>
+                            </div>
+                            <span class="alert">이미지 사이즈 690*390px</span>
+                          </div>
+                        </div>
+                        <div class="info">
+                          <div class="title">Mobile</div>
+                          <div>
+                            <div class="input-wrap file">
+                              <input class="hide" type="file" id="file">
+                              <input type="text" placeholder="선택한 파일 없음">
+                              <label class="common-btn" for="file">파일선택</label>
+                            </div>
+                            <span class="alert">이미지 사이즈 345*195px</span>
+                          </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="title">노출설정</div>
+                        <div class="info">
+                          <div class="input-wrap radio">
+                            <label for="radioSample03" name="radioSample">
+                              <input id="radioSample03" type="radio"> 노출
+                            </label>
+                            <label for="radioSample04" name="radioSample">
+                              <input id="radioSample04 " type="radio"> 미노출
+                            </label>
+                          </div>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <!-- mid AREA 중간 영역 끝 -->
+            <!-- BOTTOM AREA 바텀 영역 시작 -->
+            <section id="bottomArea">
+                <div class="btn-wrap">
+                  <button type="button" class="common-btn">
+                      삭제
+                  </button>
+                </div>
+                <div class="btn-wrap">
+                    <button type="button" class="common-btn">
+                        목록
+                    </button>
+                    <button type="button" class="common-btn" disabled>
+                        저장
+                    </button>
+                </div>
+            </section>
+            <!-- BOTTOM AREA 바텀 영역 끝 -->
+        </div>
+        <!-- 컨테이너 끝 -->
+    </div>
+</body>
+
+</html>
