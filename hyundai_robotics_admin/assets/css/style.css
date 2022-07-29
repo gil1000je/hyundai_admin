@@ -428,111 +428,111 @@ input[type="search"]::-webkit-search-results-decoration{
 .dashboard.modal-wrap .num {width:48rem}
 .dashboard.modal-wrap .view {width:108rem}
 .dashboard.modal-wrap td > p { font-size:12rem; text-align:left; padding-left:10rem; width:100%; max-width:215rem; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; color:#222; }
+
 /* datepicker custom */
 .ui-widget-header { border: 0rem solid #dddddd; background: #fff; } 
+.ui-datepicker-calendar>thead>tr>th { font-size: 16rem !important;font-weight: 500!important; } 
+.ui-datepicker .ui-datepicker-header { position: relative; padding: 10rem; } 
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default,
+.ui-button,
+html .ui-button.ui-state-disabled:hover,
+html .ui-button.ui-state-disabled:active { border: 0rem solid #c5c5c5; background-color: transparent; font-weight: normal; color: #454545; text-align: center; } 
+.ui-datepicker .ui-datepicker-title { margin: 0 0em; line-height: 32rem; text-align: center; font-size: 24rem; padding: 0rem; font-weight: bold;position: absolute;left: 50%;transform: translateX(-50%);top: 8rem;} 
+.ui-datepicker { display: none; background-color: #fff; border-radius: 4rem; margin-top: 10rem; margin-left: 0rem; margin-right: 0rem; padding: 8rem; padding-bottom: 10rem; width: 350rem; box-shadow: 10rem 10rem 40rem rgba(0, 0, 0, 0.1); } 
+.ui-widget.ui-widget-content { border: 1rem solid #eee; } 
+#datepicker:focus>.ui-datepicker { display: block; } 
+.ui-datepicker-prev,
+.ui-datepicker-next { cursor: pointer; } 
+.ui-datepicker-next { float: right; } 
+.ui-state-disabled { cursor: auto; color: hsla(0, 0%, 80%, 1); } 
+.ui-datepicker-title { text-align: center; padding: 10rem; font-weight: 100; font-size: 20rem; } 
+.ui-datepicker-calendar { width: 100%;margin-top: 15rem;}  
+.ui-datepicker-calendar>thead>tr>th { padding: 5rem; font-size: 20rem; font-weight: 400; } 
+.ui-datepicker-calendar>tbody>tr>td>a { color: #000; font-size: 16rem !important; font-weight: normal !important; text-decoration: none;}
+.ui-datepicker-calendar>tbody>tr>.ui-state-disabled:hover { cursor: auto; background-color: #fff; } 
+.ui-datepicker-calendar>tbody>tr>td { border-radius: 100%; width: 24rem; height: 24rem; cursor: pointer; padding: 5rem; font-weight: 100; text-align: center; font-size: 16rem;position: relative;} 
+.ui-datepicker-calendar>tbody>tr>td.ui-datepicker-current-day a{content: '';width: 24rem;height: 24rem;border-radius: 50%;background: rgba(59,184,150,0.2);position: absolute;left: 50%;top: 50%;transform: translate(-50%, -50%);}
+.ui-datepicker-calendar>tbody>tr>td:hover { background-color: transparent; opacity: 0.6; } 
+.ui-state-hover,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-hover,
+.ui-state-focus,
+.ui-widget-content .ui-state-focus,
+.ui-widget-header .ui-state-focus,
+.ui-button:hover,
+.ui-button:focus { border: 0rem solid #cccccc; background-color: transparent; font-weight: normal; color: #2b2b2b; } 
+.ui-widget-header .ui-icon {width: 24rem;height: 24rem;text-indent: -9999em;display: block;background: url(/hyundai_robotics_admin/assets/images/common/date_prev_arrow.png) no-repeat center/ contain; } 
+.ui-widget-header .ui-icon-circle-triangle-e{background: url(/hyundai_robotics_admin/assets/images/common/date_next_arrow.png) no-repeat center/ contain;}
+.ui-icon-circle-triangle-e { background-position: -20rem 0rem; background-size: 36rem; } 
+.ui-icon-circle-triangle-w { background-position: -0rem -0rem; background-size: 36rem; } 
+.inp { padding: 10rem 10rem; background-color: #f1f1f1; border-radius: 4rem; border: 0rem; } 
+.inp:focus { outline: none; background-color: #eee; } 
 
- .ui-datepicker-calendar>thead>tr>th { font-size: 16rem !important;font-weight: 500!important; } 
+#dashboard { background:#F4F4F4; padding-bottom:32rem}
+#dashboard #container {max-width:100% !important; width:1790rem; min-width:1790rem; }
+#dashboard .title-wrap { display:flex; align-items:center; padding:12rem 0; }
+#dashboard .title-wrap h2.title { font-size:30rem; font-weight:700; color:#222; line-height:45rem;}
+#dashboard .title-wrap .last-update { white-space:nowrap; color:#999; font-size:14rem; line-height:24rem; font-weight:500;}
+#dashboard .title-wrap > a { display:inline-block; width:28rem; height:28rem; background:url('/hyundai_robotics_admin/assets/images/common/icon_refresh.png') no-repeat center; background-size:contain; margin:0 8rem 0 15rem}
+#dashboard .title-wrap .last-update span { color:#999; font-size:14rem; font-weight:400;}
+#dashboard .dashboard-list { width:100%; display:grid; grid-template-columns:repeat(2, 1fr); gap:12rem;}
+#dashboard .dashboard-list > li { height:294rem; background:#fff; border-radius:3rem; overflow:hidden; box-shadow:0 3rem 10rem rgba(0,0,0,0.15)} 
+#dashboard .dashboard-list > li .title-wrap { display:flex; width:100%; height:44rem; align-items:center; justify-content:space-between; padding:0 20rem; background:#3BB88C;}
+#dashboard .dashboard-list > li .title {  color:#fff; font-size:18rem; font-weight:700; }
+#dashboard .dashboard-list > li .title-wrap > button { width:80rem; height:32rem; border-radius:22rem; background:#fff; color:#339A76; font-size:14rem; font-weight:500;}
+#dashboard .dashboard-list > li .info { padding:20rem }
+#dashboard .dashboard-list  li#boxVisit {}
+#dashboard .dashboard-list  li#boxVisit .info { width:calc(100% - 42rem); margin:0 auto; padding:20rem 0; overflow:hidden; display:flex; flex-direction:column;}
+#dashboard .dashboard-list li#boxVisit .tab { display:flex; gap:5rem; margin-bottom:20rem; position:relative; z-index:1; }
+#dashboard .dashboard-list li#boxVisit .tab li {}
+#dashboard .dashboard-list li#boxVisit .tab li a { display:inline-block; padding:0 5rem; color:#999; font-size:14rem; font-weight:500; }
+#dashboard .dashboard-list li#boxVisit .tab li.active a { position:relative; color:#339A76; font-size:16rem; font-weight:700; }
+#dashboard .dashboard-list li#boxVisit .tab li.active a::after {content:""; display:inline-block; width:100%; height:2px; background:#339A76; position:absolute; bottom:-5rem; left:0; }
+#dashboard .dashboard-list li#boxVisit .graph { width:100%; height:500rem; position:relative; top:0; left:0; z-index:0; }
+#dashboard .dashboard-list li#boxVisit .graph .graph-view-point { width:70rem; height:100%; display:flex; gap:15rem; flex-direction:column; position:absolute; padding-left:20rem; right:0rem; top:0; z-index:2; background: #fff;}
+#dashboard .dashboard-list li#boxVisit .graph .graph-view-point li { font-size:12rem; color:#999 }
+#dashboard .dashboard-list li#boxVisit .graph#monthly #curve_chart { position:absolute; top:-40rem; left:-313rem}
+#dashboard .dashboard-list li#boxVisit .graph#weekly #curve_chart { position:absolute; top:-40rem; left:-214rem}
+#dashboard .dashboard-list li#boxVisit .graph#daily #curve_chart { position:absolute; top:-40rem; left:-110rem}
+#dashboard .dashboard-list li#boxVisit .graph .graph-date-point { display:flex; width:100%; justify-content:space-between;}
+#dashboard .dashboard-list li#boxVisit .graph .graph-date-point-wrap { width:773rem; position:absolute; top:164rem; left:0; z-index:1;}
+#dashboard .dashboard-list li#boxVisit .graph .graph-date-point li { font-size:12rem; color:#696A74; font-weight:500;}
+#dashboard .dashboard-list li#boxVisit .graph .graph-date-point li:nth-child(3) { display:none}
+#dashboard .dashboard-list li#boxVisit .graph#daily .graph-date-point li:nth-child(3) {display:block;}
 
- .ui-datepicker .ui-datepicker-header { position: relative; padding: 10rem; } 
-
- .ui-state-default,
- .ui-widget-content .ui-state-default,
- .ui-widget-header .ui-state-default,
- .ui-button,
- html .ui-button.ui-state-disabled:hover,
- html .ui-button.ui-state-disabled:active { border: 0rem solid #c5c5c5; background-color: transparent; font-weight: normal; color: #454545; text-align: center; } 
-
- .ui-datepicker .ui-datepicker-title { margin: 0 0em; line-height: 32rem; text-align: center; font-size: 24rem; padding: 0rem; font-weight: bold;position: absolute;left: 50%;transform: translateX(-50%);top: 8rem;} 
-
- .ui-datepicker { display: none; background-color: #fff; border-radius: 4rem; margin-top: 10rem; margin-left: 0rem; margin-right: 0rem; padding: 8rem; padding-bottom: 10rem; width: 350rem; box-shadow: 10rem 10rem 40rem rgba(0, 0, 0, 0.1); } 
-
- .ui-widget.ui-widget-content { border: 1rem solid #eee; } 
-
- #datepicker:focus>.ui-datepicker { display: block; } 
-
- .ui-datepicker-prev,
- .ui-datepicker-next { cursor: pointer; } 
-
- .ui-datepicker-next { float: right; } 
-
- .ui-state-disabled { cursor: auto; color: hsla(0, 0%, 80%, 1); } 
-
- .ui-datepicker-title { text-align: center; padding: 10rem; font-weight: 100; font-size: 20rem; } 
-
- .ui-datepicker-calendar { width: 100%;margin-top: 15rem;}  
-
- .ui-datepicker-calendar>thead>tr>th { padding: 5rem; font-size: 20rem; font-weight: 400; } 
-
- .ui-datepicker-calendar>tbody>tr>td>a { color: #000; font-size: 16rem !important; font-weight: normal !important; text-decoration: none;}
-
- .ui-datepicker-calendar>tbody>tr>.ui-state-disabled:hover { cursor: auto; background-color: #fff; } 
-
- .ui-datepicker-calendar>tbody>tr>td { border-radius: 100%; width: 24rem; height: 24rem; cursor: pointer; padding: 5rem; font-weight: 100; text-align: center; font-size: 16rem;position: relative;} 
- .ui-datepicker-calendar>tbody>tr>td.ui-datepicker-current-day a{content: '';width: 24rem;height: 24rem;border-radius: 50%;background: rgba(59,184,150,0.2);position: absolute;left: 50%;top: 50%;transform: translate(-50%, -50%);}
- .ui-datepicker-calendar>tbody>tr>td:hover { background-color: transparent; opacity: 0.6; } 
-
- .ui-state-hover,
- .ui-widget-content .ui-state-hover,
- .ui-widget-header .ui-state-hover,
- .ui-state-focus,
- .ui-widget-content .ui-state-focus,
- .ui-widget-header .ui-state-focus,
- .ui-button:hover,
- .ui-button:focus { border: 0rem solid #cccccc; background-color: transparent; font-weight: normal; color: #2b2b2b; } 
-
- .ui-widget-header .ui-icon {width: 24rem;height: 24rem;text-indent: -9999em;display: block;background: url(/hyundai_robotics_admin/assets/images/common/date_prev_arrow.png) no-repeat center/ contain; } 
- .ui-widget-header .ui-icon-circle-triangle-e{background: url(/hyundai_robotics_admin/assets/images/common/date_next_arrow.png) no-repeat center/ contain;}
-
- .ui-icon-circle-triangle-e { background-position: -20rem 0rem; background-size: 36rem; } 
-
- .ui-icon-circle-triangle-w { background-position: -0rem -0rem; background-size: 36rem; } 
- .ui-state-highlight,
- /* .ui-widget-content .ui-state-highlight,
- .ui-widget-header .ui-state-highlight { border: 0rem;background: rgba(59, 184, 140, 0.2);border-radius: 50%; padding-top: 10rem; padding-bottom: 10rem;width: 100%;height: 100%;}  */
-
- .inp { padding: 10rem 10rem; background-color: #f1f1f1; border-radius: 4rem; border: 0rem; } 
-
- .inp:focus { outline: none; background-color: #eee; } 
+#dashboard .table-wrap {width:100%;}
+#dashboard .table-type-dashboard { width:100%; }
+#dashboard .table-type-dashboard thead tr { width:100%; background:#F4F4F4; height:36rem; border-radius:3rem 3rem 0 0  }
+#dashboard .table-type-dashboard thead th {text-align:center;}
+#dashboard .table-type-dashboard thead th:last-child, #dashboard .table-type-dashboard tbody td:last-child { padding-right:20rem; text-align:right}
+#dashboard .table-type-dashboard tbody td { height:36rem; text-align:center; font-weight:500; color:#222;}
+#dashboard .table-type-dashboard tbody td.num { font-size:20rem; font-weight:700; }
+#dashboard .table-type-dashboard tbody td.target {text-align:left; display:flex; align-items:center;}
+#dashboard td img {width:auto; height:auto; margin-right:7rem;}
+#dashboard .dashboard-list li#boxInquiry {grid-column-end:span 2;}
+#dashboard .dashboard-list li#boxInquiry .info {display:flex; }
+#dashboard .dashboard-list li#boxInquiry .tab {width:220rem; display:flex; flex-direction:column; gap:22rem; margin-top:10rem}
+#dashboard .dashboard-list li#boxInquiry .tab a {font-size:14rem; font-weight:500; color:#999; line-height:20rem;}
+#dashboard .dashboard-list li#boxInquiry .tab .active a { position:relative; font-size:16rem; color:#339A76; font-weight:700; line-height:24rem; }
+#dashboard .dashboard-list li#boxInquiry .tab .active a::before { content:""; display:inline-block; width:100%; height:2px; background:#339A76; position:absolute; bottom:-2rem; left:0;}
 
 
- #dashboard { background:#F4F4F4; padding-bottom:32rem}
- #dashboard #container {max-width:1780rem}
- #dashboard .title-wrap { display:flex; align-items:center; padding:12rem 0; }
- #dashboard .title-wrap h2.title { font-size:30rem; font-weight:700; color:#222; line-height:45rem;}
- #dashboard .title-wrap .last-update { white-space:nowrap; color:#999; font-size:14rem; line-height:24rem; font-weight:500;}
- #dashboard .title-wrap > a { display:inline-block; width:28rem; height:28rem; background:url('/hyundai_robotics_admin/assets/images/common/icon_refresh.png') no-repeat center; background-size:contain; margin:0 8rem 0 15rem}
- #dashboard .title-wrap .last-update span { color:#999; font-size:14rem; font-weight:400;}
-
- #dashboard .dashboard-list { width:100%; display:grid; grid-template-columns:repeat(2, 1fr); gap:12rem;}
- #dashboard .dashboard-list > li { height:294rem; background:#fff; border-radius:3rem; overflow:hidden; box-shadow:0 3rem 10rem rgba(0,0,0,0.15)} 
- #dashboard .dashboard-list > li .title-wrap { display:flex; width:100%; height:44rem; align-items:center; justify-content:space-between; padding:0 20rem; background:#3BB88C;}
- #dashboard .dashboard-list > li .title {  color:#fff; font-size:18rem; font-weight:700; }
- #dashboard .dashboard-list > li .title-wrap > button { width:80rem; height:32rem; border-radius:22rem; background:#fff; color:#339A76; font-size:14rem; font-weight:500;}
- #dashboard .dashboard-list > li .info { padding:20rem }
- #dashboard .dashboard-list  li#boxVisit {}
- #dashboard .dashboard-list  li#boxVisit .info { width:calc(100% - 42rem); margin:0 auto; padding:20rem 0; overflow:hidden; display:flex; flex-direction:column;}
- #dashboard .dashboard-list li#boxVisit .tab { display:flex; gap:5rem; margin-bottom:20rem; position:relative; z-index:1; }
- #dashboard .dashboard-list li#boxVisit .tab li {}
- #dashboard .dashboard-list li#boxVisit .tab li a { display:inline-block; padding:0 5rem; color:#999; font-size:14rem; font-weight:500; }
- #dashboard .dashboard-list li#boxVisit .tab li.active a { position:relative; color:#339A76; font-size:16rem; font-weight:700; }
- #dashboard .dashboard-list li#boxVisit .tab li.active a::after {content:""; display:inline-block; width:100%; height:2px; background:#339A76; position:absolute; bottom:-5rem; left:0; }
- #dashboard .dashboard-list li#boxVisit .graph { width:100%; height:500rem; position:relative; top:0; left:0; z-index:0; }
- #dashboard .dashboard-list li#boxVisit .graph .graph-view-point { width:70rem; height:100%; display:flex; gap:15rem; flex-direction:column; position:absolute; padding-left:20rem; right:0rem; top:0; z-index:1; background: #fff;}
- #dashboard .dashboard-list li#boxVisit .graph .graph-view-point li { font-size:12rem; color:#999 }
- #dashboard .dashboard-list li#boxVisit .graph #curve_chart { position:absolute; top:-40rem; left:-250rem}
- #dashboard .table-wrap {width:100%;}
- #dashboard .table-type-dashboard { width:100%; }
- #dashboard .table-type-dashboard thead tr { width:100%; background:#F4F4F4; height:36rem; border-radius:3rem 3rem 0 0  }
- #dashboard .table-type-dashboard thead th {text-align:center;}
- #dashboard .table-type-dashboard thead th:last-child, #dashboard .table-type-dashboard tbody td:last-child { padding-right:20rem; text-align:right}
- #dashboard .table-type-dashboard tbody td { height:36rem; text-align:center; font-weight:500; color:#222;}
- #dashboard .table-type-dashboard tbody td.num { font-size:20rem; font-weight:700; }
- #dashboard .table-type-dashboard tbody td.target {text-align:left; display:flex; align-items:center;}
- #dashboard td img {width:auto; height:auto; margin-right:7rem;}
-
- #dashboard .dashboard-list li#boxInquiry {grid-column-end:span 2;}
- #dashboard .dashboard-list li#boxInquiry .info {display:flex; }
- #dashboard .dashboard-list li#boxInquiry .tab {width:220rem; display:flex; flex-direction:column; gap:22rem; margin-top:10rem}
- #dashboard .dashboard-list li#boxInquiry .tab a {font-size:14rem; font-weight:500; color:#999; line-height:20rem;}
- #dashboard .dashboard-list li#boxInquiry .tab .active a { position:relative; font-size:16rem; color:#339A76; font-weight:700; line-height:24rem; }
- #dashboard .dashboard-list li#boxInquiry .tab .active a::before { content:""; display:inline-block; width:100%; height:2px; background:#339A76; position:absolute; bottom:-2rem; left:0;}
+circle {fill:#E86565; position:relative;}
+.google-visualization-tooltip {display:none}
+g text {display:none}
+svg > g > g:last-child { pointer-events: none }
+.tooltip-box { display:none; width:142rem; min-height:101rem; background:#fff; border:solid 1px #E86565; border-radius:3rem 3rem 0 0; position:fixed; top:100rem; left:20rem; z-index:10; line-height:0;}
+.tooltip-box::before {content:""; display:inline-block; width:100%; height:12rem; background:#E86565;}
+.tooltip-box div {line-height:1;}
+.tooltip-box .date-wrap { padding:6rem 8rem 0rem; width:100%; line-height:10rem; font-size:10rem; font-weight:500; color:#999;}
+.tooltip-box .view-wrap { padding:0 8rem; ;font-size:14rem; line-height:24rem; font-weight:500; color:#222; }
+.tooltip-box .view-wrap strong { font-size:24rem; font-weight:700; color:#222;}
+.tooltip-box .compare-wrap { padding:8rem; font-size:12rem; font-weight:500; color:#999; display:flex; gap:4rem;}
+.tooltip-box .compare-wrap .compare-num.plus { font-size:14rem; color:#E86565; font-weight:700;}
+.tooltip-box .compare-wrap .compare-num.minus { font-size:14rem; color:#4577FF; font-weight:700;}
+.tooltip-box .compare-wrap .compare-num.same { font-size:14rem; color:#999999; font-weight:700;}
+.tooltip-box .compare-wrap .compare-num.plus::after {content:url(/hyundai_robotics_admin/assets/images/common/icon_plus.svg); position:relative; top:-2rem}
+.tooltip-box .compare-wrap .compare-num.minus::after {content:url(/hyundai_robotics_admin/assets/images/common/icon_minus.svg); position:relative; top:-2rem}
+.tooltip-box .compare-wrap .compare-num.same::after {content:url(/hyundai_robotics_admin/assets/images/common/icon_same.svg); position:relative; top:-5rem}
