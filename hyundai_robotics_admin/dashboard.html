@@ -54,19 +54,60 @@
                                         <a href="javascript:void(0)">Monthly</a>
                                     </li>
                                 </ul>
-                                <div class="graph">
+                                <div id="daily" class="graph">
+
+                                    <!-- 그래프 스크립트 -->
                                     <div id="curve_chart" style="width:100%; height:100%"></div>
-                                    <ul class="graph-view-point">
-                                        <li>5,000</li>
-                                        <li>4,000</li>
-                                        <li>3,000</li>
-                                        <li>2,000</li>
-                                        <li>1,000</li>
-                                        <li>0</li>
-                                    </ul>
+
+                                    <!-- Y축 방문자 수 -->
+                                    <div class="graph-view-point-wrap">
+                                        <ul class="graph-view-point">
+                                            <li>5,000</li>
+                                            <li>4,000</li>
+                                            <li>3,000</li>
+                                            <li>2,000</li>
+                                            <li>1,000</li>
+                                            <li>0</li>
+                                        </ul>
+                                    </div>
+
+                                    <!-- X축 날짜 -->
+                                    <div class="graph-date-point-wrap">
+                                        <ul class="graph-date-point">
+                                            <li>2022년 5월</li>
+                                            <li>2022년 6월</li>
+                                            <li>2022년 7월</li>
+                                        </ul>
+                                    </div>
+
                                 </div>
                             </div>
                         </li>
+                        <div class="tooltip-box">
+                            <div class="date-wrap">
+                                2022-07-03
+                            </div>
+                            <div class="view-wrap">
+                                방문자 수 <br>
+                                <strong class="view">1,800</strong>
+                                건
+                            </div>
+                            <div class="compare-wrap">
+                                전일대비
+                                <!-- 전일대비 상승했을 경우 plus 클래스 추가 -->
+                                <div class="compare-num plus">
+                                    + 500명
+                                </div>
+                                <!-- 전일대비 감소했을 경우 minus 클래스 추가 -->
+                                <!-- <div class="compare-num minus"가
+                                    - 500명
+                                </div> -->
+                                <!-- 전일대비 동일했을 경우 same 클래스 추가 -->
+                                <!-- <div class="compare-num same">
+                                   
+                                </div> -->
+                            </div>
+                        </div>
                         <!-- 인기 사용 페이지 -->
                         <li id="boxPopularPages">
                             <div class="title-wrap">
